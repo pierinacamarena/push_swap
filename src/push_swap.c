@@ -6,7 +6,7 @@
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 17:30:38 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/05 19:54:53 by pcamaren         ###   ########.fr       */
+/*   Updated: 2021/10/06 15:52:24 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,13 @@ int	main(int ac, char **av)
 	else
 	{
 		ft_simple_print(stackA, stackB);
+		printf("size is %d\n", stackA.size);
 		count = ft_sort_stack(&stackA, &stackB);
 		printf("number of instructions is %d\n", count);
+	    ft_simple_print(stackA, stackB);
 	}
+	free_stack(&stackA);
+	free_stack(&stackB);
 	return (0);
 }
 

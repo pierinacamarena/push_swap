@@ -6,7 +6,7 @@
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 19:55:04 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/05 19:22:21 by pcamaren         ###   ########.fr       */
+/*   Updated: 2021/10/06 15:40:05 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ int	ft_sort_stack(t_stack *stackA, t_stack *stackB)
 		count = count + ft_sort_three(stackA);
 	else if ((stackB->size == 3) && (!ft_check_sorted_reverse(*stackB)))
 		count = count + ft_sort_three_reverse(stackB);
+//	else if (stackA->size > 3 && stackA->size <= 45)
+//	    count = count + ft_sort_inverse(stackA, stackB, stackA->size);
 	else if (stackA->size > 3)
-		count = count + ft_sort_main_algo(stackA, stackB);
+	    count = count + ft_sort_main_algo(stackA, stackB);
 	return (count);
 }
 
@@ -46,18 +48,28 @@ int	ft_sort_main_algo(t_stack *stackA, t_stack *stackB)
 				|| (stackA->b > stackB->x || stackA->b < stackB->y) \
 				|| (stackA->c > stackB->x || stackA->c < stackB->y))
 		{
+			printf("i am here ! \n");
 			if (stackA->a > stackB->x || stackA->a < stackB->y)
+			{
+				printf("woof\n");
 				count = count + ft_top_stack_a(stackA, stackB);
+			}
 			else if (stackA->b > stackB->x || stackA->b < stackB->y)
+			{
+				printf("meow\n");
 				count = count + ft_top_stack_b(stackA, stackB);
-			else if (stackA->c > stackB->x || stackA->c < stackB->y)
+			}else if (stackA->c > stackB->x || stackA->c < stackB->y)
+			{
+				printf("meee\n");
 				count = count + ft_top_stack_c(stackA, stackB);
+			}
 			j++;
 		}
 		else if ((stackA->a < stackB->x && stackA->a > stackB->y) \
 				&& (stackA->b < stackB->x && stackA->b > stackB->y) \
 				&& (stackA->c <stackB->x && stackA->c > stackB->y))
 		{
+			printf("i am here now !\n");
 			ft_distance(stackA, stackB);
 			if ((stackA->d_a - 1 <= stackA->d_b)\
 					&& (stackA->d_a - 1 <= stackA->d_c))
