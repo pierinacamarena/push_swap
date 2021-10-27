@@ -63,32 +63,40 @@ int	ft_base_case_one(t_stack *stackA, t_stack *stackB)
 
 int	ft_rbase_case_two(t_stack *stackA, t_stack *stackB)
 {
-	int	count;
+    printf("entered the function\n");
+	int count;
 
 	count = 0;
-	if ((stackB->a < stackA->x || stackB->a > stackA->y) \
-			|| (stackB->b > stackA->x || stackB->b < stackA->y))
+	ft_val_updtA(stackA);
+	ft_val_updtB(stackB);
+	if (((stackB->a < stackA->x) || (stackB->a > stackA->y)) || ((stackB->b < stackA->x) || (stackB->b > stackA->y)))
 	{
-		if (stackB->a < stackA->x || stackB->a > stackA->y)
+	    printf("1\n");
+	  	if (stackB->a < stackA->x || stackB->a > stackA->y)
 		{
+		    printf("1.1\n");
 			 count = reverse_top_stack_a(stackA, stackB);
 		}
 		else if (stackB->b < stackA->x || stackB->b > stackA->y)
 		{
+		    printf("1.2\n");
 			count = reverse_top_stack_b(stackA, stackB);
 		}
 	}
 	else if ((stackB->a > stackA->x && stackB->a < stackA->y) \
 			&& (stackB->b > stackA->x) && (stackB->b < stackA->y))
 	{
+	    printf("2\n");
 		ft_distance_reverse(stackA, stackB);
 		printf("the value of the distances are da:%d and db:%d\n", stackB->d_a, stackB->d_b);
 		if (stackB->d_a - 1 <= stackB->d_b)
 		{
+		    printf("2.1\n");
 			count = rda_smaller(stackA, stackB);
 		}
 		else if (stackB->d_b < stackB->d_a -1)
 		{
+		    printf("2.2\n");
 			count = rdb_smaller(stackA, stackB);
 		}
 	}

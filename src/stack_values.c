@@ -12,14 +12,31 @@
 
 #include "../includes/push_swap.h"
 
+
+/*void    format_updt()
+{
+    
+}
+*/
+
 void	ft_val_updtA(t_stack *stackA)
 {
 	int	endA;
+	int midpoint;
 
 	endA = stackA->size - 1;
+	if (stackA->size % 2 == 0)
+	    midpoint = stackA->size / 2;
+	else
+	    midpoint = endA / 2;
 	stackA->a = stackA->array[0];
 	stackA->b = stackA->array[1];
 	stackA->c = stackA->array[endA];
+	stackA->x = stackA->array[0];
+	stackA->y = stackA->array[endA];
+    stackA->midpoint = stackA->array[midpoint];
+    printf("stackA: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackA->a, stackA->b, stackA->c, stackA->x, stackA->y);
+    printf("the size is: %d\n", stackA->size);
 }
 
 void	ft_val_updtB(t_stack *stackB)
@@ -27,14 +44,19 @@ void	ft_val_updtB(t_stack *stackB)
 	int	endB;
 	int	midpoint;
 
-	endB= stackB->size - 1;
+	endB = stackB->size - 1;
 	if (stackB->size % 2 == 0)
 		midpoint = stackB->size / 2;
 	else
 		midpoint = endB / 2;
+	stackB->a = stackB->array[0];
+	stackB->b = stackB->array[1];
+	stackB->c = stackB->array[endB];
 	stackB->x = stackB->array[0];
 	stackB->y = stackB->array[endB];
 	stackB->midpoint = stackB->array[midpoint];
+	printf("stackB: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackB->a, stackB->b, stackB->c, stackB->x, stackB->y);
+	printf("the size is: %d\n", stackB->size);
 }
 
 void	ft_distance(t_stack *stackA, t_stack *stackB)

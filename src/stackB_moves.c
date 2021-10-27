@@ -12,7 +12,6 @@
 
 #include "../includes/push_swap.h"
 
-/**
  *	Switches the top two number of stackB
  **/
 int	ft_sb(t_stack *stackB)

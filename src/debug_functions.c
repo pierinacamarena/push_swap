@@ -12,6 +12,17 @@
 
 #include "../includes/push_swap.h"
 
+*
+void    format_printing_initial(t_stack  stackA, t_stack stackB)
+{
+    int i;
+
+    i = 0;
+    printf("Init a and b\n");
+    while (i < stackA->max_size)
+}
+*/
+
 void	ft_print_full_stack(t_stack stackA, t_stack stackB, int j)
 {
 	printf("This is stackA \n, at the %dth iteration\n", j);

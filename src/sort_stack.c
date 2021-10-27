@@ -23,9 +23,9 @@ int	ft_sort_stack(t_stack *stackA, t_stack *stackB)
 		count = count + ft_sort_three(stackA);
 	else if ((stackB->size == 3) && (!ft_check_sorted_reverse(*stackB)))
 		count = count + ft_sort_three_reverse(stackB);
-//	else if (stackA->size > 3 && stackA->size <= 45)
-//	    count = count + ft_sort_inverse(stackA, stackB, stackA->size);
-	else if (stackA->size > 3)
+	else if (stackA->size > 3 && stackA->size <= 45)
+	    count = count + ft_sort_inverse(stackA, stackB, stackA->size);
+	else if (stackA->size > 45)
 	    count = count + ft_sort_main_algo(stackA, stackB);
 	return (count);
 }
@@ -48,28 +48,18 @@ int	ft_sort_main_algo(t_stack *stackA, t_stack *stackB)
 				|| (stackA->b > stackB->x || stackA->b < stackB->y) \
 				|| (stackA->c > stackB->x || stackA->c < stackB->y))
 		{
-			printf("i am here ! \n");
 			if (stackA->a > stackB->x || stackA->a < stackB->y)
-			{
-				printf("woof\n");
 				count = count + ft_top_stack_a(stackA, stackB);
-			}
 			else if (stackA->b > stackB->x || stackA->b < stackB->y)
-			{
-				printf("meow\n");
 				count = count + ft_top_stack_b(stackA, stackB);
-			}else if (stackA->c > stackB->x || stackA->c < stackB->y)
-			{
-				printf("meee\n");
+			else if (stackA->c > stackB->x || stackA->c < stackB->y)
 				count = count + ft_top_stack_c(stackA, stackB);
-			}
 			j++;
 		}
 		else if ((stackA->a < stackB->x && stackA->a > stackB->y) \
 				&& (stackA->b < stackB->x && stackA->b > stackB->y) \
 				&& (stackA->c <stackB->x && stackA->c > stackB->y))
 		{
-			printf("i am here now !\n");
 			ft_distance(stackA, stackB);
 			if ((stackA->d_a - 1 <= stackA->d_b)\
 					&& (stackA->d_a - 1 <= stackA->d_c))
@@ -120,7 +110,7 @@ int	ft_sort_three(t_stack *stackA)
 		count = count + ft_sa(stackA);
 	}
 	else if ((b < a) && (a < c))
-		count = count + ft_sa(stackA);
+    	count = count + ft_sa(stackA);
 	else if ((c < a) && (a < b))
 		count = count + ft_rra(stackA);
 	else if ((b < c) && (c < a))

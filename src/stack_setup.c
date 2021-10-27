@@ -45,6 +45,16 @@ bool	ft_check_sorted_reverse(t_stack stack)
 	return (false);
 }
 
+/*
+void    format_setup(char *instruction)
+{
+    int count;
+
+    count = 0;
+    format.instruction = instruction;
+    format.count = count;
+}
+*/
 
 /**
  *	This function checks if the stack is sorted in ascending order

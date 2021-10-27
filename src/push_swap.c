@@ -12,7 +12,6 @@
 
 #include "../includes/push_swap.h"
 
-
 int	main(int ac, char **av)
 {
 	t_stack stackA;
@@ -35,14 +34,14 @@ int	main(int ac, char **av)
 		printf("it is sorted! \n");
 	else
 	{
+	    printf("the stacks before sorting\n");
 		ft_simple_print(stackA, stackB);
 		printf("size is %d\n", stackA.size);
+		printf("the sorted stack is\n");
 		count = ft_sort_stack(&stackA, &stackB);
 		printf("number of instructions is %d\n", count);
 	    ft_simple_print(stackA, stackB);
 	}
-	free_stack(&stackA);
-	free_stack(&stackB);
 	return (0);
 }
 
