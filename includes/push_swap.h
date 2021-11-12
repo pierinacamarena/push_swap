@@ -35,6 +35,12 @@ typedef struct s_stack
   int d_c;
 } t_stack;
 
+struct LinkedList
+{
+	int	data;
+	struct	LinkedLIst *next;
+};
+
 /*
 
 typedef struct s_format
@@ -47,53 +53,55 @@ typedef struct s_format
 
 */
 
-t_stack init_stack (int ac);
-t_stack ft_stack_populate (t_stack * stack, char **av, int size);
-bool ft_check_sorted (t_stack stack);
-bool ft_check_sorted_reverse (t_stack stack);
-int ft_sa (t_stack * stackA);
-int ft_sb (t_stack * stackB);
-int ft_ra (t_stack * stackA);
-int ft_rb (t_stack * stackB);
-int ft_rra (t_stack * stackA);
-int ft_rrb (t_stack * stackB);
-int ft_pa (t_stack * stackA, t_stack * stackB);
-int ft_pb (t_stack * stackA, t_stack * stackB);
-void ft_print_stack (t_stack stack);
-int ft_sort_stack (t_stack * stackA, t_stack * stackB);
-int ft_sort_three (t_stack * stackA);
-int ft_sort_three_reverse (t_stack * stackB);
-int ft_sort_main_algo (t_stack * stackA, t_stack * stackB);
-int ft_sort_inverse (t_stack * stackA, t_stack * stackB, int n);
-int reverse_top_stack_a (t_stack * stackA, t_stack * stackB);
-int reverse_top_stack_b (t_stack * stackA, t_stack * stackB);
-int reverse_top_stack_c (t_stack * stackA, t_stack * stackB);
-int rdb_smaller (t_stack * stackA, t_stack * stackB);
-int rdc_smaller (t_stack * stackA, t_stack * stackB);
-int rda_smaller (t_stack * stackA, t_stack * stackB);
-void ft_distance_reverse (t_stack * stackA, t_stack * stackB);
-void ft_rda (t_stack * stackA, t_stack * stackB);
-void ft_rdb (t_stack * stackA, t_stack * stackB);
-void ft_rdc (t_stack * stackA, t_stack * stackB);
-void ft_val_updtA (t_stack * stackA);
-void ft_val_updtB (t_stack * stackB);
-void ft_distance (t_stack * stackA, t_stack * stackB);
-void ft_print_full_stack (t_stack stackA, t_stack stackB, int j);
-void ft_print_distances (t_stack stackA, int j);
-void ft_simple_print (t_stack stackA, t_stack stackB);
-int ft_base_case_two (t_stack * stackA, t_stack * stackB);
-int ft_base_case_one (t_stack * stackA, t_stack * stackB);
-int ft_top_stack_a (t_stack * stackA, t_stack * stackB);
-int ft_top_stack_b (t_stack * stackA, t_stack * stackB);
-int ft_top_stack_c (t_stack * stackA, t_stack * stackB);
-int ft_db_smaller (t_stack * stackA, t_stack * stackB);
-int ft_dc_smaller (t_stack * stackA, t_stack * stackB);
-int ft_da_smaller (t_stack * stackA, t_stack * stackB);
-void ft_da (t_stack * stackA, t_stack * stackB);
-void ft_db (t_stack * stackA, t_stack * stackB);
-void ft_dc (t_stack * stackA, t_stack * stackB);
-int ft_atoi (const char *str);
-void ft_putstr (char const *s);
-int ft_rbase_case_two (t_stack * stackA, t_stack * stackB);
-int ft_rbase_case_one (t_stack * stackA, t_stack * stackB);
+t_stack	init_stack (int ac);
+t_stack	ft_stack_populate (t_stack * stack, char **av, int size);
+bool	ft_check_sorted (t_stack stack);
+bool	ft_check_sorted_reverse (t_stack stack);
+int	ft_sa (t_stack * stackA);
+int	ft_sb (t_stack * stackB);
+int	ft_ra (t_stack * stackA);
+int	ft_rb (t_stack * stackB);
+int	ft_rra (t_stack * stackA);
+int	ft_rrb (t_stack * stackB);
+int	ft_pa (t_stack * stackA, t_stack * stackB);
+int	ft_pb (t_stack * stackA, t_stack * stackB);
+void	ft_print_stack (t_stack stack);
+int	ft_sort_stack (t_stack * stackA, t_stack * stackB);
+int	ft_sort_three (t_stack * stackA);
+int	ft_sort_three_reverse (t_stack * stackB);
+int	ft_sort_main_algo (t_stack * stackA, t_stack * stackB);
+int	ft_sort_inverse (t_stack * stackA, t_stack * stackB, int n);
+int	reverse_top_stack_a (t_stack * stackA, t_stack * stackB);
+int	reverse_top_stack_b (t_stack * stackA, t_stack * stackB);
+int	reverse_top_stack_c (t_stack * stackA, t_stack * stackB);
+int	rdb_smaller (t_stack * stackA, t_stack * stackB);
+int	rdc_smaller (t_stack * stackA, t_stack * stackB);
+int	rda_smaller (t_stack * stackA, t_stack * stackB);
+void	ft_distance_reverse (t_stack * stackA, t_stack * stackB);
+void	ft_rda (t_stack * stackA, t_stack * stackB);
+void	ft_rdb (t_stack * stackA, t_stack * stackB);
+void	ft_rdc (t_stack * stackA, t_stack * stackB);
+void	ft_val_updtA (t_stack * stackA);
+void	ft_val_updtB (t_stack * stackB);
+void	ft_distance (t_stack * stackA, t_stack * stackB);
+void	ft_print_full_stack (t_stack stackA, t_stack stackB, int j);
+void	ft_print_distances (t_stack stackA, int j);
+void	ft_simple_print (t_stack stackA, t_stack stackB);
+int	ft_base_case_two (t_stack * stackA, t_stack * stackB);
+int	ft_base_case_one (t_stack * stackA, t_stack * stackB);
+int	ft_top_stack_a (t_stack * stackA, t_stack * stackB);
+int	ft_top_stack_b (t_stack * stackA, t_stack * stackB);
+int	ft_top_stack_c (t_stack * stackA, t_stack * stackB);
+int	ft_db_smaller (t_stack * stackA, t_stack * stackB);
+int	ft_dc_smaller (t_stack * stackA, t_stack * stackB);
+int	ft_da_smaller (t_stack * stackA, t_stack * stackB);
+void	ft_da (t_stack * stackA, t_stack * stackB);
+void 	ft_db (t_stack * stackA, t_stack * stackB);
+void	ft_dc (t_stack * stackA, t_stack * stackB);
+int	ft_atoi (const char *str);
+void	ft_putstr (char const *s);
+int 	ft_rbase_case_two (t_stack * stackA, t_stack * stackB);
+int	ft_rbase_case_one (t_stack * stackA, t_stack * stackB);
+void	ft_putneg(unsigned int n);
+
 #endif
