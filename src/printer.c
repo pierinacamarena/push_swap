@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
 
 void	ft_printer(t_info printer)
 {
@@ -21,12 +20,7 @@ void	ft_printer(t_info printer)
 	i = 0;
 	ft_putstr("---------------------------------\n");
 	ft_putstr("exec ");
-	while (i < printer.move_q)
-	{
-		ft_putstr(printer.move[i]);
-		ft_putstr(" ");
-		i++;
-	}
+	ft_putstr(printer.move)
 	ft_putstr("\n");
 	len = ft_max(printer.lenA, printer.lenB);
 	i = 0;
@@ -37,7 +31,8 @@ void	ft_printer(t_info printer)
 			while(i < printer.lenA)
 			{
 				ft_putnbr(printer.stackA.array[i]);
-				if++;
+				ft_putstr("\n");
+				i++;
 			}
 		}
 		else if (printer.lenA < printer.lenB)
@@ -45,20 +40,27 @@ void	ft_printer(t_info printer)
 			while(i < printer.lenB)
 			{
 				ft_putnbr(printer.stackA.array[i]);
+				ft_putstr("\n");
 				i++;
 			}
 		}
 		else
 		{
 			ft_putnbr(printer.stackA.array[i]);
+			ft_putstr(" ");
 			ft_putnbr(printer.stackA.array[i]);
+			ft_putstr("\n");
 			i++
 		}
 		if(i < len)
 		{
 			ft_putnbr(printer.stackA.array[i]);
+			ft_putstr(" ");
 			ft_putnbr(printer.stackA.array[i]);
+			ft_putstr("\n");
 			i++;
 		}
 	}
+	ft_putstr("_ _\n");
+	ft_putstr("a b\n");
 }

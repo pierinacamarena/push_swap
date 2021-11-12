@@ -41,17 +41,17 @@ struct LinkedList
 	struct	LinkedLIst *next;
 };
 
-/*
+typedef struct *node;
 
-typedef struct s_format
+typedef struct s_info 
 {
-  t_stack stackA;
-  t_stack stackB;
-  char *instruction;
-  int count;
-} t_format;
+  t_stack	stackA;
+  it_stack	stackB;
+  int		lenA;
+  int		lenB;
+  char		move[3];
 
-*/
+} t_info;
 
 t_stack	init_stack (int ac);
 t_stack	ft_stack_populate (t_stack * stack, char **av, int size);
