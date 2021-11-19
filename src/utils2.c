@@ -12,6 +12,11 @@
 
 #include "../includes/push_swap.h"
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_putneg(unsigned int n)
 {
 	if (n / 10 != 0)
@@ -27,4 +32,14 @@ void	ft_putnbr(int n)
 		n = -n;
 	}
 	ft_putneg((unsigned int)n);
+}
+
+int	ft_max(int a, int b)
+{
+	if(a > b)
+		return (a);
+	else if (a < b)
+		return (b);
+	else
+		return (a);
 }

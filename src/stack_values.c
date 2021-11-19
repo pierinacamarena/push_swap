@@ -35,8 +35,8 @@ void	ft_val_updtA(t_stack *stackA)
 	stackA->x = stackA->array[0];
 	stackA->y = stackA->array[endA];
     stackA->midpoint = stackA->array[midpoint];
-    printf("stackA: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackA->a, stackA->b, stackA->c, stackA->x, stackA->y);
-    printf("the size is: %d\n", stackA->size);
+  //  printf("stackA: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackA->a, stackA->b, stackA->c, stackA->x, stackA->y);
+    //printf("the size is: %d\n", stackA->size);
 }
 
 void	ft_val_updtB(t_stack *stackB)
@@ -55,8 +55,8 @@ void	ft_val_updtB(t_stack *stackB)
 	stackB->x = stackB->array[0];
 	stackB->y = stackB->array[endB];
 	stackB->midpoint = stackB->array[midpoint];
-	printf("stackB: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackB->a, stackB->b, stackB->c, stackB->x, stackB->y);
-	printf("the size is: %d\n", stackB->size);
+//	printf("stackB: a is %d, b is %d, c is %d, x is %d, y is %d\n", stackB->a, stackB->b, stackB->c, stackB->x, stackB->y);
+//	printf("the size is: %d\n", stackB->size);
 }
 
 void	ft_distance(t_stack *stackA, t_stack *stackB)

@@ -16,14 +16,14 @@
  *	Switches the top two numbers of stackA
  **/
 
-int	ft_sa(t_stack *stackA)
+int	ft_sa(t_stack *stackA, t_stack *stackB, t_info *printer)
 {
 	int	temp;
 	temp = stackA->array[0];
 	stackA->array[0] = stackA->array[1];
 	stackA->array[1] = temp;
 	ft_val_updtA(stackA);
-	ft_putstr("sa\n");
+	update_printer(*stackA, *stackB, printer, "sa");
 	return (1);
 }
 /**
@@ -31,7 +31,7 @@ int	ft_sa(t_stack *stackA)
  *	rest move one position upwards
  **/
 
-int	ft_ra(t_stack *stackA)
+int	ft_ra(t_stack *stackA, t_stack *stackB, t_info *printer)
 {
 	int	temp;
 	int	i;
@@ -52,7 +52,7 @@ int	ft_ra(t_stack *stackA)
 	}
 	stackA->array[end] = temp;
 	ft_val_updtA(stackA);
-	ft_putstr("ra\n");
+	update_printer(*stackA, *stackB, printer, "ra");
 	return (1);
 }
 
@@ -60,7 +60,7 @@ int	ft_ra(t_stack *stackA)
  * Reverse rotates stackA, the last number becomes first, and all other numbers
  * move one position downwards
  **/
-int	ft_rra(t_stack *stackA)
+int	ft_rra(t_stack *stackA, t_stack *stackB, t_info *printer)
 {
 	int	temp;
 	int i;
@@ -81,11 +81,11 @@ int	ft_rra(t_stack *stackA)
 	}
 	stackA->array[0] = temp;
 	ft_val_updtA(stackA);
-	ft_putstr("rra\n");
+	update_printer(*stackA, *stackB, printer, "rra");
 	return (1);
 }
 
-int	ft_pa(t_stack *stackA, t_stack *stackB)
+int	ft_pa(t_stack *stackA, t_stack *stackB, t_info *printer)
 {
 	int	i;
 	int	j;
@@ -115,6 +115,6 @@ int	ft_pa(t_stack *stackA, t_stack *stackB)
 	stackA->size++;
 	ft_val_updtA(stackA);
 	ft_val_updtB(stackB);
-	ft_putstr("pa\n");
+	update_printer(*stackA, *stackB, printer, "pa");
 	return(1);
 }

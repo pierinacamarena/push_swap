@@ -12,9 +12,9 @@
 
 #include "../includes/push_swap.h"
 
- *	Switches the top two number of stackB
+/**	Switches the top two number of stackB
  **/
-int	ft_sb(t_stack *stackB)
+int	ft_sb(t_stack *stackB, t_stack *stackA, t_info *printer)
 {
 	int	temp;
 
@@ -22,7 +22,7 @@ int	ft_sb(t_stack *stackB)
 	stackB->array[0] = stackB->array[1];
 	stackB->array[1] = temp;
 	ft_val_updtB(stackB);
-	ft_putstr("sb\n");
+	update_printer(*stackA, *stackB, printer, "sb");
 	return (1);
 }
 
@@ -31,7 +31,7 @@ int	ft_sb(t_stack *stackB)
  *	rest move one position upwards
  **/
 
-int	ft_rb(t_stack *stackB)
+int	ft_rb(t_stack *stackB, t_stack *stackA, t_info *printer)
 {
 	int	temp;
 	int	i;
@@ -46,13 +46,13 @@ int	ft_rb(t_stack *stackB)
 	temp = stackB->array[0];
 	while(i < (len - 1))
 	{
-	stackB->array[i] = stackB->array[j];
-	i++;
-	j++;
+		stackB->array[i] = stackB->array[j];
+		i++;
+		j++;
 	}
 	stackB->array[end] = temp;
 	ft_val_updtB(stackB);
-	ft_putstr("rb\n");
+	update_printer(*stackA, *stackB, printer, "rb");
 	return (1);
 }
 
@@ -61,11 +61,11 @@ int	ft_rb(t_stack *stackB)
  * move one position downwards
  **/
 
-int	ft_rrb(t_stack *stackB)
+int	ft_rrb(t_stack *stackB, t_stack *stackA, t_info *printer)
 {
 	int	temp;
-	int i;
-	int j;
+	int	i;
+	int 	j;
 	int	len;
 	int	end;
 
@@ -82,7 +82,7 @@ int	ft_rrb(t_stack *stackB)
 	}
 	stackB->array[0] = temp;
 	ft_val_updtB(stackB);
-	ft_putstr("rrb\n");
+	update_printer(*stackA, *stackB, printer, "rrb");
 	return (1);
 }
 
@@ -90,7 +90,7 @@ int	ft_rrb(t_stack *stackB)
  *Function that pushes the top element of stackA to the top of stackB
  **/
 
-int	ft_pb(t_stack *stackA, t_stack *stackB)
+int	ft_pb(t_stack *stackA, t_stack *stackB, t_info *printer)
 {
 	int	i;
 	int	j;
@@ -120,6 +120,6 @@ int	ft_pb(t_stack *stackA, t_stack *stackB)
 	stackB->size++;
 	ft_val_updtA(stackA);
 	ft_val_updtB(stackB);
-	ft_putstr("pb\n");
+	update_printer(*stackA, *stackB, printer, "pb");
 	return (1);
 }

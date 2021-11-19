@@ -14,13 +14,12 @@
 
 int	main(int ac, char **av)
 {
-	t_stack stackA;
-	t_stack stackB;
-	int i;
-	int len;
-	int	count;
+	t_stack	stackA;
+	t_stack	stackB;
+	t_info	printer;
+	int		len;
+	int		count;
 
-	i = 0;
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
 	{
@@ -30,17 +29,14 @@ int	main(int ac, char **av)
 	stackA = init_stack(len);
 	ft_stack_populate(&stackA, av, len);
 	stackB = init_stack(len);
+	printer = init_printer(stackA, stackB);
 	if (ft_check_sorted(stackA) || len == 1)
-		printf("it is sorted! \n");
+		ft_putstr("it is sorted! \n");
 	else
 	{
-	    printf("the stacks before sorting\n");
-		ft_simple_print(stackA, stackB);
-		printf("size is %d\n", stackA.size);
-		printf("the sorted stack is\n");
-		count = ft_sort_stack(&stackA, &stackB);
+		initial_print(printer);
+		count = ft_sort_stack(&stackA, &stackB, &printer);
 		printf("number of instructions is %d\n", count);
-	    ft_simple_print(stackA, stackB);
 	}
 	return (0);
 }
