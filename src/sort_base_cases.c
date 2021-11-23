@@ -12,103 +12,84 @@
 
 #include "../includes/push_swap.h"
 
-int	ft_base_case_two(t_stack *stackA, t_stack *stackB, t_info *printer)
+int	ft_base_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
 
 	count = 0;
-	if ((stackA->a > stackB->x || stackA->a < stackB->y) \
-			|| (stackA->b > stackB->x || stackA->b < stackB->y))
+	if ((stacka->a > stackb->x || stacka->a < stackb->y) \
+			|| (stacka->b > stackb->x || stacka->b < stackb->y))
 	{
-		if (stackA->a > stackB->x || stackA->a < stackB->y)
-		{
-			 count = ft_top_stack_a(stackA, stackB, printer);
-		}
-		else if (stackA->b > stackB->x || stackA->b < stackB->y)
-		{
-			count = ft_top_stack_b(stackA, stackB, printer);
-		}
+		if (stacka->a > stackb->x || stacka->a < stackb->y)
+			count = ft_top_stack_a(stacka, stackb, printer);
+		else if (stacka->b > stackb->x || stacka->b < stackb->y)
+			count = ft_top_stack_b(stacka, stackb, printer);
 	}
-	else if ((stackA->a < stackB->x && stackA->a > stackB->y) \
-			&& (stackA->b < stackB->x) && (stackA->b > stackA->y))
+	else if ((stacka->a < stackb->x && stacka->a > stackb->y) \
+			&& (stacka->b < stackb->x) && (stacka->b > stackb->y))
 	{
-		ft_distance(stackA, stackB);
-		if (stackA->d_a - 1 <= stackA->d_b)
-		{
-			count = ft_da_smaller(stackA, stackB, printer);
-		}
-		else if (stackA->d_b < stackA->d_a -1)
-		{
-			count = ft_db_smaller(stackA, stackB, printer);
-		}
+		ft_distance(stacka, stackb);
+		if (stacka->d_a - 1 <= stackb->d_b)
+			count = ft_da_smaller(stacka, stackb, printer);
+		else if (stacka->d_b < stacka->d_a -1)
+			count = ft_db_smaller(stacka, stackb, printer);
 	}
 	return (count);
 }
 
-int	ft_base_case_one(t_stack *stackA, t_stack *stackB, t_info *printer)
+int	ft_base_case_one(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
 
 	count = 0;
-	if (stackA->a > stackB->x || stackA->a < stackB->y)
+	if (stacka->a > stackb->x || stacka->a < stackb->y)
+		count = ft_top_stack_a(stacka, stackb, printer);
+	else if (stacka->a < stackb->x && stacka->a > stackb->y)
 	{
-		count= ft_top_stack_a(stackA, stackB, printer);
-	}
-	else if (stackA->a < stackB->x && stackA->a > stackB->y)
-	{
-		ft_distance(stackA, stackB);
-		count =ft_da_smaller(stackA, stackB, printer);
+		ft_distance(stacka, stackb);
+		count = ft_da_smaller(stacka, stackb, printer);
 	}
 	return (count);
 }
 
-int	ft_rbase_case_two(t_stack *stackA, t_stack *stackB, t_info *printer)
-{
-	int count;
-
-	count = 0;
-	ft_val_updtA(stackA);
-	ft_val_updtB(stackB);
-	if (((stackB->a < stackA->x) || (stackB->a > stackA->y)) || ((stackB->b < stackA->x) || (stackB->b > stackA->y)))
-	{
-	  	if (stackB->a < stackA->x || stackB->a > stackA->y)
-		{
-			 count = reverse_top_stack_a(stackA, stackB, printer);
-		}
-		else if (stackB->b < stackA->x || stackB->b > stackA->y)
-		{
-			count = reverse_top_stack_b(stackA, stackB, printer);
-		}
-	}
-	else if ((stackB->a > stackA->x && stackB->a < stackA->y) \
-			&& (stackB->b > stackA->x) && (stackB->b < stackA->y))
-	{
-		ft_distance_reverse(stackA, stackB);
-		if (stackB->d_a - 1 <= stackB->d_b)
-		{
-			count = rda_smaller(stackA, stackB, printer);
-		}
-		else if (stackB->d_b < stackB->d_a -1)
-		{
-			count = rdb_smaller(stackA, stackB, printer);
-		}
-	}
-	return (count);
-}
-
-int	ft_rbase_case_one(t_stack *stackA, t_stack *stackB, t_info *printer)
+int	ft_rbase_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
 
 	count = 0;
-	if (stackB->a < stackA->x || stackB->a > stackA->y)
+	ft_val_updta(stacka);
+	ft_val_updta(stackb);
+	if (((stackb->a < stacka->x) || (stackb->a > stacka->y)) || \
+			((stackb->b < stacka->x) || (stackb->b > stacka->y)))
 	{
-		count = + reverse_top_stack_a(stackA, stackB, printer);
+		if (stackb->a < stacka->x || stackb->a > stacka->y)
+			count = reverse_top_stack_a(stacka, stackb, printer);
+		else if (stackb->b < stacka->x || stackb->b > stacka->y)
+			count = reverse_top_stack_b(stacka, stackb, printer);
 	}
-	else if (stackB->a > stackA->x && stackB->a < stackA->y)
+	else if ((stackb->a > stacka->x && stackb->a < stacka->y) \
+			&& (stackb->b > stacka->x) && (stackb->b < stacka->y))
 	{
-		ft_distance_reverse(stackA, stackB);
-		count = count + rda_smaller(stackA, stackB, printer);
+		ft_distance_reverse(stacka, stackb);
+		if (stackb->d_a - 1 <= stackb->d_b)
+			count = rda_smaller(stacka, stackb, printer);
+		else if (stackb->d_b < stackb->d_a -1)
+			count = rdb_smaller(stacka, stackb, printer);
+	}
+	return (count);
+}
+
+int	ft_rbase_case_one(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	int	count;
+
+	count = 0;
+	if (stackb->a < stacka->x || stackb->a > stacka->y)
+		count += reverse_top_stack_a(stacka, stackb, printer);
+	else if (stackb->a > stacka->x && stackb->a < stacka->y)
+	{
+		ft_distance_reverse(stacka, stackb);
+		count = count + rda_smaller(stacka, stackb, printer);
 	}
 	return (count);
 }

@@ -12,23 +12,24 @@
 
 #include "../includes/push_swap.h"
 
-t_info	init_printer(t_stack stackA, t_stack stackB)
+t_info	init_printer(t_stack stacka, t_stack stackb)
 {
 	t_info	printer;
 
-	printer.stackA = stackA;
-	printer.stackB = stackB;
-	printer.lenA = stackA.size;
-	printer.lenB = stackB.size;
+	printer.stacka = stacka;
+	printer.stackb = stackb;
+	printer.lena = stacka.size;
+	printer.lenb = stackb.size;
 	printer.move[3] = '\0';
 	printer.move[2] = '\0';
-	return(printer);
+	return (printer);
 }
 
-void	update_printer(t_stack stackA, t_stack stackB, t_info *printer, char *move)
+void	update_printer(t_stack stacka, t_stack stackb, \
+		t_info *printer, char *move)
 {
-	printer->lenA = stackA.size;
-	printer->lenB = stackB.size;
+	printer->lena = stacka.size;
+	printer->lenb = stackb.size;
 	printer->move[0] = move[0];
 	printer->move[1] = move[1];
 	printer->move[2] = '\0';

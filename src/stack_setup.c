@@ -19,19 +19,19 @@
 t_stack	init_stack(int len)
 {
 	t_stack	stack;
-	int	*list;
+	int		*list;
 
-	list = (int *)malloc(sizeof(int) * len + 1 );
+	list = (int *)malloc(sizeof(int) * len + 1);
 	stack.max_size = len;
 	stack.size = 0;
 	stack.array = list;
-	return(stack);
+	return (stack);
 }
 
 bool	ft_check_sorted_reverse(t_stack stack)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 1;
@@ -45,25 +45,14 @@ bool	ft_check_sorted_reverse(t_stack stack)
 	return (false);
 }
 
-/*
-void    format_setup(char *instruction)
-{
-    int count;
-
-    count = 0;
-    format.instruction = instruction;
-    format.count = count;
-}
-*/
-
 /**
  *	This function checks if the stack is sorted in ascending order
  **/
 
 bool	ft_check_sorted(t_stack stack)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 1;
@@ -84,8 +73,8 @@ bool	ft_check_sorted(t_stack stack)
 
 t_stack	ft_stack_populate(t_stack *stack, char **av, int size)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	j = 0;
@@ -96,9 +85,8 @@ t_stack	ft_stack_populate(t_stack *stack, char **av, int size)
 		j++;
 	}
 	stack->size = size;
-
 	stack->a = stack->array[0];
 	stack->b = stack->array[1];
-	stack->c = stack->array[size - 1];;
+	stack->c = stack->array[size - 1];
 	return (*stack);
 }

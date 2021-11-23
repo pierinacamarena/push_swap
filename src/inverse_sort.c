@@ -1,67 +1,76 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   inverse_sort.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/24 17:08:38 by pcamaren          #+#    #+#             */
+/*   Updated: 2021/10/06 15:36:04 by pcamaren         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
-int	ft_sort_inverse(t_stack *stackA, t_stack *stackB, t_info *printer)
+int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	j;
 	int	count;
 	int	n;
 
 	count = 0;
-	n = stackA->size;
+	n = stacka->size;
 	while (n > 3)
 	{
-	    count = count + ft_pb(stackA, stackB, printer);
-	    n--;
+		count = count + ft_pb(stacka, stackb, printer);
+		n--;
 	}
-	count = count + ft_sort_three(stackA, stackB, printer);
+	count = count + ft_sort_three(stacka, stackb, printer);
 	j = 3;
-	while (j < stackA->max_size && stackB->size >= 3)
+	while (j < stacka->max_size && stackb->size >= 3)
 	{
-		if ((stackB->a < stackA->x || stackB->a > stackA->y) \
-				|| (stackB->b < stackA->x || stackB->b > stackA->y) \
-				|| (stackB->c < stackA->x || stackB->c > stackA->y))
+		if ((stackb->a < stacka->x || stackb->a > stacka->y) \
+				|| (stackb->b < stacka->x || stackb->b > stacka->y) \
+				|| (stackb->c < stacka->x || stackb->c > stacka->y))
 		{
-			if (stackB->a < stackA->x || stackB->a > stackA->y)
-				count = count + reverse_top_stack_a(stackA, stackB, printer);
-			else if (stackB->b < stackA->x || stackB->b > stackA->y)
-				count = count + reverse_top_stack_b(stackA, stackB, printer);
-			else if (stackB->c < stackA->x || stackB->c > stackA->y)
-				count = count + reverse_top_stack_c(stackA, stackB, printer);
+			if (stackb->a < stacka->x || stacka->a > stacka->y)
+				count = count + reverse_top_stack_a(stacka, stackb, printer);
+			else if (stackb->b < stacka->x || stackb->b > stacka->y)
+				count = count + reverse_top_stack_b(stacka, stackb, printer);
+			else if (stackb->c < stacka->x || stackb->c > stacka->y)
+				count = count + reverse_top_stack_c(stacka, stackb, printer);
 		}
-		else if ((stackB->a > stackA->x && stackB->a < stackA->y) \
-				&& (stackB->b > stackA->x && stackB->b < stackA->y) \
-				&& (stackB->c > stackA->x && stackB->c < stackA->y))
+		else if ((stackb->a > stacka->x && stackb->a < stacka->y) \
+				&& (stackb->b > stacka->x && stackb->b < stacka->y) \
+				&& (stackb->c > stacka->x && stackb->c < stacka->y))
 		{
-			ft_distance_reverse(stackA, stackB);
-			if ((stackB->d_a - 1 <= stackB->d_b)\
-					&& (stackB->d_a - 1 <= stackB->d_c))
+			ft_distance_reverse(stacka, stackb);
+			if ((stackb->d_a - 1 <= stackb->d_b) \
+					&& (stackb->d_a - 1 <= stackb->d_c))
 			{
-				count = count + rda_smaller(stackA, stackB, printer);
+				count = count + rda_smaller(stacka, stacka, printer);
 			}
 			else
 			{
-				if (stackB->d_b < stackB->d_a - 1)
-					count = count + rdb_smaller(stackA, stackB, printer);
-				else if (stackB->d_c < stackB->d_a - 1)
-					count = count + rdc_smaller(stackA, stackB, printer);
+				if (stackb->d_b < stackb->d_a - 1)
+					count = count + rdb_smaller(stacka, stackb, printer);
+				else if (stackb->d_c < stackb->d_a - 1)
+					count = count + rdc_smaller(stacka, stackb, printer);
 			}
 		}
 		j++;
-		ft_val_updtA(stackA);
-		ft_val_updtB(stackB);
+		ft_val_updta(stacka);
+		ft_val_updtb(stackb);
 	}
-	if (stackB->size == 2)
+	if (stackb->size == 2)
 	{
-	    //printf("stackB size is 2\n");
-	    //printf("inside the stackB->size == 2 part\n");
-	    ft_val_updtA(stackA);
-		ft_val_updtB(stackB);
-		count = count + ft_rbase_case_two(stackA, stackB, printer);
+		ft_val_updta(stacka);
+		ft_val_updtb(stackb);
+		count = count + ft_rbase_case_two(stacka, stackb, printer);
 	}
-	if (stackB->size == 1)
+	if (stackb->size == 1)
 	{
-	    //printf("stackB size is 1\n");
-		count = count + ft_rbase_case_one(stackA, stackB, printer);
+		count = count + ft_rbase_case_one(stacka, stackb, printer);
 	}
 	return (count);
 }

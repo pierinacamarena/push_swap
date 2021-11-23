@@ -14,8 +14,8 @@
 
 int	main(int ac, char **av)
 {
-	t_stack	stackA;
-	t_stack	stackB;
+	t_stack	stacka;
+	t_stack	stackb;
 	t_info	printer;
 	int		len;
 	int		count;
@@ -26,17 +26,19 @@ int	main(int ac, char **av)
 		printf("no numbers to sort");
 		return (0);
 	}
-	stackA = init_stack(len);
-	ft_stack_populate(&stackA, av, len);
-	stackB = init_stack(len);
-	printer = init_printer(stackA, stackB);
-	if (ft_check_sorted(stackA) || len == 1)
+	stacka = init_stack(len);
+	ft_stack_populate(&stacka, av, len);
+	stackb = init_stack(len);
+	printer = init_printer(stacka, stackb);
+	if (ft_check_sorted(stacka) || len == 1)
 		ft_putstr("it is sorted! \n");
 	else
 	{
 		initial_print(printer);
-		count = ft_sort_stack(&stackA, &stackB, &printer);
-		printf("number of instructions is %d\n", count);
+		count = ft_sort_stack(&stacka, &stacka, &printer);
+		ft_putstr("number of instructions is ");
+		ft_putnbr(count);
+		ft_putstr("\n");
 	}
 	return (0);
 }
@@ -47,12 +49,12 @@ int	main(int ac, char **av)
 
 void	ft_print_stack(t_stack stack)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < stack.size)
 	{
-		printf("%d\n",stack.array[i]);
+		printf("%d\n", stack.array[i]);
 		i++;
 	}
 }

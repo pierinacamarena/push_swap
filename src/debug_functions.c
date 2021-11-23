@@ -12,56 +12,45 @@
 
 #include "../includes/push_swap.h"
 
-/**
-void    format_printing_initial(t_stack  stackA, t_stack stackB)
-{
-    int i;
-
-    i = 0;
-    printf("Init a and b\n");
-    while (i < stackA->max_size)
-}
-**/
-void	ft_print_full_stack(t_stack stackA, t_stack stackB, int j)
+void	ft_print_full_stack(t_stack stacka, t_stack stackb, int j)
 {
 	printf("This is stackA \n, at the %dth iteration\n", j);
 	printf("----------------------------------------\n");
-	ft_print_stack(stackA);
+	ft_print_stack(stacka);
 	printf("----------------------------------------\n");
 	printf("\n\n");
 	printf("This is stackB \n");
 	printf("----------------------------------------\n");
-	ft_print_stack(stackB);
+	ft_print_stack(stackb);
 	printf("----------------------------------------\n");
 	printf("these are the values of stackA\n");
-	printf("size: %d\n", stackA.size);
-	printf("max_size: %d\n", stackA.max_size);
-	printf("a is %d\n", stackA.a);
-	printf("b is %d\n", stackA.b);
-	printf("c is %d\n", stackA.c);
+	printf("size: %d\n", stacka.size);
+	printf("max_size: %d\n", stacka.max_size);
+	printf("a is %d\n", stacka.a);
+	printf("b is %d\n", stacka.b);
+	printf("c is %d\n", stackb.c);
 	printf("these are the values of stackB\n");
-	printf("size; %d\n", stackB.size);
-	printf("max_size: %d\n", stackB.max_size);
-	printf("x is %d\n", stackB.x);
-	printf("y is %d\n", stackB.y);
-	printf("midpoint is %d\n", stackB.midpoint);
-	ft_print_distances(stackA, 0);
+	printf("size; %d\n", stackb.size);
+	printf("max_size: %d\n", stackb.max_size);
+	printf("x is %d\n", stackb.x);
+	printf("y is %d\n", stackb.y);
+	printf("midpoint is %d\n", stackb.midpoint);
+	ft_print_distances(stacka, 0);
 }
 
-void	ft_simple_print(t_stack stackA, t_stack stackB)
+void	ft_simple_print(t_stack stacka, t_stack stackb)
 {
 	printf("*****************************************\n");
-	ft_print_stack(stackA);
+	ft_print_stack(stacka);
 	printf("*****************************************\n");
-	ft_print_stack(stackB);
+	ft_print_stack(stackb);
 	printf("*****************************************\n");
 }
 
-
-void	ft_print_distances(t_stack stackA, int j)
+void	ft_print_distances(t_stack stacka, int j)
 {
-	printf("the value of distances at the %dth iteration is (ignore this part)\n", j);
-	printf("d_a is %d\n", stackA.d_a);
-	printf("d_b is %d\n", stackA.d_b);
-	printf("d_c is %d\n", stackA.d_c);
+	printf("the value of distances at the %dth iteration is \n", j);
+	printf("d_a is %d\n", stacka.d_a);
+	printf("d_b is %d\n", stacka.d_b);
+	printf("d_c is %d\n", stacka.d_c);
 }

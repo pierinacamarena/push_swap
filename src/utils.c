@@ -12,10 +12,10 @@
 
 #include "../includes/push_swap.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int nb;
-	int sign;
+	int	nb;
+	int	sign;
 
 	nb = 0;
 	sign = 1;
@@ -34,7 +34,7 @@ int		ft_atoi(const char *str)
 
 void	ft_putstr(char const *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')

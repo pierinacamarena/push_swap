@@ -14,15 +14,15 @@
 
 /**	Switches the top two number of stackB
  **/
-int	ft_sb(t_stack *stackB, t_stack *stackA, t_info *printer)
+int	ft_sb(t_stack *stackb, t_stack *stacka, t_info *printer)
 {
 	int	temp;
 
-	temp = stackB->array[0];
-	stackB->array[0] = stackB->array[1];
-	stackB->array[1] = temp;
-	ft_val_updtB(stackB);
-	update_printer(*stackA, *stackB, printer, "sb");
+	temp = stackb->array[0];
+	stackb->array[0] = stackb->array[1];
+	stackb->array[1] = temp;
+	ft_val_updtb(stackb);
+	update_printer(*stacka, *stackb, printer, "sb");
 	return (1);
 }
 
@@ -31,7 +31,7 @@ int	ft_sb(t_stack *stackB, t_stack *stackA, t_info *printer)
  *	rest move one position upwards
  **/
 
-int	ft_rb(t_stack *stackB, t_stack *stackA, t_info *printer)
+int	ft_rb(t_stack *stackb, t_stack *stacka, t_info *printer)
 {
 	int	temp;
 	int	i;
@@ -41,18 +41,18 @@ int	ft_rb(t_stack *stackB, t_stack *stackA, t_info *printer)
 
 	i = 0;
 	j = 1;
-	len = stackB->size;
+	len = stackb->size;
 	end = len - 1;
-	temp = stackB->array[0];
-	while(i < (len - 1))
+	temp = stackb->array[0];
+	while (i < (len - 1))
 	{
-		stackB->array[i] = stackB->array[j];
+		stackb->array[i] = stackb->array[j];
 		i++;
 		j++;
 	}
-	stackB->array[end] = temp;
-	ft_val_updtB(stackB);
-	update_printer(*stackA, *stackB, printer, "rb");
+	stackb->array[end] = temp;
+	ft_val_updtb(stackb);
+	update_printer(*stacka, *stackb, printer, "rb");
 	return (1);
 }
 
@@ -61,28 +61,28 @@ int	ft_rb(t_stack *stackB, t_stack *stackA, t_info *printer)
  * move one position downwards
  **/
 
-int	ft_rrb(t_stack *stackB, t_stack *stackA, t_info *printer)
+int	ft_rrb(t_stack *stackb, t_stack *stacka, t_info *printer)
 {
 	int	temp;
 	int	i;
-	int 	j;
+	int	j;
 	int	len;
 	int	end;
 
-	len = stackB->size;
+	len = stackb->size;
 	end = len - 1;
 	i = end;
 	j = end - 1;
-	temp = stackB->array[end];
-	while(i > 0)
+	temp = stackb->array[end];
+	while (i > 0)
 	{
-		stackB->array[i] = stackB->array[j];
+		stackb->array[i] = stackb->array[j];
 		i--;
 		j--;
 	}
-	stackB->array[0] = temp;
-	ft_val_updtB(stackB);
-	update_printer(*stackA, *stackB, printer, "rrb");
+	stackb->array[0] = temp;
+	ft_val_updtb(stackb);
+	update_printer(*stacka, *stackb, printer, "rrb");
 	return (1);
 }
 
@@ -90,7 +90,7 @@ int	ft_rrb(t_stack *stackB, t_stack *stackA, t_info *printer)
  *Function that pushes the top element of stackA to the top of stackB
  **/
 
-int	ft_pb(t_stack *stackA, t_stack *stackB, t_info *printer)
+int	ft_pb(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	i;
 	int	j;
@@ -100,26 +100,26 @@ int	ft_pb(t_stack *stackA, t_stack *stackB, t_info *printer)
 
 	i = 0;
 	j = 1;
-	end = stackA->size - 1;
-	temp = stackA->array[0];
+	end = stacka->size - 1;
+	temp = stacka->array[0];
 	while (i < end)
 	{
-		stackA->array[i] = stackA->array[j];
+		stacka->array[i] = stacka->array[j];
 		i++;
 		j++;
 	}
-	stackA->size--;
-	increase = stackA->max_size - stackA->size;
-	i = stackB->size;
+	stacka->size--;
+	increase = stacka->max_size - stacka->size;
+	i = stackb->size;
 	while (i > 0 && i < increase)
 	{
-		stackB->array[i] = stackB->array[i-1];
+		stackb->array[i] = stackb->array[i - 1];
 		i--;
 	}
-	stackB->array[0] = temp;
-	stackB->size++;
-	ft_val_updtA(stackA);
-	ft_val_updtB(stackB);
-	update_printer(*stackA, *stackB, printer, "pb");
+	stackb->array[0] = temp;
+	stackb->size++;
+	ft_val_updta(stacka);
+	ft_val_updtb(stackb);
+	update_printer(*stacka, *stackb, printer, "pb");
 	return (1);
 }

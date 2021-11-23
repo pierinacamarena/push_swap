@@ -14,7 +14,7 @@
 
 void	ft_printer(t_info printer)
 {
-	int 	i;
+	int	i;
 	int	j;
 	int	len;
 	int	difference;
@@ -25,87 +25,86 @@ void	ft_printer(t_info printer)
 	ft_putstr("exec ");
 	ft_putstr(printer.move);
 	ft_putstr("\n");
-	len = ft_max(printer.lenA, printer.lenB);
+	len = ft_max(printer.lena, printer.lenb);
 	while (i < len)
 	{
-		if (printer.lenA > printer.lenB)
+		if (printer.lena > printer.lenb)
 		{
-			difference = printer.lenA - printer.lenB;
-			while(i < difference)
+			difference = printer.lena - printer.lenb;
+			while (i < difference)
 			{
-				ft_putnbr(printer.stackA.array[i]);
+				ft_putnbr(printer.stacka.array[i]);
 				ft_putstr("\n");
 				i++;
 			}
 		}
-		else if (printer.lenA < printer.lenB)
+		else if (printer.lena < printer.lenb)
 		{
-			difference = printer.lenB - printer.lenA;
-			while(i < difference)
+			difference = printer.lenb - printer.lena;
+			while (i < difference)
 			{
-				ft_putstr("  ");
-				ft_putnbr(printer.stackB.array[i]);
+				ft_putstr("               ");
+				ft_putnbr(printer.stackb.array[i]);
 				ft_putstr("\n");
 				i++;
 			}
 		}
-		else if (printer.lenA == printer.lenB)
+		else if (printer.lena == printer.lenb)
 		{
 			while (i < len)
 			{
-				ft_putnbr(printer.stackA.array[i]);
-				ft_putstr(" ");
-				ft_putnbr(printer.stackB.array[i]);
+				ft_putnbr(printer.stacka.array[i]);
+				ft_putstr("               ");
+				ft_putnbr(printer.stackb.array[i]);
 				ft_putstr("\n");
 				i++;
 			}
 		}
-		if (i < len && printer.lenA > printer.lenB)
+		if (i < len && printer.lena > printer.lenb)
 		{
 			while (i < len)
 			{
-				ft_putnbr(printer.stackA.array[i]);
-				ft_putstr(" ");
-				ft_putnbr(printer.stackB.array[j]);
+				ft_putnbr(printer.stacka.array[i]);
+				ft_putstr("               ");
+				ft_putnbr(printer.stackb.array[j]);
 				ft_putstr("\n");
 				i++;
 				j++;
 			}
 		}
-		else if (i < len && printer.lenB > printer.lenA)
+		else if (i < len && printer.lenb > printer.lena)
 		{
 			j = 0;
 			while (i < len)
 			{
-				ft_putnbr(printer.stackA.array[j]);
-				ft_putstr(" ");
-				ft_putnbr(printer.stackB.array[i]);
+				ft_putnbr(printer.stacka.array[j]);
+				ft_putstr("               ");
+				ft_putnbr(printer.stackb.array[i]);
 				ft_putstr("\n");
 				i++;
 				j++;
 			}
 		}
 	}
-	ft_putstr("_ _\n");
-	ft_putstr("a b\n");
+	ft_putstr("_               _\n");
+	ft_putstr("a               b\n");
 }
 
 void	initial_print(t_info printer)
 {
-	int 	i;
+	int	i;
 	int	len;
 
 	i = 0;
 	ft_putstr("---------------------------------\n");
 	ft_putstr("Before sorting \n");
-	len = printer.lenA;
+	len = printer.lena;
 	while (i < len)
 	{
-		ft_putnbr(printer.stackA.array[i]);
+		ft_putnbr(printer.stacka.array[i]);
 		ft_putstr("\n");
 		i++;
 	}
-	ft_putstr("_ _\n");
-	ft_putstr("a b\n");
+	ft_putstr("_               _\n");
+	ft_putstr("a               b\n");
 }
-

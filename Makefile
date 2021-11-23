@@ -10,17 +10,27 @@
 #                                                                              #
 # **************************************************************************** #
 
+
 NAME = push_swap
 
 SRC = src/algo_helpers.c \
-	  	src/push_swap.c \
+	  	src/algo_helpers_reverse.c \
+		src/cleaner.c \
+		src/debug_functions.c \
+		src/inverse_sort.c \
+		src/lnkdlst_setup.c \
+		src/printer.c \
+		src/printer_setup.c \
+		src/push_swap.c \
+		src/reverse_distance.c \
 		src/sort_base_cases.c \
 		src/sort_stack.c \
 		src/stackA_moves.c \
 		src/stackB_moves.c \
 		src/stack_setup.c \
 		src/stack_values.c \
-		src/utils.c \
+		src/utils2.c \
+		src/utils.c
 
 OBJ		= $(SRC:.c=.o)
 
@@ -35,16 +45,12 @@ RM		= rm -f
 all :			$(NAME)
 
 $(NAME) :		$(OBJ)
-				ar rc $(NAME) $(OBJ)
-
-%.o:%.c	
-				$(CC) $(FLAGS) -c $< -o $@ $(INC)
-
+			$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(INC)
 clean :
-				$(RM) $(OBJ)
+			$(RM) $(OBJ)
 
 fclean :		clean
-				$(RM) $(NAME)
+			$(RM) $(NAME)
 
 re :			fclean all
 
