@@ -43,7 +43,7 @@ void	ft_printer(t_info printer)
 			difference = printer.lenb - printer.lena;
 			while (i < difference)
 			{
-				ft_putstr("               ");
+				ft_putstr("                 ");
 				ft_putnbr(printer.stackb.array[i]);
 				ft_putstr("\n");
 				i++;
@@ -54,7 +54,7 @@ void	ft_printer(t_info printer)
 			while (i < len)
 			{
 				ft_putnbr(printer.stacka.array[i]);
-				ft_putstr("               ");
+				ft_putstr("                ");
 				ft_putnbr(printer.stackb.array[i]);
 				ft_putstr("\n");
 				i++;

@@ -29,7 +29,7 @@ int	ft_base_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
 			&& (stacka->b < stackb->x) && (stacka->b > stackb->y))
 	{
 		ft_distance(stacka, stackb);
-		if (stacka->d_a - 1 <= stackb->d_b)
+		if (stacka->d_a - 1 <= stacka->d_b)
 			count = ft_da_smaller(stacka, stackb, printer);
 		else if (stacka->d_b < stacka->d_a -1)
 			count = ft_db_smaller(stacka, stackb, printer);

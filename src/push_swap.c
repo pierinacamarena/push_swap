@@ -23,7 +23,7 @@ int	main(int ac, char **av)
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
 	{
-		printf("no numbers to sort");
+		ft_putstr("no numbers to sort");
 		return (0);
 	}
 	stacka = init_stack(len);
@@ -35,7 +35,7 @@ int	main(int ac, char **av)
 	else
 	{
 		initial_print(printer);
-		count = ft_sort_stack(&stacka, &stacka, &printer);
+		count = ft_sort_stack(&stacka, &stackb, &printer);
 		ft_putstr("number of instructions is ");
 		ft_putnbr(count);
 		ft_putstr("\n");

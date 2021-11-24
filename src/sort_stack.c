@@ -64,7 +64,7 @@ int	ft_sort_main_algo(t_stack *stacka, t_stack *stackb, t_info *printer)
 			if ((stacka->d_a - 1 <= stacka->d_b) \
 					&& (stacka->d_a - 1 <= stacka->d_c))
 			{
-				count = count + ft_da_smaller(stacka, stacka, printer);
+				count = count + ft_da_smaller(stacka, stackb, printer);
 				j++;
 			}
 			else

@@ -20,7 +20,7 @@ int	ft_top_stack_a(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	count;
 
 	a = stacka->a;
-	x = stacka->x;
+	x = stackb->x;
 	y = stackb->y;
 	count = 0;
 	if (a > x)
@@ -126,7 +126,7 @@ int	ft_db_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		i = 0;
 		while (i <= stackb->d_b)
 		{
-			count = count + ft_rb(stackb, stacka, printer);
+			count = count + ft_rb(sta ckb, stacka, printer);
 			i++;
 		}
 		return (count);
@@ -209,7 +209,7 @@ int	ft_da_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		i = 0;
 		while (i <= stacka->d_a)
 		{
-			count = count + ft_rb(stackb, stackb, printer);
+			count = count + ft_rb(stackb, stacka, printer);
 			i++;
 		}
 		return (count);

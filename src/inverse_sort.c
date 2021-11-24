@@ -33,7 +33,7 @@ int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
 				|| (stackb->b < stacka->x || stackb->b > stacka->y) \
 				|| (stackb->c < stacka->x || stackb->c > stacka->y))
 		{
-			if (stackb->a < stacka->x || stacka->a > stacka->y)
+			if (stackb->a < stacka->x || stackb->a > stacka->y)
 				count = count + reverse_top_stack_a(stacka, stackb, printer);
 			else if (stackb->b < stacka->x || stackb->b > stacka->y)
 				count = count + reverse_top_stack_b(stacka, stackb, printer);
@@ -48,7 +48,7 @@ int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
 			if ((stackb->d_a - 1 <= stackb->d_b) \
 					&& (stackb->d_a - 1 <= stackb->d_c))
 			{
-				count = count + rda_smaller(stacka, stacka, printer);
+				count = count + rda_smaller(stacka, stackb, printer);
 			}
 			else
 			{
