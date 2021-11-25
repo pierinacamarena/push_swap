@@ -6,7 +6,7 @@
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:08:38 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/06 15:36:04 by pcamaren         ###   ########.fr       */
+/*   Updated: 2021/11/25 16:59:06 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ int	ft_db_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		i = 0;
 		while (i <= stackb->d_b)
 		{
-			count = count + ft_rb(sta ckb, stacka, printer);
+			count = count + ft_rb(stackb, stacka, printer);
 			i++;
 		}
 		return (count);

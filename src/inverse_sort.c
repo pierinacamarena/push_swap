@@ -45,17 +45,35 @@ int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
 				&& (stackb->c > stacka->x && stackb->c < stacka->y))
 		{
 			ft_distance_reverse(stacka, stackb);
+			printf("i am at the point where I need to use distances, instruction #%d\n", count);
+			ft_print_distances_b(*stackb);
 			if ((stackb->d_a - 1 <= stackb->d_b) \
 					&& (stackb->d_a - 1 <= stackb->d_c))
 			{
+				printf("i am in the case where d_a is the smallest\n");
+				ft_print_distances_b(*stackb);
 				count = count + rda_smaller(stacka, stackb, printer);
 			}
 			else
 			{
-				if (stackb->d_b < stackb->d_a - 1)
+				if (stackb->d_b < stackb->d_c)
+				{
+					printf("i am in the case where d_b is the smallest\n");
+					ft_print_distances_b(*stackb);
 					count = count + rdb_smaller(stacka, stackb, printer);
-				else if (stackb->d_c < stackb->d_a - 1)
+				}
+				else if (stackb->d_c < stackb->d_b)
+				{
+					printf("i am in the case where d_c is the smallest\n");
+					ft_print_distances_b(*stackb);
 					count = count + rdc_smaller(stacka, stackb, printer);
+				}
+				else if (stackb->d_b == stackb->d_c)
+				{
+					printf("i am in the case where d_b and d_c have the same value\n");
+					ft_print_distances_b(*stackb);
+					count = count + rdb_smaller(stacka, stackb, printer);
+				}
 			}
 		}
 		j++;

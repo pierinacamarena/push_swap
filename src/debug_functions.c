@@ -54,3 +54,13 @@ void	ft_print_distances(t_stack stacka, int j)
 	printf("d_b is %d\n", stacka.d_b);
 	printf("d_c is %d\n", stacka.d_c);
 }
+
+void	ft_print_distances_b(t_stack stackb)
+{
+	printf("the value of distances is:\n -------------------------\n");
+	printf("d_a is %d\n", stackb.d_a);
+	printf("d_b is %d\n", stackb.d_b);
+	printf("d_c is %d\n", stackb.d_c);
+	printf("size of stackb is %d\n", stackb.size);
+	printf("-------------------------\n");
+}

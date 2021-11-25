@@ -112,4 +112,5 @@ void	ft_putneg(unsigned int n);
 void	ft_putnbr(int i);
 int	ft_max(int a, int b);
 void	ft_putchar(char c);
+void	ft_print_distances_b(t_stack stackb);
 #endif
