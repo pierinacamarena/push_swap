@@ -51,6 +51,7 @@ typedef struct s_info
   t_stack	stackb;
   int		lena;
   int		lenb;
+  int   count;
   char		move[4];
 
 } t_info;

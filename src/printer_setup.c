@@ -22,6 +22,7 @@ t_info	init_printer(t_stack stacka, t_stack stackb)
 	printer.lenb = stackb.size;
 	printer.move[3] = '\0';
 	printer.move[2] = '\0';
+	printer.count = 0;
 	return (printer);
 }
 

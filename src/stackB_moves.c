@@ -22,6 +22,7 @@ int	ft_sb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	stackb->array[0] = stackb->array[1];
 	stackb->array[1] = temp;
 	ft_val_updtb(stackb);
+	printer->count = printer->count + 1;
 	update_printer(*stacka, *stackb, printer, "sb");
 	return (1);
 }
@@ -52,6 +53,7 @@ int	ft_rb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	}
 	stackb->array[end] = temp;
 	ft_val_updtb(stackb);
+	printer->count = printer->count + 1;
 	update_printer(*stacka, *stackb, printer, "rb");
 	return (1);
 }
@@ -82,6 +84,7 @@ int	ft_rrb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	}
 	stackb->array[0] = temp;
 	ft_val_updtb(stackb);
+	printer->count = printer->count + 1;
 	update_printer(*stacka, *stackb, printer, "rrb");
 	return (1);
 }
@@ -120,6 +123,7 @@ int	ft_pb(t_stack *stacka, t_stack *stackb, t_info *printer)
 	stackb->size++;
 	ft_val_updta(stacka);
 	ft_val_updtb(stackb);
+	printer->count = printer->count + 1;
 	update_printer(*stacka, *stackb, printer, "pb");
 	return (1);
 }
