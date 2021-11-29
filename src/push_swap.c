@@ -39,6 +39,8 @@ int	main(int ac, char **av)
 		ft_putstr("number of instructions is ");
 		ft_putnbr(count);
 		ft_putstr("\n");
+	//	ft_print_stack(stacka);
+	//	ft_print_stack(stackb);
 	}
 	return (0);
 }
