@@ -146,7 +146,7 @@ int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	{
 		i = 0;
 		printf("it is larger than midpoint");
-		count = ft_rra(stacka, stackb, printer);
+		count = ft_rrb(stackb, stacka, printer);
 		while (i < stackb->d_c)
 		{
 			count = count + ft_rra(stacka, stackb, printer);

@@ -24,9 +24,9 @@ void	ft_printer(t_info printer)
 	ft_putstr("---------------------------------\n");
 	ft_putstr("exec ");
 	ft_putstr(printer.move);
-	ft_putstr("---------");
+	ft_putstr("----------------");
 	ft_putnbr(printer.count);
-	ft_putstr("\n");
+	ft_putstr("\n\n");
 	len = ft_max(printer.lena, printer.lenb);
 	while (i < len)
 	{
