@@ -1,25 +1,28 @@
 ---------------------------------
 Before sorting 
-0
 9
-13
-12
-11
-10
-1
-5
 8
-3
-14
-7
 6
+12
+5
+16
+18
+14
+1
+19
+13
+11
+17
+20
+7
 2
+10
 15
+3
 4
 _               _
 a               b
-number of instructions is 100
-0
+number of instructions is 138
 1
 2
 3
@@ -35,3 +38,8 @@ number of instructions is 100
 13
 14
 15
+16
+17
+18
+19
+20

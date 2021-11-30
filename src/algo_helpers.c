@@ -124,7 +124,7 @@ int	ft_db_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		}
 		count = count + ft_pb(stacka, stackb, printer);
 		i = 0;
-		while (i <= stackb->d_b)
+		while (i <= stacka->d_b)
 		{
 			count = count + ft_rb(stackb, stacka, printer);
 			i++;

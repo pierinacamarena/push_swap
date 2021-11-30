@@ -23,9 +23,9 @@ int	ft_sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = count + ft_sort_three(stacka, stackb, printer);
 	else if ((stackb->size == 3) && (!ft_check_sorted_reverse(*stackb)))
 		count = count + ft_sort_three_reverse(stackb, stacka, printer);
-	else if (stacka->size > 3 && stacka->size <= 45)
+	else if (stacka->size > 3 && stacka->size <= 5)
 		count = count + ft_sort_inverse(stacka, stackb, printer);
-	else if (stacka->size > 45)
+	else if (stacka->size > 5)
 		count = count + ft_sort_main_algo(stacka, stackb, printer);
 	return (count);
 }
@@ -69,10 +69,12 @@ int	ft_sort_main_algo(t_stack *stacka, t_stack *stackb, t_info *printer)
 			}
 			else
 			{
-				if (stacka->d_b < stacka->d_a - 1)
+				if (stacka->d_b < stacka->d_c)
 					count = count + ft_db_smaller(stacka, stackb, printer);
-				else if (stacka->d_c < stacka->d_a - 1)
+				else if (stacka->d_c < stacka->d_b)
 					count = count + ft_dc_smaller(stacka, stackb, printer);
+				else if (stacka->d_b == stacka->d_c)
+					count = count + ft_db_smaller(stacka, stackb, printer);
 				j++;
 			}
 		}

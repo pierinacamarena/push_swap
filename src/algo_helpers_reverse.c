@@ -120,16 +120,12 @@ int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	i;
 	int	count;
 
-	printf("i am inside the rdc_smaller function\n");
 	if (stackb->c < stacka->midpoint)
 	{
 		i = 0;
-		printf("it is smaller than midpoint\n");
-		printf("the value of dc is %d\n", stackb->d_c);
 		count = ft_rrb(stackb, stacka, printer);
 		while (i < stackb->d_c)
 		{
-			printf("inside while loop, i is %d\n", i);
 			count = count + ft_ra(stacka, stackb, printer);
 			i++;
 		}
@@ -145,7 +141,6 @@ int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	else
 	{
 		i = 0;
-		printf("it is larger than midpoint");
 		count = ft_rrb(stackb, stacka, printer);
 		while (i < stackb->d_c)
 		{
