@@ -37,19 +37,7 @@ int	ft_db_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	else
 	{
-		count = ft_sa(stacka, stackb, printer);
-		while (i < stacka->d_b)
-		{
-			count = count + ft_rrb(stackb, stacka, printer);
-			i++;
-		}
-		count = count + ft_pb(stacka, stackb, printer);
-		i = 0;
-		while (i <= stacka->d_b)
-		{
-			count = count + ft_rb(stackb, stacka, printer);
-			i++;
-		}
+		count = db_less_midpoint(stacka, stackb, printer);
 		return (count);
 	}
 }
@@ -79,19 +67,7 @@ int	ft_dc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	else
 	{
-		count = ft_rra(stacka, stackb, printer);
-		while (i < stacka->d_c)
-		{
-			count = count + ft_rrb(stackb, stacka, printer);
-			i++;
-		}
-		count = count + ft_pb(stacka, stackb, printer);
-		i = 0;
-		while (i <= stacka->d_c)
-		{
-			count = count + ft_rb(stackb, stacka, printer);
-			i++;
-		}
+		count = dc_less_midpoint(stacka, stackb, printer);
 		return (count);
 	}
 }
@@ -121,18 +97,7 @@ int	ft_da_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	else
 	{
-		while (i < stacka->d_a)
-		{
-			count = count + ft_rrb(stackb, stacka, printer);
-			i++;
-		}
-		count = count + ft_pb(stacka, stackb, printer);
-		i = 0;
-		while (i <= stacka->d_a)
-		{
-			count = count + ft_rb(stackb, stacka, printer);
-			i++;
-		}
+		count = dc_less_midpoint(stacka, stackb, printer);
 		return (count);
 	}
 }

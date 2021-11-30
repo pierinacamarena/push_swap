@@ -114,4 +114,10 @@ void	ft_putnbr(int i);
 int	ft_max(int a, int b);
 void	ft_putchar(char c);
 void	ft_print_distances_b(t_stack stackb);
+int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	ft_sort_three_helper(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer);
 #endif

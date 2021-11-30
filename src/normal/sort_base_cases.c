@@ -12,6 +12,41 @@
 
 #include "../../includes/push_swap.h"
 
+int	ft_sort_three(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	int	a;
+	int	b;
+	int	c;
+	int	count;
+
+	a = stacka->array[0];
+	b = stacka->array[1];
+	c = stacka->array[2];
+	if ((a < c) && (c < b))
+		count = ft_sort_three_helper(stacka, stackb, printer);
+	else if ((b < a) && (a < c))
+		count = ft_sa(stacka, stackb, printer);
+	else if ((c < a) && (a < b))
+		count = ft_rra(stacka, stackb, printer);
+	else if ((b < c) && (c < a))
+		count = ft_ra(stacka, stackb, printer);
+	else if ((c < b) && (b < a))
+	{
+		count = ft_ra(stacka, stackb, printer);
+		count = count + ft_sa(stacka, stackb, printer);
+	}
+	return (count);
+}
+
+int	ft_sort_three_helper(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	int	count;
+
+	count = ft_rra(stacka, stackb, printer);
+	count = count + ft_sa(stacka, stackb, printer);
+	return (count);	
+}
+
 int	ft_base_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;

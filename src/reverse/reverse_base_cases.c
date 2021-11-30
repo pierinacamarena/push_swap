@@ -12,6 +12,36 @@
 
 #include "../../includes/push_swap.h"
 
+int	ft_sort_three_reverse(t_stack *stackb, t_stack *stacka, t_info *printer)
+{
+	int	a;
+	int	b;
+	int	c;
+	int	count;
+
+	a = stackb->array[0];
+	b = stackb->array[1];
+	c = stackb->array[2];
+	count = 0;
+	if ((a < b) && (b < c))
+	{
+		count = count + ft_rb(stackb, stacka, printer);
+		count = count + ft_sb(stackb, stacka, printer);
+	}
+	else if ((a < c) && (c < b))
+		count = count + ft_rb(stackb, stacka, printer);
+	else if ((b < a) && (a < c))
+		count = count + ft_rrb(stackb, stacka, printer);
+	else if ((c < a) && (a < b))
+		count = count + ft_sb(stackb, stacka, printer);
+	else if ((b < c) && (c < a))
+	{
+		count = count + ft_rrb(stackb, stacka, printer);
+		count = count + ft_sb(stackb, stacka, printer);
+	}
+	return (count);
+}
+
 int	ft_rbase_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
