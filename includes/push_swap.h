@@ -120,4 +120,6 @@ int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_sort_three_helper(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	algo_helper_end(t_stack *stacka, t_stack *stackb, t_info *printer);
 #endif

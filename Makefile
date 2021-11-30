@@ -21,6 +21,7 @@ SRC = src/algorithm/push_swap.c \
 		src/normal/distances.c \
 		src/normal/sort_base_cases.c \
 		src/normal/sort_stack.c \
+		src/normal/sort_stack_helpers.c \
 		src/normal/top_stack.c \
 		src/printing/debug_functions.c \
 		src/printing/printer.c \
