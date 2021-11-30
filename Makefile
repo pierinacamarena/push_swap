@@ -13,24 +13,26 @@
 
 NAME = push_swap
 
-SRC = src/algo_helpers.c \
-	  	src/algo_helpers_reverse.c \
-		src/cleaner.c \
-		src/debug_functions.c \
-		src/inverse_sort.c \
-		src/lnkdlst_setup.c \
-		src/printer.c \
-		src/printer_setup.c \
-		src/push_swap.c \
-		src/reverse_distance.c \
-		src/sort_base_cases.c \
-		src/sort_stack.c \
-		src/stackA_moves.c \
-		src/stackB_moves.c \
-		src/stack_setup.c \
-		src/stack_values.c \
-		src/utils2.c \
-		src/utils.c
+SRC = src/algorithm/push_swap.c \
+		src/algorithm/stackA_moves.c \
+		src/algorithm/stackB_moves.c \
+		src/normal/intermediate.c \
+		src/normal/distances.c \
+		src/normal/sort_base_cases.c \
+		src/normal/sort_stack.c \
+		src/normal/top_stack.c \
+		src/printing/debug_functions.c \
+		src/printing/printer.c \
+		src/reverse/algo_helpers_reverse.c \
+		src/reverse/inverse_sort.c \
+		src/reverse/reverse_base_cases.c \
+		src/reverse/reverse_distance.c \
+		src/set_up/printer_setup.c \
+		src/set_up/stack_values.c \
+		src/set_up/stack_setup.c \
+		src/utils/cleaner.c \
+		src/utils/utils2.c \
+		src/utils/utils.c
 
 OBJ		= $(SRC:.c=.o)
 

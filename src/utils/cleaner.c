@@ -1,45 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   cleaner.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 17:30:38 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/06 15:55:17 by pcamaren         ###   ########.fr       */
+/*   Created: 2021/10/06 15:43:25 by pcamaren          #+#    #+#             */
+/*   Updated: 2021/10/06 15:50:57 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
-void	ft_putchar(char c)
+void	free_stack(t_stack *stack)
 {
-	write(1, &c, 1);
-}
-
-void	ft_putneg(unsigned int n)
-{
-	if (n / 10 != 0)
-		ft_putneg(n / 10);
-	ft_putchar((n % 10) + '0');
-}
-
-void	ft_putnbr(int n)
-{
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-	ft_putneg((unsigned int)n);
-}
-
-int	ft_max(int a, int b)
-{
-	if (a > b)
-		return (a);
-	else if (a < b)
-		return (b);
-	else
-		return (a);
+	free(stack->array);
+	free(stack);
 }

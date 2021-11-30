@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
 int	ft_sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
@@ -23,9 +23,9 @@ int	ft_sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = count + ft_sort_three(stacka, stackb, printer);
 	else if ((stackb->size == 3) && (!ft_check_sorted_reverse(*stackb)))
 		count = count + ft_sort_three_reverse(stackb, stacka, printer);
-	else if (stacka->size > 3 && stacka->size <= 5)
+	else if (stacka->size > 3 && stacka->size <= 40)
 		count = count + ft_sort_inverse(stacka, stackb, printer);
-	else if (stacka->size > 5)
+	else if (stacka->size > 40)
 		count = count + ft_sort_main_algo(stacka, stackb, printer);
 	return (count);
 }

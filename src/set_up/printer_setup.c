@@ -10,37 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
-/*
-typedef	struct *node;
-
-node	createNode()
+t_info	init_printer(t_stack stacka, t_stack stackb)
 {
-	node temp;
+	t_info	printer;
 
-	temp = (node)malloc(sizeof(struct LinkedList));
-	temp->next = NULL;
-	return (temp);	
+	printer.stacka = stacka;
+	printer.stackb = stackb;
+	printer.lena = stacka.size;
+	printer.lenb = stackb.size;
+	printer.move[3] = '\0';
+	printer.move[2] = '\0';
+	printer.count = 0;
+	return (printer);
 }
 
-node	addNode(node head, int value)
+void	update_printer(t_stack stacka, t_stack stackb, \
+		t_info *printer, char *move)
 {
-	node	temp;
-	node	p;
-
-	temp = createNode();
-	temp->data = value;
-	if (head = NULL)
-		head = temp;
-	else
-	{
-		p = head;
-		while (p->next != NULL)
-			p = p->next;
-		p->next = temp;
-	}
-	return (head);
+	printer->lena = stacka.size;
+	printer->lenb = stackb.size;
+	printer->move[0] = move[0];
+	printer->move[1] = move[1];
+	printer->move[2] = '\0';
+	if (move[2] != '\0')
+		printer->move[2] = move[2];
+	ft_printer(*printer);
 }
-
-*/

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cleaner.c                                          :+:      :+:    :+:   */
+/*   printer_setup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,10 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
-void	free_stack(t_stack *stack)
+/*
+typedef	struct *node;
+
+node	createNode()
 {
-	free(stack->array);
-	free(stack);
+	node temp;
+
+	temp = (node)malloc(sizeof(struct LinkedList));
+	temp->next = NULL;
+	return (temp);	
 }
+
+node	addNode(node head, int value)
+{
+	node	temp;
+	node	p;
+
+	temp = createNode();
+	temp->data = value;
+	if (head = NULL)
+		head = temp;
+	else
+	{
+		p = head;
+		while (p->next != NULL)
+			p = p->next;
+		p->next = temp;
+	}
+	return (head);
+}
+
+*/

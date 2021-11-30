@@ -10,53 +10,36 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
-int	main(int ac, char **av)
+void	ft_putchar(char c)
 {
-	t_stack	stacka;
-	t_stack	stackb;
-	t_info	printer;
-	int		len;
-	int		count;
-
-	len = ac - 1;
-	if (ac == 0 || ac == 1)
-	{
-		ft_putstr("no numbers to sort");
-		return (0);
-	}
-	stacka = init_stack(len);
-	ft_stack_populate(&stacka, av, len);
-	stackb = init_stack(len);
-	printer = init_printer(stacka, stackb);
-	if (ft_check_sorted(stacka) || len == 1)
-		ft_putstr("it is sorted! \n");
-	else
-	{
-		initial_print(printer);
-		count = ft_sort_stack(&stacka, &stackb, &printer);
-		ft_putstr("number of instructions is ");
-		ft_putnbr(count);
-		ft_putstr("\n");
-		ft_print_stack(stacka);
-		ft_print_stack(stackb);
-	}
-	return (0);
+	write(1, &c, 1);
 }
 
-/**
- * Prints the elements of the stack from top to bottom.
- **/
-
-void	ft_print_stack(t_stack stack)
+void	ft_putneg(unsigned int n)
 {
-	int	i;
+	if (n / 10 != 0)
+		ft_putneg(n / 10);
+	ft_putchar((n % 10) + '0');
+}
 
-	i = 0;
-	while (i < stack.size)
+void	ft_putnbr(int n)
+{
+	if (n < 0)
 	{
-		printf("%d\n", stack.array[i]);
-		i++;
+		ft_putchar('-');
+		n = -n;
 	}
+	ft_putneg((unsigned int)n);
+}
+
+int	ft_max(int a, int b)
+{
+	if (a > b)
+		return (a);
+	else if (a < b)
+		return (b);
+	else
+		return (a);
 }

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
 int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
