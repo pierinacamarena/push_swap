@@ -14,7 +14,7 @@
 
 int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-	int	count;
+	int		count;
 
 	count = ft_pb(stacka, stackb, printer);
 	count = count + ft_pb(stacka, stackb, printer);
@@ -25,7 +25,7 @@ int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-	int	count;
+	int		count;
 
 	count = 0;
 	if (stacka->a > stackb->x || stacka->a < stackb->y)
@@ -39,7 +39,7 @@ int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-	int	count;
+	int		count;
 
 	count = 0;
 	ft_distance(stacka, stackb);
@@ -62,8 +62,8 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int	algo_helper_end(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-	int count;
-	int	i;
+	int		count;
+	int		i;
 
 	i = 0;
 	count = 0;

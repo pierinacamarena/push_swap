@@ -15,9 +15,11 @@ NAME = push_swap
 
 SRC = src/algorithm/push_swap.c \
 		src/algorithm/stackA_moves.c \
+		src/algorithm/stack_moves_helper.c \
 		src/algorithm/stackB_moves.c \
 		src/normal/intermediate.c \
-		src/normal/intermediate_helper.c \
+		src/normal/intermediate_helper_less.c \
+		src/normal/intermediate_helper_bigger.c \
 		src/normal/distances.c \
 		src/normal/sort_base_cases.c \
 		src/normal/sort_stack.c \

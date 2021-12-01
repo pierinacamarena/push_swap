@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   intermediate_helper.c                              :+:      :+:    :+:   */
+/*   intermediate_helper_less.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,11 +14,11 @@
 
 int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-	int	i;
-    int	count;
-    
+	int		i;
+	int		count;
+
 	i = 0;
-    while (i < stacka->d_a)
+	while (i < stacka->d_a)
 	{
 		count = count + ft_rrb(stackb, stacka, printer);
 		i++;
@@ -33,10 +33,10 @@ int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	return (count);
 }
 
-int db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    int	i;
-	int count;
+	int		i;
+	int		count;
 
 	i = 0;
 	count = ft_sa(stacka, stackb, printer);
@@ -44,7 +44,7 @@ int db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	{
 		count = count + ft_rrb(stackb, stacka, printer);
 		i++;
-    }
+	}
 	count = count + ft_pb(stacka, stackb, printer);
 	i = 0;
 	while (i <= stacka->d_b)
@@ -55,13 +55,13 @@ int db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	return (count);
 }
 
-int dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    int	i;
-	int count;
+	int		i;
+	int		count;
 
 	i = 0;
-    count = ft_rra(stacka, stackb, printer);
+	count = ft_rra(stacka, stackb, printer);
 	while (i < stacka->d_c)
 	{
 		count = count + ft_rrb(stackb, stacka, printer);

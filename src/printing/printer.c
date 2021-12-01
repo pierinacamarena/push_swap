@@ -6,7 +6,7 @@
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 17:30:38 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/06 15:55:17 by pcamaren         ###   ########.fr       */
+/*   Updated: 2021/12/01 18:04:22 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_printer(t_info printer)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 
 	i = 0;
 	printer_initial_setup(printer);
@@ -23,21 +23,22 @@ void	ft_printer(t_info printer)
 	while (i < len)
 	{
 		if (printer.lena != printer.lenb)
-			i = i + printer_diff_len(stacka, stackb, printer);
+			i = i + printer_diff_len(printer);
 		else if (printer.lena == printer.lenb)
-			i = i + printer_same_len(stacka, stackb, printer);
+			i = i + printer_same_len(printer, len);
 		if (i < len && printer.lena != printer.lenb)
-			i = i + printer_final_print(stacka, stackb, printer, i);
+			i = i + printer_final_print(printer, i, len);
+	}
 	ft_putstr("_               _\n");
 	ft_putstr("a               b\n");
 }
 
-void    printer_initial_setup(t_info printer)
+void	printer_initial_setup(t_info printer)
 {
-    ft_putstr("---------------------------------\n");
+	ft_putstr("---------------------------------\n");
 	ft_putstr("exec ");
 	ft_putstr(printer.move);
-	ft_putstr("-------instruction number");
+	ft_putstr("-------instruction number ");
 	ft_putnbr(printer.count);
 	ft_putstr("\n\n");
 }

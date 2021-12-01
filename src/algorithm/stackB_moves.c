@@ -23,7 +23,7 @@ int	ft_sb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	stackb->array[1] = temp;
 	ft_val_updtb(stackb);
 	printer->count = printer->count + 1;
-//	update_printer(*stacka, *stackb, printer, "sb");
+	update_printer(*stacka, *stackb, printer, "sb");
 	return (1);
 }
 
@@ -54,7 +54,7 @@ int	ft_rb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	stackb->array[end] = temp;
 	ft_val_updtb(stackb);
 	printer->count = printer->count + 1;
-//	update_printer(*stacka, *stackb, printer, "rb");
+	update_printer(*stacka, *stackb, printer, "rb");
 	return (1);
 }
 
@@ -85,7 +85,7 @@ int	ft_rrb(t_stack *stackb, t_stack *stacka, t_info *printer)
 	stackb->array[0] = temp;
 	ft_val_updtb(stackb);
 	printer->count = printer->count + 1;
-//	update_printer(*stacka, *stackb, printer, "rrb");
+	update_printer(*stacka, *stackb, printer, "rrb");
 	return (1);
 }
 
@@ -96,21 +96,12 @@ int	ft_rrb(t_stack *stackb, t_stack *stacka, t_info *printer)
 int	ft_pb(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	i;
-	int	j;
 	int	temp;
-	int	end;
 	int	increase;
 
 	i = 0;
-	j = 1;
-	end = stacka->size - 1;
 	temp = stacka->array[0];
-	while (i < end)
-	{
-		stacka->array[i] = stacka->array[j];
-		i++;
-		j++;
-	}
+	ft_pb_helper(stacka, stackb);
 	stacka->size--;
 	increase = stacka->max_size - stacka->size;
 	i = stackb->size;
@@ -124,6 +115,6 @@ int	ft_pb(t_stack *stacka, t_stack *stackb, t_info *printer)
 	ft_val_updta(stacka);
 	ft_val_updtb(stackb);
 	printer->count = printer->count + 1;
-//	update_printer(*stacka, *stackb, printer, "pb");
+	update_printer(*stacka, *stackb, printer, "pb");
 	return (1);
 }

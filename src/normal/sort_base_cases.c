@@ -44,7 +44,7 @@ int	ft_sort_three_helper(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 	count = ft_rra(stacka, stackb, printer);
 	count = count + ft_sa(stacka, stackb, printer);
-	return (count);	
+	return (count);
 }
 
 int	ft_base_case_two(t_stack *stacka, t_stack *stackb, t_info *printer)
