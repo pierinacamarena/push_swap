@@ -122,4 +122,10 @@ int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer);
 int	algo_helper_end(t_stack *stacka, t_stack *stackb, t_info *printer);
+int     printer_diff_len(t_stack stacka, t_stack stackb, t_info printer);
+int     printer_difflen_b(t_stack stacka, t_stack stackb, t_info printer);
+int     printer_same_len(t_stack stacka, t_stack stackb, t_info printer);
+int     printer_final_print(t_stack stacka, t_stack stackb, t_info printer, int i);
+int     printer_final_b(t_stack stacka, t_stack stackb, t_info printer, int i);
+void    printer_initial_setup(t_info printer);
 #endif

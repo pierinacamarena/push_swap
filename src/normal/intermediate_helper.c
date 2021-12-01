@@ -15,7 +15,7 @@
 int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	i;
-    int count;
+    int	count;
     
 	i = 0;
     while (i < stacka->d_a)

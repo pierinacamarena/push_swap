@@ -15,81 +15,31 @@
 void	ft_printer(t_info printer)
 {
 	int	i;
-	int	j;
 	int	len;
-	int	difference;
 
 	i = 0;
-	j = 0;
-	ft_putstr("---------------------------------\n");
-	ft_putstr("exec ");
-	ft_putstr(printer.move);
-	ft_putstr("----------------");
-	ft_putnbr(printer.count);
-	ft_putstr("\n\n");
+	printer_initial_setup(printer);
 	len = ft_max(printer.lena, printer.lenb);
 	while (i < len)
 	{
-		if (printer.lena > printer.lenb)
-		{
-			difference = printer.lena - printer.lenb;
-			while (i < difference)
-			{
-				ft_putnbr(printer.stacka.array[i]);
-				ft_putstr("\n");
-				i++;
-			}
-		}
-		else if (printer.lena < printer.lenb)
-		{
-			difference = printer.lenb - printer.lena;
-			while (i < difference)
-			{
-				ft_putstr("                ");
-				ft_putnbr(printer.stackb.array[i]);
-				ft_putstr("\n");
-				i++;
-			}
-		}
+		if (printer.lena != printer.lenb)
+			i = i + printer_diff_len(stacka, stackb, printer);
 		else if (printer.lena == printer.lenb)
-		{
-			while (i < len)
-			{
-				ft_putnbr(printer.stacka.array[i]);
-				ft_putstr("                ");
-				ft_putnbr(printer.stackb.array[i]);
-				ft_putstr("\n");
-				i++;
-			}
-		}
-		if (i < len && printer.lena > printer.lenb)
-		{
-			while (i < len)
-			{
-				ft_putnbr(printer.stacka.array[i]);
-				ft_putstr("               ");
-				ft_putnbr(printer.stackb.array[j]);
-				ft_putstr("\n");
-				i++;
-				j++;
-			}
-		}
-		else if (i < len && printer.lenb > printer.lena)
-		{
-			j = 0;
-			while (i < len)
-			{
-				ft_putnbr(printer.stacka.array[j]);
-				ft_putstr("               ");
-				ft_putnbr(printer.stackb.array[i]);
-				ft_putstr("\n");
-				i++;
-				j++;
-			}
-		}
-	}
+			i = i + printer_same_len(stacka, stackb, printer);
+		if (i < len && printer.lena != printer.lenb)
+			i = i + printer_final_print(stacka, stackb, printer, i);
 	ft_putstr("_               _\n");
 	ft_putstr("a               b\n");
+}
+
+void    printer_initial_setup(t_info printer)
+{
+    ft_putstr("---------------------------------\n");
+	ft_putstr("exec ");
+	ft_putstr(printer.move);
+	ft_putstr("-------instruction number");
+	ft_putnbr(printer.count);
+	ft_putstr("\n\n");
 }
 
 void	initial_print(t_info printer)
