@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   algo_helpers_reverse.c                             :+:      :+:    :+:   */
+/*   intermediate_reverse.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,6 +12,18 @@
 
 #include "../../includes/push_swap.h"
 
+int	rda_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	int	i;
+	int	count;
+
+	i = 0;
+	if (stackb->a < stacka->midpoint)
+		count = rda_less_midpoint(stacka, stackb, printer);
+	else
+		count = rda_more_midpoint(stacka, stackb, printer);
+}
+
 int	rdb_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	i;
@@ -19,39 +31,9 @@ int	rdb_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 	i = 0;
 	if (stackb->b < stacka->midpoint)
-	{
-		count = ft_sb(stackb, stacka, printer);
-		while (i < stackb->d_b)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i < stackb->d_b)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
+		count = rdb_less_midpoint(stacka, stackb, printer);
 	else
-	{
-		count = ft_sb(stackb, stacka, printer);
-		while (i < stackb->d_b)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i <= stackb->d_b)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
+		count = rdb_more_midpoint(stacka, stackb, printer);
 }
 
 int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
@@ -60,80 +42,7 @@ int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	count;
 
 	if (stackb->c < stacka->midpoint)
-	{
-		i = 0;
-		count = ft_rrb(stackb, stacka, printer);
-		while (i < stackb->d_c)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i < stackb->d_c)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
+		count = rdc_less_midpoint(stacka, stackb, printer);
 	else
-	{
-		i = 0;
-		count = ft_rrb(stackb, stacka, printer);
-		while (i < stackb->d_c)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i <= stackb->d_c)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
-}
-
-int	rda_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
-{
-	int	i;
-	int	count;
-
-	i = 0;
-	count = 0;
-	if (stackb->a < stacka->midpoint)
-	{
-		while (i < stackb->d_a)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i < stackb->d_a)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
-	else
-	{
-		while (i < stackb->d_a)
-		{
-			count = count + ft_rra(stacka, stackb, printer);
-			i++;
-		}
-		count = count + ft_pa(stacka, stackb, printer);
-		i = 0;
-		while (i <= stackb->d_a)
-		{
-			count = count + ft_ra(stacka, stackb, printer);
-			i++;
-		}
-		return (count);
-	}
+		count = rdc_more_midpoint(stacka, stackb, printer);
 }

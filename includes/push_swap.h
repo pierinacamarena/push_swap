@@ -56,6 +56,148 @@ typedef struct s_info
 
 } t_info;
 
+/*
+-----Algorithm-----
+*/
+
+/*
+push_swap.c
+*/
+
+/*
+stack_moves_helper.c
+*/
+
+/*
+stackA_moves.c
+*/
+
+/*
+stackB_moves.c
+*/
+
+/*
+-----Normal------
+*/
+
+/*
+distances.c
+*/
+
+/*
+intermediate_helper_bigger.c
+*/
+
+/*
+intermediate_helper_less.c
+*/
+
+/*
+intermediate.c
+*/
+
+/*
+sort_base_cases.c
+*/
+
+/*
+sort_stack_helpers.c
+*/
+
+/*
+sort_stack.c
+*/
+
+/*
+top_stack.c
+*/
+
+/*
+-----Printing-----
+*/
+
+/*
+debug_functions.c
+*/
+
+/*
+printer_helper.c
+*/
+
+/*
+printer.c
+*/
+
+/*
+-----Reverse-----
+*/
+
+/*
+intermediate_bigger_reverse.c
+*/
+
+/*
+intermediate_reverse.c
+*/
+
+/*
+intermediate_smaller_reverse.c
+*/
+
+/*
+inverse_sort.c
+*/
+int	sort_inverse_top(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	sort_inverse_inter(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	sort_inverse_end(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	sort_inverse_initial(t_stack *stacka, t_stack *stackb, t_info *printer);
+/*
+reverse_base_cases.c
+*/
+int sort_three_reverse_helper(t_stack *stackb, t_stack *stacka, t_info *printer);
+/*
+reverse_distance.c
+*/
+
+/*
+top_stack_reverse.c
+*/
+
+/*
+-----Set up-----
+*/
+
+/*
+lnkdlst_setup.c
+*/
+
+/*
+printer_setup.c
+*/
+
+/*
+stacK_setup.c
+*/
+
+/*
+stack_values.c
+*/
+
+/*
+-----Utils-----
+*/
+
+/*
+cleaner.c
+*/
+
+/*
+utils.c
+*/
+
+/*
+utils2.c
+*/
 t_stack	init_stack (int ac);
 t_stack	ft_stack_populate (t_stack *stack, char **av, int size);
 t_info	init_printer(t_stack stacka, t_stack stackb);
@@ -72,9 +214,6 @@ int	ft_rra (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_rrb (t_stack *stackb, t_stack *stacka, t_info *printer);
 int	ft_pa (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_pb (t_stack *stacka, t_stack *stackb, t_info *printer);
-void  ft_pa_helper(t_stack *stacka, t_stack *stackb);
-void  ft_pb_helper(t_stack *stacka, t_stack *stackb);
-void	ft_print_stack (t_stack stack);
 int	ft_sort_stack (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_sort_three (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_sort_three_reverse (t_stack *stackb, t_stack *stacka, t_info *printer);
@@ -86,13 +225,19 @@ int	reverse_top_stack_c (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	rdb_smaller (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	rdc_smaller (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	rda_smaller (t_stack *stacka, t_stack *stackb, t_info *printer);
+void  ft_pa_helper(t_stack *stacka, t_stack *stackb);
+void  ft_pb_helper(t_stack *stacka, t_stack *stackb);
+void	ft_print_stack (t_stack stack);
 void	ft_distance_reverse (t_stack *stacka, t_stack *stackb);
 void	ft_rda (t_stack *stacka, t_stack *stackb);
 void	ft_rdb (t_stack *stacka, t_stack *stackb);
 void	ft_rdc (t_stack *stacka, t_stack *stackb);
-int   da_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
-int   db_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
-int	  dc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int   rda_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int   rdb_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	  rdc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int   rda_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int   rdb_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
+int	  rdc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
 void	ft_val_updta (t_stack * stacka);
 void	ft_val_updtb (t_stack * stackb);
 void	ft_distance (t_stack *stacka, t_stack *stackb);

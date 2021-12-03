@@ -30,6 +30,7 @@ SRC = src/algorithm/push_swap.c \
 		src/printing/printer_helper.c \
 		src/reverse/intermediate_reverse.c \
 		src/reverse/intermediate_bigger_reverse.c \
+		src/reverse/intermediate_smaller_reverse.c \
 		src/reverse/top_stack_reverse.c \
 		src/reverse/inverse_sort.c \
 		src/reverse/reverse_base_cases.c \

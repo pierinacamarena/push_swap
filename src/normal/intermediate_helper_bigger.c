@@ -18,9 +18,10 @@ int	da_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int		count;
 
 	i = 0;
+	count = 0;
 	while (i < stacka->d_a)
 	{
-		count = ft_rb(stackb, stacka, printer);
+		count = count + ft_rb(stackb, stacka, printer);
 		i++;
 	}
 	count = count + ft_pb(stacka, stackb, printer);
