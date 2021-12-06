@@ -113,6 +113,26 @@ top_stack.c
 */
 
 /*
+-----Optimization-----
+*/
+
+/*
+optimization.c
+*/
+
+int optim_a(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optim_b(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optim_b(t_stack *stacka, t_stack *stackb, t_info *printer);
+
+/*
+r_optimization.c
+*/
+
+int r_optim_a(t_stack *stacka, t_stack *stackb, t_info *printer);
+int r_optim_a(t_stack *stacka, t_stack *stackb, t_info *printer);
+int r_optim_a(t_stack *stacka, t_stack *stackb, t_info *printer);
+
+/*
 -----Printing-----
 */
 

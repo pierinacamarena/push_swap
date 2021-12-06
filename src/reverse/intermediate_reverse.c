@@ -22,6 +22,7 @@ int	rda_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = rda_less_midpoint(stacka, stackb, printer);
 	else
 		count = rda_more_midpoint(stacka, stackb, printer);
+	return (count);
 }
 
 int	rdb_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
@@ -34,6 +35,7 @@ int	rdb_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = rdb_less_midpoint(stacka, stackb, printer);
 	else
 		count = rdb_more_midpoint(stacka, stackb, printer);
+	return (count);
 }
 
 int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
@@ -45,4 +47,5 @@ int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = rdc_less_midpoint(stacka, stackb, printer);
 	else
 		count = rdc_more_midpoint(stacka, stackb, printer);
+	return (count);
 }
