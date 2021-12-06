@@ -28,6 +28,7 @@ int	rda_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stackb->d_a)
 	{
+		count = count + r_optim(stacka, stackb, printer);
 		count = count + ft_rra(stacka, stackb, printer);
 		i++;
 	}
@@ -51,6 +52,7 @@ int	rdb_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stackb->d_b)
 	{
+		count = count + r_optim(stacka, stackb, printer);
 		count = count + ft_rra(stacka, stackb, printer);
 		i++;
 	}
@@ -73,6 +75,7 @@ int	rdc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stackb->d_c)
 	{
+		count = count + r_optim(stacka, stackb, printer);
 		count = count + ft_rra(stacka, stackb, printer);
 		i++;
 	}
