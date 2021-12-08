@@ -27,6 +27,8 @@ SRC = src/algorithm/push_swap.c \
 		src/normal/top_stack.c \
 		src/optimization/optimization.c \
 		src/optimization/r_optimization.c \
+		src/optimization/optimization_less.c \
+		src/optimization/r_optimization_less.c \
 		src/printing/debug_functions.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
