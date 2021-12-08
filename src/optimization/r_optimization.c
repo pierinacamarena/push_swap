@@ -12,6 +12,23 @@
 
 #include "../../includes/push_swap.h"
 
+int r_optim_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+    int checker;
+
+    checker = 0;
+    if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
+        (stackb->a > stacka->a && stackb->a < stacka->b))
+        checker++;
+    if ((stackb->b < stacka->a && stackb->b > stacka->c) || \
+        (stackb->b > stacka->a && stackb->b < stacka->b))
+        checker++;
+    if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
+        (stackb->a > stacka->a && stackb->a < stacka->b))
+        checker++;
+    return (checker);
+}
+
 int r_optim(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
     printf("inside reverse optimization main function\n");

@@ -16,7 +16,148 @@ Before sorting
 _               _
 a               b
 ---------------------------------
-exec sa-------instruction number11
+exec pb-------instruction number 1
+
+7
+0
+12
+9
+1
+5
+10
+2
+6
+8
+4
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 2
+
+0
+12
+9
+1
+5
+10
+2
+6
+8
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 3
+
+12
+9
+1
+5
+10
+2
+6
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 4
+
+9
+1
+5
+10
+2
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 5
+
+1
+5
+10
+2               9
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 6
+
+5
+10               1
+2               9
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 7
+
+                5
+10               1
+2               9
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 8
+
+                10
+                5
+                1
+2               9
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 9
+
+                2
+                10
+                5
+                1
+                9
+6               12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 10
+
+                6
+                2
+                10
+                5
+                1
+                9
+                12
+8               0
+4               7
+11               3
+_               _
+a               b
+---------------------------------
+exec sa-------instruction number 11
 
                 6
                 2
@@ -31,7 +172,22 @@ exec sa-------instruction number11
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number13
+exec sb-------instruction number 12
+
+                2
+                6
+                10
+                5
+                1
+                9
+                12
+4               0
+8               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pa-------instruction number 13
 
                 6
                 10
@@ -45,7 +201,7 @@ exec pa-------instruction number13
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number14
+exec ra-------instruction number 14
 
                 6
                 10
@@ -59,7 +215,7 @@ exec ra-------instruction number14
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number15
+exec ra-------instruction number 15
 
                 6
                 10
@@ -73,7 +229,7 @@ exec ra-------instruction number15
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number16
+exec pa-------instruction number 16
 
                 10
                 5
@@ -86,321 +242,180 @@ exec pa-------instruction number16
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number17
+exec sb-------instruction number 17
 
+                5
                 10
-                5
                 1
-4               9
-6               12
-8               0
-11               7
-2               3
-_               _
-a               b
----------------------------------
-exec rra-------instruction number18
-
-                10
-                5
-                1
-2               9
-4               12
-6               0
-8               7
-11               3
-_               _
-a               b
----------------------------------
-exec rra-------instruction number19
-
-                10
-                5
-                1
-11               9
-2               12
-4               0
-6               7
-8               3
-_               _
-a               b
----------------------------------
-exec pa-------instruction number20
-
-                5
-10               1
-11               9
-2               12
-4               0
-6               7
-8               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number21
-
-                5
-11               1
-2               9
-4               12
-6               0
-8               7
-10               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number22
-
-                5
-2               1
-4               9
-6               12
-8               0
-10               7
-11               3
-_               _
-a               b
----------------------------------
-exec pa-------instruction number24
-
-1
-2               5
-4               9
-6               12
-8               0
-10               7
-11               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number25
-
-2
-4               5
 6               9
 8               12
-10               0
-11               7
-1               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number26
-
-4
-6               5
-8               9
-10               12
 11               0
-1               7
-2               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number27
-
-6
-8               5
-10               9
-11               12
-1               0
 2               7
 4               3
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number28
+exec pa-------instruction number 18
 
-5
-6
-8
-10               9
-11               12
-1               0
+                10
+5               1
+6               9
+8               12
+11               0
 2               7
 4               3
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number29
+exec rra-------instruction number 19
 
-4
-5
-6
-8               9
-10               12
-11               0
-1               7
-2               3
-_               _
-a               b
----------------------------------
-exec rra-------instruction number30
-
-2
-4
-5
-6               9
-8               12
-10               0
-11               7
-1               3
-_               _
-a               b
----------------------------------
-exec rra-------instruction number31
-
-1
-2
-4
+                10
+4               1
 5               9
 6               12
 8               0
-10               7
-11               3
-_               _
-a               b
----------------------------------
-exec pa-------instruction number33
-
-12
-1
-2
-4
-5
-6               9
-8               0
-10               7
-11               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number34
-
-1
-2
-4
-5
-6
-8               9
-10               0
 11               7
-12               3
+2               3
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number36
+exec rra-------instruction number 20
 
-0
-1
-2
-4
-5
-6
-8
-10               9
-11               7
-12               3
-_               _
-a               b
----------------------------------
-exec rra-------instruction number37
-
-12
-0
-1
-2
-4
-5
-6
-8               9
-10               7
+                10
+2               1
+4               9
+5               12
+6               0
+8               7
 11               3
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number38
+exec sb-------instruction number 21
+
+                1
+2               10
+4               9
+5               12
+6               0
+8               7
+11               3
+_               _
+a               b
+---------------------------------
+exec pa-------instruction number 22
+
+1
+2               10
+4               9
+5               12
+6               0
+8               7
+11               3
+_               _
+a               b
+---------------------------------
+exec rra-------instruction number 23
 
 11
-12
-0
-1
-2
-4
-5
-6               9
-8               7
-10               3
+1               10
+2               9
+4               12
+5               0
+6               7
+8               3
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number39
+exec pa-------instruction number 24
 
 10
 11
-12
-0
 1
-2
-4
-5               9
+2               9
+4               12
+5               0
 6               7
 8               3
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number40
+exec pa-------instruction number 25
 
 9
 10
 11
-12
-0
 1
 2
-4
-5
+4               12
+5               0
 6               7
 8               3
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number41
+exec ra-------instruction number 26
 
 10
 11
-12
-0
 1
 2
 4
-5
-6
+5               12
+6               0
 8               7
 9               3
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number42
+exec ra-------instruction number 27
 
 11
-12
-0
 1
 2
 4
 5
-6
-8
+6               12
+8               0
 9               7
 10               3
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number43
+exec pa-------instruction number 28
 
 12
+11
+1
+2
+4
+5
+6
+8               0
+9               7
+10               3
+_               _
+a               b
+---------------------------------
+exec ra-------instruction number 29
+
+11
+1
+2
+4
+5
+6
+8
+9               0
+10               7
+12               3
+_               _
+a               b
+---------------------------------
+exec pa-------instruction number 30
+
 0
+11
 1
 2
 4
@@ -409,28 +424,14 @@ exec ra-------instruction number43
 8
 9
 10               7
-11               3
-_               _
-a               b
----------------------------------
-exec ra-------instruction number44
-
-0
-1
-2
-4
-5
-6
-8
-9
-10
-11               7
 12               3
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number46
+exec sb-------instruction number 31
 
+0
+11
 1
 2
 4
@@ -438,321 +439,116 @@ exec ra-------instruction number46
 6
 8
 9
-10
-11
-12               3
-0               7
-_               _
-a               b
----------------------------------
-exec ra-------instruction number47
-
-2
-4
-5
-6
-8
-9
-10
-11
-12
-0               3
-1               7
-_               _
-a               b
----------------------------------
-exec ra-------instruction number48
-
-4
-5
-6
-8
-9
-10
-11
-12
-0
-1               3
-2               7
-_               _
-a               b
----------------------------------
-exec pa-------instruction number49
-
-3
-4
-5
-6
-8
-9
-10
-11
-12
-0
-1
-2               7
-_               _
-a               b
----------------------------------
-exec rra-------instruction number50
-
-2
-3
-4
-5
-6
-8
-9
-10
-11
-12
-0
-1               7
-_               _
-a               b
----------------------------------
-exec rra-------instruction number51
-
-1
-2
-3
-4
-5
-6
-8
-9
-10
-11
-12
-0               7
-_               _
-a               b
----------------------------------
-exec rra-------instruction number52
-
-0
-1
-2
-3
-4
-5
-6
-8
-9
-10
-11
+10               3
 12               7
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number53
+exec ra-------instruction number 32
 
-12
-0
+11
 1
 2
-3
 4
 5
 6
 8
 9
 10
-11               7
+12               3
+0               7
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number54
+exec pa-------instruction number 33
 
+3
 11
-12
-0
 1
 2
-3
 4
 5
 6
 8
 9
-10               7
-_               _
-a               b
----------------------------------
-exec rra-------instruction number55
-
 10
-11
 12
-0
-1
-2
-3
-4
-5
-6
-8
-9               7
+0               7
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number56
-
-9
-10
-11
-12
-0
-1
-2
-3
-4
-5
-6
-8               7
-_               _
-a               b
----------------------------------
-exec rra-------instruction number57
-
-8
-9
-10
-11
-12
-0
-1
-2
-3
-4
-5
-6               7
-_               _
-a               b
----------------------------------
-exec pa-------instruction number58
+exec pa-------instruction number 34
 
 7
-8
-9
-10
+3
 11
-12
-0
 1
 2
-3
 4
 5
 6
+8
+9
+10
+12
+0
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number59
+exec sa-------instruction number 35
 
-8
-9
-10
+3
+7
 11
-12
-0
 1
 2
-3
 4
 5
 6
-7
+8
+9
+10
+12
+0
 _               _
 a               b
 ---------------------------------
-exec ra-------instruction number60
+exec rra-------instruction number 36
 
-9
-10
-11
-12
 0
+3
+7
+11
 1
 2
-3
 4
 5
 6
-7
-8
-_               _
-a               b
----------------------------------
-exec ra-------instruction number61
-
-10
-11
-12
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-_               _
-a               b
----------------------------------
-exec ra-------instruction number62
-
-11
-12
-0
-1
-2
-3
-4
-5
-6
-7
 8
 9
 10
-_               _
-a               b
----------------------------------
-exec ra-------instruction number63
-
-12
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-_               _
-a               b
----------------------------------
-exec ra-------instruction number64
-
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 12
 _               _
 a               b
-number of instructions is 64
+inside reverse optimization main function
+number of instruction is 16
+inside reverse optimization b
+number of instruction is 16
+inside r_optimization b_a
+number of instruction is 16
+inside reverse optimization main function
+number of instruction is 19
+inside reverse optimization less main function
+number of instruction is 24
+inside reverse optimization less_a function
+number of instruction is 24
+inside r_optimization_less a_a
+number of instruction is 24
+inside reverse optimization less main function
+number of instruction is 26
+inside reverse optimization main function
+number of instruction is 33
+inside reverse optimization a
+number of instruction is 33
+inside r_optimization a_b
+number of instruction is 33
