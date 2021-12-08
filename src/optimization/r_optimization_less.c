@@ -30,22 +30,38 @@ int r_optim_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 }
 
-int r_optim_less(t_stack *stacka, t_stack *stackb, t_info *printer)
+int r_optim_less(t_stack *stacka, t_stack *stackb, t_info *printer, int *new_ra)
 {
     int count;
+    int check;
 
     count = 0;
+    check = 0;
     printf("inside reverse optimization less main function\n");
     printf("number of instruction is %d\n", printer->count);
     if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
         (stackb->a > stacka->a && stackb->a < stacka->b))
+    {
         count = count + r_optim_less_a(stacka, stackb, printer);
+        check++;
+        printf("inside roptim less, the vale of check is %d\n", check);
+    }
     if ((stackb->b < stacka->a && stackb->b > stacka->c) || \
         (stackb->b > stacka->a && stackb->b < stacka->b))
+    {
         count = count + r_optim_less_b(stacka, stackb, printer);
+        check++;
+        printf("inside roptim less, the vale of check is %d\n", check);
+    }
     if ((stackb->c < stacka->a && stackb->c > stacka->c) || \
         (stackb->c > stacka->a && stackb->c < stacka->b))
+    {
         count = count + r_optim_less_c(stacka, stackb, printer);
+        check++;
+        printf("inside roptim less, the vale of check is %d\n", check);
+    }
+    *new_ra = check;
+    printf("inside roptim less, the vale of new_ra is %d\n", *new_ra);
     return (count);
 }
 

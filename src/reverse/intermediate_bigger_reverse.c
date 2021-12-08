@@ -14,11 +14,14 @@
 
 int	rda_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
+	printf("inside rda_bigger\n");
 	int	count;
 	int	i;
+	int	new_ra;
 
 	i = 0;
 	count = 0;
+	new_ra = 0;
 	while (i < stackb->d_a)
 	{
 		count = count + ft_rra(stacka, stackb, printer);
@@ -26,9 +29,9 @@ int	rda_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	count = count + ft_pa(stacka, stackb, printer);
 	i = 0;
-	while (i <= stackb->d_a)
+	count = count + r_optim_less(stacka, stackb, printer, &new_ra);
+	while (i <= (stackb->d_a + new_ra))
 	{
-		count = count + r_optim_less(stacka, stackb, printer);
 		count = count + ft_ra(stacka, stackb, printer);
 		i++;
 	}
@@ -37,10 +40,13 @@ int	rda_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int	rdb_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
+	printf("inside rdb_bigger\n");
 	int	i;
 	int	count;
+	int	new_ra;
 
 	i = 0;
+	new_ra = 0;
 	count = ft_sb(stackb, stacka, printer);
 	while (i < stackb->d_b)
 	{
@@ -49,9 +55,9 @@ int	rdb_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	count = count + ft_pa(stacka, stackb, printer);
 	i = 0;
-	while (i <= stackb->d_b)
+	count = count + r_optim_less(stacka, stackb, printer, &new_ra);
+	while (i <= (stackb->d_b + new_ra))
 	{
-		count = count + r_optim_less(stacka, stackb, printer);
 		count = count + ft_ra(stacka, stackb, printer);
 		i++;
 	}
@@ -60,8 +66,10 @@ int	rdb_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int	rdc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
+	printf("inside rdc_bigger\n");
 	int	i;
 	int	count;
+	int	new_ra;
 
 	i = 0;
 	count = ft_rrb(stackb, stacka, printer);
@@ -71,10 +79,10 @@ int	rdc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 		i++;
 	}
 	count = count + ft_pa(stacka, stackb, printer);
+	count = count + r_optim_less(stacka, stackb, printer, &new_ra);
 	i = 0;
-	while (i <= stackb->d_c)
+	while (i <= (stackb->d_c + new_ra))
 	{
-		count = count + r_optim_less(stacka, stackb, printer);
 		count = count + ft_ra(stacka, stackb, printer);
 		i++;
 	}
