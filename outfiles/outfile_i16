@@ -1234,7 +1234,7 @@ exec ra-------instruction number 73
 11
 12
 13
-14
+14  -
 15
 0
 1
@@ -1311,7 +1311,120 @@ exec ra-------instruction number 76
 12
 _               _
 a               b
----------------------------------
+---inside rda_more_midpoint---
+ instruction number is 17
+inside reverse optimization less main function
+number of instruction is 19
+inside reverse optimization less_a function
+number of instruction is 19
+inside r_optimization_less a_b
+number of instruction is 19
+inside roptim less, the vale of check is 1
+inside roptim less, the vale of new_ra is 1
+the next function will be ra inside original loop 
+the instruction before the ra is 21
+inside reverse optimization less main function
+number of instruction is 22
+inside reverse optimization less_a function
+number of instruction is 22
+inside r_optimization_less a_b
+number of instruction is 22
+inside roptim less, the vale of check is 1
+inside reverse optimization less_b function
+number of instruction is 24
+inside r_optimization_less b_b
+number of instruction is 24
+inside roptim less, the vale of check is 2
+inside roptim less, the vale of new_ra is 2
+the next function will be ra inside original loop 
+the instruction before the ra is 27
+the next function will be ra of the optimization 
+the instruction before the optimized ra is 28
+the next function will be ra of the optimization 
+the instruction before the optimized ra is 29
+the next function will be ra of the optimization 
+the instruction before the optimized ra is 30
+---exiting rda_more_midpoint---
+, count is 4
+ rra is 3
+the number of instruction is 31
+---inside rda_less_midpoint---
+ instruction number is 31
+inside reverse optimization main function
+number of instruction is 34
+inside reverse optimization main function
+number of instruction is 35
+inside reverse optimization b
+number of instruction is 35
+inside r_optimization b_a
+number of instruction is 35
+---inside rdb_more_midpoint---
+ instruction number is 38
+inside reverse optimization less main function
+number of instruction is 43
+inside reverse optimization less_b function
+number of instruction is 43
+inside r_optimization_less b_a
+number of instruction is 43
+inside roptim less, the vale of check is 1
+inside roptim less, the vale of new_ra is 1
+inside reverse optimization less main function
+number of instruction is 46
+inside reverse optimization less_b function
+number of instruction is 46
+inside r_optimization_less b_a
+number of instruction is 46
+inside roptim less, the vale of check is 1
+inside roptim less, the vale of new_ra is 1
+inside reverse optimization less main function
+number of instruction is 49
+inside reverse optimization less_b function
+number of instruction is 49
+inside r_optimization_less b_a
+number of instruction is 49
+inside roptim less, the vale of check is 1
+inside roptim less, the vale of new_ra is 1
+---exiting rdb_more_midpoint---
+, count is 7
+ rra is 3
+the number of instruction is 54
+---inside rda_less_midpoint---
+ instruction number is 54
+inside reverse optimization main function
+number of instruction is 60
+inside reverse optimization main function
+number of instruction is 61
+inside reverse optimization main function
+number of instruction is 62
+inside reverse optimization main function
+number of instruction is 63
+inside reverse optimization main function
+number of instruction is 64
+---inside rda_more_midpoint---
+ instruction number is 65
+inside reverse optimization less main function
+number of instruction is 72
+inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 72
+inside reverse optimization less main function
+number of instruction is 73
+inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 73
+inside reverse optimization less main function
+number of instruction is 74
+inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 74
+inside reverse optimization less main function
+number of instruction is 75
+inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 75
+inside reverse optimization less main function
+number of instruction is 76
+inside roptim less, the vale of new---------------------------------
 exec ra-------instruction number 77
 
 14
@@ -1374,108 +1487,19 @@ exec ra-------instruction number 79
 15
 _               _
 a               b
----inside rda_more_midpoint---
- instruction number is 17
-inside reverse optimization less main function
-number of instruction is 19
-inside reverse optimization less_a function
-number of instruction is 19
-inside r_optimization_less a_b
-number of instruction is 19
-inside roptim less, the vale of check is 1
-inside roptim less, the vale of new_ra is 1
-inside reverse optimization less main function
-number of instruction is 22
-inside reverse optimization less_a function
-number of instruction is 22
-inside r_optimization_less a_b
-number of instruction is 22
-inside roptim less, the vale of check is 1
-inside reverse optimization less_b function
-number of instruction is 24
-inside r_optimization_less b_b
-number of instruction is 24
-inside roptim less, the vale of check is 2
-inside roptim less, the vale of new_ra is 2
----exiting rda_more_midpoint---
-, count is 4
- rra is 3
-the number of instruction is 31
----inside rda_less_midpoint---
- instruction number is 31
-inside reverse optimization main function
-number of instruction is 34
-inside reverse optimization main function
-number of instruction is 35
-inside reverse optimization b
-number of instruction is 35
-inside r_optimization b_a
-number of instruction is 35
----inside rdb_more_midpoint---
- instruction number is 38
-inside reverse optimization less main function
-number of instruction is 43
-inside reverse optimization less_b function
-number of instruction is 43
-inside r_optimization_less b_a
-number of instruction is 43
-inside roptim less, the vale of check is 1
-inside roptim less, the vale of new_ra is 1
-inside reverse optimization less main function
-number of instruction is 46
-inside reverse optimization less_b function
-number of instruction is 46
-inside r_optimization_less b_a
-number of instruction is 46
-inside roptim less, the vale of check is 1
-inside roptim less, the vale of new_ra is 1
-inside reverse optimization less main function
-number of instruction is 49
-inside reverse optimization less_b function
-number of instruction is 49
-inside r_optimization_less b_a
-number of instruction is 49
-inside roptim less, the vale of check is 1
-inside roptim less, the vale of new_ra is 1
----exiting rdb_more_midpoint---
-, count is 7
- rra is 3
-the number of instruction is 54
----inside rda_less_midpoint---
- instruction number is 54
-inside reverse optimization main function
-number of instruction is 60
-inside reverse optimization main function
-number of instruction is 61
-inside reverse optimization main function
-number of instruction is 62
-inside reverse optimization main function
-number of instruction is 63
-inside reverse optimization main function
-number of instruction is 64
----inside rda_more_midpoint---
- instruction number is 65
-inside reverse optimization less main function
-number of instruction is 72
-inside roptim less, the vale of new_ra is 0
-inside reverse optimization less main function
-number of instruction is 73
-inside roptim less, the vale of new_ra is 0
-inside reverse optimization less main function
-number of instruction is 74
-inside roptim less, the vale of new_ra is 0
-inside reverse optimization less main function
-number of instruction is 75
-inside roptim less, the vale of new_ra is 0
-inside reverse optimization less main function
-number of instruction is 76
-inside roptim less, the vale of new_ra is 0
+_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 76
 inside reverse optimization less main function
 number of instruction is 77
 inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 77
 inside reverse optimization less main function
 number of instruction is 78
 inside roptim less, the vale of new_ra is 0
+the next function will be ra inside original loop 
+the instruction before the ra is 78
 ---exiting rda_more_midpoint---
 , count is 14
  rra is 0

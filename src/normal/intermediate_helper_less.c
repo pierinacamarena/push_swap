@@ -16,8 +16,11 @@ int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	//int		new_ra;
+	//int		rra;
 
 	i = 0;
+	printf("---inside da_less_midpoint---\n instruction number is %d\n", printer->count);
 	while (i < stacka->d_a)
 	{
 		count = count + ft_rrb(stackb, stacka, printer);
@@ -30,6 +33,8 @@ int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = count + ft_rb(stackb, stacka, printer);
 		i++;
 	}
+	printf("---exiting da_less_midpoint---\n, count is %d\n", count);
+	printf("the number of instruction is %d\n", printer->count);
 	return (count);
 }
 
@@ -37,8 +42,11 @@ int	db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	//int		new_ra;
+	//int		rra;
 
 	i = 0;
+	printf("---inside da_less_midpoint---\n instruction number is %d\n", printer->count);
 	count = ft_sa(stacka, stackb, printer);
 	while (i < stacka->d_b)
 	{
@@ -52,6 +60,8 @@ int	db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = count + ft_rb(stackb, stacka, printer);
 		i++;
 	}
+	printf("---exiting db_less_midpoint---\n, count is %d\n", count);
+	printf("the number of instruction is %d\n", printer->count);
 	return (count);
 }
 
@@ -59,8 +69,11 @@ int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	int		new_ra;
+	int		rra;
 
 	i = 0;
+	printf("---inside dc_less_midpoint---\n instruction number is %d\n", printer->count);
 	count = ft_rra(stacka, stackb, printer);
 	while (i < stacka->d_c)
 	{
@@ -74,5 +87,7 @@ int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 		count = count + ft_rb(stackb, stacka, printer);
 		i++;
 	}
+	printf("---exiting dc_more_midpoint---\n, count is %d\n", count);
+	printf("the number of instruction is %d\n", printer->count);
 	return (count);
 }

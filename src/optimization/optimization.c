@@ -108,14 +108,14 @@ int optim_c(t_stack *stacka, t_stack *stackb, t_info *printer)
     {
         printf("inside optimization c_a\n");
         printf("number of instruction is %d\n", printer->count);
-        count = count + ft_rrb(stackb, stacka, printer);
+        count = count + ft_rra(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
     }
     else if (stacka->c < stackb->a && stacka->c > stackb->b)
     {
         printf("inside optimization c_b\n");
         printf("number of instruction is %d\n", printer->count);
-        count = count + ft_rrb(stackb, stacka, printer);
+        count = count + ft_rra(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
         count = count + ft_sb(stackb, stacka, printer);
     }
