@@ -989,6 +989,12 @@ exec pa-------instruction number 69
 11
 _               _
 a               b
+the value of distances is:
+ -------------------------
+d_a is 1
+d_b is 1
+d_c is 1
+instruction number is 4
 ---inside da_more_midpoint---
  instruction number is 4
 inside optimization main function
@@ -1005,6 +1011,12 @@ after optmization in rda, before rrb
 ---exiting da_more_midpoint---
 , count is 7
 the number of instruction is 11
+the value of distances is:
+ -------------------------
+d_a is 2
+d_b is 2
+d_c is 2
+instruction number is 11
 ---inside da_more_midpoint---
  instruction number is 11
 inside optimization main function
@@ -1020,11 +1032,23 @@ after optmization in rda, before rrb
 ---exiting da_more_midpoint---
 , count is 8
 the number of instruction is 19
+the value of distances is:
+ -------------------------
+d_a is 2
+d_b is 3
+d_c is 4
+instruction number is 19
 ---inside dc_less_midpoint---
  instruction number is 19
 ---exiting dc_more_midpoint---
 , count is 11
 the number of instruction is 30
+the value of distances is:
+ -------------------------
+d_a is 2
+d_b is 3
+d_c is 4
+instruction number is 30
 ---inside dc_less_midpoint---
  instruction number is 30
 ---exiting dc_more_midpoint---

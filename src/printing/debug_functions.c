@@ -35,7 +35,7 @@ void	ft_print_full_stack(t_stack stacka, t_stack stackb, int j)
 	printf("x is %d\n", stackb.x);
 	printf("y is %d\n", stackb.y);
 	printf("midpoint is %d\n", stackb.midpoint);
-	ft_print_distances(stacka, 0);
+	ft_print_distances(stacka);
 }
 
 void	ft_simple_print(t_stack stacka, t_stack stackb)
@@ -47,9 +47,9 @@ void	ft_simple_print(t_stack stacka, t_stack stackb)
 	printf("*****************************************\n");
 }
 
-void	ft_print_distances(t_stack stacka, int j)
+void	ft_print_distances(t_stack stacka)
 {
-	printf("the value of distances at the %dth iteration is \n", j);
+	printf("the value of distances is:\n -------------------------\n");
 	printf("d_a is %d\n", stacka.d_a);
 	printf("d_b is %d\n", stacka.d_b);
 	printf("d_c is %d\n", stacka.d_c);

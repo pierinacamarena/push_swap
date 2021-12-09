@@ -43,6 +43,8 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 	count = 0;
 	ft_distance(stacka, stackb);
+	ft_print_distances(*stacka);
+	printf("instruction number is %d\n", printer->count);
 	if ((stacka->d_a - 1 <= stacka->d_b) \
 		&& (stacka->d_a - 1 <= stacka->d_c))
 	{

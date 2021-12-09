@@ -164,6 +164,9 @@ int r_optim_less_c(t_stack *stacka, t_stack *stackb, t_info *printer);
 debug_functions.c
 */
 
+void	ft_print_distances_b(t_stack stackb);
+void	ft_print_distances (t_stack stacka);
+
 /*
 printer_helper.c
 */
@@ -286,7 +289,6 @@ void	ft_val_updta (t_stack * stacka);
 void	ft_val_updtb (t_stack * stackb);
 void	ft_distance (t_stack *stacka, t_stack *stackb);
 void	ft_print_full_stack (t_stack stacka, t_stack stackb, int j);
-void	ft_print_distances (t_stack stacka, int j);
 void	ft_simple_print (t_stack stacka, t_stack stackb);
 int	ft_base_case_two (t_stack *stacka, t_stack *stackb, t_info *printer);
 int	ft_base_case_one (t_stack *stacka, t_stack *stackb, t_info *printer);
@@ -307,7 +309,6 @@ void	ft_putneg(unsigned int n);
 void	ft_putnbr(int i);
 int	  ft_max(int a, int b);
 void	ft_putchar(char c);
-void	ft_print_distances_b(t_stack stackb);
 int   da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
 int   db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
 int   dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer);
