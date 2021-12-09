@@ -177,6 +177,18 @@ exec ra-------instruction number 16
 5
 _               _
 a               b
+---------------------------------
+exec ra-------instruction number 17
+
+0
+1
+2
+3
+4
+5
+6
+_               _
+a               b
 inside rda_bigger
 inside reverse optimization less main function
 number of instruction is 11
@@ -184,10 +196,11 @@ inside reverse optimization less_a function
 number of instruction is 11
 inside r_optimization_less a_b
 number of instruction is 11
-the value of new_ra is 0
+inside roptim less, the vale of check is 1
+inside roptim less, the vale of new_ra is 1
 inside reverse optimization less main function
 number of instruction is 14
-the value of new_ra is 0
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 15
-the value of new_ra is 0
+inside roptim less, the vale of new_ra is 0

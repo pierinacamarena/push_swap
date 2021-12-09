@@ -331,10 +331,13 @@ exec rra-------instruction number 26
 9
 _               _
 a               b
+inside rda_bigger
 inside reverse optimization less main function
 number of instruction is 15
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 16
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization main function
 number of instruction is 23
 inside reverse optimization a

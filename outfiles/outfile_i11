@@ -579,21 +579,30 @@ inside reverse optimization b
 number of instruction is 17
 inside r_optimization b_b
 number of instruction is 17
+inside rda_bigger
 inside reverse optimization less main function
 number of instruction is 23
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 24
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization main function
 number of instruction is 29
 inside reverse optimization main function
 number of instruction is 30
+inside rda_bigger
 inside reverse optimization less main function
 number of instruction is 36
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 37
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 38
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 39
+inside roptim less, the vale of new_ra is 0
 inside reverse optimization less main function
 number of instruction is 40
+inside roptim less, the vale of new_ra is 0
