@@ -17,7 +17,7 @@ int	da_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int		i;
 	int		count;
 	//int		new_ra;
-	//int		rra;
+	//int		rr0000000a;
 
 	i = 0;
 	printf("---inside da_less_midpoint---\n instruction number is %d\n", printer->count);
@@ -46,7 +46,7 @@ int	db_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	//int		rra;
 
 	i = 0;
-	printf("---inside da_less_midpoint---\n instruction number is %d\n", printer->count);
+	printf("---inside db_less_midpoint---\n instruction number is %d\n", printer->count);
 	count = ft_sa(stacka, stackb, printer);
 	while (i < stacka->d_b)
 	{

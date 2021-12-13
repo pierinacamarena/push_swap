@@ -45,19 +45,34 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 	ft_distance(stacka, stackb);
 	ft_print_distances(*stacka);
 	printf("instruction number is %d\n", printer->count);
+	printf("I am checking now if it goes to da, db, dc\n");
 	if ((stacka->d_a - 1 <= stacka->d_b) \
 		&& (stacka->d_a - 1 <= stacka->d_c))
 	{
+		printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
+		printf("i am going to entere da_smaller");
 		count = count + ft_da_smaller(stacka, stackb, printer);
 	}
 	else
 	{
 		if (stacka->d_b < stacka->d_c)
+		{
+			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
+			printf("i will enter db_smaller");
 			count = count + ft_db_smaller(stacka, stackb, printer);
+		}
 		else if (stacka->d_c < stacka->d_b)
+		{
+			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
+			printf("i will enter dc_smaller");
 			count = count + ft_dc_smaller(stacka, stackb, printer);
+		}
 		else if (stacka->d_b == stacka->d_c)
+		{
+			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
+			printf("i will enter db_smaller, case where db and dc are equal\n");
 			count = count + ft_db_smaller(stacka, stackb, printer);
+		}
 	}
 	return (count);
 }
