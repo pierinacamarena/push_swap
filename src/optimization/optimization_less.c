@@ -29,22 +29,34 @@ int optim_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
     return (checker);
 }
 
-int optim_less(t_stack *stacka, t_stack *stackb, t_info *printer)
+int optim_less(t_stack *stacka, t_stack *stackb, t_info *printer, int *new_rb)
 {
     int count;
+    int check;
 
     count = 0;
+    check = 0;
     printf("inside optimization less main function\n");
     printf("number of instruction is %d\n", printer->count);
     if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
         (stacka->a < stackb->a && stacka->a > stackb->b))
+    {
+        check++;
         count = count + optim_less_a(stacka, stackb, printer);
+    }
     if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
         (stacka->b < stackb->a && stacka->b > stackb->b))
+    {
+        check++;
         count = count + optim_less_b(stacka, stackb, printer);
+    }
     if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
         (stacka->c < stackb->a && stacka->c > stackb->b))
+    {
+        check++;
         count = count + optim_less_c(stacka, stackb, printer);
+    }
+    *new_rb = check;
     return (count); 
 }
 

@@ -157,9 +157,8 @@ exec pb-------instruction number 6
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 7
+exec pb-------instruction number 7
 
-3
 4
 11
 14
@@ -170,17 +169,16 @@ exec rb-------instruction number 7
 18
 7
 10
-8
-19               1
-2               20
-13               16
-9               12
+8               3
+19               12
+2               1
+13               20
+9               16
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 8
+exec sb-------instruction number 8
 
-3
 4
 11
 14
@@ -191,19 +189,18 @@ exec rb-------instruction number 8
 18
 7
 10
-8
-19               20
-2               16
-13               12
-9               1
+8               12
+19               3
+2               1
+13               20
+9               16
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 9
+exec sa-------instruction number 9
 
-3
-4
 11
+4
 14
 5
 17
@@ -212,18 +209,17 @@ exec rrb-------instruction number 9
 18
 7
 10
-8
-19               1
-2               20
-13               16
-9               12
+8               12
+19               3
+2               1
+13               20
+9               16
 _               _
 a               b
 ---------------------------------
 exec pb-------instruction number 10
 
 4
-11
 14
 5
 17
@@ -231,193 +227,18 @@ exec pb-------instruction number 10
 15
 18
 7
-10
-8               3
-19               1
-2               20
-13               16
-9               12
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 11
-
-4
-11
-14
-5
-17
-6
-15
-18
-7
-10
-8               1
-19               20
-2               16
-13               12
-9               3
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 12
-
-4
-11
-14
-5
-17
-6
-15
-18
-7
-10
-8               20
-19               16
-2               12
-13               3
-9               1
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 13
-
-4
-11
-14
-5
-17
-6
-15
-18
-7
-10
-8               1
-19               20
-2               16
-13               12
-9               3
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 14
-
-4
-11
-14
-5
-17
-6
-15
-18
-7
-10
-8               3
-19               1
-2               20
-13               16
-9               12
-_               _
-a               b
----------------------------------
-exec pb-------instruction number 15
-
-11
-14
-5
-17
-6
-15
-18
-7
-10               4
-8               3
-19               1
-2               20
-13               16
-9               12
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 16
-
-11
-14
-5
-17
-6
-15
-18
-7
-10               3
-8               1
-19               20
-2               16
-13               12
-9               4
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 17
-
-11
-14
-5
-17
-6
-15
-18
-7
-10               1
-8               20
-19               16
-2               12
-13               4
-9               3
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 18
-
-11
-14
-5
-17
-6
-15
-18
-7
-10               20
-8               16
-19               12
-2               4
-13               3
-9               1
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 19
-
-11
-14
-5
-17
-6
-15
-18
-7
-10               16
+10               11
 8               12
-19               4
-2               3
-13               1
-9               20
+19               3
+2               1
+13               20
+9               16
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 20
+exec sb-------instruction number 11
 
-11
+4
 14
 5
 17
@@ -426,7 +247,7 @@ exec rb-------instruction number 20
 18
 7
 10               12
-8               4
+8               11
 19               3
 2               1
 13               20
@@ -434,9 +255,9 @@ exec rb-------instruction number 20
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 21
+exec rb-------instruction number 12
 
-11
+4
 14
 5
 17
@@ -444,7 +265,7 @@ exec rb-------instruction number 21
 15
 18
 7
-10               4
+10               11
 8               3
 19               1
 2               20
@@ -453,7 +274,25 @@ exec rb-------instruction number 21
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 22
+exec pb-------instruction number 13
+
+14
+5
+17
+6
+15
+18
+7               4
+10               11
+8               3
+19               1
+2               20
+13               16
+9               12
+_               _
+a               b
+---------------------------------
+exec sb-------instruction number 14
 
 14
 5
@@ -471,7 +310,7 @@ exec pb-------instruction number 22
 _               _
 a               b
 ---------------------------------
-exec sa-------instruction number 23
+exec sa-------instruction number 15
 
 5
 14
@@ -489,7 +328,7 @@ exec sa-------instruction number 23
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 24
+exec pb-------instruction number 16
 
 14
 17
@@ -506,7 +345,7 @@ exec pb-------instruction number 24
 _               _
 a               b
 ---------------------------------
-exec sb-------instruction number 25
+exec sb-------instruction number 17
 
 14
 17
@@ -523,7 +362,7 @@ exec sb-------instruction number 25
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number 26
+exec rra-------instruction number 18
 
 9
 14
@@ -540,7 +379,7 @@ exec rra-------instruction number 26
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 27
+exec pb-------instruction number 19
 
 14
 17
@@ -556,7 +395,7 @@ exec pb-------instruction number 27
 _               _
 a               b
 ---------------------------------
-exec sb-------instruction number 28
+exec sb-------instruction number 20
 
 14
 17
@@ -572,7 +411,119 @@ exec sb-------instruction number 28
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 29
+exec rb-------instruction number 21
+
+14
+17
+6               9
+15               5
+18               4
+7               3
+10               1
+8               20
+19               16
+2               12
+13               11
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 22
+
+14
+17
+6               5
+15               4
+18               3
+7               1
+10               20
+8               16
+19               12
+2               11
+13               9
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 23
+
+14
+17
+6               4
+15               3
+18               1
+7               20
+10               16
+8               12
+19               11
+2               9
+13               5
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 24
+
+14
+17
+6               3
+15               1
+18               20
+7               16
+10               12
+8               11
+19               9
+2               5
+13               4
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 25
+
+14
+17
+6               1
+15               20
+18               16
+7               12
+10               11
+8               9
+19               5
+2               4
+13               3
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 26
+
+14
+17
+6               20
+15               16
+18               12
+7               11
+10               9
+8               5
+19               4
+2               3
+13               1
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 27
+
+14
+17
+6               16
+15               12
+18               11
+7               9
+10               5
+8               4
+19               3
+2               1
+13               20
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 28
 
 14
 17
@@ -588,7 +539,7 @@ exec rrb-------instruction number 29
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 30
+exec pb-------instruction number 29
 
 17                14
 6                12
@@ -603,7 +554,7 @@ exec pb-------instruction number 30
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number 31
+exec rra-------instruction number 30
 
 13                14
 17                12
@@ -618,7 +569,7 @@ exec rra-------instruction number 31
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 32
+exec pb-------instruction number 31
 
                 13
                 14
@@ -634,7 +585,7 @@ exec pb-------instruction number 32
 _               _
 a               b
 ---------------------------------
-exec sb-------instruction number 33
+exec sb-------instruction number 32
 
                 14
                 13
@@ -650,7 +601,7 @@ exec sb-------instruction number 33
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 34
+exec rrb-------instruction number 33
 
                 16
                 14
@@ -666,7 +617,7 @@ exec rrb-------instruction number 34
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 35
+exec pb-------instruction number 34
 
                 17
                 16
@@ -683,7 +634,7 @@ exec pb-------instruction number 35
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 36
+exec rrb-------instruction number 35
 
                 20
                 17
@@ -700,7 +651,7 @@ exec rrb-------instruction number 36
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number 37
+exec rra-------instruction number 36
 
                 20
                 17
@@ -717,7 +668,7 @@ exec rra-------instruction number 37
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 38
+exec rrb-------instruction number 37
 
                 1
                 20
@@ -734,7 +685,7 @@ exec rrb-------instruction number 38
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 39
+exec pb-------instruction number 38
 
                 2
                 1
@@ -752,7 +703,7 @@ exec pb-------instruction number 39
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 40
+exec rb-------instruction number 39
 
                 1
                 20
@@ -770,7 +721,7 @@ exec rb-------instruction number 40
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 41
+exec rb-------instruction number 40
 
                 20
                 17
@@ -788,7 +739,7 @@ exec rb-------instruction number 41
 _               _
 a               b
 ---------------------------------
-exec rra-------instruction number 42
+exec rra-------instruction number 41
 
                 20
                 17
@@ -806,7 +757,7 @@ exec rra-------instruction number 42
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 43
+exec rb-------instruction number 42
 
                 17
                 16
@@ -824,7 +775,7 @@ exec rb-------instruction number 43
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 44
+exec pb-------instruction number 43
 
                 19
                 17
@@ -843,7 +794,7 @@ exec pb-------instruction number 44
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 45
+exec rrb-------instruction number 44
 
                 20
                 19
@@ -862,7 +813,7 @@ exec rrb-------instruction number 45
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 46
+exec rrb-------instruction number 45
 
                 1
                 20
@@ -881,7 +832,7 @@ exec rrb-------instruction number 46
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 47
+exec rrb-------instruction number 46
 
                 2
                 1
@@ -900,7 +851,7 @@ exec rrb-------instruction number 47
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 48
+exec rrb-------instruction number 47
 
                 3
                 2
@@ -919,7 +870,7 @@ exec rrb-------instruction number 48
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 49
+exec rrb-------instruction number 48
 
                 4
                 3
@@ -938,7 +889,7 @@ exec rrb-------instruction number 49
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 50
+exec rrb-------instruction number 49
 
                 5
                 4
@@ -957,7 +908,7 @@ exec rrb-------instruction number 50
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 51
+exec pb-------instruction number 50
 
                 6
                 5
@@ -977,8 +928,30 @@ exec pb-------instruction number 51
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 52
+exec rra-------instruction number 51
 
+                6
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+                17
+                16
+8               14
+15               13
+18               12
+7               11
+10               9
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 52
+
+                8
+                6
                 5
                 4
                 3
@@ -993,12 +966,13 @@ exec rb-------instruction number 52
 18               12
 7               11
 10               9
-8               6
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 53
 
+                6
+                5
                 4
                 3
                 2
@@ -1012,13 +986,14 @@ exec rb-------instruction number 53
 15               12
 18               11
 7               9
-10               6
-8               5
+10               8
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 54
 
+                5
+                4
                 3
                 2
                 1
@@ -1031,14 +1006,15 @@ exec rb-------instruction number 54
                 12
 15               11
 18               9
-7               6
-10               5
-8               4
+7               8
+10               6
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 55
 
+                4
+                3
                 2
                 1
                 20
@@ -1050,14 +1026,55 @@ exec rb-------instruction number 55
                 12
                 11
 15               9
-18               6
-7               5
-10               4
-8               3
+18               8
+7               6
+10               5
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 56
+
+                3
+                2
+                1
+                20
+                19
+                17
+                16
+                14
+                13
+                12
+                11
+                9
+15               8
+18               6
+7               5
+10               4
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 57
+
+                2
+                1
+                20
+                19
+                17
+                16
+                14
+                13
+                12
+                11
+                9
+                8
+15               6
+18               5
+7               4
+10               3
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 58
 
                 1
                 20
@@ -1069,35 +1086,16 @@ exec rb-------instruction number 56
                 12
                 11
                 9
-15               6
-18               5
-7               4
-10               3
-8               2
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 57
-
-                20
-                19
-                17
-                16
-                14
-                13
-                12
-                11
-                9
+                8
                 6
 15               5
 18               4
 7               3
 10               2
-8               1
 _               _
 a               b
 ---------------------------------
-exec sa-------instruction number 58
+exec rb-------instruction number 59
 
                 20
                 19
@@ -1108,17 +1106,19 @@ exec sa-------instruction number 58
                 12
                 11
                 9
+                8
                 6
-18               5
+                5
 15               4
-7               3
-10               2
-8               1
+18               3
+7               2
+10               1
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 59
+exec sa-------instruction number 60
 
+                20
                 19
                 17
                 16
@@ -1127,18 +1127,19 @@ exec rb-------instruction number 59
                 12
                 11
                 9
+                8
                 6
                 5
 18               4
 15               3
 7               2
 10               1
-8               20
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 60
+exec rb-------instruction number 61
 
+                19
                 17
                 16
                 14
@@ -1146,6 +1147,7 @@ exec rb-------instruction number 60
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1153,13 +1155,11 @@ exec rb-------instruction number 60
 15               2
 7               1
 10               20
-8               19
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 61
+exec rb-------instruction number 62
 
-                18
                 17
                 16
                 14
@@ -1167,20 +1167,20 @@ exec pb-------instruction number 61
                 12
                 11
                 9
+                8
                 6
                 5
                 4
                 3
-15               2
-7               1
-10               20
-8               19
+18               2
+15               1
+7               20
+10               19
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 62
+exec pb-------instruction number 63
 
-                19
                 18
                 17
                 16
@@ -1189,34 +1189,15 @@ exec rrb-------instruction number 62
                 12
                 11
                 9
+                8
                 6
                 5
                 4
-15               3
-7               2
-10               1
-8               20
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 63
-
-                20
-                19
-                18
-                17
-                16
-                14
-                13
-                12
-                11
-                9
-                6
-                5
-15               4
-7               3
-10               2
-8               1
+                3
+                2
+15               1
+7               20
+10               19
 _               _
 a               b
 the value of distances is:
@@ -1229,146 +1210,136 @@ I am checking now if it goes to da, db, dc
 the value of da is 1, of db is 1 and of dc is 1 
 i am going to entere da_smaller---inside da_less_midpoint---
  instruction number is 4
+inside optimization less main function
+number of instruction is 6
+inside optimization-less_a function
+number of instruction is 6
+inside optimization-less_a_b function
+number of instruction is 6
+inside optimization-less_b function
+number of instruction is 8
+inside optimization-less_b_b function
+number of instruction is 8
+inside optimization less main function
+number of instruction is 12
+inside optimization-less_a function
+number of instruction is 12
+inside optimization-less_a_b function
+number of instruction is 12
+inside optimization-less_b function
+number of instruction is 14
+inside optimization-less_b_b function
+number of instruction is 14
+inside optimization-less_c function
+number of instruction is 17
+inside optimization-less_c_b function
+number of instruction is 17
 ---exiting da_less_midpoint---
-, count is 22070
-the number of instruction is 8
-the value of distances is:
- -------------------------
-d_a is 1
-d_b is 1
-d_c is 1
-instruction number is 8
-I am checking now if it goes to da, db, dc
-the value of da is 1, of db is 1 and of dc is 1 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 8
----exiting da_less_midpoint---
-, count is 22070
-the number of instruction is 12
+, count is 1411790513
+the number of instruction is 26
 the value of distances is:
  -------------------------
 d_a is 2
-d_b is 2
+d_b is 1
 d_c is 2
-instruction number is 12
+instruction number is 26
 I am checking now if it goes to da, db, dc
-the value of da is 2, of db is 2 and of dc is 2 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 12
----exiting da_less_midpoint---
-, count is 22072
-the number of instruction is 18
-the value of distances is:
- -------------------------
-d_a is 3
-d_b is 2
-d_c is 3
-instruction number is 18
-I am checking now if it goes to da, db, dc
-the value of da is 3, of db is 2 and of dc is 3 
+the value of da is 2, of db is 1 and of dc is 2 
 i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 18
+ instruction number is 26
 inside optimization main function
-number of instruction is 22
-inside optimization b
-number of instruction is 22
-inside optimization b_b
-number of instruction is 22
-inside optimization c
-number of instruction is 25
-inside optimization c_b
-number of instruction is 25
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 29
-inside optimization a
-number of instruction is 29
-inside optimization a_a
 number of instruction is 29
 inside optimization c
-number of instruction is 30
+number of instruction is 29
 inside optimization c_b
-number of instruction is 30
+number of instruction is 29
 after optmization in rda, before rrb
 inside optimization main function
-number of instruction is 34
+number of instruction is 33
 inside optimization a
-number of instruction is 34
+number of instruction is 33
 inside optimization a_a
-number of instruction is 34
+number of instruction is 33
 after optmization in rda, before rrb
 ---exiting da_more_midpoint---
-, count is 18
-the number of instruction is 36
+, count is 9
+the number of instruction is 35
 the value of distances is:
  -------------------------
 d_a is 4
 d_b is 3
 d_c is 1
-instruction number is 36
+instruction number is 35
 I am checking now if it goes to da, db, dc
 the value of da is 4, of db is 3 and of dc is 1 
 i will enter dc_smaller---inside dc_less_midpoint---
- instruction number is 36
+ instruction number is 35
+inside optimization less main function
+number of instruction is 38
+inside optimization less main function
+number of instruction is 39
 ---exiting dc_more_midpoint---
 , count is 5
-the number of instruction is 41
+the number of instruction is 40
 the value of distances is:
  -------------------------
 d_a is 5
 d_b is 3
 d_c is 1
-instruction number is 41
+instruction number is 40
 I am checking now if it goes to da, db, dc
 the value of da is 5, of db is 3 and of dc is 1 
 i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 41
+ instruction number is 40
 inside optimization main function
-number of instruction is 44
+number of instruction is 43
 after optmization in rdc, before rrb
 ---exiting da_more_midpoint---
 , count is 4
-the number of instruction is 45
+the number of instruction is 44
 the value of distances is:
  -------------------------
 d_a is 5
 d_b is 4
 d_c is 5
-instruction number is 45
+instruction number is 44
 I am checking now if it goes to da, db, dc
 the value of da is 5, of db is 4 and of dc is 5 
 i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 45
+ instruction number is 44
+inside optimization less main function
+number of instruction is 50
+inside optimization-less_c function
+number of instruction is 50
+inside optimization-less_c_a function
+number of instruction is 50
+inside optimization less main function
+number of instruction is 53
+inside optimization less main function
+number of instruction is 54
+inside optimization less main function
+number of instruction is 55
+inside optimization less main function
+number of instruction is 56
+inside optimization less main function
+number of instruction is 57
 ---exiting da_less_midpoint---
-, count is 22078
-the number of instruction is 57
+, count is 1411790510
+the number of instruction is 59
 the value of distances is:
  -------------------------
 d_a is 4
 d_b is 2
-d_c is 6
-instruction number is 57
+d_c is 8
+instruction number is 59
 I am checking now if it goes to da, db, dc
-the value of da is 4, of db is 2 and of dc is 6 
+the value of da is 4, of db is 2 and of dc is 8 
 i will enter db_smaller---inside db_more_midpoint---
- instruction number is 57
+ instruction number is 59
 inside optimization main function
-number of instruction is 61
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 62
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 6
-the number of instruction is 63
-the value of distances is:
- -------------------------
-d_a is 5
-d_b is 6
-d_c is 6
-instruction number is 63
-I am check---------------------------------
-exec rb-------instruction number 64
+number of instruction is 63
+after ---------------------------------
+exec rrb-------instruction number 64
 
                 19
                 18
@@ -1379,17 +1350,62 @@ exec rb-------instruction number 64
                 12
                 11
                 9
+                8
+                6
+                5
+                4
+                3
+15               2
+7               1
+10               20
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 65
+
+                20
+                19
+                18
+                17
+                16
+                14
+                13
+                12
+                11
+                9
+                8
                 6
                 5
                 4
 15               3
 7               2
 10               1
-8               20
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 65
+exec rb-------instruction number 66
+
+                19
+                18
+                17
+                16
+                14
+                13
+                12
+                11
+                9
+                8
+                6
+                5
+                4
+                3
+15               2
+7               1
+10               20
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 67
 
                 18
                 17
@@ -1399,26 +1415,7 @@ exec rb-------instruction number 65
                 12
                 11
                 9
-                6
-                5
-                4
-                3
-15               2
-7               1
-10               20
-8               19
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 66
-
-                17
-                16
-                14
-                13
-                12
-                11
-                9
+                8
                 6
                 5
                 4
@@ -1427,18 +1424,19 @@ exec rb-------instruction number 66
 15               1
 7               20
 10               19
-8               18
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 67
+exec rb-------instruction number 68
 
+                17
                 16
                 14
                 13
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1448,17 +1446,18 @@ exec rb-------instruction number 67
 15               20
 7               19
 10               18
-8               17
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 68
+exec rb-------instruction number 69
 
+                16
                 14
                 13
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1469,11 +1468,32 @@ exec rb-------instruction number 68
 15               19
 7               18
 10               17
-8               16
 _               _
 a               b
 ---------------------------------
-exec pb-------instruction number 69
+exec rb-------instruction number 70
+
+                14
+                13
+                12
+                11
+                9
+                8
+                6
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+15               18
+7               17
+10               16
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 71
 
                 15
                 14
@@ -1481,6 +1501,31 @@ exec pb-------instruction number 69
                 12
                 11
                 9
+                8
+                6
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+7               17
+10               16
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 72
+
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
                 6
                 5
                 4
@@ -1491,12 +1536,12 @@ exec pb-------instruction number 69
                 19
 7               18
 10               17
-8               16
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 70
+exec rrb-------instruction number 73
 
+                17
                 16
                 15
                 14
@@ -1504,6 +1549,7 @@ exec rrb-------instruction number 70
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1513,12 +1559,12 @@ exec rrb-------instruction number 70
                 20
 7               19
 10               18
-8               17
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 71
+exec rrb-------instruction number 74
 
+                18
                 17
                 16
                 15
@@ -1527,6 +1573,7 @@ exec rrb-------instruction number 71
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1535,12 +1582,12 @@ exec rrb-------instruction number 71
                 1
 7               20
 10               19
-8               18
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 72
+exec rrb-------instruction number 75
 
+                19
                 18
                 17
                 16
@@ -1550,6 +1597,7 @@ exec rrb-------instruction number 72
                 12
                 11
                 9
+                8
                 6
                 5
                 4
@@ -1557,12 +1605,12 @@ exec rrb-------instruction number 72
                 2
 7               1
 10               20
-8               19
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 73
+exec rrb-------instruction number 76
 
+                20
                 19
                 18
                 17
@@ -1573,39 +1621,17 @@ exec rrb-------instruction number 73
                 12
                 11
                 9
+                8
                 6
                 5
                 4
                 3
 7               2
 10               1
-8               20
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 74
-
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                9
-                6
-                5
-                4
-7               3
-10               2
-8               1
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 75
+exec rrb-------instruction number 77
 
                 1
                 20
@@ -1619,15 +1645,16 @@ exec rrb-------instruction number 75
                 12
                 11
                 9
+                8
                 6
                 5
-7               4
-10               3
-8               2
+                4
+7               3
+10               2
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 76
+exec rrb-------instruction number 78
 
                 2
                 1
@@ -1642,14 +1669,15 @@ exec rrb-------instruction number 76
                 12
                 11
                 9
+                8
                 6
-7               5
-10               4
-8               3
+                5
+7               4
+10               3
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 77
+exec rrb-------instruction number 79
 
                 3
                 2
@@ -1665,14 +1693,63 @@ exec rrb-------instruction number 77
                 12
                 11
                 9
-7               6
-10               5
-8               4
+                8
+                6
+7               5
+10               4
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 78
+exec rrb-------instruction number 80
 
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+7               6
+10               5
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 81
+
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+7               8
+10               6
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 82
+
+                6
+                5
                 4
                 3
                 2
@@ -1688,56 +1765,11 @@ exec rrb-------instruction number 78
                 12
                 11
 7               9
-10               6
-8               5
+10               8
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 79
-
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-7               11
-10               9
-8               6
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 80
-
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-7               12
-10               11
-8               9
-_               _
-a               b
----------------------------------
-exec pb-------instruction number 81
+exec pb-------instruction number 83
 
                 7
                 6
@@ -1755,59 +1787,16 @@ exec pb-------instruction number 81
                 14
                 13
                 12
-10               11
-8               9
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 82
-
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-10               9
-8               7
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 83
-
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
                 11
                 9
-10               7
-8               6
+10               8
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 84
 
+                6
+                5
                 4
                 3
                 2
@@ -1823,14 +1812,15 @@ exec rb-------instruction number 84
                 12
                 11
                 9
-                7
-10               6
-8               5
+                8
+10               7
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 85
 
+                5
+                4
                 3
                 2
                 1
@@ -1845,14 +1835,61 @@ exec rb-------instruction number 85
                 12
                 11
                 9
+                8
                 7
-                6
-10               5
-8               4
+10               6
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 86
+
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+                7
+                6
+10               5
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 87
+
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+                7
+                6
+                5
+10               4
+_               _
+a               b
+---------------------------------
+exec rb-------instruction number 88
 
                 2
                 1
@@ -1867,15 +1904,16 @@ exec rb-------instruction number 86
                 12
                 11
                 9
+                8
                 7
                 6
                 5
-10               4
-8               3
+                4
+10               3
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 87
+exec rb-------instruction number 89
 
                 1
                 20
@@ -1889,41 +1927,18 @@ exec rb-------instruction number 87
                 12
                 11
                 9
-                7
-                6
-                5
-                4
-10               3
-8               2
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 88
-
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                9
+                8
                 7
                 6
                 5
                 4
                 3
 10               2
-8               1
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 89
+exec rb-------instruction number 90
 
-                1
                 20
                 19
                 18
@@ -1935,40 +1950,67 @@ exec rrb-------instruction number 89
                 12
                 11
                 9
+                8
                 7
                 6
                 5
                 4
-10               3
-8               2
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 90
-
+                3
                 2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                9
-                7
-                6
-                5
-10               4
-8               3
+10               1
 _               _
 a               b
 ---------------------------------
 exec rrb-------instruction number 91
 
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+                7
+                6
+                5
+                4
+                3
+10               2
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 92
+
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+                7
+                6
+                5
+                4
+10               3
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 93
+
                 3
                 2
                 1
@@ -1983,14 +2025,15 @@ exec rrb-------instruction number 91
                 12
                 11
                 9
+                8
                 7
                 6
-10               5
-8               4
+                5
+10               4
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 92
+exec rrb-------instruction number 94
 
                 4
                 3
@@ -2007,13 +2050,14 @@ exec rrb-------instruction number 92
                 12
                 11
                 9
+                8
                 7
-10               6
-8               5
+                6
+10               5
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 93
+exec rrb-------instruction number 95
 
                 5
                 4
@@ -2031,13 +2075,64 @@ exec rrb-------instruction number 93
                 12
                 11
                 9
-10               7
-8               6
+                8
+                7
+10               6
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 94
+exec rrb-------instruction number 96
 
+                6
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+                8
+10               7
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 97
+
+                7
+                6
+                5
+                4
+                3
+                2
+                1
+                20
+                19
+                18
+                17
+                16
+                15
+                14
+                13
+                12
+                11
+                9
+10               8
+_               _
+a               b
+---------------------------------
+exec rrb-------instruction number 98
+
+                8
+                7
                 6
                 5
                 4
@@ -2055,12 +2150,13 @@ exec rrb-------instruction number 94
                 12
                 11
 10               9
-8               7
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 95
+exec rrb-------instruction number 99
 
+                9
+                8
                 7
                 6
                 5
@@ -2078,60 +2174,14 @@ exec rrb-------instruction number 95
                 13
                 12
 10               11
-8               9
 _               _
 a               b
 ---------------------------------
-exec rrb-------instruction number 96
-
-                9
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-10               12
-8               11
-_               _
-a               b
----------------------------------
-exec pb-------instruction number 97
+exec pb-------instruction number 100
 
                 10
                 9
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-8               11
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 98
-
-                9
+                8
                 7
                 6
                 5
@@ -2149,60 +2199,15 @@ exec rb-------instruction number 98
                 13
                 12
                 11
-8               10
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 99
-
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-8               9
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 100
-
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-8               7
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 101
 
+                9
+                8
+                7
+                6
                 5
                 4
                 3
@@ -2219,14 +2224,15 @@ exec rb-------instruction number 101
                 12
                 11
                 10
-                9
-                7
-8               6
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 102
 
+                8
+                7
+                6
+                5
                 4
                 3
                 2
@@ -2243,14 +2249,15 @@ exec rb-------instruction number 102
                 11
                 10
                 9
-                7
-                6
-8               5
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 103
 
+                7
+                6
+                5
+                4
                 3
                 2
                 1
@@ -2266,15 +2273,16 @@ exec rb-------instruction number 103
                 11
                 10
                 9
-                7
-                6
-                5
-8               4
+                8
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 104
 
+                6
+                5
+                4
+                3
                 2
                 1
                 20
@@ -2289,16 +2297,17 @@ exec rb-------instruction number 104
                 11
                 10
                 9
+                8
                 7
-                6
-                5
-                4
-8               3
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 105
 
+                5
+                4
+                3
+                2
                 1
                 20
                 19
@@ -2312,309 +2321,14 @@ exec rb-------instruction number 105
                 11
                 10
                 9
+                8
                 7
                 6
-                5
-                4
-                3
-8               2
 _               _
 a               b
 ---------------------------------
 exec rb-------instruction number 106
 
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-                6
-                5
-                4
-                3
-                2
-8               1
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 107
-
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-                6
-                5
-                4
-                3
-8               2
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 108
-
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-                6
-                5
-                4
-8               3
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 109
-
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-                6
-                5
-8               4
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 110
-
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-                6
-8               5
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 111
-
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                7
-8               6
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 112
-
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-8               7
-_               _
-a               b
----------------------------------
-exec rrb-------instruction number 113
-
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-8               9
-_               _
-a               b
----------------------------------
-exec pb-------instruction number 114
-
-                8
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 115
-
-                7
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                8
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 116
-
-                6
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                8
-                7
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 117
-
-                5
-                4
-                3
-                2
-                1
-                20
-                19
-                18
-                17
-                16
-                15
-                14
-                13
-                12
-                11
-                10
-                9
-                8
-                7
-                6
-_               _
-a               b
----------------------------------
-exec rb-------instruction number 118
-
                 4
                 3
                 2
@@ -2638,7 +2352,7 @@ exec rb-------instruction number 118
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 119
+exec rb-------instruction number 107
 
                 3
                 2
@@ -2663,7 +2377,7 @@ exec rb-------instruction number 119
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 120
+exec rb-------instruction number 108
 
                 2
                 1
@@ -2688,7 +2402,7 @@ exec rb-------instruction number 120
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 121
+exec rb-------instruction number 109
 
                 1
                 20
@@ -2713,7 +2427,7 @@ exec rb-------instruction number 121
 _               _
 a               b
 ---------------------------------
-exec rb-------instruction number 122
+exec rb-------instruction number 110
 
                 20
                 19
@@ -2738,7 +2452,7 @@ exec rb-------instruction number 122
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 123
+exec pa-------instruction number 111
 
                 19
                 18
@@ -2762,7 +2476,7 @@ exec pa-------instruction number 123
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 124
+exec pa-------instruction number 112
 
                 18
                 17
@@ -2785,7 +2499,7 @@ exec pa-------instruction number 124
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 125
+exec pa-------instruction number 113
 
                 17
                 16
@@ -2807,7 +2521,7 @@ exec pa-------instruction number 125
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 126
+exec pa-------instruction number 114
 
                 16
                 15
@@ -2828,7 +2542,7 @@ exec pa-------instruction number 126
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 127
+exec pa-------instruction number 115
 
                 15
                 14
@@ -2848,7 +2562,7 @@ exec pa-------instruction number 127
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 128
+exec pa-------instruction number 116
 
                 14
                 13
@@ -2867,7 +2581,7 @@ exec pa-------instruction number 128
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 129
+exec pa-------instruction number 117
 
                 13
                 12
@@ -2885,7 +2599,7 @@ exec pa-------instruction number 129
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 130
+exec pa-------instruction number 118
 
                 12
                 11
@@ -2902,7 +2616,7 @@ exec pa-------instruction number 130
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 131
+exec pa-------instruction number 119
 
                 11
                 10
@@ -2918,7 +2632,7 @@ exec pa-------instruction number 131
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 132
+exec pa-------instruction number 120
 
 11                10
 12                9
@@ -2933,7 +2647,7 @@ exec pa-------instruction number 132
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 133
+exec pa-------instruction number 121
 
 10
 11
@@ -2949,7 +2663,7 @@ exec pa-------instruction number 133
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 134
+exec pa-------instruction number 122
 
 9
 10
@@ -2966,7 +2680,7 @@ exec pa-------instruction number 134
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 135
+exec pa-------instruction number 123
 
 8
 9
@@ -2984,7 +2698,7 @@ exec pa-------instruction number 135
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 136
+exec pa-------instruction number 124
 
 7
 8
@@ -3003,7 +2717,7 @@ exec pa-------instruction number 136
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 137
+exec pa-------instruction number 125
 
 6
 7
@@ -3023,7 +2737,7 @@ exec pa-------instruction number 137
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 138
+exec pa-------instruction number 126
 
 5
 6
@@ -3044,7 +2758,7 @@ exec pa-------instruction number 138
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 139
+exec pa-------instruction number 127
 
 4
 5
@@ -3066,7 +2780,7 @@ exec pa-------instruction number 139
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 140
+exec pa-------instruction number 128
 
 3
 4
@@ -3089,7 +2803,7 @@ exec pa-------instruction number 140
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 141
+exec pa-------instruction number 129
 
 2
 3
@@ -3113,7 +2827,7 @@ exec pa-------instruction number 141
 _               _
 a               b
 ---------------------------------
-exec pa-------instruction number 142
+exec pa-------instruction number 130
 
 1
 2
@@ -3137,16 +2851,23 @@ exec pa-------instruction number 142
 20
 _               _
 a               b
-ing now if it goes to da, db, dc
-the value of da is 5, of db is 6 and of dc is 6 
+optmization in rdb, before rrb
+inside optimization main function
+number of instruction is 64
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 6
+the number of instruction is 65
+the value of distances is:
+ -------------------------
+d_a is 5
+d_b is 6
+d_c is 8
+instruction number is 65
+I am checking now if it goes to da, db, dc
+the value of da is 5, of db is 6 and of dc is 8 
 i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 63
-inside optimization main function
-number of instruction is 69
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 70
-after optmization in rda, before rrb
+ instruction number is 65
 inside optimization main function
 number of instruction is 71
 after optmization in rda, before rrb
@@ -3156,29 +2877,56 @@ after optmization in rda, before rrb
 inside optimization main function
 number of instruction is 73
 after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 74
+after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 75
+after optmization in rda, before rrb
 ---exiting da_more_midpoint---
 , count is 11
-the number of instruction is 74
-the value of distances is:
- -------------------------
-d_a is 6
-d_b is 7
-d_c is 6
-instruction number is 74
-I am checking now if it goes to da, db, dc
-the value of da is 6, of db is 7 and of dc is 6 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 74
----exiting da_less_midpoint---
-, count is 22080
-the number of instruction is 88
+the number of instruction is 76
 ---inside da_less_midpoint---
- instruction number is 88
+ instruction number is 76
+inside optimization less main function
+number of instruction is 83
+inside optimization less main function
+number of instruction is 84
+inside optimization less main function
+number of instruction is 85
+inside optimization less main function
+number of instruction is 86
+inside optimization less main function
+number of instruction is 87
+inside optimization less main function
+number of instruction is 88
+inside optimization less main function
+number of instruction is 89
 ---exiting da_less_midpoint---
-, count is 19
-the number of instruction is 106
+, count is 13
+the number of instruction is 90
 ---inside da_less_midpoint---
- instruction number is 106
+ instruction number is 90
+inside optimization less main function
+number of instruction is 100
+inside optimization less main function
+number of instruction is 101
+inside optimization less main function
+number of instruction is 102
+inside optimization less main function
+number of instruction is 103
+inside optimization less main function
+number of instruction is 104
+inside optimization less main function
+number of instruction is 105
+inside optimization less main function
+number of instruction is 106
+inside optimization less main function
+number of instruction is 107
+inside optimization less main function
+number of instruction is 108
+inside optimization less main function
+number of instruction is 109
 ---exiting da_less_midpoint---
-, count is 35
-the number of instruction is 122
+, count is 33
+the number of instruction is 110

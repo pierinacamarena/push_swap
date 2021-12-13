@@ -141,7 +141,7 @@ optimization_less.c
 */
 
 int optim_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
-int optim_less(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optim_less(t_stack *stacka, t_stack *stackb, t_info *printer, int *new_rb);
 int optim_less_a(t_stack *stacka, t_stack *stackb, t_info *printer);
 int optim_less_b(t_stack *stacka, t_stack *stackb, t_info *printer);
 int optim_less_c(t_stack *stacka, t_stack *stackb, t_info *printer);
