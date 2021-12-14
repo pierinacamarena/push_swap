@@ -16,6 +16,7 @@ int	da_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	int		check;
 
 	i = 0;
 	count = 0;
@@ -29,7 +30,8 @@ int	da_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stacka->d_a)
 	{
-		count = count + optim(stacka, stackb, printer);
+		while ((check = optim_checker(stacka, stackb, printer)) > 0)
+			count = count + optim(stacka, stackb, printer);
 		printf("after optmization in rda, before rrb\n");
 		count = count + ft_rrb(stackb, stacka, printer);
 		i++;
@@ -43,6 +45,7 @@ int	db_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	int		check;
 
 	i = 0;
 	printf("---inside db_more_midpoint---\n instruction number is %d\n", printer->count);
@@ -56,7 +59,8 @@ int	db_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stacka->d_b)
 	{
-		count = count + optim(stacka, stackb, printer);
+		while ((check = optim_checker(stacka, stackb, printer)) > 0)
+			count = count + optim(stacka, stackb, printer);
 		printf("after optmization in rdb, before rrb\n");
 		count = count + ft_rrb(stackb, stacka, printer);
 		i++;
@@ -70,6 +74,7 @@ int	dc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		i;
 	int		count;
+	int		check;
 
 	i = 0;
 	printf("---inside db_more_midpoint---\n instruction number is %d\n", printer->count);
@@ -83,7 +88,8 @@ int	dc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	i = 0;
 	while (i < stacka->d_c)
 	{
-		count = count + optim(stacka, stackb, printer);
+		while ((check = optim_checker(stacka, stackb, printer)) > 0)
+			count = count + optim(stacka, stackb, printer);
 		printf("after optmization in rdc, before rrb\n");
 		count = count + ft_rrb(stackb, stacka, printer);
 		i++;

@@ -7031,145 +7031,7 @@ exec rrb-------instruction number 75
 22               83
 _               _
 a               b
-the value of distances is:
- -------------------------
-d_a is 1
-d_b is 1
-d_c is 1
-instruction number is 6
-I am checking now if it goes to da, db, dc
-the value of da is 1, of db is 1 and of dc is 1 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 6
-inside optimization less main function
-number of instruction is 8
-inside optimization-less_a function
-number of instruction is 8
-inside optimization-less_a_b function
-number of instruction is 8
-inside optimization less main function
-number of instruction is 11
-inside optimization-less_b function
-number of instruction is 11
-inside optimization-less_b_b function
-number of instruction is 11
----exiting da_less_midpoint---
-, count is -540527551
-the number of instruction is 17
-the value of distances is:
- -------------------------
-d_a is 2
-d_b is 1
-d_c is 1
-instruction number is 17
-I am checking now if it goes to da, db, dc
-the value of da is 2, of db is 1 and of dc is 1 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 17
-inside optimization main function
-number of instruction is 20
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 21
-inside optimization a
-number of instruction is 21
-inside optimization a_a
-number of instruction is 21
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 6
-the number of instruction is 23
-the value of distances is:
- -------------------------
-d_a is 3
-d_b is 5
-d_c is 2
-instruction number is 27
-I am checking now if it goes to da, db, dc
-the value of da is 3, of db is 5 and of dc is 2 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 27
-inside optimization less main function
-number of instruction is 31
-inside optimization less main function
-number of instruction is 32
-inside optimization-less_c function
-number of instruction is 32
-inside optimization-less_c_b function
-number of instruction is 32
-inside optimization less main function
-number of instruction is 36
-inside optimization less main function
-number of instruction is 37
----exiting da_less_midpoint---
-, count is 97
-the number of instruction is 39
-the value of distances is:
- -------------------------
-d_a is 6
-d_b is 2
-d_c is 4
-instruction number is 44
-I am checking now if it goes to da, db, dc
-the value of da is 6, of db is 2 and of dc is 4 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 44
-inside optimization main function
-number of instruction is 48
-inside optimization b
-number of instruction is 48
-inside optimization b_a
-number of instruction is 48
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 51
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 8
-the number of instruction is 52
-the value of distances is:
- -------------------------
-d_a is 8
-d_b is 3
-d_c is 6
-instruction number is 52
-I am checking now if it goes to da, db, dc
-the value of da is 8, of db is 3 and of dc is 6 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 52
-inside optimization less main function
-number of instruction is 57
-inside optimization less main function
-number of instruction is 58
-inside optimization less main function
-number of instruction is 59
-inside optimization less main function
-number of instruction is 60
----exiting db_less_midpoint---
-, count is 9
-the number of instruction is 61
-the value of distances is:
- -------------------------
-d_a is 9
-d_b is 9
-d_c is 7
-instruction number is 63
-I am checking now if it goes to da, db, dc
-the value of da is 9, of db is 9 and of dc is 7 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 63
-inside optimization main function
-number of instruction is 72
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 73
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 74
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 75
-after ---------------------------------
+---------------------------------
 exec rrb-------instruction number 76
 
 55
@@ -7509,7 +7371,147 @@ exec rrb-------instruction number 79
 22               1
 _               _
 a               b
----------------------------------
+the value of distances is:
+ -------------------------
+d_a is 1
+d_b is 1
+d_c is 1
+instruction number is 6
+I am checking now if it goes to da, db, dc
+the value of da is 1, of db is 1 and of dc is 1 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 6
+inside optimization less main function
+number of instruction is 8
+inside optimization-less_a function
+number of instruction is 8
+inside optimization-less_a_b function
+number of instruction is 8
+inside optimization less main function
+number of instruction is 11
+inside optimization-less_b function
+number of instruction is 11
+inside optimization-less_b_b function
+number of instruction is 11
+---exiting da_less_midpoint---
+, count is -314121103
+the number of instruction is 17
+the value of distances is:
+ -------------------------
+d_a is 2
+d_b is 1
+d_c is 1
+instruction number is 17
+I am checking now if it goes to da, db, dc
+the value of da is 2, of db is 1 and of dc is 1 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 17
+after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 21
+inside optimization a
+number of instruction is 21
+inside optimization a_a
+number of instruction is 21
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 6
+the number of instruction is 23
+the value of distances is:
+ -------------------------
+d_a is 3
+d_b is 5
+d_c is 2
+instruction number is 27
+I am checking now if it goes to da, db, dc
+the value of da is 3, of db is 5 and of dc is 2 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 27
+inside optimization less main function
+number of instruction is 31
+inside optimization less main function
+number of instruction is 32
+inside optimization-less_c function
+number of instruction is 32
+inside optimization-less_c_b function
+number of instruction is 32
+inside optimization less main function
+number of instruction is 36
+inside optimization less main function
+number of instruction is 37
+---exiting da_less_midpoint---
+, count is 97
+the number of instruction is 39
+the value of distances is:
+ -------------------------
+d_a is 6
+d_b is 2
+d_c is 4
+instruction number is 44
+I am checking now if it goes to da, db, dc
+the value of da is 6, of db is 2 and of dc is 4 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 44
+inside optimization main function
+number of instruction is 48
+inside optimization b
+number of instruction is 48
+inside optimization b_a
+number of instruction is 48
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 8
+the number of instruction is 52
+the value of distances is:
+ -------------------------
+d_a is 8
+d_b is 3
+d_c is 6
+instruction number is 52
+I am checking now if it goes to da, db, dc
+the value of da is 8, of db is 3 and of dc is 6 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 52
+inside optimization less main function
+number of instruction is 57
+inside optimization less main function
+number of instruction is 58
+inside optimization less main function
+number of instruction is 59
+inside optimization less main function
+number of instruction is 60
+---exiting db_less_midpoint---
+, count is 9
+the number of instruction is 61
+the value of distances is:
+ -------------------------
+d_a is 9
+d_b is 9
+d_c is 7
+instruction number is 63
+I am checking now if it goes to da, db, dc
+the value of da is 9, of db is 9 and of dc is 7 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 63
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 16
+the number of instruction is 79
+the value of distances is:
+ -------------------------
+d_a is 10
+d_b is 9
+d_c is 6
+instruction number is 79
+I am checking now if it goes to da, db, dc
+the---------------------------------
 exec rra-------instruction number 80
 
 22
@@ -12803,139 +12805,7 @@ exec rb-------instruction number 143
 85               1
 _               _
 a               b
-optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 76
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 77
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 78
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 16
-the number of instruction is 79
-the value of distances is:
- -------------------------
-d_a is 10
-d_b is 9
-d_c is 6
-instruction number is 79
-I am checking now if it goes to da, db, dc
-the value of da is 10, of db is 9 and of dc is 6 
-i will enter dc_smaller---inside dc_less_midpoint---
- instruction number is 79
-inside optimization less main function
-number of instruction is 87
-inside optimization less main function
-number of instruction is 88
-inside optimization less main function
-number of instruction is 89
-inside optimization less main function
-number of instruction is 90
-inside optimization less main function
-number of instruction is 91
-inside optimization less main function
-number of instruction is 92
-inside optimization less main function
-number of instruction is 93
----exiting dc_more_midpoint---
-, count is 15
-the number of instruction is 94
-the value of distances is:
- -------------------------
-d_a is 10
-d_b is 10
-d_c is 10
-instruction number is 94
-I am checking now if it goes to da, db, dc
-the value of da is 10, of db is 10 and of dc is 10 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 94
-inside optimization main function
-number of instruction is 105
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 106
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 107
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 108
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 109
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 110
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 111
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 112
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 113
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 114
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 21
-the number of instruction is 115
-the value of distances is:
- -------------------------
-d_a is 10
-d_b is 10
-d_c is 10
-instruction number is 115
-I am checking now if it goes to da, db, dc
-the value of da is 10, of db is 10 and of dc is 10 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 115
-inside optimization less main function
-number of instruction is 126
-inside optimization-less_a function
-number of instruction is 126
-inside optimization-less_a_a function
-number of instruction is 126
-inside optimization-less_c function
-number of instruction is 127
-inside optimization-less_c_b function
-number of instruction is 127
-inside optimization less main function
-number of instruction is 131
-inside optimization less main function
-number of instruction is 132
-inside optimization less main function
-number of instruction is 133
-inside optimization less main function
-number of instruction is 134
-inside optimization less main function
-number of instruction is 135
-inside optimization less main function
-number of instruction is 136
-inside optimization less main function
-number of instruction is 137
-inside optimization less main function
-number of instruction is 138
-inside optimization less main function
-number of instruction is 139
-inside optimization less main function
-number of instruction is 140
----exiting da_less_midpoint---
-, count is 47
-the number of instruction is 143
-the value of distances is:
- -------------------------
-d_a is 4
-d_b is 1
-d_c is 3
-instruction number is 143
-I am ch---------------------------------
+---------------------------------
 exec sa-------instruction number 144
 
 89
@@ -14419,7 +14289,137 @@ exec rrb-------instruction number 162
 81               1
 _               _
 a               b
----------------------------------
+ value of da is 10, of db is 9 and of dc is 6 
+i will enter dc_smaller---inside dc_less_midpoint---
+ instruction number is 79
+inside optimization less main function
+number of instruction is 87
+inside optimization less main function
+number of instruction is 88
+inside optimization less main function
+number of instruction is 89
+inside optimization less main function
+number of instruction is 90
+inside optimization less main function
+number of instruction is 91
+inside optimization less main function
+number of instruction is 92
+inside optimization less main function
+number of instruction is 93
+---exiting dc_more_midpoint---
+, count is 15
+the number of instruction is 94
+the value of distances is:
+ -------------------------
+d_a is 10
+d_b is 10
+d_c is 10
+instruction number is 94
+I am checking now if it goes to da, db, dc
+the value of da is 10, of db is 10 and of dc is 10 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 94
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 21
+the number of instruction is 115
+the value of distances is:
+ -------------------------
+d_a is 10
+d_b is 10
+d_c is 10
+instruction number is 115
+I am checking now if it goes to da, db, dc
+the value of da is 10, of db is 10 and of dc is 10 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 115
+inside optimization less main function
+number of instruction is 126
+inside optimization-less_a function
+number of instruction is 126
+inside optimization-less_a_a function
+number of instruction is 126
+inside optimization-less_c function
+number of instruction is 127
+inside optimization-less_c_b function
+number of instruction is 127
+inside optimization less main function
+number of instruction is 131
+inside optimization less main function
+number of instruction is 132
+inside optimization less main function
+number of instruction is 133
+inside optimization less main function
+number of instruction is 134
+inside optimization less main function
+number of instruction is 135
+inside optimization less main function
+number of instruction is 136
+inside optimization less main function
+number of instruction is 137
+inside optimization less main function
+number of instruction is 138
+inside optimization less main function
+number of instruction is 139
+inside optimization less main function
+number of instruction is 140
+---exiting da_less_midpoint---
+, count is 47
+the number of instruction is 143
+the value of distances is:
+ -------------------------
+d_a is 4
+d_b is 1
+d_c is 3
+instruction number is 143
+I am checking now if it goes to da, db, dc
+the value of da is 4, of db is 1 and of dc is 3 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 143
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 4
+the number of instruction is 147
+the value of distances is:
+ -------------------------
+d_a is 5
+d_b is 8
+d_c is 4
+instruction number is 147
+I am checking now if it goes to da, db, dc
+the value of da is 5, of db is 8 and of dc is 4 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 147
+after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 154
+inside optimization c
+number of instruction is 154
+inside optimization c_a
+number of instruction is 154
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 159
+inside optimization c
+number of instruction is 159
+inside optimization c_a
+number of instruction is 159
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 15
+the number of instruction is 162
+the value of distances is---------------------------------
 exec rra-------instruction number 163
 
 81
@@ -18502,138 +18502,7 @@ exec rrb-------instruction number 217
 40               72
 _               _
 a               b
-ecking now if it goes to da, db, dc
-the value of da is 4, of db is 1 and of dc is 3 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 143
-inside optimization main function
-number of instruction is 146
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 4
-the number of instruction is 147
-the value of distances is:
- -------------------------
-d_a is 5
-d_b is 8
-d_c is 4
-instruction number is 147
-I am checking now if it goes to da, db, dc
-the value of da is 5, of db is 8 and of dc is 4 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 147
-inside optimization main function
-number of instruction is 153
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 154
-inside optimization c
-number of instruction is 154
-inside optimization c_a
-number of instruction is 154
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 157
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 158
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 159
-inside optimization c
-number of instruction is 159
-inside optimization c_a
-number of instruction is 159
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 15
-the number of instruction is 162
-the value of distances is:
- -------------------------
-d_a is 11
-d_b is 9
-d_c is 7
-instruction number is 162
-I am checking now if it goes to da, db, dc
-the value of da is 11, of db is 9 and of dc is 7 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 162
-inside optimization main function
-number of instruction is 171
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 172
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 173
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 174
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 175
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 176
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 177
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 16
-the number of instruction is 178
-the value of distances is:
- -------------------------
-d_a is 12
-d_b is 9
-d_c is 11
-instruction number is 178
-I am checking now if it goes to da, db, dc
-the value of da is 12, of db is 9 and of dc is 11 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 178
-inside optimization less main function
-number of instruction is 189
-inside optimization less main function
-number of instruction is 190
-inside optimization less main function
-number of instruction is 191
-inside optimization less main function
-number of instruction is 192
-inside optimization less main function
-number of instruction is 193
-inside optimization less main function
-number of instruction is 194
-inside optimization less main function
-number of instruction is 195
-inside optimization less main function
-number of instruction is 196
-inside optimization less main function
-number of instruction is 197
-inside optimization-less_b function
-number of instruction is 197
-inside optimization-less_b_b function
-number of instruction is 197
-inside optimization less main function
-number of instruction is 201
----exiting db_less_midpoint---
-, count is 24
-the number of instruction is 203
-the value of distances is:
- -------------------------
-d_a is 12
-d_b is 12
-d_c is 13
-instruction number is 203
-I am checking now if it goes to da, db, dc
-the value of da is 12, of db is 12 and of dc is 13 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 203
-inside optimization main function
-number of instruction is 216
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction ---------------------------------
+---------------------------------
 exec rrb-------instruction number 218
 
 31
@@ -21949,7 +21818,137 @@ exec rb-------instruction number 264
 40               24
 _               _
 a               b
----------------------------------
+:
+ -------------------------
+d_a is 11
+d_b is 9
+d_c is 7
+instruction number is 162
+I am checking now if it goes to da, db, dc
+the value of da is 11, of db is 9 and of dc is 7 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 162
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 16
+the number of instruction is 178
+the value of distances is:
+ -------------------------
+d_a is 12
+d_b is 9
+d_c is 11
+instruction number is 178
+I am checking now if it goes to da, db, dc
+the value of da is 12, of db is 9 and of dc is 11 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 178
+inside optimization less main function
+number of instruction is 189
+inside optimization less main function
+number of instruction is 190
+inside optimization less main function
+number of instruction is 191
+inside optimization less main function
+number of instruction is 192
+inside optimization less main function
+number of instruction is 193
+inside optimization less main function
+number of instruction is 194
+inside optimization less main function
+number of instruction is 195
+inside optimization less main function
+number of instruction is 196
+inside optimization less main function
+number of instruction is 197
+inside optimization-less_b function
+number of instruction is 197
+inside optimization-less_b_b function
+number of instruction is 197
+inside optimization less main function
+number of instruction is 201
+---exiting db_less_midpoint---
+, count is 24
+the number of instruction is 203
+the value of distances is:
+ -------------------------
+d_a is 12
+d_b is 12
+d_c is 13
+instruction number is 203
+I am checking now if it goes to da, db, dc
+the value of da is 12, of db is 12 and of dc is 13 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 203
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 25
+the number of instruction is 228
+the value of distances is:
+ -------------------------
+d_a is 12
+d_b is 6
+d_c is 13
+instruction number is 230
+I am checking now if it goes to da, db, dc
+the value of da is 12, of db is 6 and of dc is 13 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 230
+inside optimization less main function
+number of instruction is 238
+inside optimization less main function
+number of instruction is 239
+inside optimization less main function
+number of instruction is 240
+inside optimization less main function
+number of instruction is 241
+inside optimization less main function
+number of instruction is 242
+inside optimization less main function
+number of instruction is 243
+inside optimization less main function
+number of instruction is 244
+---exiting db_less_midpoint---
+, count is 15
+the number of instruction is 245
+the value of distances is:
+ -------------------------
+d_a is 13
+d_b is 14
+d_c is 14
+instruction number is 245
+I am checking now if it goes to da, db, dc
+the value of da is 13, of db is 14 and of dc is 14 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 245
+inside optimization less main function
+number of instruction is 259
+inside optimization less main function
+number of instruction is 260
+inside optimization less main function
+number of instruction is 261
+inside optimization less main function
+number of instruction is 262
+inside optimization less main function
+number of instruction is 263
+inside optimization less main function
+number---------------------------------
 exec rb-------instruction number 265
 
 36
@@ -23379,136 +23378,7 @@ exec rrb-------instruction number 285
 40               1
 _               _
 a               b
-is 217
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 218
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 219
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 220
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 221
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 222
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 223
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 224
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 225
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 226
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 227
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 25
-the number of instruction is 228
-the value of distances is:
- -------------------------
-d_a is 12
-d_b is 6
-d_c is 13
-instruction number is 230
-I am checking now if it goes to da, db, dc
-the value of da is 12, of db is 6 and of dc is 13 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 230
-inside optimization less main function
-number of instruction is 238
-inside optimization less main function
-number of instruction is 239
-inside optimization less main function
-number of instruction is 240
-inside optimization less main function
-number of instruction is 241
-inside optimization less main function
-number of instruction is 242
-inside optimization less main function
-number of instruction is 243
-inside optimization less main function
-number of instruction is 244
----exiting db_less_midpoint---
-, count is 15
-the number of instruction is 245
-the value of distances is:
- -------------------------
-d_a is 13
-d_b is 14
-d_c is 14
-instruction number is 245
-I am checking now if it goes to da, db, dc
-the value of da is 13, of db is 14 and of dc is 14 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 245
-inside optimization less main function
-number of instruction is 259
-inside optimization less main function
-number of instruction is 260
-inside optimization less main function
-number of instruction is 261
-inside optimization less main function
-number of instruction is 262
-inside optimization less main function
-number of instruction is 263
-inside optimization less main function
-number of instruction is 264
-inside optimization less main function
-number of instruction is 265
-inside optimization less main function
-number of instruction is 266
-inside optimization less main function
-number of instruction is 267
-inside optimization less main function
-number of instruction is 268
-inside optimization less main function
-number of instruction is 269
-inside optimization-less_b function
-number of instruction is 269
-inside optimization-less_b_b function
-number of instruction is 269
-inside optimization less main function
-number of instruction is 273
-inside optimization less main function
-number of instruction is 274
-inside optimization less main function
-number of instruction is 275
----exiting da_less_midpoint---
-, count is 46
-the number of instruction is 277
-the value of distances is:
- -------------------------
-d_a is 16
-d_b is 3
-d_c is 16
-instruction number is 277
-I am checking now if it goes to da, db, dc
-the value of da is 16, of db is 3 and of dc is 16 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 277
-inside optimization main function
-number of instruction is 282
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 283
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 284
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 8
-the number of instruction is 285
-the value of distances---------------------------------
+---------------------------------
 exec sa-------instruction number 286
 
 88
@@ -27513,7 +27383,138 @@ exec rb-------instruction number 348
 57               1
 _               _
 a               b
----------------------------------
+ of instruction is 264
+inside optimization less main function
+number of instruction is 265
+inside optimization less main function
+number of instruction is 266
+inside optimization less main function
+number of instruction is 267
+inside optimization less main function
+number of instruction is 268
+inside optimization less main function
+number of instruction is 269
+inside optimization-less_b function
+number of instruction is 269
+inside optimization-less_b_b function
+number of instruction is 269
+inside optimization less main function
+number of instruction is 273
+inside optimization less main function
+number of instruction is 274
+inside optimization less main function
+number of instruction is 275
+---exiting da_less_midpoint---
+, count is 46
+the number of instruction is 277
+the value of distances is:
+ -------------------------
+d_a is 16
+d_b is 3
+d_c is 16
+instruction number is 277
+I am checking now if it goes to da, db, dc
+the value of da is 16, of db is 3 and of dc is 16 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 277
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 8
+the number of instruction is 285
+the value of distances is:
+ -------------------------
+d_a is 16
+d_b is 5
+d_c is 16
+instruction number is 285
+I am checking now if it goes to da, db, dc
+the value of da is 16, of db is 5 and of dc is 16 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 285
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 12
+the number of instruction is 297
+the value of distances is:
+ -------------------------
+d_a is 16
+d_b is 15
+d_c is 16
+instruction number is 297
+I am checking now if it goes to da, db, dc
+the value of da is 16, of db is 15 and of dc is 16 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 297
+inside optimization less main function
+number of instruction is 314
+inside optimization-less_c function
+number of instruction is 314
+inside optimization-less_c_a function
+number of instruction is 314
+inside optimization less main function
+number of instruction is 317
+inside optimization less main function
+number of instruction is 318
+inside optimization-less_a function
+number of instruction is 318
+inside optimization-less_a_b function
+number of instruction is 318
+inside optimization-less_a function
+number of instruction is 320
+inside optimization-less_a_b function
+number of instruction is 320
+inside optimization-less_c function
+number of instruction is 322
+inside optimization-less_c_b function
+number of instruction is 322
+inside optimization less main function
+number of instruction is 326
+inside optimization less main function
+number of instruction is 327
+inside optimization less main function
+number of instruction is 328
+inside optimization less main function
+number of instruction is 329
+inside optimization less main function
+number of instruction is 330
+inside optimization less main function
+number of instruction is 331
+inside optimization less main function
+number of instruction is 332
+inside optimization less main function
+number of instruction is 333
+inside optimization less main function
+number of instruction is 334
+inside optimization less main function
+number of instruction is 335
+inside optimization less main function
+number of instruction is 336
+inside optimization less main function
+number of instruction is 337
+inside optimization less main function
+number of instruction is 338
+inside optimization less main function
+number of instruction is 339
+inside optimization-less_c function
+number of instruction is 339
+inside optimization-less_c_b function
+number of instruction is 339
+---exiting da_less_midpoint---
+, count is 58
+the number of instruction is 348
+the value of distances is:
+ -------------------------
+d_a is 21
+d_b is 21
+d_c is 19
+instruction number is 348
+I am ---------------------------------
 exec rra-------instruction number 349
 
 57
@@ -29185,135 +29186,7 @@ exec rrb-------instruction number 376
 53               79
 _               _
 a               b
- is:
- -------------------------
-d_a is 16
-d_b is 5
-d_c is 16
-instruction number is 285
-I am checking now if it goes to da, db, dc
-the value of da is 16, of db is 5 and of dc is 16 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 285
-inside optimization main function
-number of instruction is 292
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 293
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 294
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 295
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 296
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 12
-the number of instruction is 297
-the value of distances is:
- -------------------------
-d_a is 16
-d_b is 15
-d_c is 16
-instruction number is 297
-I am checking now if it goes to da, db, dc
-the value of da is 16, of db is 15 and of dc is 16 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 297
-inside optimization less main function
-number of instruction is 314
-inside optimization-less_c function
-number of instruction is 314
-inside optimization-less_c_a function
-number of instruction is 314
-inside optimization less main function
-number of instruction is 317
-inside optimization less main function
-number of instruction is 318
-inside optimization-less_a function
-number of instruction is 318
-inside optimization-less_a_b function
-number of instruction is 318
-inside optimization-less_a function
-number of instruction is 320
-inside optimization-less_a_b function
-number of instruction is 320
-inside optimization-less_c function
-number of instruction is 322
-inside optimization-less_c_b function
-number of instruction is 322
-inside optimization less main function
-number of instruction is 326
-inside optimization less main function
-number of instruction is 327
-inside optimization less main function
-number of instruction is 328
-inside optimization less main function
-number of instruction is 329
-inside optimization less main function
-number of instruction is 330
-inside optimization less main function
-number of instruction is 331
-inside optimization less main function
-number of instruction is 332
-inside optimization less main function
-number of instruction is 333
-inside optimization less main function
-number of instruction is 334
-inside optimization less main function
-number of instruction is 335
-inside optimization less main function
-number of instruction is 336
-inside optimization less main function
-number of instruction is 337
-inside optimization less main function
-number of instruction is 338
-inside optimization less main function
-number of instruction is 339
-inside optimization-less_c function
-number of instruction is 339
-inside optimization-less_c_b function
-number of instruction is 339
----exiting da_less_midpoint---
-, count is 58
-the number of instruction is 348
-the value of distances is:
- -------------------------
-d_a is 21
-d_b is 21
-d_c is 19
-instruction number is 348
-I am checking now if it goes to da, db, dc
-the value of da is 21, of db is 21 and of dc is 19 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 348
-inside optimization main function
-number of instruction is 369
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 370
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 371
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 372
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 373
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 374
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 375
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 376
-after optmization in r---------------------------------
+---------------------------------
 exec rrb-------instruction number 377
 
 52
@@ -32856,137 +32729,7 @@ exec rrb-------instruction number 437
 14               1
 _               _
 a               b
-dc, before rrb
-inside optimization main function
-number of instruction is 377
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 378
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 379
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 380
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 381
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 382
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 383
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 384
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 385
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 386
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 387
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 40
-the number of instruction is 388
-the value of distances is:
- -------------------------
-d_a is 22
-d_b is 21
-d_c is 22
-instruction number is 388
-I am checking now if it goes to da, db, dc
-the value of da is 22, of db is 21 and of dc is 22 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 388
-inside optimization main function
-number of instruction is 411
-inside optimization c
-number of instruction is 411
-inside optimization c_a
-number of instruction is 411
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 414
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 415
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 416
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 417
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 418
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 419
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 420
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 421
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 422
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 423
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 424
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 425
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 426
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 427
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 428
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 429
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 430
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 431
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 432
-inside optimization b
-number of instruction is 432
-inside optimization b_a
-number of instruction is 432
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 435
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 436
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 49
-the number of instruction is 437
-the value of distances is:
- -------------------------
-d_a is 21
-d_b is 24
-d_c is 7
-instruction number is 437
-I am checking n---------------------------------
+---------------------------------
 exec rra-------instruction number 438
 
 14
@@ -35531,7 +35274,131 @@ exec rb-------instruction number 483
 45               32
 _               _
 a               b
----------------------------------
+checking now if it goes to da, db, dc
+the value of da is 21, of db is 21 and of dc is 19 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 348
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 40
+the number of instruction is 388
+the value of distances is:
+ -------------------------
+d_a is 22
+d_b is 21
+d_c is 22
+instruction number is 388
+I am checking now if it goes to da, db, dc
+the value of da is 22, of db is 21 and of dc is 22 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 388
+inside optimization main function
+number of instruction is 411
+inside optimization c
+number of instruction is 411
+inside optimization c_a
+number of instruction is 411
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+inside optimization main function
+number of instruction is 432
+inside optimization b
+number of instruction is 432
+inside optimization b_a
+number of instruction is 432
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 49
+the number of instruction is 437
+the value of distances is:
+ -------------------------
+d_a is 21
+d_b is 24
+d_c is 7
+instruction number is 437
+I am checking now if it goes to da, db, dc
+the value of da is 21, of db is 24 and of dc is 7 
+i will enter dc_smaller---inside dc_less_midpoint---
+ instruction number is 437
+inside optimization less main function
+number of instruction is 446
+inside optimization less main function
+number of instruction is 447
+inside optimization less main function
+number of instruction is 448
+inside optimization less main function
+number of instruction is 449
+inside optimization less main function
+number of instruction is 450
+inside optimization less main function
+number of instruction is 451
+inside optimization less main function
+number of instruction is 452
+inside optimization less main function
+number of instruction is 453
+---exiting dc_more_midpoint---
+, count is 17
+the number of instruction is 454
+the value of distances is:
+ -------------------------
+d_a is 22
+d_b is 25
+d_c is 23
+instruction number is 454
+I am checking now if it goes to da, db, dc
+the value of da is 22, of db is 25 and of dc is 23 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 454
+inside optimization less main function
+number of instruction is 477
+inside optimization less main function
+number of instruction is 478
+inside optimization less main function
+number of instruction is 479
+inside optimization less main function
+number of instruction is 480
+inside optimization less main function
+number of instruction is 481
+inside optimization less main function
+number of instruction is 482
+inside optimization ---------------------------------
 exec rb-------instruction number 484
 
                 30
@@ -38510,131 +38377,7 @@ exec rrb-------instruction number 536
 45               72
 _               _
 a               b
-ow if it goes to da, db, dc
-the value of da is 21, of db is 24 and of dc is 7 
-i will enter dc_smaller---inside dc_less_midpoint---
- instruction number is 437
-inside optimization less main function
-number of instruction is 446
-inside optimization less main function
-number of instruction is 447
-inside optimization less main function
-number of instruction is 448
-inside optimization less main function
-number of instruction is 449
-inside optimization less main function
-number of instruction is 450
-inside optimization less main function
-number of instruction is 451
-inside optimization less main function
-number of instruction is 452
-inside optimization less main function
-number of instruction is 453
----exiting dc_more_midpoint---
-, count is 17
-the number of instruction is 454
-the value of distances is:
- -------------------------
-d_a is 22
-d_b is 25
-d_c is 23
-instruction number is 454
-I am checking now if it goes to da, db, dc
-the value of da is 22, of db is 25 and of dc is 23 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 454
-inside optimization less main function
-number of instruction is 477
-inside optimization less main function
-number of instruction is 478
-inside optimization less main function
-number of instruction is 479
-inside optimization less main function
-number of instruction is 480
-inside optimization less main function
-number of instruction is 481
-inside optimization less main function
-number of instruction is 482
-inside optimization less main function
-number of instruction is 483
-inside optimization less main function
-number of instruction is 484
-inside optimization less main function
-number of instruction is 485
-inside optimization less main function
-number of instruction is 486
-inside optimization less main function
-number of instruction is 487
-inside optimization less main function
-number of instruction is 488
-inside optimization less main function
-number of instruction is 489
-inside optimization less main function
-number of instruction is 490
-inside optimization less main function
-number of instruction is 491
-inside optimization less main function
-number of instruction is 492
-inside optimization less main function
-number of instruction is 493
-inside optimization less main function
-number of instruction is 494
-inside optimization less main function
-number of instruction is 495
-inside optimization less main function
-number of instruction is 496
-inside optimization less main function
-number of instruction is 497
-inside optimization less main function
-number of instruction is 498
-inside optimization less main function
-number of instruction is 499
----exiting da_less_midpoint---
-, count is 63
-the number of instruction is 500
-the value of distances is:
- -------------------------
-d_a is 25
-d_b is 24
-d_c is 24
-instruction number is 500
-I am checking now if it goes to da, db, dc
-the value of da is 25, of db is 24 and of dc is 24 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 500
-inside optimization main function
-number of instruction is 526
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 527
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 528
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 529
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 530
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 531
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 532
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 533
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 534
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 535
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 536
-after optmization in rda---------------------------------
+---------------------------------
 exec rrb-------instruction number 537
 
                 72
@@ -40820,7 +40563,134 @@ exec rrb-------instruction number 574
 45               1
 _               _
 a               b
----------------------------------
+less main function
+number of instruction is 483
+inside optimization less main function
+number of instruction is 484
+inside optimization less main function
+number of instruction is 485
+inside optimization less main function
+number of instruction is 486
+inside optimization less main function
+number of instruction is 487
+inside optimization less main function
+number of instruction is 488
+inside optimization less main function
+number of instruction is 489
+inside optimization less main function
+number of instruction is 490
+inside optimization less main function
+number of instruction is 491
+inside optimization less main function
+number of instruction is 492
+inside optimization less main function
+number of instruction is 493
+inside optimization less main function
+number of instruction is 494
+inside optimization less main function
+number of instruction is 495
+inside optimization less main function
+number of instruction is 496
+inside optimization less main function
+number of instruction is 497
+inside optimization less main function
+number of instruction is 498
+inside optimization less main function
+number of instruction is 499
+---exiting da_less_midpoint---
+, count is 63
+the number of instruction is 500
+the value of distances is:
+ -------------------------
+d_a is 25
+d_b is 24
+d_c is 24
+instruction number is 500
+I am checking now if it goes to da, db, dc
+the value of da is 25, of db is 24 and of dc is 24 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 500
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 51
+the number of instruction is 551
+the value of distances is:
+ -------------------------
+d_a is 24
+d_b is 6
+d_c is 24
+instruction number is 551
+I am checking now if it goes to da, db, dc
+the value of da is 24, of db is 6 and of dc is 24 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 551
+inside optimization less main function
+number of instruction is 559
+inside optimization less main function
+number of instruction is 560
+inside optimization less main function
+number of instruction is 561
+inside optimization less main function
+number of instruction is 562
+inside optimization less main function
+number of instruction is 563
+inside optimization less main function
+number of instruction is 564
+inside optimization less main function
+number of instruction is 565
+---exiting db_less_midpoint---
+, count is 15
+the number of instruction is 566
+the value of distances is:
+ -------------------------
+d_a is 25
+d_b is 3
+d_c is 25
+instruction number is 566
+I am checking now if it goes to da, db, dc
+the value of da is 25, of db is 3 and of dc is 25 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 566
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 8
+the number of instruction is 574
+the value of distances is:
+ -------------------------
+d_a is 25
+d_b is 16
+d_c is 25
+instruction number is 574
+I am checking now if it goes to da, db, dc
+the value of da is 25, of db is 16 and of dc is 25 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number ---------------------------------
 exec sa-------instruction number 575
 
                 100
@@ -42603,136 +42473,7 @@ exec rb-------instruction number 604
 45               8
 _               _
 a               b
-, before rrb
-inside optimization main function
-number of instruction is 537
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 538
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 539
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 540
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 541
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 542
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 543
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 544
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 545
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 546
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 547
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 548
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 549
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 550
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 51
-the number of instruction is 551
-the value of distances is:
- -------------------------
-d_a is 24
-d_b is 6
-d_c is 24
-instruction number is 551
-I am checking now if it goes to da, db, dc
-the value of da is 24, of db is 6 and of dc is 24 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 551
-inside optimization less main function
-number of instruction is 559
-inside optimization less main function
-number of instruction is 560
-inside optimization less main function
-number of instruction is 561
-inside optimization less main function
-number of instruction is 562
-inside optimization less main function
-number of instruction is 563
-inside optimization less main function
-number of instruction is 564
-inside optimization less main function
-number of instruction is 565
----exiting db_less_midpoint---
-, count is 15
-the number of instruction is 566
-the value of distances is:
- -------------------------
-d_a is 25
-d_b is 3
-d_c is 25
-instruction number is 566
-I am checking now if it goes to da, db, dc
-the value of da is 25, of db is 3 and of dc is 25 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 566
-inside optimization main function
-number of instruction is 571
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 572
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 573
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 8
-the number of instruction is 574
-the value of distances is:
- -------------------------
-d_a is 25
-d_b is 16
-d_c is 25
-instruction number is 574
-I am checking now if it goes to da, db, dc
-the value of da is 25, of db is 16 and of dc is 25 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 574
-inside optimization less main function
-number of instruction is 592
-inside optimization less main function
-number of instruction is 593
-inside optimization less main function
-number of instruction is 594
-inside optimization less main function
-number of instruction is 595
-inside optimization less main function
-number of instruction is 596
-inside optimization less main function
-number of instruction is 597
-inside optimization less main function
-number of instruction is 598
-inside optimization less main function
-number of instruction is 599
-inside optimization less main function
-number of instruction is 600
-inside optimization less main function
-number of instruction is 601
-inside optimization less main function
-number of instruction is 602
-inside optimization less main function
-number of instruction is 603
-inside ---------------------------------
+---------------------------------
 exec rb-------instruction number 605
 
                 5
@@ -47094,7 +46835,131 @@ exec rb-------instruction number 674
 58               11
 _               _
 a               b
----------------------------------
+is 574
+inside optimization less main function
+number of instruction is 592
+inside optimization less main function
+number of instruction is 593
+inside optimization less main function
+number of instruction is 594
+inside optimization less main function
+number of instruction is 595
+inside optimization less main function
+number of instruction is 596
+inside optimization less main function
+number of instruction is 597
+inside optimization less main function
+number of instruction is 598
+inside optimization less main function
+number of instruction is 599
+inside optimization less main function
+number of instruction is 600
+inside optimization less main function
+number of instruction is 601
+inside optimization less main function
+number of instruction is 602
+inside optimization less main function
+number of instruction is 603
+inside optimization less main function
+number of instruction is 604
+inside optimization less main function
+number of instruction is 605
+inside optimization less main function
+number of instruction is 606
+inside optimization less main function
+number of instruction is 607
+inside optimization less main function
+number of instruction is 608
+---exiting db_less_midpoint---
+, count is 35
+the number of instruction is 609
+the value of distances is:
+ -------------------------
+d_a is 26
+d_b is 26
+d_c is 26
+instruction number is 609
+I am checking now if it goes to da, db, dc
+the value of da is 26, of db is 26 and of dc is 26 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 609
+inside optimization less main function
+number of instruction is 636
+inside optimization-less_a function
+number of instruction is 636
+inside optimization-less_a_b function
+number of instruction is 636
+inside optimization-less_c function
+number of instruction is 638
+inside optimization-less_c_a function
+number of instruction is 638
+inside optimization less main function
+number of instruction is 641
+inside optimization less main function
+number of instruction is 642
+inside optimization less main function
+number of instruction is 643
+inside optimization-less_b function
+number of instruction is 643
+inside optimization-less_b_b function
+number of instruction is 643
+inside optimization less main function
+number of instruction is 647
+inside optimization less main function
+number of instruction is 648
+inside optimization less main function
+number of instruction is 649
+inside optimization less main function
+number of instruction is 650
+inside optimization less main function
+number of instruction is 651
+inside optimization less main function
+number of instruction is 652
+inside optimization less main function
+number of instruction is 653
+inside optimization less main function
+number of instruction is 654
+inside optimization less main function
+number of instruction is 655
+inside optimization less main function
+number of instruction is 656
+inside optimization less main function
+number of instruction is 657
+inside optimization less main function
+number of instruction is 658
+inside optimization less main function
+number of instruction is 659
+inside optimization less main function
+number of instruction is 660
+inside optimization less main function
+number of instruction is 661
+inside optimization-less_c function
+number of instruction is 661
+inside optimization-less_c_b function
+number of instruction is 661
+inside optimization less main function
+number of instruction is 665
+inside optimization less main function
+number of instruction is 666
+inside optimization-less_a function
+number of instruction is 666
+inside optimization-less_a_b function
+number of instruction is 666
+inside optimization less main function
+number of instruction is 669
+inside optimization less main function
+number of instruction is 670
+inside optimization less main function
+number of instruction is 671
+inside optimization less main function
+number of instruction is 672
+inside optimization less main function
+number of instruction is 673
+inside optimization less main function
+number of instruction is 674
+inside optimization-less_b function
+number of instruction is 674
+i---------------------------------
 exec sa-------instruction number 675
 
                 8
@@ -48772,132 +48637,7 @@ exec rrb-------instruction number 699
 58               88
 _               _
 a               b
-optimization less main function
-number of instruction is 604
-inside optimization less main function
-number of instruction is 605
-inside optimization less main function
-number of instruction is 606
-inside optimization less main function
-number of instruction is 607
-inside optimization less main function
-number of instruction is 608
----exiting db_less_midpoint---
-, count is 35
-the number of instruction is 609
-the value of distances is:
- -------------------------
-d_a is 26
-d_b is 26
-d_c is 26
-instruction number is 609
-I am checking now if it goes to da, db, dc
-the value of da is 26, of db is 26 and of dc is 26 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 609
-inside optimization less main function
-number of instruction is 636
-inside optimization-less_a function
-number of instruction is 636
-inside optimization-less_a_b function
-number of instruction is 636
-inside optimization-less_c function
-number of instruction is 638
-inside optimization-less_c_a function
-number of instruction is 638
-inside optimization less main function
-number of instruction is 641
-inside optimization less main function
-number of instruction is 642
-inside optimization less main function
-number of instruction is 643
-inside optimization-less_b function
-number of instruction is 643
-inside optimization-less_b_b function
-number of instruction is 643
-inside optimization less main function
-number of instruction is 647
-inside optimization less main function
-number of instruction is 648
-inside optimization less main function
-number of instruction is 649
-inside optimization less main function
-number of instruction is 650
-inside optimization less main function
-number of instruction is 651
-inside optimization less main function
-number of instruction is 652
-inside optimization less main function
-number of instruction is 653
-inside optimization less main function
-number of instruction is 654
-inside optimization less main function
-number of instruction is 655
-inside optimization less main function
-number of instruction is 656
-inside optimization less main function
-number of instruction is 657
-inside optimization less main function
-number of instruction is 658
-inside optimization less main function
-number of instruction is 659
-inside optimization less main function
-number of instruction is 660
-inside optimization less main function
-number of instruction is 661
-inside optimization-less_c function
-number of instruction is 661
-inside optimization-less_c_b function
-number of instruction is 661
-inside optimization less main function
-number of instruction is 665
-inside optimization less main function
-number of instruction is 666
-inside optimization-less_a function
-number of instruction is 666
-inside optimization-less_a_b function
-number of instruction is 666
-inside optimization less main function
-number of instruction is 669
-inside optimization less main function
-number of instruction is 670
-inside optimization less main function
-number of instruction is 671
-inside optimization less main function
-number of instruction is 672
-inside optimization less main function
-number of instruction is 673
-inside optimization less main function
-number of instruction is 674
-inside optimization-less_b function
-number of instruction is 674
-inside optimization-less_b_b function
-number of instruction is 674
----exiting da_less_midpoint---
-, count is 104
-the number of instruction is 684
-the value of distances is:
- -------------------------
-d_a is 11
-d_b is 10
-d_c is 21
-instruction number is 684
-I am checking now if it goes to da, db, dc
-the value of da is 11, of db is 10 and of dc is 21 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 684
-inside optimization main function
-number of instruction is 696
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 697
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 698
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 699
-after optmization in rda, bef---------------------------------
+---------------------------------
 exec rrb-------instruction number 700
 
                 88
@@ -53382,137 +53122,7 @@ exec rrb-------instruction number 764
 58               1
 _               _
 a               b
-ore rrb
-inside optimization main function
-number of instruction is 700
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 701
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 702
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 703
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 704
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 705
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 706
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 23
-the number of instruction is 707
-the value of distances is:
- -------------------------
-d_a is 10
-d_b is 17
-d_c is 22
-instruction number is 707
-I am checking now if it goes to da, db, dc
-the value of da is 10, of db is 17 and of dc is 22 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 707
-inside optimization less main function
-number of instruction is 718
-inside optimization less main function
-number of instruction is 719
-inside optimization less main function
-number of instruction is 720
-inside optimization less main function
-number of instruction is 721
-inside optimization less main function
-number of instruction is 722
-inside optimization less main function
-number of instruction is 723
-inside optimization less main function
-number of instruction is 724
-inside optimization less main function
-number of instruction is 725
-inside optimization less main function
-number of instruction is 726
-inside optimization less main function
-number of instruction is 727
-inside optimization less main function
-number of instruction is 728
----exiting da_less_midpoint---
-, count is 45
-the number of instruction is 729
-the value of distances is:
- -------------------------
-d_a is 17
-d_b is 30
-d_c is 22
-instruction number is 729
-I am checking now if it goes to da, db, dc
-the value of da is 17, of db is 30 and of dc is 22 
-i am going to entere da_smaller---inside da_more_midpoint---
- instruction number is 729
-inside optimization main function
-number of instruction is 747
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 748
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 749
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 750
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 751
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 752
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 753
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 754
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 755
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 756
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 757
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 758
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 759
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 760
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 761
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 762
-after optmization in rda, before rrb
-inside optimization main function
-number of instruction is 763
-after optmization in rda, before rrb
----exiting da_more_midpoint---
-, count is 35
-the number of instruction is 764
-the value of distances is:
- -------------------------
-d_a is 31
-d_b is 3
-d_c is 23
-instruction number is 764
-I am checki---------------------------------
+---------------------------------
 exec sa-------instruction number 765
 
                 100
@@ -54719,7 +54329,135 @@ exec rrb-------instruction number 781
 58               1
 _               _
 a               b
----------------------------------
+nside optimization-less_b_b function
+number of instruction is 674
+---exiting da_less_midpoint---
+, count is 104
+the number of instruction is 684
+the value of distances is:
+ -------------------------
+d_a is 11
+d_b is 10
+d_c is 21
+instruction number is 684
+I am checking now if it goes to da, db, dc
+the value of da is 11, of db is 10 and of dc is 21 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 684
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 23
+the number of instruction is 707
+the value of distances is:
+ -------------------------
+d_a is 10
+d_b is 17
+d_c is 22
+instruction number is 707
+I am checking now if it goes to da, db, dc
+the value of da is 10, of db is 17 and of dc is 22 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 707
+inside optimization less main function
+number of instruction is 718
+inside optimization less main function
+number of instruction is 719
+inside optimization less main function
+number of instruction is 720
+inside optimization less main function
+number of instruction is 721
+inside optimization less main function
+number of instruction is 722
+inside optimization less main function
+number of instruction is 723
+inside optimization less main function
+number of instruction is 724
+inside optimization less main function
+number of instruction is 725
+inside optimization less main function
+number of instruction is 726
+inside optimization less main function
+number of instruction is 727
+inside optimization less main function
+number of instruction is 728
+---exiting da_less_midpoint---
+, count is 45
+the number of instruction is 729
+the value of distances is:
+ -------------------------
+d_a is 17
+d_b is 30
+d_c is 22
+instruction number is 729
+I am checking now if it goes to da, db, dc
+the value of da is 17, of db is 30 and of dc is 22 
+i am going to entere da_smaller---inside da_more_midpoint---
+ instruction number is 729
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+after optmization in rda, before rrb
+---exiting da_more_midpoint---
+, count is 35
+the number of instruction is 764
+the value of distances is:
+ -------------------------
+d_a is 31
+d_b is 3
+d_c is 23
+instruction number is 764
+I am checking now if it goes to da, db, dc
+the value of da is 31, of db is 3 and of dc is 23 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 764
+inside optimization less main function
+number of instruction is 769
+inside optimization less main function
+number of instruction is 770
+inside optimization less main function
+number of instruction is 771
+inside optimization less main function
+number of instruction is 772
+---exiting db_less_midpoint---
+, count is 9
+the number of instruction is 773
+the value of distances is:
+ -------------------------
+d_a is 31
+d_b is 3
+d_c is 23
+instruction number is 773
+I am checking now if it goes to da, db, dc
+the value of da is 31, of db is 3 and of dc is 23 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 773
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint----------------------------------
 exec sa-------instruction number 782
 
                 100
@@ -58377,135 +58115,7 @@ exec rrb-------instruction number 831
 58               98
 _               _
 a               b
-ng now if it goes to da, db, dc
-the value of da is 31, of db is 3 and of dc is 23 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 764
-inside optimization less main function
-number of instruction is 769
-inside optimization less main function
-number of instruction is 770
-inside optimization less main function
-number of instruction is 771
-inside optimization less main function
-number of instruction is 772
----exiting db_less_midpoint---
-, count is 9
-the number of instruction is 773
-the value of distances is:
- -------------------------
-d_a is 31
-d_b is 3
-d_c is 23
-instruction number is 773
-I am checking now if it goes to da, db, dc
-the value of da is 31, of db is 3 and of dc is 23 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 773
-inside optimization main function
-number of instruction is 778
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 779
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 780
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 8
-the number of instruction is 781
-the value of distances is:
- -------------------------
-d_a is 32
-d_b is 7
-d_c is 24
-instruction number is 781
-I am checking now if it goes to da, db, dc
-the value of da is 32, of db is 7 and of dc is 24 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 781
-inside optimization main function
-number of instruction is 790
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 791
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 792
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 793
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 794
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 795
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 796
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 16
-the number of instruction is 797
-the value of distances is:
- -------------------------
-d_a is 33
-d_b is 17
-d_c is 25
-instruction number is 797
-I am checking now if it goes to da, db, dc
-the value of da is 33, of db is 17 and of dc is 25 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 797
-inside optimization main function
-number of instruction is 816
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 817
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 818
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 819
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 820
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 821
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 822
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 823
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 824
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 825
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 826
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 827
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 828
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 829
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 830
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 831
-after optmizati---------------------------------
+---------------------------------
 exec rrb-------instruction number 832
 
                 98
@@ -64111,9 +63721,55 @@ exec rb-------instruction number 906
 69               1
 _               _
 a               b
-on in rdb, before rrb
-inside optimization main function
-number of instruction is 832
+--
+, count is 8
+the number of instruction is 781
+the value of distances is:
+ -------------------------
+d_a is 32
+d_b is 7
+d_c is 24
+instruction number is 781
+I am checking now if it goes to da, db, dc
+the value of da is 32, of db is 7 and of dc is 24 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 781
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 16
+the number of instruction is 797
+the value of distances is:
+ -------------------------
+d_a is 33
+d_b is 17
+d_c is 25
+instruction number is 797
+I am checking now if it goes to da, db, dc
+the value of da is 33, of db is 17 and of dc is 25 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 797
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
 after optmization in rdb, before rrb
 ---exiting db_more_midpoint---
 , count is 36
@@ -64128,83 +63784,31 @@ I am checking now if it goes to da, db, dc
 the value of da is 34, of db is 27 and of dc is 26 
 i will enter dc_smaller---inside db_more_midpoint---
  instruction number is 833
-inside optimization main function
-number of instruction is 861
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 862
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 863
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 864
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 865
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 866
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 867
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 868
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 869
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 870
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 871
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 872
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 873
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 874
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 875
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 876
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 877
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 878
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 879
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 880
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 881
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 882
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 883
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 884
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 885
 after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 886
 after optmization in rdc, before rrb
 ---exiting da_more_midpoint---
 , count is 54
@@ -64238,7 +63842,15 @@ number of instruction is 904
 inside optimization less main function
 number of instruction is 905
 ---exiting dc_more_midpoint---
-, count---------------------------------
+, count is 19
+the number of instruction is 906
+the value of distances is:
+ -------------------------
+d_a is 35
+d_b is 28
+d_c is 21
+instruction number is 906
+I am checking now if it goe---------------------------------
 exec rra-------instruction number 907
 
                 100
@@ -71053,135 +70665,7 @@ exec rb-------instruction number 993
 95               9
 _               _
 a               b
- is 19
-the number of instruction is 906
-the value of distances is:
- -------------------------
-d_a is 35
-d_b is 28
-d_c is 21
-instruction number is 906
-I am checking now if it goes to da, db, dc
-the value of da is 35, of db is 28 and of dc is 21 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 906
-inside optimization main function
-number of instruction is 929
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 930
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 931
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 932
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 933
-inside optimization c
-number of instruction is 933
-inside optimization c_a
-number of instruction is 933
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 936
-inside optimization c
-number of instruction is 936
-inside optimization c_a
-number of instruction is 936
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 939
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 940
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 941
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 942
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 943
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 944
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 945
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 946
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 947
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 948
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 949
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 950
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 951
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 952
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 953
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 48
-the number of instruction is 954
-the value of distances is:
- -------------------------
-d_a is 36
-d_b is 31
-d_c is 20
-instruction number is 954
-I am checking now if it goes to da, db, dc
-the value of da is 36, of db is 31 and of dc is 20 
-i will enter dc_smaller---inside dc_less_midpoint---
- instruction number is 954
-inside optimization less main function
-number of instruction is 976
-inside optimization less main function
-number of instruction is 977
-inside optimization less main function
-number of instruction is 978
-inside optimization less main function
-number of instruction is 979
-inside optimization less main function
-number of instruction is 980
-inside optimization less main function
-number of instruction is 981
-inside optimization less main function
-number of instruction is 982
-inside optimization less main function
-number of instruction is 983
-inside optimization less main function
-number of instruction is 984
-inside optimization less main function
-number of instruction is 985
-inside optimization less main function
-number of instruction is 986
-inside optimization less main function
-number of instruction is 987
-inside optimization-less_c function
-number of instruction is 987
-inside optimization-less_c_b function
-number of instruction is 987
-inside optimization less main function
-number of instruction is 991
-inside optimization less main function
-number of instruction is 992
-inside optimizat---------------------------------
+---------------------------------
 exec rb-------instruction number 994
 
                 7
@@ -74285,7 +73769,133 @@ exec pb-------instruction number 1031
 66               21
 _               _
 a               b
----------------------------------
+s to da, db, dc
+the value of da is 35, of db is 28 and of dc is 21 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 906
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+inside optimization main function
+number of instruction is 933
+inside optimization c
+number of instruction is 933
+inside optimization c_a
+number of instruction is 933
+after optmization in rdc, before rrb
+inside optimization main function
+number of instruction is 936
+inside optimization c
+number of instruction is 936
+inside optimization c_a
+number of instruction is 936
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 48
+the number of instruction is 954
+the value of distances is:
+ -------------------------
+d_a is 36
+d_b is 31
+d_c is 20
+instruction number is 954
+I am checking now if it goes to da, db, dc
+the value of da is 36, of db is 31 and of dc is 20 
+i will enter dc_smaller---inside dc_less_midpoint---
+ instruction number is 954
+inside optimization less main function
+number of instruction is 976
+inside optimization less main function
+number of instruction is 977
+inside optimization less main function
+number of instruction is 978
+inside optimization less main function
+number of instruction is 979
+inside optimization less main function
+number of instruction is 980
+inside optimization less main function
+number of instruction is 981
+inside optimization less main function
+number of instruction is 982
+inside optimization less main function
+number of instruction is 983
+inside optimization less main function
+number of instruction is 984
+inside optimization less main function
+number of instruction is 985
+inside optimization less main function
+number of instruction is 986
+inside optimization less main function
+number of instruction is 987
+inside optimization-less_c function
+number of instruction is 987
+inside optimization-less_c_b function
+number of instruction is 987
+inside optimization less main function
+number of instruction is 991
+inside optimization less main function
+number of instruction is 992
+inside optimization less main function
+number of instruction is 993
+inside optimization less main function
+number of instruction is 994
+inside optimization less main function
+number of instruction is 995
+inside optimization less main function
+number of instruction is 996
+inside optimization less main function
+number of instruction is 997
+inside optimization less main function
+number of instruction is 998
+inside optimization less main function
+number of instruction is 999
+---exiting dc_more_midpoint---
+, count is 46
+the number of instruction is 1001
+the value of distances is:
+ -------------------------
+d_a is 38
+d_b is 31
+d_c is 4
+instruction number is 1001
+I am checking now if it goes to da, db, dc
+the value of da is 38, of db is 31 and of dc is 4 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 1001
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 10
+the number of instruction is 1011
+the value of distances is:
+ -------------------------
+d_a is 38
+d_b is 32
+d_c is 18
+instruction number is 1011
+I am checking now if it goes to da, db, dc
+the value of da is 38, of db is 32 and of dc is 18 
+i will enter dc_smaller---inside dc_less_midpoint---
+ instruction number is 1011
+inside optimization less main functi---------------------------------
 exec rb-------instruction number 1032
 
                 19
@@ -79045,136 +78655,7 @@ exec rrb-------instruction number 1088
 50               79
 _               _
 a               b
-ion less main function
-number of instruction is 993
-inside optimization less main function
-number of instruction is 994
-inside optimization less main function
-number of instruction is 995
-inside optimization less main function
-number of instruction is 996
-inside optimization less main function
-number of instruction is 997
-inside optimization less main function
-number of instruction is 998
-inside optimization less main function
-number of instruction is 999
----exiting dc_more_midpoint---
-, count is 46
-the number of instruction is 1001
-the value of distances is:
- -------------------------
-d_a is 38
-d_b is 31
-d_c is 4
-instruction number is 1001
-I am checking now if it goes to da, db, dc
-the value of da is 38, of db is 31 and of dc is 4 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 1001
-inside optimization main function
-number of instruction is 1007
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1008
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1009
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1010
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 10
-the number of instruction is 1011
-the value of distances is:
- -------------------------
-d_a is 38
-d_b is 32
-d_c is 18
-instruction number is 1011
-I am checking now if it goes to da, db, dc
-the value of da is 38, of db is 32 and of dc is 18 
-i will enter dc_smaller---inside dc_less_midpoint---
- instruction number is 1011
-inside optimization less main function
-number of instruction is 1031
-inside optimization less main function
-number of instruction is 1032
-inside optimization less main function
-number of instruction is 1033
-inside optimization less main function
-number of instruction is 1034
-inside optimization less main function
-number of instruction is 1035
-inside optimization less main function
-number of instruction is 1036
-inside optimization less main function
-number of instruction is 1037
-inside optimization less main function
-number of instruction is 1038
-inside optimization less main function
-number of instruction is 1039
-inside optimization less main function
-number of instruction is 1040
-inside optimization less main function
-number of instruction is 1041
-inside optimization less main function
-number of instruction is 1042
-inside optimization less main function
-number of instruction is 1043
-inside optimization less main function
-number of instruction is 1044
-inside optimization less main function
-number of instruction is 1045
-inside optimization less main function
-number of instruction is 1046
-inside optimization less main function
-number of instruction is 1047
-inside optimization less main function
-number of instruction is 1048
-inside optimization less main function
-number of instruction is 1049
----exiting dc_more_midpoint---
-, count is 39
-the number of instruction is 1050
-the value of distances is:
- -------------------------
-d_a is 39
-d_b is 32
-d_c is 25
-instruction number is 1050
-I am checking now if it goes to da, db, dc
-the value of da is 39, of db is 32 and of dc is 25 
-i will enter dc_smaller---inside db_more_midpoint---
- instruction number is 1050
-inside optimization main function
-number of instruction is 1077
-inside optimization c
-number of instruction is 1077
-inside optimization c_b
-number of instruction is 1077
-inside optimization c
-number of instruction is 1080
-inside optimization c_a
-number of instruction is 1080
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1083
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1084
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1085
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1086
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1087
-after optmization in rdc, before rrb
-inside ---------------------------------
+---------------------------------
 exec rrb-------instruction number 1089
 
                 79
@@ -85557,130 +85038,6 @@ exec rrb-------instruction number 1162
 50               81
 _               _
 a               b
-optimization main function
-number of instruction is 1088
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1089
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1090
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1091
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1092
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1093
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1094
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1095
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1096
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1097
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1098
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1099
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1100
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1101
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1102
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1103
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1104
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1105
-after optmization in rdc, before rrb
-inside optimization main function
-number of instruction is 1106
-after optmization in rdc, before rrb
----exiting da_more_midpoint---
-, count is 57
-the number of instruction is 1107
-the value of distances is:
- -------------------------
-d_a is 39
-d_b is 35
-d_c is 40
-instruction number is 1107
-I am checking now if it goes to da, db, dc
-the value of da is 39, of db is 35 and of dc is 40 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1107
-inside optimization main function
-number of instruction is 1144
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1145
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1146
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1147
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1148
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1149
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1150
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1151
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1152
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1153
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1154
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1155
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1156
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1157
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1158
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1159
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1160
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1161
-after optmization in rdb, before rrb
 ---------------------------------
 exec rrb-------instruction number 1163
 
@@ -86203,6 +85560,129 @@ exec rrb-------instruction number 1168
 50               88
 _               _
 a               b
+on
+number of instruction is 1031
+inside optimization less main function
+number of instruction is 1032
+inside optimization less main function
+number of instruction is 1033
+inside optimization less main function
+number of instruction is 1034
+inside optimization less main function
+number of instruction is 1035
+inside optimization less main function
+number of instruction is 1036
+inside optimization less main function
+number of instruction is 1037
+inside optimization less main function
+number of instruction is 1038
+inside optimization less main function
+number of instruction is 1039
+inside optimization less main function
+number of instruction is 1040
+inside optimization less main function
+number of instruction is 1041
+inside optimization less main function
+number of instruction is 1042
+inside optimization less main function
+number of instruction is 1043
+inside optimization less main function
+number of instruction is 1044
+inside optimization less main function
+number of instruction is 1045
+inside optimization less main function
+number of instruction is 1046
+inside optimization less main function
+number of instruction is 1047
+inside optimization less main function
+number of instruction is 1048
+inside optimization less main function
+number of instruction is 1049
+---exiting dc_more_midpoint---
+, count is 39
+the number of instruction is 1050
+the value of distances is:
+ -------------------------
+d_a is 39
+d_b is 32
+d_c is 25
+instruction number is 1050
+I am checking now if it goes to da, db, dc
+the value of da is 39, of db is 32 and of dc is 25 
+i will enter dc_smaller---inside db_more_midpoint---
+ instruction number is 1050
+inside optimization main function
+number of instruction is 1077
+inside optimization c
+number of instruction is 1077
+inside optimization c_b
+number of instruction is 1077
+inside optimization c
+number of instruction is 1080
+inside optimization c_a
+number of instruction is 1080
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+after optmization in rdc, before rrb
+---exiting da_more_midpoint---
+, count is 57
+the number of instruction is 1107
+the value of distances is:
+ -------------------------
+d_a is 39
+d_b is 35
+d_c is 40
+instruction number is 1107
+I am checking now if it goes to da, db, dc
+the value of da is 39, of db is 35 and of dc is 40 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1107
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
 ---------------------------------
 exec rrb-------instruction number 1169
 
@@ -92204,130 +91684,7 @@ exec rb-------instruction number 1236
 50               1
 _               _
 a               b
-inside optimization main function
-number of instruction is 1162
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1163
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1164
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1165
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1166
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1167
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1168
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1169
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1170
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1171
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1172
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1173
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1174
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1175
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1176
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1177
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1178
-inside optimization b
-number of instruction is 1178
-inside optimization b_a
-number of instruction is 1178
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 74
-the number of instruction is 1181
-the value of distances is:
- -------------------------
-d_a is 39
-d_b is 26
-d_c is 41
-instruction number is 1181
-I am checking now if it goes to da, db, dc
-the value of da is 39, of db is 26 and of dc is 41 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 1181
-inside optimization less main function
-number of instruction is 1209
-inside optimization less main function
-number of instruction is 1210
-inside optimization less main function
-number of instruction is 1211
-inside optimization less main function
-number of instruction is 1212
-inside optimization less main function
-number of instruction is 1213
-inside optimization less main function
-number of instruction is 1214
-inside optimization less main function
-number of instruction is 1215
-inside optimization less main function
-number of instruction is 1216
-inside optimization less main function
-number of instruction is 1217
-inside optimization less main function
-number of instruction is 1218
-inside optimization less main function
-number of instruction is 1219
-inside optimization less main function
-number of instruction is 1220
-inside optimization less main function
-number of instruction is 1221
-inside optimization less main function
-number of instruction is 1222
-inside optimization less main function
-number of instruction is 1223
-inside optimization less main function
-number of instruction is 1224
-inside optimization less main function
-number of instruction is 1225
-inside optimization less main function
-number of instruction is 1226
-inside optimization less main function
-number of instruction is 1227
-inside optimization less main function
-number of instruction is 1228
-inside optimization less main function
-number of instruction is 1229
-inside optimization less main function
-number of instruction is 1230
-inside optimization less main function
-number of instruction is 1231
-inside optimization less main function
-number of instruction is 1232
-inside optimization less main function
-number of instruction is 1233
-inside optimization less main function
-number of instruction is 1234
-inside optimization less main function
-number of instruction is 1235
----exiting db_less_midpoint---
-, count is 55---------------------------------
+---------------------------------
 exec sa-------instruction number 1237
 
                 100
@@ -97603,7 +96960,128 @@ exec rrb-------instruction number 1295
 50               92
 _               _
 a               b
----------------------------------
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+inside optimization main function
+number of instruction is 1178
+inside optimization b
+number of instruction is 1178
+inside optimization b_a
+number of instruction is 1178
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 74
+the number of instruction is 1181
+the value of distances is:
+ -------------------------
+d_a is 39
+d_b is 26
+d_c is 41
+instruction number is 1181
+I am checking now if it goes to da, db, dc
+the value of da is 39, of db is 26 and of dc is 41 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 1181
+inside optimization less main function
+number of instruction is 1209
+inside optimization less main function
+number of instruction is 1210
+inside optimization less main function
+number of instruction is 1211
+inside optimization less main function
+number of instruction is 1212
+inside optimization less main function
+number of instruction is 1213
+inside optimization less main function
+number of instruction is 1214
+inside optimization less main function
+number of instruction is 1215
+inside optimization less main function
+number of instruction is 1216
+inside optimization less main function
+number of instruction is 1217
+inside optimization less main function
+number of instruction is 1218
+inside optimization less main function
+number of instruction is 1219
+inside optimization less main function
+number of instruction is 1220
+inside optimization less main function
+number of instruction is 1221
+inside optimization less main function
+number of instruction is 1222
+inside optimization less main function
+number of instruction is 1223
+inside optimization less main function
+number of instruction is 1224
+inside optimization less main function
+number of instruction is 1225
+inside optimization less main function
+number of instruction is 1226
+inside optimization less main function
+number of instruction is 1227
+inside optimization less main function
+number of instruction is 1228
+inside optimization less main function
+number of instruction is 1229
+inside optimization less main function
+number of instruction is 1230
+inside optimization less main function
+number of instruction is 1231
+inside optimization less main function
+number of instruction is 1232
+inside optimization less main function
+number of instruction is 1233
+inside optimization less main function
+number of instruction is 1234
+inside optimization less main function
+number of instruction is 1235
+---exiting db_less_midpoint---
+, count is 55
+the number of instruction is 1236
+the value of distances is:
+ -------------------------
+d_a is 40
+d_b is 33
+d_c is 42
+instruction number is 1236
+I am checking now if it goes to da, db, dc
+the value of da is 40, of db is 33 and of dc is 42 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1236
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb---------------------------------
 exec rrb-------instruction number 1296
 
                 92
@@ -102105,133 +101583,7 @@ exec rb-------instruction number 1345
 50               43
 _               _
 a               b
-
-the number of instruction is 1236
-the value of distances is:
- -------------------------
-d_a is 40
-d_b is 33
-d_c is 42
-instruction number is 1236
-I am checking now if it goes to da, db, dc
-the value of da is 40, of db is 33 and of dc is 42 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1236
-inside optimization main function
-number of instruction is 1271
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1272
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1273
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1274
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1275
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1276
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1277
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1278
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1279
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1280
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1281
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1282
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1283
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1284
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1285
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1286
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1287
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1288
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1289
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1290
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1291
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1292
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1293
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1294
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1295
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1296
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1297
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1298
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1299
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1300
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1301
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1302
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1303
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 68
-the number of instruction is 1304
-the value of distances is:
- -------------------------
-d_a is 40
-d_b is 38
-d_c is 42
-instruction number is 1304
-I am checking now if it goes to da, db, dc
-the value of da is 40, of db is 38 and of dc is 42 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 1304
-inside optimization less main function
-number of instruction is 1344
-inside---------------------------------
+---------------------------------
 exec rb-------instruction number 1346
 
                 40
@@ -109752,7 +109104,130 @@ exec rb-------instruction number 1427
 50               35
 _               _
 a               b
----------------------------------
+
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 68
+the number of instruction is 1304
+the value of distances is:
+ -------------------------
+d_a is 40
+d_b is 38
+d_c is 42
+instruction number is 1304
+I am checking now if it goes to da, db, dc
+the value of da is 40, of db is 38 and of dc is 42 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 1304
+inside optimization less main function
+number of instruction is 1344
+inside optimization less main function
+number of instruction is 1345
+inside optimization less main function
+number of instruction is 1346
+inside optimization less main function
+number of instruction is 1347
+inside optimization less main function
+number of instruction is 1348
+inside optimization less main function
+number of instruction is 1349
+inside optimization less main function
+number of instruction is 1350
+inside optimization less main function
+number of instruction is 1351
+inside optimization less main function
+number of instruction is 1352
+inside optimization less main function
+number of instruction is 1353
+inside optimization less main function
+number of instruction is 1354
+inside optimization less main function
+number of instruction is 1355
+inside optimization less main function
+number of instruction is 1356
+inside optimization less main function
+number of instruction is 1357
+inside optimization less main function
+number of instruction is 1358
+inside optimization less main function
+number of instruction is 1359
+inside optimization less main function
+number of instruction is 1360
+inside optimization less main function
+number of instruction is 1361
+inside optimization less main function
+number of instruction is 1362
+inside optimization less main function
+number of instruction is 1363
+inside optimization less main function
+number of instruction is 1364
+inside optimization less main function
+number of instruction is 1365
+inside optimization less main function
+number of instruction is 1366
+inside optimization less main function
+number of instruction is 1367
+inside optimization less main function
+number of instruction is 1368
+inside optimization less main function
+number of instruction is 1369
+inside optimization less main function
+number of instruction is 1370
+inside optimization less main function
+number of instruction is 1371
+inside optimization-less_b function
+number of instruction is 1371
+inside optimization-less_b_b function
+number of instruction is 1371
+inside optimization less main function
+number of instruction is 1375
+inside optimization less main function
+number of instruction is 1376
+inside optimization less main function
+number of instruction is 1377
+inside optimization less main function
+number of instruction is 1378
+inside optimization less main function
+number of instruction is 1379
+inside optimization less main function
+number of instruction is 1380
+inside optimization less main function
+number of instruction is 1381
+inside optimization less main function
+number of instruction is 1382
+inside optimization less main function
+number of instruction is 1383
+inside optimization less main function
+number of instruction is 1384
+inside optimization less main function
+number of instruction is 1385
+---exiting db_less_midpoint---
+, count is 82
+the number of instruction is 1387
+the value of distances is:
+ -------------------------
+d_a is 42
+d_b is 35
+d_c is 43
+instruction number is 1387
+I am checking now if it goes to da, db, dc
+the value of da is 42, of db is 35 and of dc is 43 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 1387
+inside optimization less main function
+number of instruction is 1424
+inside optimization less main function
+number of instruction is 1425
+inside optimization less main function
+number of instruction is 1426
+inside optimization less main funct---------------------------------
 exec rb-------instruction number 1428
 
                 33
@@ -110775,128 +110250,7 @@ exec rb-------instruction number 1438
 50               24
 _               _
 a               b
- optimization less main function
-number of instruction is 1345
-inside optimization less main function
-number of instruction is 1346
-inside optimization less main function
-number of instruction is 1347
-inside optimization less main function
-number of instruction is 1348
-inside optimization less main function
-number of instruction is 1349
-inside optimization less main function
-number of instruction is 1350
-inside optimization less main function
-number of instruction is 1351
-inside optimization less main function
-number of instruction is 1352
-inside optimization less main function
-number of instruction is 1353
-inside optimization less main function
-number of instruction is 1354
-inside optimization less main function
-number of instruction is 1355
-inside optimization less main function
-number of instruction is 1356
-inside optimization less main function
-number of instruction is 1357
-inside optimization less main function
-number of instruction is 1358
-inside optimization less main function
-number of instruction is 1359
-inside optimization less main function
-number of instruction is 1360
-inside optimization less main function
-number of instruction is 1361
-inside optimization less main function
-number of instruction is 1362
-inside optimization less main function
-number of instruction is 1363
-inside optimization less main function
-number of instruction is 1364
-inside optimization less main function
-number of instruction is 1365
-inside optimization less main function
-number of instruction is 1366
-inside optimization less main function
-number of instruction is 1367
-inside optimization less main function
-number of instruction is 1368
-inside optimization less main function
-number of instruction is 1369
-inside optimization less main function
-number of instruction is 1370
-inside optimization less main function
-number of instruction is 1371
-inside optimization-less_b function
-number of instruction is 1371
-inside optimization-less_b_b function
-number of instruction is 1371
-inside optimization less main function
-number of instruction is 1375
-inside optimization less main function
-number of instruction is 1376
-inside optimization less main function
-number of instruction is 1377
-inside optimization less main function
-number of instruction is 1378
-inside optimization less main function
-number of instruction is 1379
-inside optimization less main function
-number of instruction is 1380
-inside optimization less main function
-number of instruction is 1381
-inside optimization less main function
-number of instruction is 1382
-inside optimization less main function
-number of instruction is 1383
-inside optimization less main function
-number of instruction is 1384
-inside optimization less main function
-number of instruction is 1385
----exiting db_less_midpoint---
-, count is 82
-the number of instruction is 1387
-the value of distances is:
- -------------------------
-d_a is 42
-d_b is 35
-d_c is 43
-instruction number is 1387
-I am checking now if it goes to da, db, dc
-the value of da is 42, of db is 35 and of dc is 43 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 1387
-inside optimization less main function
-number of instruction is 1424
-inside optimization less main function
-number of instruction is 1425
-inside optimization less main function
-number of instruction is 1426
-inside optimization less main function
-number of instruction is 1427
-inside optimization less main function
-number of instruction is 1428
-inside optimization less main function
-number of instruction is 1429
-inside optimization less main function
-number of instruction is 1430
-inside optimization less main function
-number of instruction is 1431
-inside optimization less main function
-number of instruction is 1432
-inside optimization less main function
-number of instruction is 1433
-inside optimization less main function
-number of instruction is 1434
-inside optimization less main function
-number of instruction is 1435
-inside optimization less main function
-number of instruction is 1436
-inside optimization less main function
-number of instruction is 1437
-inside optimiz---------------------------------
+---------------------------------
 exec rb-------instruction number 1439
 
                 21
@@ -117522,130 +116876,7 @@ exec rrb-------instruction number 1509
 50               98
 _               _
 a               b
-ation less main function
-number of instruction is 1438
-inside optimization less main function
-number of instruction is 1439
-inside optimization less main function
-number of instruction is 1440
-inside optimization less main function
-number of instruction is 1441
-inside optimization less main function
-number of instruction is 1442
-inside optimization less main function
-number of instruction is 1443
-inside optimization less main function
-number of instruction is 1444
-inside optimization less main function
-number of instruction is 1445
-inside optimization less main function
-number of instruction is 1446
-inside optimization less main function
-number of instruction is 1447
-inside optimization less main function
-number of instruction is 1448
-inside optimization less main function
-number of instruction is 1449
-inside optimization less main function
-number of instruction is 1450
-inside optimization less main function
-number of instruction is 1451
-inside optimization less main function
-number of instruction is 1452
-inside optimization less main function
-number of instruction is 1453
-inside optimization less main function
-number of instruction is 1454
-inside optimization less main function
-number of instruction is 1455
-inside optimization less main function
-number of instruction is 1456
-inside optimization less main function
-number of instruction is 1457
-inside optimization less main function
-number of instruction is 1458
-inside optimization less main function
-number of instruction is 1459
----exiting db_less_midpoint---
-, count is 73
-the number of instruction is 1460
-the value of distances is:
- -------------------------
-d_a is 43
-d_b is 25
-d_c is 43
-instruction number is 1460
-I am checking now if it goes to da, db, dc
-the value of da is 43, of db is 25 and of dc is 43 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1460
-inside optimization main function
-number of instruction is 1487
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1488
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1489
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1490
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1491
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1492
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1493
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1494
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1495
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1496
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1497
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1498
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1499
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1500
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1501
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1502
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1503
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1504
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1505
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1506
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1507
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1508
-after optmization in rdb, before rrb
-insi---------------------------------
+---------------------------------
 exec rrb-------instruction number 1510
 
                 98
@@ -121129,7 +120360,129 @@ exec rrb-------instruction number 1546
 50               76
 _               _
 a               b
----------------------------------
+ion
+number of instruction is 1427
+inside optimization less main function
+number of instruction is 1428
+inside optimization less main function
+number of instruction is 1429
+inside optimization less main function
+number of instruction is 1430
+inside optimization less main function
+number of instruction is 1431
+inside optimization less main function
+number of instruction is 1432
+inside optimization less main function
+number of instruction is 1433
+inside optimization less main function
+number of instruction is 1434
+inside optimization less main function
+number of instruction is 1435
+inside optimization less main function
+number of instruction is 1436
+inside optimization less main function
+number of instruction is 1437
+inside optimization less main function
+number of instruction is 1438
+inside optimization less main function
+number of instruction is 1439
+inside optimization less main function
+number of instruction is 1440
+inside optimization less main function
+number of instruction is 1441
+inside optimization less main function
+number of instruction is 1442
+inside optimization less main function
+number of instruction is 1443
+inside optimization less main function
+number of instruction is 1444
+inside optimization less main function
+number of instruction is 1445
+inside optimization less main function
+number of instruction is 1446
+inside optimization less main function
+number of instruction is 1447
+inside optimization less main function
+number of instruction is 1448
+inside optimization less main function
+number of instruction is 1449
+inside optimization less main function
+number of instruction is 1450
+inside optimization less main function
+number of instruction is 1451
+inside optimization less main function
+number of instruction is 1452
+inside optimization less main function
+number of instruction is 1453
+inside optimization less main function
+number of instruction is 1454
+inside optimization less main function
+number of instruction is 1455
+inside optimization less main function
+number of instruction is 1456
+inside optimization less main function
+number of instruction is 1457
+inside optimization less main function
+number of instruction is 1458
+inside optimization less main function
+number of instruction is 1459
+---exiting db_less_midpoint---
+, count is 73
+the number of instruction is 1460
+the value of distances is:
+ -------------------------
+d_a is 43
+d_b is 25
+d_c is 43
+instruction number is 1460
+I am checking now if it goes to da, db, dc
+the value of da is 43, of db is 25 and of dc is 43 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1460
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 52
+the number of instruction is 1512
+the value of distances is:
+ -------------------------
+d_a is 43
+d_b is 27
+d_c is 44
+instruction number is 1512
+I am checking now if it goes to da, db, dc
+the value of da is 43, of db is 27 and of dc is 44 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1512
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmiz---------------------------------
 exec rrb-------instruction number 1547
 
                 76
@@ -127594,132 +126947,7 @@ exec rb-------instruction number 1614
 50               39
 _               _
 a               b
-de optimization main function
-number of instruction is 1509
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1510
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1511
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 52
-the number of instruction is 1512
-the value of distances is:
- -------------------------
-d_a is 43
-d_b is 27
-d_c is 44
-instruction number is 1512
-I am checking now if it goes to da, db, dc
-the value of da is 43, of db is 27 and of dc is 44 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1512
-inside optimization main function
-number of instruction is 1541
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1542
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1543
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1544
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1545
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1546
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1547
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1548
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1549
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1550
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1551
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1552
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1553
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1554
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1555
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1556
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1557
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1558
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1559
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1560
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1561
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1562
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1563
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1564
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1565
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1566
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1567
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 56
-the number of instruction is 1568
-the value of distances is:
- -------------------------
-d_a is 43
-d_b is 40
-d_c is 45
-instruction number is 1568
-I am checking now if it goes to da, db, dc
-the value of da is 43, of db is 40 and of dc is 45 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 1568
-inside optimization less main function
-number of instruction is 1610
-inside optimization less main function
-number of instruction is 1611
-inside optimization less main function
-number of instruction is 1612
-inside optimization less main function
-number of instruction is 1613
-inside optimization less main function
-number of instruction i---------------------------------
+---------------------------------
 exec rb-------instruction number 1615
 
                 37
@@ -131271,7 +130499,127 @@ exec rb-------instruction number 1651
 50               1
 _               _
 a               b
----------------------------------
+ation in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 56
+the number of instruction is 1568
+the value of distances is:
+ -------------------------
+d_a is 43
+d_b is 40
+d_c is 45
+instruction number is 1568
+I am checking now if it goes to da, db, dc
+the value of da is 43, of db is 40 and of dc is 45 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 1568
+inside optimization less main function
+number of instruction is 1610
+inside optimization less main function
+number of instruction is 1611
+inside optimization less main function
+number of instruction is 1612
+inside optimization less main function
+number of instruction is 1613
+inside optimization less main function
+number of instruction is 1614
+inside optimization less main function
+number of instruction is 1615
+inside optimization less main function
+number of instruction is 1616
+inside optimization less main function
+number of instruction is 1617
+inside optimization less main function
+number of instruction is 1618
+inside optimization less main function
+number of instruction is 1619
+inside optimization less main function
+number of instruction is 1620
+inside optimization less main function
+number of instruction is 1621
+inside optimization less main function
+number of instruction is 1622
+inside optimization less main function
+number of instruction is 1623
+inside optimization less main function
+number of instruction is 1624
+inside optimization less main function
+number of instruction is 1625
+inside optimization less main function
+number of instruction is 1626
+inside optimization less main function
+number of instruction is 1627
+inside optimization less main function
+number of instruction is 1628
+inside optimization less main function
+number of instruction is 1629
+inside optimization less main function
+number of instruction is 1630
+inside optimization less main function
+number of instruction is 1631
+inside optimization less main function
+number of instruction is 1632
+inside optimization less main function
+number of instruction is 1633
+inside optimization less main function
+number of instruction is 1634
+inside optimization less main function
+number of instruction is 1635
+inside optimization less main function
+number of instruction is 1636
+inside optimization less main function
+number of instruction is 1637
+inside optimization less main function
+number of instruction is 1638
+inside optimization less main function
+number of instruction is 1639
+inside optimization less main function
+number of instruction is 1640
+inside optimization less main function
+number of instruction is 1641
+inside optimization less main function
+number of instruction is 1642
+inside optimization less main function
+number of instruction is 1643
+inside optimization less main function
+number of instruction is 1644
+inside optimization less main function
+number of instruction is 1645
+inside optimization less main function
+number of instruction is 1646
+inside optimization less main function
+number of instruction is 1647
+inside optimization less main function
+number of instruction is 1648
+inside optimization less main function
+number of instruction is 1649
+inside optimization less main function
+number of instruction is 1650
+---exiting db_less_midpoint---
+, count is 83
+the number of instruction is 1651
+the value of distanc---------------------------------
 exec rrb-------instruction number 1652
 
                 1
@@ -137241,128 +136589,7 @@ exec rb-------instruction number 1713
 50               30
 _               _
 a               b
-s 1614
-inside optimization less main function
-number of instruction is 1615
-inside optimization less main function
-number of instruction is 1616
-inside optimization less main function
-number of instruction is 1617
-inside optimization less main function
-number of instruction is 1618
-inside optimization less main function
-number of instruction is 1619
-inside optimization less main function
-number of instruction is 1620
-inside optimization less main function
-number of instruction is 1621
-inside optimization less main function
-number of instruction is 1622
-inside optimization less main function
-number of instruction is 1623
-inside optimization less main function
-number of instruction is 1624
-inside optimization less main function
-number of instruction is 1625
-inside optimization less main function
-number of instruction is 1626
-inside optimization less main function
-number of instruction is 1627
-inside optimization less main function
-number of instruction is 1628
-inside optimization less main function
-number of instruction is 1629
-inside optimization less main function
-number of instruction is 1630
-inside optimization less main function
-number of instruction is 1631
-inside optimization less main function
-number of instruction is 1632
-inside optimization less main function
-number of instruction is 1633
-inside optimization less main function
-number of instruction is 1634
-inside optimization less main function
-number of instruction is 1635
-inside optimization less main function
-number of instruction is 1636
-inside optimization less main function
-number of instruction is 1637
-inside optimization less main function
-number of instruction is 1638
-inside optimization less main function
-number of instruction is 1639
-inside optimization less main function
-number of instruction is 1640
-inside optimization less main function
-number of instruction is 1641
-inside optimization less main function
-number of instruction is 1642
-inside optimization less main function
-number of instruction is 1643
-inside optimization less main function
-number of instruction is 1644
-inside optimization less main function
-number of instruction is 1645
-inside optimization less main function
-number of instruction is 1646
-inside optimization less main function
-number of instruction is 1647
-inside optimization less main function
-number of instruction is 1648
-inside optimization less main function
-number of instruction is 1649
-inside optimization less main function
-number of instruction is 1650
----exiting db_less_midpoint---
-, count is 83
-the number of instruction is 1651
-the value of distances is:
- -------------------------
-d_a is 44
-d_b is 45
-d_c is 45
-instruction number is 1651
-I am checking now if it goes to da, db, dc
-the value of da is 44, of db is 45 and of dc is 45 
-i am going to entere da_smaller---inside da_less_midpoint---
- instruction number is 1651
-inside optimization less main function
-number of instruction is 1696
-inside optimization less main function
-number of instruction is 1697
-inside optimization less main function
-number of instruction is 1698
-inside optimization less main function
-number of instruction is 1699
-inside optimization less main function
-number of instruction is 1700
-inside optimization less main function
-number of instruction is 1701
-inside optimization less main function
-number of instruction is 1702
-inside optimization less main function
-number of instruction is 1703
-inside optimization less main function
-number of instruction is 1704
-inside optimization less main function
-number of instruction is 1705
-inside optimization less main function
-number of instruction is 1706
-inside optimization less main function
-number of instruction is 1707
-inside optimization less main function
-number of instruction is 1708
-inside optimization less main function
-number of instruction is 1709
-inside optimization less main function
-number of instruction is 1710
-inside optimization less main function
-number of instruction is 1711
-inside optimization less main function
-number of instruction is 1712
-inside optimization less main function
-number of instructi---------------------------------
+---------------------------------
 exec rb-------instruction number 1714
 
                 28
@@ -142803,7 +142030,130 @@ exec rrb-------instruction number 1769
 50               84
 _               _
 a               b
----------------------------------
+es is:
+ -------------------------
+d_a is 44
+d_b is 45
+d_c is 45
+instruction number is 1651
+I am checking now if it goes to da, db, dc
+the value of da is 44, of db is 45 and of dc is 45 
+i am going to entere da_smaller---inside da_less_midpoint---
+ instruction number is 1651
+inside optimization less main function
+number of instruction is 1696
+inside optimization less main function
+number of instruction is 1697
+inside optimization less main function
+number of instruction is 1698
+inside optimization less main function
+number of instruction is 1699
+inside optimization less main function
+number of instruction is 1700
+inside optimization less main function
+number of instruction is 1701
+inside optimization less main function
+number of instruction is 1702
+inside optimization less main function
+number of instruction is 1703
+inside optimization less main function
+number of instruction is 1704
+inside optimization less main function
+number of instruction is 1705
+inside optimization less main function
+number of instruction is 1706
+inside optimization less main function
+number of instruction is 1707
+inside optimization less main function
+number of instruction is 1708
+inside optimization less main function
+number of instruction is 1709
+inside optimization less main function
+number of instruction is 1710
+inside optimization less main function
+number of instruction is 1711
+inside optimization less main function
+number of instruction is 1712
+inside optimization less main function
+number of instruction is 1713
+inside optimization less main function
+number of instruction is 1714
+inside optimization less main function
+number of instruction is 1715
+inside optimization less main function
+number of instruction is 1716
+inside optimization less main function
+number of instruction is 1717
+inside optimization less main function
+number of instruction is 1718
+inside optimization less main function
+number of instruction is 1719
+inside optimization less main function
+number of instruction is 1720
+inside optimization less main function
+number of instruction is 1721
+inside optimization less main function
+number of instruction is 1722
+inside optimization less main function
+number of instruction is 1723
+inside optimization less main function
+number of instruction is 1724
+inside optimization less main function
+number of instruction is 1725
+inside optimization less main function
+number of instruction is 1726
+inside optimization less main function
+number of instruction is 1727
+inside optimization less main function
+number of instruction is 1728
+inside optimization less main function
+number of instruction is 1729
+inside optimization less main function
+number of instruction is 1730
+inside optimization less main function
+number of instruction is 1731
+inside optimization less main function
+number of instruction is 1732
+inside optimization less main function
+number of instruction is 1733
+inside optimization less main function
+number of instruction is 1734
+inside optimization less main function
+number of instruction is 1735
+inside optimization less main function
+number of instruction is 1736
+inside optimization less main function
+number of instruction is 1737
+inside optimization less main function
+number of instruction is 1738
+inside optimization less main function
+number of instruction is 1739
+inside optimization less main function
+number of instruction is 1740
+---exiting da_less_midpoint---
+, count is 173
+the number of instruction is 1741
+the value of distances is:
+ -------------------------
+d_a is 45
+d_b is 20
+d_c is 45
+instruction number is 1741
+I am checking now if it goes to da, db, dc
+the value of da is 45, of db is 20 and of dc is 45 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1741
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+inside optimization main function
+number of instruction is 1766
+inside optimization b
+number of instruction is 1766
+inside optimization b_a
+number of instruction is 1766
+after optmization in rdb, before rrb
+after optmization in rdb, befor---------------------------------
 exec rrb-------instruction number 1770
 
                 84
@@ -144195,131 +143545,7 @@ exec rrb-------instruction number 1783
 50               97
 _               _
 a               b
-on is 1713
-inside optimization less main function
-number of instruction is 1714
-inside optimization less main function
-number of instruction is 1715
-inside optimization less main function
-number of instruction is 1716
-inside optimization less main function
-number of instruction is 1717
-inside optimization less main function
-number of instruction is 1718
-inside optimization less main function
-number of instruction is 1719
-inside optimization less main function
-number of instruction is 1720
-inside optimization less main function
-number of instruction is 1721
-inside optimization less main function
-number of instruction is 1722
-inside optimization less main function
-number of instruction is 1723
-inside optimization less main function
-number of instruction is 1724
-inside optimization less main function
-number of instruction is 1725
-inside optimization less main function
-number of instruction is 1726
-inside optimization less main function
-number of instruction is 1727
-inside optimization less main function
-number of instruction is 1728
-inside optimization less main function
-number of instruction is 1729
-inside optimization less main function
-number of instruction is 1730
-inside optimization less main function
-number of instruction is 1731
-inside optimization less main function
-number of instruction is 1732
-inside optimization less main function
-number of instruction is 1733
-inside optimization less main function
-number of instruction is 1734
-inside optimization less main function
-number of instruction is 1735
-inside optimization less main function
-number of instruction is 1736
-inside optimization less main function
-number of instruction is 1737
-inside optimization less main function
-number of instruction is 1738
-inside optimization less main function
-number of instruction is 1739
-inside optimization less main function
-number of instruction is 1740
----exiting da_less_midpoint---
-, count is 173
-the number of instruction is 1741
-the value of distances is:
- -------------------------
-d_a is 45
-d_b is 20
-d_c is 45
-instruction number is 1741
-I am checking now if it goes to da, db, dc
-the value of da is 45, of db is 20 and of dc is 45 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1741
-inside optimization main function
-number of instruction is 1763
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1764
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1765
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1766
-inside optimization b
-number of instruction is 1766
-inside optimization b_a
-number of instruction is 1766
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1769
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1770
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1771
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1772
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1773
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1774
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1775
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1776
-inside optimization b
-number of instruction is 1776
-inside optimization b_a
-number of instruction is 1776
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1779
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1780
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1781
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1782
-after optmization in rdb, before rrb
-inside optimization main fu---------------------------------
+---------------------------------
 exec rrb-------instruction number 1784
 
                 97
@@ -152982,133 +152208,7 @@ exec rb-------instruction number 1869
 50               18
 _               _
 a               b
-nction
-number of instruction is 1783
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1784
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1785
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1786
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 46
-the number of instruction is 1787
-the value of distances is:
- -------------------------
-d_a is 47
-d_b is 25
-d_c is 47
-instruction number is 1787
-I am checking now if it goes to da, db, dc
-the value of da is 47, of db is 25 and of dc is 47 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1787
-inside optimization main function
-number of instruction is 1814
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1815
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1816
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1817
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1818
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1819
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1820
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1821
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1822
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1823
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1824
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1825
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1826
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1827
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1828
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1829
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1830
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1831
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1832
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1833
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1834
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1835
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1836
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1837
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1838
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 52
-the number of instruction is 1839
-the value of distances is:
- -------------------------
-d_a is 47
-d_b is 22
-d_c is 47
-instruction number is 1839
-I am checking now if it goes to da, db, dc
-the value of da is 47, of db is 22 and of dc is 47 
-i will enter db_smaller---inside db_less_midpoint---
- instruction number is 1839
-inside optimization less main function
-number of instruction is 1863
-inside optimization less main function
-number of instruction is 1864
-inside optimization less main function
-number of instruction is 1865
-inside optimization less main function
-number of instruction is 1866
-inside optimization less main function
-number of instruction is 1867
-inside optimization less main function
-number of instruction is 1868
-inside optimization less main function
-number of---------------------------------
+---------------------------------
 exec rb-------instruction number 1870
 
                 16
@@ -154842,7 +153942,130 @@ exec rb-------instruction number 1886
 50               1
 _               _
 a               b
----------------------------------
+e rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+inside optimization main function
+number of instruction is 1776
+inside optimization b
+number of instruction is 1776
+inside optimization b_a
+number of instruction is 1776
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 46
+the number of instruction is 1787
+the value of distances is:
+ -------------------------
+d_a is 47
+d_b is 25
+d_c is 47
+instruction number is 1787
+I am checking now if it goes to da, db, dc
+the value of da is 47, of db is 25 and of dc is 47 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1787
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 52
+the number of instruction is 1839
+the value of distances is:
+ -------------------------
+d_a is 47
+d_b is 22
+d_c is 47
+instruction number is 1839
+I am checking now if it goes to da, db, dc
+the value of da is 47, of db is 22 and of dc is 47 
+i will enter db_smaller---inside db_less_midpoint---
+ instruction number is 1839
+inside optimization less main function
+number of instruction is 1863
+inside optimization less main function
+number of instruction is 1864
+inside optimization less main function
+number of instruction is 1865
+inside optimization less main function
+number of instruction is 1866
+inside optimization less main function
+number of instruction is 1867
+inside optimization less main function
+number of instruction is 1868
+inside optimization less main function
+number of instruction is 1869
+inside optimization less main function
+number of instruction is 1870
+inside optimization less main function
+number of instruction is 1871
+inside optimization less main function
+number of instruction is 1872
+inside optimization less main function
+number of instruction is 1873
+inside optimization less main function
+number of instruction is 1874
+inside optimization less main function
+number of instruction is 1875
+inside optimization less main function
+number of instruction is 1876
+inside optimization less main function
+number of instruction is 1877
+inside optimization less main function
+number of instruction is 1878
+inside optimization less main function
+number of instruction is 1879
+inside optimization less main function
+number of instruction is 1880
+inside optimization less main function
+number of instruction is 1881
+inside optimization less main function
+number of instruction is 1882
+inside optimization less main function
+number of instruction is 1883
+inside optimization less main function
+number of instruction is 1884
+inside optimization less main function
+number of instruction is 1885
+---exiting db_less_midpoint---
+, count is 47
+the number of instruction is 1886
+the value of distances is:
+ -----------------------------------------------
 exec sa-------instruction number 1887
 
                 100
@@ -160172,131 +159395,7 @@ exec rrb-------instruction number 1938
 50               1
 _               _
 a               b
- instruction is 1869
-inside optimization less main function
-number of instruction is 1870
-inside optimization less main function
-number of instruction is 1871
-inside optimization less main function
-number of instruction is 1872
-inside optimization less main function
-number of instruction is 1873
-inside optimization less main function
-number of instruction is 1874
-inside optimization less main function
-number of instruction is 1875
-inside optimization less main function
-number of instruction is 1876
-inside optimization less main function
-number of instruction is 1877
-inside optimization less main function
-number of instruction is 1878
-inside optimization less main function
-number of instruction is 1879
-inside optimization less main function
-number of instruction is 1880
-inside optimization less main function
-number of instruction is 1881
-inside optimization less main function
-number of instruction is 1882
-inside optimization less main function
-number of instruction is 1883
-inside optimization less main function
-number of instruction is 1884
-inside optimization less main function
-number of instruction is 1885
----exiting db_less_midpoint---
-, count is 47
-the number of instruction is 1886
-the value of distances is:
- -------------------------
-d_a is 48
-d_b is 25
-d_c is 48
-instruction number is 1886
-I am checking now if it goes to da, db, dc
-the value of da is 48, of db is 25 and of dc is 48 
-i will enter db_smaller---inside db_more_midpoint---
- instruction number is 1886
-inside optimization main function
-number of instruction is 1913
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1914
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1915
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1916
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1917
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1918
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1919
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1920
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1921
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1922
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1923
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1924
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1925
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1926
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1927
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1928
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1929
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1930
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1931
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1932
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1933
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1934
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1935
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1936
-after optmization in rdb, before rrb
-inside optimization main function
-number of instruction is 1937
-after optmization in rdb, before rrb
----exiting db_more_midpoint---
-, count is 52
-the number of instruction is 1938
-----------------------------------
+---------------------------------
 exec rrb-------instruction number 1939
 
                 1
@@ -169439,7 +168538,126 @@ exec rb-------instruction number 2026
                 13
 _               _
 a               b
----------------------------------
+-----------
+d_a is 48
+d_b is 25
+d_c is 48
+instruction number is 1886
+I am checking now if it goes to da, db, dc
+the value of da is 48, of db is 25 and of dc is 48 
+i will enter db_smaller---inside db_more_midpoint---
+ instruction number is 1886
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+after optmization in rdb, before rrb
+---exiting db_more_midpoint---
+, count is 52
+the number of instruction is 1938
+---inside da_less_midpoint---
+ instruction number is 1938
+inside optimization less main function
+number of instruction is 1987
+inside optimization-less_a function
+number of instruction is 1987
+inside optimization-less_a_a function
+number of instruction is 1987
+inside optimization less main function
+number of instruction is 1989
+inside optimization less main function
+number of instruction is 1990
+inside optimization less main function
+number of instruction is 1991
+inside optimization less main function
+number of instruction is 1992
+inside optimization less main function
+number of instruction is 1993
+inside optimization less main function
+number of instruction is 1994
+inside optimization less main function
+number of instruction is 1995
+inside optimization less main function
+number of instruction is 1996
+inside optimization less main function
+number of instruction is 1997
+inside optimization less main function
+number of instruction is 1998
+inside optimization less main function
+number of instruction is 1999
+inside optimization less main function
+number of instruction is 2000
+inside optimization less main function
+number of instruction is 2001
+inside optimization less main function
+number of instruction is 2002
+inside optimization less main function
+number of instruction is 2003
+inside optimization less main function
+number of instruction is 2004
+inside optimization less main function
+number of instruction is 2005
+inside optimization less main function
+number of instruction is 2006
+inside optimization less main function
+number of instruction is 2007
+inside optimization less main function
+number of instruction is 2008
+inside optimization less main function
+number of instruction is 2009
+inside optimization less main function
+number of instruction is 2010
+inside optimization less main function
+number of instruction is 2011
+inside optimization less main function
+number of instruction is 2012
+inside optimization less main function
+number of instruction is 2013
+inside optimization less main function
+number of instruction is 2014
+inside optimization less main function
+number of instruction is 2015
+inside optimization less main function
+number of instruction is 2016
+inside optimization less main function
+number of instruction is 2017
+inside optimization less main function
+number of instruction is 2018
+inside optimization less main function
+number of instruction is 2019
+inside optimization less main function
+number of instruction is 2020
+inside optimization less main function
+number of instruction is 2021
+inside optimization less main function
+number of instruction is 2022
+inside optimization less main function
+number of instruction is 2023
+inside optimization less main function
+number of instruction is 2024
+inside optimization less main function
+number of instruction is 2025
+inside optimization less main fun---------------------------------
 exec rb-------instruction number 2027
 
                 11
@@ -178699,89 +177917,7 @@ exec pa-------instruction number 2138
 100
 _               _
 a               b
---inside da_less_midpoint---
- instruction number is 1938
-inside optimization less main function
-number of instruction is 1987
-inside optimization-less_a function
-number of instruction is 1987
-inside optimization-less_a_a function
-number of instruction is 1987
-inside optimization less main function
-number of instruction is 1989
-inside optimization less main function
-number of instruction is 1990
-inside optimization less main function
-number of instruction is 1991
-inside optimization less main function
-number of instruction is 1992
-inside optimization less main function
-number of instruction is 1993
-inside optimization less main function
-number of instruction is 1994
-inside optimization less main function
-number of instruction is 1995
-inside optimization less main function
-number of instruction is 1996
-inside optimization less main function
-number of instruction is 1997
-inside optimization less main function
-number of instruction is 1998
-inside optimization less main function
-number of instruction is 1999
-inside optimization less main function
-number of instruction is 2000
-inside optimization less main function
-number of instruction is 2001
-inside optimization less main function
-number of instruction is 2002
-inside optimization less main function
-number of instruction is 2003
-inside optimization less main function
-number of instruction is 2004
-inside optimization less main function
-number of instruction is 2005
-inside optimization less main function
-number of instruction is 2006
-inside optimization less main function
-number of instruction is 2007
-inside optimization less main function
-number of instruction is 2008
-inside optimization less main function
-number of instruction is 2009
-inside optimization less main function
-number of instruction is 2010
-inside optimization less main function
-number of instruction is 2011
-inside optimization less main function
-number of instruction is 2012
-inside optimization less main function
-number of instruction is 2013
-inside optimization less main function
-number of instruction is 2014
-inside optimization less main function
-number of instruction is 2015
-inside optimization less main function
-number of instruction is 2016
-inside optimization less main function
-number of instruction is 2017
-inside optimization less main function
-number of instruction is 2018
-inside optimization less main function
-number of instruction is 2019
-inside optimization less main function
-number of instruction is 2020
-inside optimization less main function
-number of instruction is 2021
-inside optimization less main function
-number of instruction is 2022
-inside optimization less main function
-number of instruction is 2023
-inside optimization less main function
-number of instruction is 2024
-inside optimization less main function
-number of instruction is 2025
-inside optimization less main function
+ction
 number of instruction is 2026
 inside optimization less main function
 number of instruction is 2027
@@ -178804,5 +177940,5 @@ number of instruction is 2035
 inside optimization less main function
 number of instruction is 2036
 ---exiting da_less_midpoint---
-, count is -540528477
+, count is -314122029
 the number of instruction is 2038
