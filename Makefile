@@ -29,6 +29,8 @@ SRC = src/algorithm/push_swap.c \
 		src/optimization/r_optimization.c \
 		src/optimization/optimization_less.c \
 		src/optimization/r_optimization_less.c \
+		src/optimization/optimization_loop.c \
+		src/optimization/optimization_less_loop.c \
 		src/printing/debug_functions.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
@@ -39,6 +41,7 @@ SRC = src/algorithm/push_swap.c \
 		src/reverse/inverse_sort.c \
 		src/reverse/reverse_base_cases.c \
 		src/reverse/reverse_distance.c \
+		src/reverse/to_stackb.c \
 		src/set_up/printer_setup.c \
 		src/set_up/stack_values.c \
 		src/set_up/stack_setup.c \

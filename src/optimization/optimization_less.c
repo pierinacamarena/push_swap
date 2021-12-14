@@ -33,28 +33,43 @@ int optim_less(t_stack *stacka, t_stack *stackb, t_info *printer, int *new_rb)
 {
     int count;
     int check;
+    int checker;
+    int ind_check;
 
     count = 0;
     check = 0;
+    ind_check = 0;
     printf("inside optimization less main function\n");
     printf("number of instruction is %d\n", printer->count);
-    if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
-        (stacka->a < stackb->a && stacka->a > stackb->b))
+    while((checker = optim_less_checker(stacka, stackb, printer)) > 0)
     {
-        check++;
-        count = count + optim_less_a(stacka, stackb, printer);
-    }
-    if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
-        (stacka->b < stackb->a && stacka->b > stackb->b))
-    {
-        check++;
-        count = count + optim_less_b(stacka, stackb, printer);
-    }
-    if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
-        (stacka->c < stackb->a && stacka->c > stackb->b))
-    {
-        check++;
-        count = count + optim_less_c(stacka, stackb, printer);
+        while ((ind_check = optima_less_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
+                (stacka->a < stackb->a && stacka->a > stackb->b))
+            {
+                check++;
+                count = count + optim_less_a(stacka, stackb, printer);
+            }
+        }
+        while ((ind_check = optimb_less_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
+                (stacka->b < stackb->a && stacka->b > stackb->b))
+            {
+                check++;
+                count = count + optim_less_b(stacka, stackb, printer);
+            }
+        }
+        while ((ind_check = optimc_less_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
+                (stacka->c < stackb->a && stacka->c > stackb->b))
+            {
+                check++;
+                count = count + optim_less_c(stacka, stackb, printer);
+            }
+        }
     }
     *new_rb = check;
     return (count); 

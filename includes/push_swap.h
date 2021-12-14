@@ -157,6 +157,19 @@ int r_optim_less_b(t_stack *stacka, t_stack *stackb, t_info *printer);
 int r_optim_less_c(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
+optimization_loop.c
+*/
+int optima_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optimb_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optimc_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+/*
+optimization_less_loop.c
+*/
+int optima_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optimb_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+int optimc_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer);
+
+/*
 -----Printing-----
 */
 
@@ -209,6 +222,11 @@ reverse_distance.c
 /*
 top_stack_reverse.c
 */
+
+/*
+to_stackb.c
+*/
+int pb_stackb(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
 -----Set up-----

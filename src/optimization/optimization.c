@@ -34,18 +34,31 @@ int optim(t_stack *stacka, t_stack *stackb, t_info *printer)
     printf("inside optimization main function\n");
     printf("number of instruction is %d\n", printer->count);
     int count;
+    int checker;
+    int ind_check;
 
     count = 0;
-    if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
-        (stacka->a < stackb->a && stacka->a > stackb->b))
-        count = count + optim_a(stacka, stackb, printer);
-    if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
-        (stacka->b < stackb->a && stacka->b > stackb->b))
-        count = count + optim_b(stacka, stackb, printer);
-    if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
-        (stacka->c < stackb->a && stacka->c > stackb->b))
-        count = count + optim_c(stacka, stackb, printer);
-
+    while ((checker = optim_checker(stacka, stackb, printer)) > 0)
+    {
+        while ((ind_check = optima_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
+                (stacka->a < stackb->a && stacka->a > stackb->b))
+                count = count + optim_a(stacka, stackb, printer);
+        }
+        while ((ind_check = optimb_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
+                (stacka->b < stackb->a && stacka->b > stackb->b))
+                count = count + optim_b(stacka, stackb, printer);
+        }
+        while ((ind_check = optimc_checker(stacka, stackb, printer)) == 1)
+        {
+            if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
+                (stacka->c < stackb->a && stacka->c > stackb->b))
+                count = count + optim_c(stacka, stackb, printer);
+        }
+    }
     return (count);
 }
 
