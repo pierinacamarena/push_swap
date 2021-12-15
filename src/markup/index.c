@@ -15,21 +15,27 @@
 void    indexing(t_stack *stacka)
 {
     int min;
-    int j;
     int i;
     int *processed;
+    int index;
 
-    i = 0;
-    j = 0;
+    processed = (int *)malloc(sizeof(int) * stack->size + 1);
+    while (i < stack->size)
+    {
+        index = find_min(stacka);
+        processed[i] = index
+        min = stacka->array[index];
+        i++;
+    }
+
 
     min = find_min(stacka);
 }
 
-void   find_min(t_stack *stacka)
+int   find_min(t_stack *stacka)
 {
     int i;
     int j;
-    int *processed;
 
     i = 0;
     j = 1;
