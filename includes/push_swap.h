@@ -79,6 +79,18 @@ stackB_moves.c
 */
 
 /*
+-----Indexing----
+*/
+
+/*
+index.c
+*/
+int *indexing(t_stack *stacka);
+int find_min(t_stack *stacka);
+int find_indices(t_stack *stacka, int *processed, int len);
+int check_min(int *processed, int len, int i);
+
+/*
 -----Normal------
 */
 

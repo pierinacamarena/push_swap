@@ -19,6 +19,8 @@ int	main(int ac, char **av)
 	t_info	printer;
 	int		len;
 	int		count;
+	int		*indices;
+	int		i;
 
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
@@ -35,7 +37,16 @@ int	main(int ac, char **av)
 	else
 	{
 		initial_print(printer);
-		count = ft_sort_stack(&stacka, &stackb, &printer);
+		printf("\n");
+		indices = indexing(&stacka);
+		i = 0;
+		while (i < stacka.size)
+		{
+			printf("%d\n", indices[i]);
+			i++;
+		}
+		printf("the min number is %d and the index is %d\n", stacka.array[count], count);
+	//	count = ft_sort_stack(&stacka, &stackb, &printer);
 	//	ft_putstr("number of instructions is ");
 	//	ft_putnbr(count);
 	//	ft_putstr("\n");

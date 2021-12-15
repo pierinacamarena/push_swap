@@ -29,7 +29,8 @@ t_stack	init_stack(int len)
 	stack.max_size = len;
 	stack.size = 0;
 	stack.array = list;
-	stack.
+	stack.index = indices;
+	stack.original_index = original_index;
 
 	return (stack);
 }
