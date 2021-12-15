@@ -41,6 +41,7 @@ int	main(int ac, char **av)
 	//	ft_putstr("\n");
 	//	ft_print_stack(stacka);
 	//	ft_print_stack(stackb);
+	//free stacks 
 	}
 	return (0);
 }

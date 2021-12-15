@@ -20,11 +20,17 @@ t_stack	init_stack(int len)
 {
 	t_stack	stack;
 	int		*list;
+	int		*indices;
+	int		*original_index;
 
 	list = (int *)malloc(sizeof(int) * len + 1);
+	indices = (int *)malloc(sizeof(int) * len + 1);
+	original_index = (int *)malloc(sizeof(int) * len + 1);
 	stack.max_size = len;
 	stack.size = 0;
 	stack.array = list;
+	stack.
+
 	return (stack);
 }
 

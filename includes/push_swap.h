@@ -29,6 +29,8 @@ typedef struct s_stack
   int x;
   int y;
   int *array;
+  int *index;
+  int *original_index;
   int max_size;
   int d_a;
   int d_b;

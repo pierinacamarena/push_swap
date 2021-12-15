@@ -12,6 +12,18 @@
 
 #include "../../includes/push_swap.h"
 
+void	ft_original_index(t_stack *stacka)
+{
+	int	i;
+
+	i = 0;
+	while (i < (stacka->max_size))
+	{
+		stacka->original_index[i] = i;
+		i++;
+	}
+}
+
 void	ft_val_updta(t_stack *stacka)
 {
 	int	end_a;

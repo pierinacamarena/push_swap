@@ -50,7 +50,7 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 		&& (stacka->d_a - 1 <= stacka->d_c))
 	{
 		printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-		printf("i am going to entere da_smaller");
+		printf("i am going to entere da_smaller\n");
 		count = count + ft_da_smaller(stacka, stackb, printer);
 	}
 	else
@@ -58,13 +58,13 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 		if (stacka->d_b < stacka->d_c)
 		{
 			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-			printf("i will enter db_smaller");
+			printf("i will enter db_smaller\n");
 			count = count + ft_db_smaller(stacka, stackb, printer);
 		}
 		else if (stacka->d_c < stacka->d_b)
 		{
 			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-			printf("i will enter dc_smaller");
+			printf("i will enter dc_smaller\n");
 			count = count + ft_dc_smaller(stacka, stackb, printer);
 		}
 		else if (stacka->d_b == stacka->d_c)
