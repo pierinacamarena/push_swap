@@ -79,6 +79,15 @@ stackB_moves.c
 */
 
 /*
+-----Dirty_Sort-----
+*/
+
+/*
+dirty_sort.c
+*/
+t_stack dirty_sorting(t_stack stacka);
+
+/*
 -----Indexing----
 */
 

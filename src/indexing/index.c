@@ -11,17 +11,19 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
-int *indexing(t_stack *stacka)
+/**
+int *indexing(t_stack stacka)
 {
     int min;
     int i;
     int *processed;
+    int stacka_copy[stacka->size];
     int index;
 
     processed = (int *)malloc(sizeof(int) * stacka->size + 1);
-    i = 1;
+    stacka_copy = stacka;
     processed[0] = find_min(stacka);
+    i = 0;
     while (i < stacka->size)
     {
         index = find_indices(stacka, processed, i);
@@ -29,6 +31,26 @@ int *indexing(t_stack *stacka)
         i++;
     }
     return(processed);
+}
+
+int  *min_dirty_sort(t_stack *stacka, t_stack *processed)
+{
+    int i;
+    int min_index[2];
+
+    min_index[0] = stacka->array[0];
+    i = 1;
+    while ((i < stacka->size))
+    {
+        if (stacka->array[i] < min_index[0])
+        {
+            min_index[0] = stacka->array[i];
+            min_index[1] = i;
+        }
+        i++;
+    }
+
+    return (processed);
 }
 
 int   find_min(t_stack *stacka)
@@ -88,3 +110,4 @@ int check_min(int *processed, int len, int i)
     } 
     return (0);
 }
+**/

@@ -16,10 +16,11 @@ int	main(int ac, char **av)
 {
 	t_stack	stacka;
 	t_stack	stackb;
+	t_stack arr;
 	t_info	printer;
 	int		len;
-	int		count;
-	int		*indices;
+//	int		count;
+//	int		*indices;
 	int		i;
 
 	len = ac - 1;
@@ -38,21 +39,13 @@ int	main(int ac, char **av)
 	{
 		initial_print(printer);
 		printf("\n");
-		indices = indexing(&stacka);
+		arr = dirty_sorting(stacka);
 		i = 0;
-		while (i < stacka.size)
+		while (i < len)
 		{
-			printf("%d\n", indices[i]);
+			printf("%d\n", arr.array[i]);
 			i++;
 		}
-		printf("the min number is %d and the index is %d\n", stacka.array[count], count);
-	//	count = ft_sort_stack(&stacka, &stackb, &printer);
-	//	ft_putstr("number of instructions is ");
-	//	ft_putnbr(count);
-	//	ft_putstr("\n");
-	//	ft_print_stack(stacka);
-	//	ft_print_stack(stackb);
-	//free stacks 
 	}
 	return (0);
 }
