@@ -25,10 +25,19 @@ void merge(t_stack *arr, int l, int m, int r)
     int L[n1];
     int R[n2]; 
 
-    for (i = 0; i < n1; i++) 
-        L[i] = arr->array[l + i]; 
-    for (j = 0; j < n2; j++) 
-        R[j] = arr->array[m + 1 + j]; 
+    
+    i = 0;
+    while (i < n1)
+    {
+        L[i] = arr->array[l + i];
+        i++;
+    }
+    j = 0;
+    while (j < n2)
+    {
+        R[j] = arr->array[m + 1 + j];
+        j++;
+    }
     i = 0; 
     j = 0; 
     k = l; 
@@ -73,17 +82,7 @@ void mergeSort(t_stack *arr, int l, int r)
         merge(arr, l, m, r); 
     } 
 } 
-// Functions to Print Elements of Array
-void printArray(t_stack arr, int size) 
-{ 
-    int i; 
-    for (i=0; i < size; i++) 
-    {
-        printf("%d ", arr.array[i]); 
-        printf("\n"); 
-    }
-}   
-// Main Method
+
 t_stack dirty_sorting(t_stack stacka) 
 {
     int arr_size; 

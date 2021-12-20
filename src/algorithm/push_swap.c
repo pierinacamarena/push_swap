@@ -19,6 +19,7 @@ int	main(int ac, char **av)
 	t_stack arr;
 	t_info	printer;
 	int		len;
+	int		*indexed;
 //	int		count;
 //	int		*indices;
 	int		i;
@@ -40,10 +41,11 @@ int	main(int ac, char **av)
 		initial_print(printer);
 		printf("\n");
 		arr = dirty_sorting(stacka);
+		indexed = set_index(arr, stacka);
 		i = 0;
 		while (i < len)
 		{
-			printf("%d\n", arr.array[i]);
+			printf("%d     %d\n", stacka.array[i], indexed[i]);
 			i++;
 		}
 	}

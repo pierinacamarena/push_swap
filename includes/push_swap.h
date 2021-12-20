@@ -100,6 +100,12 @@ int find_indices(t_stack *stacka, int *processed, int len);
 int check_min(int *processed, int len, int i);
 
 /*
+indexing.c
+*/
+int index_finder(t_stack stacka, int numb);
+int *set_index(t_stack arr, t_stack stacka);
+
+/*
 -----Normal------
 */
 
