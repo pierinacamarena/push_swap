@@ -18,8 +18,8 @@ SRC = src/algorithm/push_swap.c \
 		src/algorithm/stack_moves_helper.c \
 		src/algorithm/stackB_moves.c \
 		src/dirty_sort/dirty_sort.c \
-		src/indexing/index.c \
 		src/indexing/indexing.c \
+		src/mark_up/markup_index.c \
 		src/normal/intermediate.c \
 		src/normal/intermediate_helper_less.c \
 		src/normal/intermediate_helper_bigger.c \

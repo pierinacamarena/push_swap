@@ -106,6 +106,16 @@ int index_finder(t_stack stacka, int numb);
 int *set_index(t_stack arr, t_stack stacka);
 
 /*
+-----Mark_up-----
+*/
+
+/*
+markup_index.c
+*/
+int markup_head_count(t_stack stacka, int *indices, int index);
+int find_max(int *array, int len);
+
+/*
 -----Normal------
 */
 
