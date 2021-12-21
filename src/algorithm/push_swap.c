@@ -16,15 +16,15 @@ int	main(int ac, char **av)
 {
 	t_stack	stacka;
 	t_stack	stackb;
-//	t_stack arr;
+	t_stack arr;
 	t_info	printer;
 	int		len;
-//	int		*indexed;
-//	int		head_count;
+	int		*indexed;
+	int		head;
 //	int		count;
 //	int		*indices;
 	int		max;
-//	int		i;
+	int		i;
 
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
@@ -42,9 +42,7 @@ int	main(int ac, char **av)
 	{
 		initial_print(printer);
 		printf("\n");
-		max = find_max(stacka.array, stacka.size);
-		printf("the max number is %d\n", max);
-		/*arr = dirty_sorting(stacka);
+		arr = dirty_sorting(stacka);
 		indexed = set_index(arr, stacka);
 		i = 0;
 		while (i < len)
@@ -52,9 +50,8 @@ int	main(int ac, char **av)
 			printf("%d     %d\n", stacka.array[i], indexed[i]);
 			i++;
 		}
-		head_count = markup_head_count(stacka, indexed, 2);
-		printf("the count is %d", head_count);
-		*/
+		head = find_head_greater(stacka, indexed);
+		printf("the max is %d\n", head);
 
 	}
 	return (0);

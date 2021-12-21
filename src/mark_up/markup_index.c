@@ -73,9 +73,13 @@ int find_head_greater(t_stack stacka, int *indices)
     int i;
     int head;
 
+    i = 0;
+    printf("count per index, incresing order\n");
+    printf("[index : count]\n");
     while (i < stacka.size)
     {
         counter[i] = markup_head_count(stacka, indices, i);
+        printf("[%d : %d]\n", i, counter[i]);
         i++;
     }
     head = find_max(counter, stacka.size);

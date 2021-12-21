@@ -114,6 +114,7 @@ markup_index.c
 */
 int markup_head_count(t_stack stacka, int *indices, int index);
 int find_max(int *array, int len);
+int find_head_greater(t_stack stacka, int *indices);
 
 /*
 -----Normal------
