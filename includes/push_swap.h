@@ -110,11 +110,22 @@ int *set_index(t_stack arr, t_stack stacka);
 */
 
 /*
-markup_index.c
+markup_greater.c
 */
 int markup_head_count(t_stack stacka, int *indices, int index);
-int find_max(int *array, int len);
 int find_head_greater(t_stack stacka, int *indices);
+
+/*
+markup_index.c
+*/
+int index_head_count(t_stack stacka, int *indices, int index);
+int find_head_index(t_stack stacka, int *indices);
+
+/*
+markup_utils.c
+*/
+int index_value_finder(t_stack stacka, int * indices, int index);
+int find_max(int *array, int len);
 
 /*
 -----Normal------

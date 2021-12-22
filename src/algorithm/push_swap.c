@@ -23,7 +23,7 @@ int	main(int ac, char **av)
 	int		head;
 //	int		count;
 //	int		*indices;
-	int		max;
+//	int		max;
 	int		i;
 
 	len = ac - 1;
@@ -47,11 +47,11 @@ int	main(int ac, char **av)
 		i = 0;
 		while (i < len)
 		{
-			printf("%d     %d\n", stacka.array[i], indexed[i]);
+			printf("%d       %d     %d\n", i, stacka.array[i], indexed[i]);
 			i++;
 		}
 		head = find_head_greater(stacka, indexed);
-		printf("the max is %d\n", head);
+		printf("head is %d", head);
 
 	}
 	return (0);

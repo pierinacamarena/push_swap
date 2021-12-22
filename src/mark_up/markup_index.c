@@ -12,62 +12,34 @@
 
 #include "../../includes/push_swap.h"
 
-int markup_head_count(t_stack stacka, int *indices, int index)
+int index_head_count(t_stack stacka, int *indices, int index)
 {
     int i;
     int j;
-    int midpoint;
-    int end;
     int count;
+    int prev_max;
 
-    i = 0;
     count = 1;
-    end = stacka.max_size - 1;
-    if (stacka.max_size % 2 == 0)
-		midpoint = stacka.max_size / 2;
-	else
-		midpoint = end / 2;
-
-    while (i < stacka.max_size)
-    {
-        if (indices[i] == index)
-            break;
-        i++;
-    }
-    if (i == end)
-        return (0);
+    i = index_value_finder(stacka, indices, index);
+    if (i == (stacka.max_size - 1))
+        return(1);
+    prev_max = indices[i];
     j = i + 1;
     while (j < stacka.max_size)
     {
-        if (stacka.array[i] < stacka.array[j])
+        if ((indices[i] + 1) == indices[j])
         {
-            i++;
+            i = j;
             j++;
             count++;
         }
         else
             j++;
     }
-    return (count);
+    return(count);
 }
 
-int find_max(int *array, int len)
-{
-    int max;
-    int i;
-
-    max = array[0];
-    i = 1;
-    while(i < len)
-    {
-        if (array[i] > max)
-            max = array[i];
-        i++;
-    }
-    return(max);
-}
-
-int find_head_greater(t_stack stacka, int *indices)
+int find_head_index(t_stack stacka, int *indices)
 {
     int counter[stacka.size];
     int i;
@@ -78,7 +50,7 @@ int find_head_greater(t_stack stacka, int *indices)
     printf("[index : count]\n");
     while (i < stacka.size)
     {
-        counter[i] = markup_head_count(stacka, indices, i);
+        counter[i] = index_head_count(stacka, indices, i);
         printf("[%d : %d]\n", i, counter[i]);
         i++;
     }
