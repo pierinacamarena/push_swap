@@ -16,13 +16,13 @@ int	main(int ac, char **av)
 {
 	t_stack	stacka;
 	t_stack	stackb;
-	t_stack arr;
+//	t_stack arr;
 	t_info	printer;
 	int		len;
-	int		*indexed;
-	int		head;
+//	int		*indexed;
+//	int		head;
 //	int		count;
-//	int		*indices;
+//	int		*indices;			
 //	int		max;
 	int		i;
 
@@ -42,6 +42,9 @@ int	main(int ac, char **av)
 	{
 		initial_print(printer);
 		printf("\n");
+		markup(&stacka);
+
+		/**
 		arr = dirty_sorting(stacka);
 		indexed = set_index(arr, stacka);
 		i = 0;
@@ -50,8 +53,9 @@ int	main(int ac, char **av)
 			printf("%d       %d     %d\n", i, stacka.array[i], indexed[i]);
 			i++;
 		}
-		head = find_head_greater(stacka, indexed);
-		printf("head is %d", head);
+		count = markup_head_count(stacka, indexed, 1);
+		printf("count is %d", count);
+		**/
 
 	}
 	return (0);

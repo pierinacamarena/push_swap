@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int index_value_finder(t_stack stacka, int * indices, int index)
+int index_value_finder(t_stack stacka, int index)
 {
     int i;
     int midpoint;
@@ -27,7 +27,7 @@ int index_value_finder(t_stack stacka, int * indices, int index)
 
     while (i < stacka.max_size)
     {
-        if (indices[i] == index)
+        if (stacka.indices[i] == index)
             break;
         i++;
     }
@@ -58,7 +58,7 @@ int find_min(int *array, int len)
     int i;
     int count;
 
-    max = array[0];
+    min = array[0];
     i = 1;
     count = 0;
     while(i < len)
@@ -70,7 +70,7 @@ int find_min(int *array, int len)
     return (min);
 }
 
-int *multiple_max(int *counter, int head, int size)
+int multiple_max(int *counter, int head, int size)
 {
     int total;
     int i;
@@ -97,5 +97,9 @@ int *multiple_max(int *counter, int head, int size)
         }
         i++;
     }
-    return (potential_heads);
+    if (total == 1)
+        return (potential_heads[0]);
+    else
+        i = find_min(potential_heads, total);
+    return (i);
 }

@@ -1,0 +1,495 @@
+---------------------------------
+Before sorting 
+24
+37
+40
+1
+9
+22
+33
+0
+27
+8
+38
+12
+10
+36
+25
+3
+5
+11
+20
+30
+6
+31
+17
+28
+29
+7
+13
+21
+4
+14
+26
+15
+23
+19
+32
+2
+34
+18
+35
+16
+39
+_               _
+a               b
+
+0       24     24
+1       37     37
+2       40     40
+3       1     1
+4       9     9
+5       22     22
+6       33     33
+7       0     0
+8       27     27
+9       8     8
+10       38     38
+11       12     12
+12       10     10
+13       36     36
+14       25     25
+15       3     3
+16       5     5
+17       11     11
+18       20     20
+19       30     30
+20       6     6
+21       31     31
+22       17     17
+23       28     28
+24       29     29
+25       7     7
+26       13     13
+27       21     21
+28       4     4
+29       14     14
+30       26     26
+31       15     15
+32       23     23
+33       19     19
+34       32     32
+35       2     2
+36       34     34
+37       18     18
+38       35     35
+39       16     16
+40       39     39
+i is 3
+ j is 4
+ stacka.array[i] is 1
+ stacka.array[j] is 9
+ count is 1
+---(stacka.array[i] < stacka.array[j])---
+i is 4
+ j is 5
+ stacka.array[i] is 9
+ stacka.array[j] is 22
+, count is 2
+i is 4
+ j is 5
+ stacka.array[i] is 9
+ stacka.array[j] is 22
+ count is 2
+---(stacka.array[i] < stacka.array[j])---
+i is 5
+ j is 6
+ stacka.array[i] is 22
+ stacka.array[j] is 33
+, count is 3
+i is 5
+ j is 6
+ stacka.array[i] is 22
+ stacka.array[j] is 33
+ count is 3
+---(stacka.array[i] < stacka.array[j])---
+i is 6
+ j is 7
+ stacka.array[i] is 33
+ stacka.array[j] is 0
+, count is 4
+i is 6
+ j is 7
+ stacka.array[i] is 33
+ stacka.array[j] is 0
+ count is 4
+---ELSE---
+i is 6
+ j is 8
+ stacka.array[i] is 33
+ stacka.array[j] is 27
+, count is 4
+i is 6
+ j is 8
+ stacka.array[i] is 33
+ stacka.array[j] is 27
+ count is 4
+---ELSE---
+i is 6
+ j is 9
+ stacka.array[i] is 33
+ stacka.array[j] is 8
+, count is 4
+i is 6
+ j is 9
+ stacka.array[i] is 33
+ stacka.array[j] is 8
+ count is 4
+---ELSE---
+i is 6
+ j is 10
+ stacka.array[i] is 33
+ stacka.array[j] is 38
+, count is 4
+i is 6
+ j is 10
+ stacka.array[i] is 33
+ stacka.array[j] is 38
+ count is 4
+---(stacka.array[i] < stacka.array[j])---
+i is 10
+ j is 11
+ stacka.array[i] is 38
+ stacka.array[j] is 12
+, count is 5
+i is 10
+ j is 11
+ stacka.array[i] is 38
+ stacka.array[j] is 12
+ count is 5
+---ELSE---
+i is 10
+ j is 12
+ stacka.array[i] is 38
+ stacka.array[j] is 10
+, count is 5
+i is 10
+ j is 12
+ stacka.array[i] is 38
+ stacka.array[j] is 10
+ count is 5
+---ELSE---
+i is 10
+ j is 13
+ stacka.array[i] is 38
+ stacka.array[j] is 36
+, count is 5
+i is 10
+ j is 13
+ stacka.array[i] is 38
+ stacka.array[j] is 36
+ count is 5
+---ELSE---
+i is 10
+ j is 14
+ stacka.array[i] is 38
+ stacka.array[j] is 25
+, count is 5
+i is 10
+ j is 14
+ stacka.array[i] is 38
+ stacka.array[j] is 25
+ count is 5
+---ELSE---
+i is 10
+ j is 15
+ stacka.array[i] is 38
+ stacka.array[j] is 3
+, count is 5
+i is 10
+ j is 15
+ stacka.array[i] is 38
+ stacka.array[j] is 3
+ count is 5
+---ELSE---
+i is 10
+ j is 16
+ stacka.array[i] is 38
+ stacka.array[j] is 5
+, count is 5
+i is 10
+ j is 16
+ stacka.array[i] is 38
+ stacka.array[j] is 5
+ count is 5
+---ELSE---
+i is 10
+ j is 17
+ stacka.array[i] is 38
+ stacka.array[j] is 11
+, count is 5
+i is 10
+ j is 17
+ stacka.array[i] is 38
+ stacka.array[j] is 11
+ count is 5
+---ELSE---
+i is 10
+ j is 18
+ stacka.array[i] is 38
+ stacka.array[j] is 20
+, count is 5
+i is 10
+ j is 18
+ stacka.array[i] is 38
+ stacka.array[j] is 20
+ count is 5
+---ELSE---
+i is 10
+ j is 19
+ stacka.array[i] is 38
+ stacka.array[j] is 30
+, count is 5
+i is 10
+ j is 19
+ stacka.array[i] is 38
+ stacka.array[j] is 30
+ count is 5
+---ELSE---
+i is 10
+ j is 20
+ stacka.array[i] is 38
+ stacka.array[j] is 6
+, count is 5
+i is 10
+ j is 20
+ stacka.array[i] is 38
+ stacka.array[j] is 6
+ count is 5
+---ELSE---
+i is 10
+ j is 21
+ stacka.array[i] is 38
+ stacka.array[j] is 31
+, count is 5
+i is 10
+ j is 21
+ stacka.array[i] is 38
+ stacka.array[j] is 31
+ count is 5
+---ELSE---
+i is 10
+ j is 22
+ stacka.array[i] is 38
+ stacka.array[j] is 17
+, count is 5
+i is 10
+ j is 22
+ stacka.array[i] is 38
+ stacka.array[j] is 17
+ count is 5
+---ELSE---
+i is 10
+ j is 23
+ stacka.array[i] is 38
+ stacka.array[j] is 28
+, count is 5
+i is 10
+ j is 23
+ stacka.array[i] is 38
+ stacka.array[j] is 28
+ count is 5
+---ELSE---
+i is 10
+ j is 24
+ stacka.array[i] is 38
+ stacka.array[j] is 29
+, count is 5
+i is 10
+ j is 24
+ stacka.array[i] is 38
+ stacka.array[j] is 29
+ count is 5
+---ELSE---
+i is 10
+ j is 25
+ stacka.array[i] is 38
+ stacka.array[j] is 7
+, count is 5
+i is 10
+ j is 25
+ stacka.array[i] is 38
+ stacka.array[j] is 7
+ count is 5
+---ELSE---
+i is 10
+ j is 26
+ stacka.array[i] is 38
+ stacka.array[j] is 13
+, count is 5
+i is 10
+ j is 26
+ stacka.array[i] is 38
+ stacka.array[j] is 13
+ count is 5
+---ELSE---
+i is 10
+ j is 27
+ stacka.array[i] is 38
+ stacka.array[j] is 21
+, count is 5
+i is 10
+ j is 27
+ stacka.array[i] is 38
+ stacka.array[j] is 21
+ count is 5
+---ELSE---
+i is 10
+ j is 28
+ stacka.array[i] is 38
+ stacka.array[j] is 4
+, count is 5
+i is 10
+ j is 28
+ stacka.array[i] is 38
+ stacka.array[j] is 4
+ count is 5
+---ELSE---
+i is 10
+ j is 29
+ stacka.array[i] is 38
+ stacka.array[j] is 14
+, count is 5
+i is 10
+ j is 29
+ stacka.array[i] is 38
+ stacka.array[j] is 14
+ count is 5
+---ELSE---
+i is 10
+ j is 30
+ stacka.array[i] is 38
+ stacka.array[j] is 26
+, count is 5
+i is 10
+ j is 30
+ stacka.array[i] is 38
+ stacka.array[j] is 26
+ count is 5
+---ELSE---
+i is 10
+ j is 31
+ stacka.array[i] is 38
+ stacka.array[j] is 15
+, count is 5
+i is 10
+ j is 31
+ stacka.array[i] is 38
+ stacka.array[j] is 15
+ count is 5
+---ELSE---
+i is 10
+ j is 32
+ stacka.array[i] is 38
+ stacka.array[j] is 23
+, count is 5
+i is 10
+ j is 32
+ stacka.array[i] is 38
+ stacka.array[j] is 23
+ count is 5
+---ELSE---
+i is 10
+ j is 33
+ stacka.array[i] is 38
+ stacka.array[j] is 19
+, count is 5
+i is 10
+ j is 33
+ stacka.array[i] is 38
+ stacka.array[j] is 19
+ count is 5
+---ELSE---
+i is 10
+ j is 34
+ stacka.array[i] is 38
+ stacka.array[j] is 32
+, count is 5
+i is 10
+ j is 34
+ stacka.array[i] is 38
+ stacka.array[j] is 32
+ count is 5
+---ELSE---
+i is 10
+ j is 35
+ stacka.array[i] is 38
+ stacka.array[j] is 2
+, count is 5
+i is 10
+ j is 35
+ stacka.array[i] is 38
+ stacka.array[j] is 2
+ count is 5
+---ELSE---
+i is 10
+ j is 36
+ stacka.array[i] is 38
+ stacka.array[j] is 34
+, count is 5
+i is 10
+ j is 36
+ stacka.array[i] is 38
+ stacka.array[j] is 34
+ count is 5
+---ELSE---
+i is 10
+ j is 37
+ stacka.array[i] is 38
+ stacka.array[j] is 18
+, count is 5
+i is 10
+ j is 37
+ stacka.array[i] is 38
+ stacka.array[j] is 18
+ count is 5
+---ELSE---
+i is 10
+ j is 38
+ stacka.array[i] is 38
+ stacka.array[j] is 35
+, count is 5
+i is 10
+ j is 38
+ stacka.array[i] is 38
+ stacka.array[j] is 35
+ count is 5
+---ELSE---
+i is 10
+ j is 39
+ stacka.array[i] is 38
+ stacka.array[j] is 16
+, count is 5
+i is 10
+ j is 39
+ stacka.array[i] is 38
+ stacka.array[j] is 16
+ count is 5
+---ELSE---
+i is 10
+ j is 40
+ stacka.array[i] is 38
+ stacka.array[j] is 39
+, count is 5
+i is 10
+ j is 40
+ stacka.array[i] is 38
+ stacka.array[j] is 39
+ count is 5
+---(stacka.array[i] < stacka.array[j])---
+i is 40
+ j is 41
+ stacka.array[i] is 39
+ stacka.array[j] is 0
+, count is 6
+count is 6

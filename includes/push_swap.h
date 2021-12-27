@@ -58,6 +58,12 @@ typedef struct s_info
 
 } t_info;
 
+typedef struct markup
+{
+  int *indexed;
+  int *
+}
+
 /*
 -----Algorithm-----
 */
@@ -95,7 +101,7 @@ t_stack dirty_sorting(t_stack stacka);
 index.c
 */
 int *indexing(t_stack *stacka);
-int find_min(t_stack *stacka);
+//int find_min(t_stack *stacka);
 int find_indices(t_stack *stacka, int *processed, int len);
 int check_min(int *processed, int len, int i);
 
@@ -110,22 +116,35 @@ int *set_index(t_stack arr, t_stack stacka);
 */
 
 /*
+markup.c
+*/
+void    markup(t_stack *stacka);
+char markup_choice(int *counter_i, int *counter_g, int size);
+
+/*
 markup_greater.c
 */
-int markup_head_count(t_stack stacka, int *indices, int index);
-int find_head_greater(t_stack stacka, int *indices);
+int markup_head_count(t_stack stacka, int index);
+int find_head_greater(t_stack stacka);
+int head_finder_greater(int *counter, int size);
+void greater_selection(t_stack *stacka, int index);
 
 /*
 markup_index.c
 */
-int index_head_count(t_stack stacka, int *indices, int index);
-int find_head_index(t_stack stacka, int *indices);
+int index_head_count(t_stack stacka, int index);
+int find_head_index(t_stack stacka);
+int head_finder_index(int *counter, int size);
+void index_selection(t_stack *stacka, int index);
+
 
 /*
 markup_utils.c
 */
-int index_value_finder(t_stack stacka, int * indices, int index);
+int index_value_finder(t_stack stacka, int index);
 int find_max(int *array, int len);
+int find_min(int *array, int len);
+int multiple_max(int *counter, int head, int size);
 
 /*
 -----Normal------

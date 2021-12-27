@@ -80,3 +80,18 @@ Ok lets write the algorithm we have so far
 							then repeat from number 3
 
 							**/
+
+
+
+
+/**
+
+what do i want to do
+
+have a function that calls functions that will do the following:
+	-call the function that creates the indeces
+	-call the function that finds which markup method gives the biggest head
+	
+	-
+	-
+**/
