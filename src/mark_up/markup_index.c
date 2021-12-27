@@ -46,7 +46,7 @@ function that creates an array with the count of each index as a respective head
 **/
 int *head_index_counter(t_stack stacka)
 {
-    int counter[stacka.size];
+    int *counter;
     int i;
     int head;
     int min_head;
@@ -54,6 +54,7 @@ int *head_index_counter(t_stack stacka)
     i = 0;
     printf("count per index, incresing order\n");
     printf("[index : count]\n");
+    counter = (int *)malloc(sizeof(int) * stacka.max_size + 1);
     while (i < stacka.size)
     {
         counter[i] = index_head_count(stacka, i);
@@ -80,29 +81,28 @@ void index_selection(t_stack *stacka, int index)
 {
     int i;
     int j;
+    int count;
 
     count = 0;
     i = index_value_finder(*stacka, index);
-    if (i == (stacka->max_size - 1))
-        return(1);
     j = i + 1;
     while (count < i)
     {
-        stacka->list[count] = 0;
+        stacka->bool_index[count] = 0;
         count++;
     }
-    stacka->list[i] = 1;
+    stacka->bool_index[i] = 1;
     while (j < stacka->max_size)
     {
         if ((stacka->indices[i] + 1) == stacka->indices[j])
         {
-            stacka->list[j] = 1;
+            stacka->bool_index[j] = 1;
             i = j;
             j++;
         }
         else
         {
-            stacka->list[j] = 0;
+            stacka->bool_index[j] = 0;
             j++;
         }
     }

@@ -23,25 +23,25 @@ void    markup(t_stack *stacka)
 
     arr = dirty_sorting(*stacka);
     stacka->indices = set_index(arr, *stacka);
-    counter_i = head_index_counter(*stacka, indexed);
-    counter_g = head_greater_counter(*stacka, indexed);
-    c = markup_choice(counter_i, counter_g);
+    counter_i = head_index_counter(*stacka);
+    counter_g = head_greater_counter(*stacka);
+    c = markup_choice(counter_i, counter_g, stacka->max_size);
     if (c == 'i')
     {
-        head = head_finder_index(counter, stacka->max_size)
-        index_selection(stacka, head);
+        head_i = head_finder_index(counter_i, stacka->max_size);
+        index_selection(stacka, head_i);
     }
     else if (c == 'g')
     {
-        head_g = head_finder_greater(counter, stacka->max_size);
+        head_g = head_finder_greater(counter_g, stacka->max_size);
         greater_selection(stacka, head_g);
     }
     else if (c == 'e')
     {
-        head_i = head_finder_index(counter, stacka->max_size);
-        head_g = head_finder_greater(counter, stacka->max_size);
+        head_i = head_finder_index(counter_i, stacka->max_size);
+        head_g = head_finder_greater(counter_g, stacka->max_size);
         if (head_i < head_g)
-            index_selection(stacka, head);
+            index_selection(stacka, head_i);
         else
             greater_selection(stacka, head_g);
     }
@@ -60,5 +60,5 @@ char markup_choice(int *counter_i, int *counter_g, int size)
     else if (head_i < head_g)
         return ('g');
     else
-        return ('e')
+        return ('e');
 }

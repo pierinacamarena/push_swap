@@ -21,16 +21,19 @@ t_stack	init_stack(int len)
 	t_stack	stack;
 	int		*list;
 	int		*indices;
+	int		*bool_index;
 	int		*original_index;
 
 	list = (int *)malloc(sizeof(int) * len + 1);
 	indices = (int *)malloc(sizeof(int) * len + 1);
-	original_index = (int *)malloc(sizeof(int) * len + 1);
+	bool_index = (int *)malloc(sizeof(int) * len + 1);
+	original_index = bool_index = (int *)malloc(sizeof(int) * len + 1);
 	stack.max_size = len;
 	stack.size = 0;
 	stack.array = list;
-	stack.index = indices;
+	stack.indices = indices;
 	stack.original_index = original_index;
+	stack.bool_index = bool_index;
 
 	return (stack);
 }

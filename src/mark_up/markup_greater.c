@@ -50,7 +50,7 @@ int markup_head_count(t_stack stacka, int index)
 
 int *head_greater_counter(t_stack stacka)
 {
-    int counter[stacka.size];
+    int *counter;
     int i;
     int head;
     int min_head;
@@ -58,6 +58,7 @@ int *head_greater_counter(t_stack stacka)
     i = 0;
     printf("count per index, incresing order\n");
     printf("[index : count]\n");
+    counter = (int *)malloc(sizeof(int) * stacka.max_size + 1);
     while (i < stacka.size)
     {
         counter[i] = markup_head_count(stacka, i);
@@ -89,27 +90,25 @@ void greater_selection(t_stack *stacka, int index)
 
     i = index_value_finder(*stacka, index);
     count = 0;
-    if (i == (stacka->max_size - 1))
-        return (1);
     j = i + 1;
     while (count < i)
     {
-        stacka->list[count] = 0;
+        stacka->bool_index[count] = 0;
         count++;
     }
-    stacka->list[i] = 1;
+    stacka->bool_index[i] = 1;
     while (j < stacka->max_size)
     {
         if (stacka->array[i] < stacka->array[j])
         {
-            stacka->list[j] = 1;
+            stacka->bool_index[j] = 1;
             i = j;
             j++;
             count++;
         }
         else
         {
-            stacka->list[j] = 1;
+            stacka->bool_index[j] = 1;
             j++;
         }
     }

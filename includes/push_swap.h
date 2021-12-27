@@ -29,8 +29,9 @@ typedef struct s_stack
   int x;
   int y;
   int *array;
-  int *index;
+  int *indices;
   int *original_index;
+  int *bool_index;
   int max_size;
   int d_a;
   int d_b;
@@ -58,11 +59,6 @@ typedef struct s_info
 
 } t_info;
 
-typedef struct markup
-{
-  int *indexed;
-  int *
-}
 
 /*
 -----Algorithm-----
@@ -125,7 +121,7 @@ char markup_choice(int *counter_i, int *counter_g, int size);
 markup_greater.c
 */
 int markup_head_count(t_stack stacka, int index);
-int find_head_greater(t_stack stacka);
+int *head_greater_counter(t_stack stacka);
 int head_finder_greater(int *counter, int size);
 void greater_selection(t_stack *stacka, int index);
 
@@ -133,7 +129,7 @@ void greater_selection(t_stack *stacka, int index);
 markup_index.c
 */
 int index_head_count(t_stack stacka, int index);
-int find_head_index(t_stack stacka);
+int *head_index_counter(t_stack stacka);
 int head_finder_index(int *counter, int size);
 void index_selection(t_stack *stacka, int index);
 
