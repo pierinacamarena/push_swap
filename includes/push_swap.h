@@ -116,6 +116,8 @@ markup.c
 */
 void    markup(t_stack *stacka);
 char markup_choice(int *counter_i, int *counter_g, int size);
+void printer_markup(t_stack stacka, int *counter_i, int *counter_g);
+void    print_final_markup(t_stack stacka);
 
 /*
 markup_greater.c
