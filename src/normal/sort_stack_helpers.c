@@ -16,10 +16,13 @@ int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		count;
 
-	count = ft_pb(stacka, stackb, printer);
-	count = count + ft_pb(stacka, stackb, printer);
-	count = count + ft_pb(stacka, stackb, printer);
-	count = count + ft_sort_three_reverse(stackb, stacka, printer);
+	if (stacka->bool_index[0] == 0 && stacka->bool_index[1] == 0 && stacka->bool_index[2] == 0)
+	{
+		count = ft_pb(stacka, stackb, printer);
+		count = count + ft_pb(stacka, stackb, printer);
+		count = count + ft_pb(stacka, stackb, printer);
+		count = count + ft_sort_three_reverse(stackb, stacka, printer);
+	}
 	return (count);
 }
 
@@ -28,11 +31,11 @@ int	algo_helper_top(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int		count;
 
 	count = 0;
-	if (stacka->a > stackb->x || stacka->a < stackb->y)
+	if ((stacka->a > stackb->x || stacka->a < stackb->y) && (stacka->bool_index[0] == 0))
 		count = count + ft_top_stack_a(stacka, stackb, printer);
-	else if (stacka->b > stackb->x || stacka->b < stackb->y)
+	else if ((stacka->b > stackb->x || stacka->b < stackb->y) && (stacka->bool_index[1] == 0))
 		count = count + ft_top_stack_b(stacka, stackb, printer);
-	else if (stacka->c > stackb->x || stacka->c < stackb->y)
+	else if ((stacka->c > stackb->x || stacka->c < stackb->y) && (stacka->bool_index[stacka->size-1]))
 		count = count + ft_top_stack_c(stacka, stackb, printer);
 	return (count);
 }

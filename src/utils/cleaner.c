@@ -17,3 +17,5 @@ void	free_stack(t_stack *stack)
 	free(stack->array);
 	free(stack);
 }
+
+

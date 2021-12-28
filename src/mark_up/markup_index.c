@@ -24,10 +24,10 @@ int index_head_count(t_stack stacka, int index)
 
     count = 1;
     i = index_value_finder(stacka, index);
-    if (i == (stacka.max_size - 1))
+    if (i == (stacka.size - 1))
         return(1);
     j = i + 1;
-    while (j < stacka.max_size)
+    while (j < stacka.size)
     {
         if ((stacka.indices[i] + 1) == stacka.indices[j])
         {
@@ -54,7 +54,7 @@ int *head_index_counter(t_stack stacka)
     i = 0;
     //printf("count per index, incresing order\n");
     //printf("[index : count]\n");
-    counter = (int *)malloc(sizeof(int) * stacka.max_size + 1);
+    counter = (int *)malloc(sizeof(int) * stacka.size + 1);
     while (i < stacka.size)
     {
         counter[i] = index_head_count(stacka, i);
@@ -90,7 +90,7 @@ void index_selection(t_stack *stacka, int index)
         count++;
     }
     stacka->bool_index[i] = 1;
-    while (j < stacka->max_size)
+    while (j < stacka->size)
     {
         if ((stacka->indices[i] + 1) == stacka->indices[j])
         {

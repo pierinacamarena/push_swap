@@ -20,10 +20,10 @@ int markup_head_count(t_stack stacka, int index)
 
     i = index_value_finder(stacka, index);
     count = 1;
-    if (i == (stacka.max_size - 1))
+    if (i == (stacka.size - 1))
         return (1);
     j = i + 1;
-    while (j < stacka.max_size)
+    while (j < stacka.size)
     {
     //    printf("i is %d\n j is %d\n stacka.array[i] is %d\n stacka.array[j] is %d\n count is %d\n", i, j, stacka.array[i], stacka.array[j], count);
     //    printf("prev_max is %d\n", prev_max);
@@ -58,7 +58,7 @@ int *head_greater_counter(t_stack stacka)
     i = 0;
     //printf("count per index, incresing order\n");
     //printf("[index : count]\n");
-    counter = (int *)malloc(sizeof(int) * stacka.max_size + 1);
+    counter = (int *)malloc(sizeof(int) * stacka.size + 1);
     while (i < stacka.size)
     {
         counter[i] = markup_head_count(stacka, i);
@@ -94,7 +94,7 @@ void greater_selection(t_stack *stacka, int index)
         count++;
     }
     stacka->bool_index[i] = 1;
-    while (j < stacka->max_size)
+    while (j < stacka->size)
     {
         if (stacka->array[i] < stacka->array[j])
         {

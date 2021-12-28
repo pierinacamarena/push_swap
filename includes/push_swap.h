@@ -36,6 +36,8 @@ typedef struct s_stack
   int d_a;
   int d_b;
   int d_c;
+  int stay_a;
+
 } t_stack;
 
 /**

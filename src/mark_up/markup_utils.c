@@ -19,13 +19,13 @@ int index_value_finder(t_stack stacka, int index)
     int end;
 
     i = 0;
-    end = stacka.max_size - 1;
-    if (stacka.max_size % 2 == 0)
-		midpoint = stacka.max_size / 2;
+    end = stacka.size - 1;
+    if (stacka.size % 2 == 0)
+		midpoint = stacka.size / 2;
 	else
 		midpoint = end / 2;
 
-    while (i < stacka.max_size)
+    while (i < stacka.size)
     {
         if (stacka.indices[i] == index)
             break;
@@ -85,6 +85,7 @@ int multiple_max(int *counter, int head, int size)
             total++;
         i++;
     }
+    printf("total is %d\n", total);
     potential_heads = (int *)malloc(sizeof(int) * total);
     i = 0;
     j = 0;

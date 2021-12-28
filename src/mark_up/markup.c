@@ -27,33 +27,39 @@ void    markup(t_stack *stacka)
     printf("counter_i is\n");
     counter_g = head_greater_counter(*stacka);
     printer_markup(*stacka, counter_i, counter_g);
-    c = markup_choice(counter_i, counter_g, stacka->max_size);
+    c = markup_choice(counter_i, counter_g, stacka->size);
     printf("c is %c\n",c);
     if (c == 'i')
     {
-        head_i = head_finder_index(counter_i, stacka->max_size);
+        head_i = head_finder_index(counter_i, stacka->size);
         printf("head is %d\n", head_i);
         index_selection(stacka, head_i);
+        stacka->stay_a = find_max(counter_i, stacka->size);
         print_final_markup(*stacka);
     }
     else if (c == 'g')
     {
-        head_g = head_finder_greater(counter_g, stacka->max_size);
+        head_g = head_finder_greater(counter_g, stacka->size);
         printf("head is %d\n", head_g);
         greater_selection(stacka, head_g);
+        stacka->stay_a = find_max(counter_g, stacka->size);
         print_final_markup(*stacka);
     }
     else if (c == 'e')
     {
-        head_i = head_finder_index(counter_i, stacka->max_size);
-        head_g = head_finder_greater(counter_g, stacka->max_size);
+        head_i = head_finder_index(counter_i, stacka->size);
+        head_g = head_finder_greater(counter_g, stacka->size);
+        stacka->stay_a = find_max(counter_g, stacka->size);
+        printf("i and g are %d %d\n", head_i, head_g);
         if (head_i < head_g)
         {
+            printf("inside i\n");
             index_selection(stacka, head_i);
             print_final_markup(*stacka);
         }
         else
         {
+            printf("inside g\n");
             greater_selection(stacka, head_g);
             print_final_markup(*stacka);
         }
