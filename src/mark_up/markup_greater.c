@@ -105,7 +105,7 @@ void greater_selection(t_stack *stacka, int index)
         }
         else
         {
-            stacka->bool_index[j] = 1;
+            stacka->bool_index[j] = 0;
             j++;
         }
     }

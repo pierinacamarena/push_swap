@@ -32,7 +32,9 @@ void    markup(t_stack *stacka)
     if (c == 'i')
     {
         head_i = head_finder_index(counter_i, stacka->max_size);
+        printf("head is %d\n", head_i);
         index_selection(stacka, head_i);
+        print_final_markup(*stacka);
     }
     else if (c == 'g')
     {
@@ -46,9 +48,15 @@ void    markup(t_stack *stacka)
         head_i = head_finder_index(counter_i, stacka->max_size);
         head_g = head_finder_greater(counter_g, stacka->max_size);
         if (head_i < head_g)
+        {
             index_selection(stacka, head_i);
+            print_final_markup(*stacka);
+        }
         else
+        {
             greater_selection(stacka, head_g);
+            print_final_markup(*stacka);
+        }
     }
 
 }
