@@ -27,7 +27,7 @@ int markup_head_count(t_stack stacka, int index)
     {
     //    printf("i is %d\n j is %d\n stacka.array[i] is %d\n stacka.array[j] is %d\n count is %d\n", i, j, stacka.array[i], stacka.array[j], count);
     //    printf("prev_max is %d\n", prev_max);
-        if (stacka.array[i] < stacka.array[j]) //&& (stacka.array[j] > prev_max))
+        if (stacka.a[0][i] < stacka.a[0][j]) //&& (stacka.array[j] > prev_max))
         {
         //    printf("---(stacka.array[i] < stacka.array[j])---\n");
          //   prev_max = stacka.array[j];
@@ -90,7 +90,7 @@ void greater_selection(t_stack *stacka, int index)
     j = i + 1;
     while (count < i)
     {
-        stacka->bool_index[count] = 0;
+        stacka->a[2][count] = 0;
         count++;
     }
     stacka->bool_index[i] = 1;

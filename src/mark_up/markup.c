@@ -22,7 +22,7 @@ void    markup(t_stack *stacka)
     int     head_g;
 
     arr = dirty_sorting(*stacka);
-    stacka->indices = set_index(arr, *stacka);
+    stacka->a[1] = set_index(arr, *stacka);
     counter_i = head_index_counter(*stacka);
     printf("counter_i is\n");
     counter_g = head_greater_counter(*stacka);
