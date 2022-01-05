@@ -67,3 +67,23 @@ int check_stacka(t_stack stacka)
     }
     return (0);
 }
+
+int check_sa(t_stack *stacka);
+{
+    int original_stay;
+    int new_stay;
+    int temp;
+
+    original_stay = stacka.stay_a;
+    temp = ft_sa(stacka, stackb, printer);
+    markup(stacka);
+    new_stay = stacka.stay_a;
+    if (new_stay > original_stay)
+        return (0);
+    else
+    {
+        temp = temp + ft_sa(stacka, stackb, printer);
+        markup(stacka);
+        return (1)
+    }
+}
