@@ -18,25 +18,19 @@
  **/
 t_stack	init_stack(int len)
 {
-	t_stack	stack;
-	int		*list;
-	int		*indices;
-	int		*bool_index;
-	int		**a;
+	t_stack stack;
+	int		i;	
+	int		**array;
 
-	a = (int **)malloc(sizeof(int*) * 3);
-	list = (int *)malloc(sizeof(int) * len)
-	indices = (int *)malloc(sizeof(int) * len);
-	bool_index = (int *)malloc(sizeof(int) * len);
-	a[0] = list;
-	a[1] = indices;
-	a[2] = bool_index;
-	stack.a = a;
+	array = (int **)malloc(sizeof(int*) * len);
+	while (i < len)
+	{
+		array[i] = (int*)malloc(sizeof(int) * 3);
+		i++;
+	}
+	stack.array = array;
 	stack.max_size = len;
 	stack.size = 0;
-	stack.array = list;
-	stack.indices = indices;
-	stack.bool_index = bool_index;
 
 	return (stack);
 }
@@ -48,12 +42,12 @@ bool	ft_check_sorted_reverse(t_stack stack)
 
 	i = 0;
 	j = 1;
-	while (i < (stack.size - 2) && (stack.array[i] > stack.array[j]))
+	while (i < (stack.size - 2) && (stack.array[i][0] > stack.array[j][0]))
 	{
 		i++;
 		j++;
 	}
-	if ((i == stack.size - 2) && (stack.array[i] > stack.array[j]))
+	if ((i == stack.size - 2) && (stack.array[i][0] > stack.array[j][0]))
 		return (true);
 	return (false);
 }
@@ -69,12 +63,12 @@ bool	ft_check_sorted(t_stack stack)
 
 	i = 0;
 	j = 1;
-	while (i < (stack.size - 2) && (stack.array[i] < stack.array[j]))
+	while (i < (stack.size - 2) && (stack.array[i][0] < stack.array[j][0]))
 	{
 		i++;
 		j++;
 	}
-	if ((i == stack.size - 2) && (stack.array[i] < stack.array[j]))
+	if ((i == stack.size - 2) && (stack.array[i][0] < stack.array[j][0]))
 		return (true);
 	return (false);
 }
@@ -93,13 +87,13 @@ t_stack	ft_stack_populate(t_stack *stack, char **av, int size)
 	j = 0;
 	while (i <= size)
 	{
-		stack->array[j] = ft_atoi(av[i]);
+		stack->array[j][0] = ft_atoi(av[i]);
 		i++;
 		j++;
 	}
 	stack->size = size;
-	stack->a = stack->array[0];
-	stack->b = stack->array[1];
-	stack->c = stack->array[size - 1];
+	stack->a = stack->array[0][0];
+	stack->b = stack->array[1][0];
+	stack->c = stack->array[size - 1][0];
 	return (*stack);
 }

@@ -23,7 +23,7 @@ int	printer_diff_len(t_info printer)
 		difference = printer.lena - printer.lenb;
 		while (i < difference)
 		{
-			ft_putnbr(printer.stacka.array[i++]);
+			ft_putnbr(printer.stacka.array[i++][0]);
 			ft_putstr("\n");
 		}
 	}
@@ -42,7 +42,7 @@ int	printer_difflen_b(t_info printer)
 	while (i < difference)
 	{
 		ft_putstr("                ");
-		ft_putnbr(printer.stackb.array[i++]);
+		ft_putnbr(printer.stackb.array[i++][0]);
 		ft_putstr("\n");
 	}
 	return (i);
@@ -55,9 +55,9 @@ int	printer_same_len(t_info printer, int len)
 	i = 0;
 	while (i < len)
 	{
-		ft_putnbr(printer.stacka.array[i]);
+		ft_putnbr(printer.stacka.array[i][0]);
 		ft_putstr("                ");
-		ft_putnbr(printer.stackb.array[i]);
+		ft_putnbr(printer.stackb.array[i][0]);
 		ft_putstr("\n");
 		i++;
 	}
@@ -73,9 +73,9 @@ int	printer_final_print(t_info printer, int i, int len)
 	{
 		while (i < len)
 		{
-			ft_putnbr(printer.stacka.array[i++]);
+			ft_putnbr(printer.stacka.array[i++][0]);
 			ft_putstr("               ");
-			ft_putnbr(printer.stackb.array[j++]);
+			ft_putnbr(printer.stackb.array[j++][0]);
 			ft_putstr("\n");
 		}
 	}
@@ -91,9 +91,9 @@ int	printer_final_b(t_info printer, int i, int len)
 	j = 0;
 	while (i < len)
 	{
-		ft_putnbr(printer.stacka.array[j++]);
+		ft_putnbr(printer.stacka.array[j++][0]);
 		ft_putstr("               ");
-		ft_putnbr(printer.stackb.array[i++]);
+		ft_putnbr(printer.stackb.array[i++][0]);
 		ft_putstr("\n");
 	}
 	return (i);

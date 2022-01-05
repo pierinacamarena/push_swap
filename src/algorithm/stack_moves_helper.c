@@ -23,7 +23,9 @@ void	ft_pa_helper(t_stack *stacka, t_stack *stackb)
 	end = stackb->size - 1;
 	while (i < end)
 	{
-		stackb->array[i] = stackb->array[j];
+		stackb->array[i][0] = stackb->array[j][0];
+		stackb->array[i][1] = stackb->array[j][1];
+		stackb->array[i][2] = stackb->array[j][2];
 		i++;
 		j++;
 	}
@@ -40,7 +42,9 @@ void	ft_pb_helper(t_stack *stacka, t_stack *stackb)
 	end = stacka->size - 1;
 	while (i < end)
 	{
-		stacka->array[i] = stacka->array[j];
+		stacka->array[i][0] = stacka->array[j][0];
+		stacka->array[i][1] = stacka->array[j][1];
+		stacka->array[i][2] = stacka->array[j][2];
 		i++;
 		j++;
 	}

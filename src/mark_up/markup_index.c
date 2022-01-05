@@ -29,7 +29,7 @@ int index_head_count(t_stack stacka, int index)
     j = i + 1;
     while (j < stacka.size)
     {
-        if ((stacka.indices[i] + 1) == stacka.indices[j])
+        if ((stacka.array[i][1] + 1) == stacka.array[j][1])
         {
             i = j;
             j++;
@@ -86,21 +86,21 @@ void index_selection(t_stack *stacka, int index)
     j = i + 1;
     while (count < i)
     {
-        stacka->bool_index[count] = 0;
+        stacka->array[count][2] = 0;
         count++;
     }
-    stacka->bool_index[i] = 1;
+    stacka->array[i][2] = 1;
     while (j < stacka->size)
     {
-        if ((stacka->indices[i] + 1) == stacka->indices[j])
+        if ((stacka->array[i][1] + 1) == stacka->array[i][1])
         {
-            stacka->bool_index[j] = 1;
+            stacka->array[j][2] = 1;
             i = j;
             j++;
         }
         else
         {
-            stacka->bool_index[j] = 0;
+            stacka->array[j][2] = 0;
             j++;
         }
     }

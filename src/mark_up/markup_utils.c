@@ -27,7 +27,7 @@ int index_value_finder(t_stack stacka, int index)
 
     while (i < stacka.size)
     {
-        if (stacka.indices[i] == index)
+        if (stacka.array[i][1] == index)
             break;
         i++;
     }

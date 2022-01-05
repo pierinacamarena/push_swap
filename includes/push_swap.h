@@ -28,11 +28,7 @@ typedef struct s_stack
   int c;
   int x;
   int y;
-  int **a;
-  int *array;
-  int *indices;
-  int *original_index;
-  int *bool_index;
+  int **array;
   int max_size;
   int d_a;
   int d_b;
@@ -90,7 +86,7 @@ stackB_moves.c
 /*
 dirty_sort.c
 */
-t_stack dirty_sorting(t_stack stacka);
+int *dirty_sorting(t_stack stacka);
 
 /*
 -----Indexing----
@@ -107,8 +103,8 @@ int check_min(int *processed, int len, int i);
 /*
 indexing.c
 */
-int index_finder(t_stack stacka, int numb);
-int *set_index(t_stack arr, t_stack stacka);
+int   index_finder(t_stack stacka, int numb);
+void  set_index(int *arr, t_stack *stacka);
 
 /*
 -----Mark_up-----

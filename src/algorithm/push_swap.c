@@ -52,7 +52,7 @@ void	ft_print_stack(t_stack stack)
 	i = 0;
 	while (i < stack.size)
 	{
-		printf("%d\n", stack.array[i]);
+		printf("%d\n", stack.array[i][0]);
 		i++;
 	}
 }

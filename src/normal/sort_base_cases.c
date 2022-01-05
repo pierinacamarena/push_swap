@@ -19,9 +19,9 @@ int	ft_sort_three(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	c;
 	int	count;
 
-	a = stacka->array[0];
-	b = stacka->array[1];
-	c = stacka->array[2];
+	a = stacka->array[0][0];
+	b = stacka->array[1][0];
+	c = stacka->array[2][0];
 	if ((a < c) && (c < b))
 		count = ft_sort_three_helper(stacka, stackb, printer);
 	else if ((b < a) && (a < c))

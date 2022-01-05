@@ -14,15 +14,14 @@
 
 void    markup(t_stack *stacka)
 {
-    t_stack arr;
-    char     c;
+    int     *arr;
+    char    c;
     int     *counter_i;
     int     *counter_g;
     int     head_i;
     int     head_g;
-
     arr = dirty_sorting(*stacka);
-    stacka->a[1] = set_index(arr, *stacka);
+    set_index(arr, stacka);
     counter_i = head_index_counter(*stacka);
     printf("counter_i is\n");
     counter_g = head_greater_counter(*stacka);
@@ -91,7 +90,7 @@ void printer_markup(t_stack stacka, int *counter_i, int *counter_g)
     printf("First two are: stacka, indices\n");
     while (i < stacka.max_size)
     {
-        printf("%d  %d\n",stacka.array[i], stacka.indices[i]);
+        printf("%d  %d\n",stacka.array[i][0], stacka.array[i][1]);
         i++;
     }
     i = 0;
@@ -110,7 +109,7 @@ void    print_final_markup(t_stack stacka)
     i = 0;
     while (i < stacka.max_size)
     {
-        printf("%d | %d | %d\n", stacka.array[i], stacka.indices[i], stacka.bool_index[i]);
+        printf("%d | %d | %d\n", stacka.array[i][0], stacka.array[i][1], stacka.array[i][2]);
         i++;
     }
 }

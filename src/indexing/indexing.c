@@ -19,26 +19,23 @@ int index_finder(t_stack stacka, int numb)
     i = 0;
     while (i < stacka.max_size)
     {
-        if (stacka.array[i] == numb)
+        if (stacka.array[i][0] == numb)
             return (i);
         i++;
     }
     return (-1);
 }
 
-int *set_index(t_stack arr, t_stack stacka)
+void set_index(int *arr, t_stack *stacka)
 {
     int i;
     int index;
-    int *indexed_array;
 
     i = 0;
-    indexed_array = (int *)malloc(sizeof(int) * stacka.size + 1);
-    while (i < stacka.size)
+    while (i < stacka->size)
     {
-        index = index_finder(stacka, arr.array[i]);
-        indexed_array[index] = i;
+        index = index_finder(*stacka, arr[i]);
+        stacka->array[index][1] = i;
         i++;
     }
-    return (indexed_array);
 }

@@ -12,18 +12,6 @@
 
 #include "../../includes/push_swap.h"
 
-void	ft_original_index(t_stack *stacka)
-{
-	int	i;
-
-	i = 0;
-	while (i < (stacka->max_size))
-	{
-		stacka->original_index[i] = i;
-		i++;
-	}
-}
-
 void	ft_val_updta(t_stack *stacka)
 {
 	int	end_a;
@@ -34,12 +22,12 @@ void	ft_val_updta(t_stack *stacka)
 		midpoint = stacka->size / 2;
 	else
 		midpoint = end_a / 2;
-	stacka->a = stacka->array[0];
-	stacka->b = stacka->array[1];
-	stacka->c = stacka->array[end_a];
-	stacka->x = stacka->array[0];
-	stacka->y = stacka->array[end_a];
-	stacka->midpoint = stacka->array[midpoint];
+	stacka->a = stacka->array[0][0];
+	stacka->b = stacka->array[1][0];
+	stacka->c = stacka->array[end_a][0];
+	stacka->x = stacka->array[0][0];
+	stacka->y = stacka->array[end_a][0];
+	stacka->midpoint = stacka->array[midpoint][0];
 }
 
 void	ft_val_updtb(t_stack *stackb)
@@ -52,10 +40,10 @@ void	ft_val_updtb(t_stack *stackb)
 		midpoint = stackb->size / 2;
 	else
 		midpoint = end_b / 2;
-	stackb->a = stackb->array[0];
-	stackb->b = stackb->array[1];
-	stackb->c = stackb->array[end_b];
-	stackb->x = stackb->array[0];
-	stackb->y = stackb->array[end_b];
-	stackb->midpoint = stackb->array[midpoint];
+	stackb->a = stackb->array[0][0];
+	stackb->b = stackb->array[1][0];
+	stackb->c = stackb->array[end_b][0];
+	stackb->x = stackb->array[0][0];
+	stackb->y = stackb->array[end_b][0];
+	stackb->midpoint = stackb->array[midpoint][0];
 }
