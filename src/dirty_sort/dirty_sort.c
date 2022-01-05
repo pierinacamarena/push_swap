@@ -13,7 +13,7 @@
 #include "../../includes/push_swap.h"
 
 // Merge Function
-void merge(int **arr, int l, int m, int r) 
+void merge(int *arr, int l, int m, int r) 
 { 
     int i; 
     int j; 
@@ -28,13 +28,13 @@ void merge(int **arr, int l, int m, int r)
     i = 0;
     while (i < n1)
     {
-        L[i] = *arr[l + i];
+        L[i] = arr[l + i];
         i++;
     }
     j = 0;
     while (j < n2)
     {
-        R[j] = *arr[m + 1 + j];
+        R[j] = arr[m + 1 + j];
         j++;
     }
     i = 0; 
@@ -44,32 +44,32 @@ void merge(int **arr, int l, int m, int r)
     { 
         if (L[i] <= R[j]) 
         { 
-            *arr[k] = L[i]; 
+            arr[k] = L[i]; 
             i++; 
         } 
         else
         { 
-            *arr[k] = R[j]; 
+            arr[k] = R[j]; 
             j++; 
         } 
         k++; 
     } 
     while (i < n1) 
     { 
-        *arr[k] = L[i]; 
+        arr[k] = L[i]; 
         i++; 
         k++; 
     } 
     while (j < n2) 
     { 
-        *arr[k] = R[j]; 
+        arr[k] = R[j]; 
         j++; 
         k++;   
     } 
 }
 
 // Merge Sort Function in C 
-void mergeSort(int **arr, int l, int r) 
+void mergeSort(int *arr, int l, int r) 
 { 
     int m;
 
@@ -96,6 +96,6 @@ int *dirty_sorting(t_stack stacka)
         arr[i] = stacka.array[i][0];
         i++;
     }
-    mergeSort(&arr, 0, arr_size - 1); 
+    mergeSort(arr, 0, arr_size - 1); 
     return (arr); 
 }

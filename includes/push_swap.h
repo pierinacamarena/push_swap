@@ -89,6 +89,11 @@ dirty_sort.c
 int *dirty_sorting(t_stack stacka);
 
 /*
+merge_sort.c
+*/
+int *quickmergesort(t_stack stacka);
+
+/*
 -----Indexing----
 */
 

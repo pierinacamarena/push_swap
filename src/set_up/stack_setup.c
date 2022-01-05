@@ -23,6 +23,7 @@ t_stack	init_stack(int len)
 	int		**array;
 
 	array = (int **)malloc(sizeof(int*) * len);
+	i = 0;
 	while (i < len)
 	{
 		array[i] = (int*)malloc(sizeof(int) * 3);

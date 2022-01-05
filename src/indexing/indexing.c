@@ -34,7 +34,10 @@ void set_index(int *arr, t_stack *stacka)
     i = 0;
     while (i < stacka->size)
     {
+        printf("i is %d\n", i);
+        printf("arr[i] is %d\n", arr[i]);
         index = index_finder(*stacka, arr[i]);
+        printf("index is %d \n", index);
         stacka->array[index][1] = i;
         i++;
     }
