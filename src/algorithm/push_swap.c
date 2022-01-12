@@ -37,6 +37,7 @@ int	main(int ac, char **av)
 		initial_print(printer);
 		printf("\n");
 		markup(&stacka);
+		push_to_b(&stacka, &stackb, &printer);
 	}
 	return (0);
 }

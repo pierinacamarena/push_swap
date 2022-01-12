@@ -35,6 +35,29 @@ int	ft_sa(t_stack *stacka, t_stack *stackb, t_info *printer)
 	update_printer(*stacka, *stackb, printer, "sa");
 	return (1);
 }
+
+/**
+temp sa
+**/
+
+int	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	int	temp[3];
+
+	temp[0] = stacka->array[0][0];
+	temp[1] = stacka->array[0][1];
+	temp[2] = stacka->array[0][2];
+	stacka->array[0][0] = stacka->array[1][0];
+	stacka->array[0][1] = stacka->array[1][1];
+	stacka->array[0][2] = stacka->array[1][2];
+	stacka->array[1][0] = temp[0];
+	stacka->array[1][1] = temp[1];
+	stacka->array[1][2] = temp[2];
+
+	ft_val_updta(stacka);
+	update_printer(*stacka, *stackb, printer, "ts");
+	return (1);
+}
 /**
  *	Rotates down, the top number of stackA becomes the last number and all the
  *	rest move one position upwards

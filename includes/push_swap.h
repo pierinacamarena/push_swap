@@ -74,6 +74,7 @@ stack_moves_helper.c
 /*
 stackA_moves.c
 */
+int	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
 stackB_moves.c
@@ -259,6 +260,18 @@ printer_helper.c
 /*
 printer.c
 */
+
+/*
+-----Push_to_b------
+*/
+
+/*
+push_to_b.c
+*/
+
+void  push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer);
+int     check_stacka(t_stack stacka);
+int     sa_check(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
 -----Reverse-----

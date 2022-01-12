@@ -22,8 +22,9 @@ void    markup(t_stack *stacka)
     int     head_g;
     arr = dirty_sorting(*stacka);
     set_index(arr, stacka);
+    free(arr);
     counter_i = head_index_counter(*stacka);
-    printf("counter_i is\n");
+    //printf("counter_i is\n");
     counter_g = head_greater_counter(*stacka);
     printer_markup(*stacka, counter_i, counter_g);
     c = markup_choice(counter_i, counter_g, stacka->size);
@@ -31,7 +32,7 @@ void    markup(t_stack *stacka)
     if (c == 'i')
     {
         head_i = head_finder_index(counter_i, stacka->size);
-        printf("head is %d\n", head_i);
+        //printf("head is %d\n", head_i);
         index_selection(stacka, head_i);
         stacka->stay_a = find_max(counter_i, stacka->size);
         print_final_markup(*stacka);
@@ -58,7 +59,7 @@ void    markup(t_stack *stacka)
         }
         else
         {
-            printf("inside g\n");
+//            printf("inside g\n");
             greater_selection(stacka, head_g);
             print_final_markup(*stacka);
         }
@@ -94,10 +95,10 @@ void printer_markup(t_stack stacka, int *counter_i, int *counter_g)
         i++;
     }
     i = 0;
-    printf("Second three are: index0-n, counter_i, counterg\n");
+        printf("Second three are: index0-n, counter_i, counterg\n");
     while (i < stacka.max_size)
     {
-        printf("%d  %d  %d\n", i, counter_i[i], counter_g[i]);
+    //    printf("%d  %d  %d\n", i, counter_i[i], counter_g[i]);
         i++;
     }
 }

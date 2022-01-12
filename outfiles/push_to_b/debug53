@@ -1,0 +1,298 @@
+---------------------------------
+Before sorting 
+5
+3
+2
+7
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 0
+
+3
+5
+2
+7
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 0
+
+5
+3
+2
+7
+_               _
+a               b
+---------------------------------
+exec sa-------instruction number 1
+
+3
+5
+2
+7
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 1
+
+5
+3
+2
+7
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 1
+
+3
+5
+2
+7
+_               _
+a               b
+---------------------------------
+exec ra-------instruction number 2
+
+5
+2
+7
+3
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 2
+
+2
+5
+7
+3
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 2
+
+5
+2
+7
+3
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 3
+
+2
+7
+3               5
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 3
+
+7
+2
+3               5
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 3
+
+2
+7
+3               5
+_               _
+a               b
+---------------------------------
+exec ra-------instruction number 4
+
+7
+3
+2               5
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 4
+
+3
+7
+2               5
+_               _
+a               b
+---------------------------------
+exec ts-------instruction number 4
+
+7
+3
+2               5
+_               _
+a               b
+---------------------------------
+exec pb-------instruction number 5
+
+3                7
+2                5
+_               _
+a               b
+
+here are the following arrays
+First two are: stacka, indices
+5  2
+3  1
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 2 0
+5 | 2 | 0
+3 | 1 | 0
+2 | 0 | 1
+7 | 3 | 1
+checksa before loop = 21955
+here are the following arrays
+First two are: stacka, indices
+3  1
+5  2
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 1 1
+3 | 1 | 1
+5 | 2 | 1
+2 | 0 | 0
+7 | 3 | 1
+here are the following arrays
+First two are: stacka, indices
+5  2
+3  1
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 2 0
+5 | 2 | 0
+3 | 1 | 0
+2 | 0 | 1
+7 | 3 | 1
+checksa inside loop = 0, i is 0
+here are the following arrays
+First two are: stacka, indices
+3  1
+5  2
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 1 1
+3 | 1 | 1
+5 | 2 | 1
+2 | 0 | 0
+7 | 3 | 1
+here are the following arrays
+First two are: stacka, indices
+5  2
+3  1
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 2 0
+5 | 2 | 0
+3 | 1 | 0
+2 | 0 | 1
+7 | 3 | 1
+here are the following arrays
+First two are: stacka, indices
+3  1
+5  2
+2  0
+7  3
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 1 1
+3 | 1 | 1
+5 | 2 | 1
+2 | 0 | 0
+7 | 3 | 1
+checksa inside loop = 1, i is 1
+here are the following arrays
+First two are: stacka, indices
+2  0
+5  2
+7  3
+3  1
+Second three are: index0-n, counter_i, counterg
+c is g
+head is 0
+2 | 0 | 1
+5 | 2 | 1
+7 | 3 | 1
+3 | 1 | 0
+here are the following arrays
+First two are: stacka, indices
+5  2
+2  0
+7  3
+3  1
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 0 0
+5 | 2 | 0
+2 | 0 | 1
+7 | 3 | 1
+3 | 1 | 0
+checksa inside loop = 1, i is 2
+here are the following arrays
+First two are: stacka, indices
+7  2
+2  0
+3  1
+3  1
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 0 0
+7 | 2 | 0
+2 | 0 | 1
+3 | 1 | 1
+3 | 1 | 0
+here are the following arrays
+First two are: stacka, indices
+2  0
+7  2
+3  1
+3  1
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 0 0
+2 | 0 | 1
+7 | 2 | 1
+3 | 1 | 0
+3 | 1 | 0
+checksa inside loop = 1, i is 3
+here are the following arrays
+First two are: stacka, indices
+3  1
+7  2
+2  0
+3  1
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 1 1
+3 | 1 | 1
+7 | 2 | 1
+2 | 0 | 0
+3 | 1 | 0
+here are the following arrays
+First two are: stacka, indices
+7  2
+3  1
+2  0
+3  1
+Second three are: index0-n, counter_i, counterg
+c is e
+i and g are 0 0
+7 | 2 | 0
+3 | 1 | 0
+2 | 0 | 1
+3 | 1 | 0
+checksa inside loop = 1, i is 4

@@ -85,7 +85,7 @@ int multiple_max(int *counter, int head, int size)
             total++;
         i++;
     }
-    printf("total is %d\n", total);
+    //printf("total is %d\n", total);
     potential_heads = (int *)malloc(sizeof(int) * total);
     i = 0;
     j = 0;

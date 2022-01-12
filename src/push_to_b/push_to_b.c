@@ -34,23 +34,33 @@ If after performing sa (swap a) more elements will be kept, it means that there 
 After all we have to unmake sa (swap a) and return result of our calculations.
 */
 
-void    push_to_b(t_stack *stacka);
+void    push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
     int i;
     int stacka_check;
     int count;
+    int check_sa;
 
     i = 0;
     count = 0;
-    stacka_check = check_bool_array(*stacka);
-    while (stacka_check == 1)
+    stacka_check = check_stacka(*stacka);
+    printf("checksa before loop = %d\n", check_sa);
+    while (stacka_check == 1 && i < 5)
     {
-        stacka_check = check_bool_array(*stacka);
-        //check if sa is needed
-        else if (stacka->array[0] == 0)
+        check_sa = sa_check(stacka, stackb, printer);
+        printf("checksa inside loop = %d, i is %d\n", check_sa, i);
+        if (check_sa == 0)
+        {
+            count = count + ft_sa(stacka, stackb, printer);
+            markup(stacka);
+
+        }
+        else if (stacka->array[0][2] == 0)
             count = count + ft_pb(stacka, stackb, printer);
         else
-            count = count + ft_ra(stacka, stackb, printer);   
+            count = count + ft_ra(stacka, stackb, printer);
+        stacka_check = check_stacka(*stacka);
+        i++;
     }
 }
 
@@ -61,29 +71,29 @@ int check_stacka(t_stack stacka)
     i = 0;
     while (i < stacka.size)
     {
-        if (stacka->array[i][2] == 0)
+        if (stacka.array[i][2] == 0)
             return (1);
         i++;
     }
     return (0);
 }
 
-int check_sa(t_stack *stacka);
+int sa_check(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
     int original_stay;
     int new_stay;
     int temp;
+    int result;
 
-    original_stay = stacka.stay_a;
-    temp = ft_sa(stacka, stackb, printer);
+    original_stay = stacka->stay_a;
+    temp = ft_temp_sa(stacka, stackb, printer);
     markup(stacka);
-    new_stay = stacka.stay_a;
+    new_stay = stacka->stay_a;
     if (new_stay > original_stay)
-        return (0);
+        result = 0;
     else
-    {
-        temp = temp + ft_sa(stacka, stackb, printer);
-        markup(stacka);
-        return (1)
-    }
+        result = 1;
+    temp = temp + ft_temp_sa(stacka, stackb, printer);
+    markup(stacka);
+    return (result);
 }
