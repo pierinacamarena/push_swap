@@ -104,3 +104,19 @@ int multiple_max(int *counter, int head, int size)
         i = find_min(potential_heads, total);
     return (i);
 }
+
+int temp_stay_a(t_stack stacka)
+{
+    int total;
+    int i;
+
+    total = 0;
+    i = 0;
+    while (i < stacka->size)
+    {
+        if (stack->temp_a[i] == 1)
+            total++;
+        i++;
+    }
+    return(total);
+}

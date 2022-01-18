@@ -14,15 +14,12 @@
 
 void    markup(t_stack *stacka)
 {
-    int     *arr;
     char    c;
     int     *counter_i;
     int     *counter_g;
     int     head_i;
     int     head_g;
-    arr = dirty_sorting(*stacka);
-    set_index(arr, stacka);
-    free(arr);
+
     counter_i = head_index_counter(*stacka);
     //printf("counter_i is\n");
     counter_g = head_greater_counter(*stacka);
@@ -64,7 +61,62 @@ void    markup(t_stack *stacka)
             print_final_markup(*stacka);
         }
     }
+    free(counter_i);
+    free(counter_g);
 
+}
+
+void    temp_markup(t_stack *stacka)
+{
+    char    c;
+    int     *counter_i;
+    int     *counter_g;
+    int     head_i;
+    int     head_g;
+
+    counter_i = head_index_counter(*stacka);
+    //printf("counter_i is\n");
+    counter_g = head_greater_counter(*stacka);
+    printer_markup(*stacka, counter_i, counter_g);
+    c = markup_choice(counter_i, counter_g, stacka->size);
+    printf("c is %c\n",c);
+    if (c == 'i')
+    {
+        head_i = head_finder_index(counter_i, stacka->size);
+        //printf("head is %d\n", head_i);
+        stacka->temp_a = index_temp_selection(stacka, head_i);
+        stacka->stay_a_temp = temp_stay_a(*stacka);
+        print_final_markup(*stacka);
+    }
+    else if (c == 'g')
+    {
+        head_g = head_finder_greater(counter_g, stacka->size);
+        printf("head is %d\n", head_g);
+        stacka->temp_a = greater_temp_selection(stacka, head_g);
+        stacka->stay_a_temp = temp_stay_a(*stacka);
+        print_final_markup(*stacka);
+    }
+    else if (c == 'e')
+    {
+        head_i = head_finder_index(counter_i, stacka->size);
+        head_g = head_finder_greater(counter_g, stacka->size);
+        stacka->stay_a_temp = temp_stay_a(*stacka);
+        printf("i and g are %d %d\n", head_i, head_g);
+        if (head_i < head_g)
+        {
+        //    printf("inside i\n");
+            stacka->temp_a = index_temp_selection(stacka, head_i);
+            print_final_markup(*stacka);
+        }
+        else
+        {
+//            printf("inside g\n");
+            stacka->temp_a = greater_temp_selection(stacka, head_g);
+            print_final_markup(*stacka);
+        }
+    }
+    free(counter_g);
+    free(counter_i);
 }
 
 char markup_choice(int *counter_i, int *counter_g, int size)

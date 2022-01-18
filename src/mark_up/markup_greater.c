@@ -110,3 +110,38 @@ void greater_selection(t_stack *stacka, int index)
         }
     }
 }
+
+int *greater_temp_selection(t_stack *stacka, int index)
+{
+    int i;
+    int j;
+    int count;
+    int *temp;
+
+    temp = (int *)malloc(sizeof(int) * stacka->size);   
+    i = index_value_finder(*stacka, index);
+    count = 0;
+    j = i + 1;
+    while (count < i)
+    {
+        stacka->array[count][2] = 0;
+        count++;
+    }
+    stacka->array[i][2] = 1;
+    while (j < stacka->size)
+    {
+        if (stacka->array[i][0] < stacka->array[j][0])
+        {
+            temp[j] = 1;
+            i = j;
+            j++;
+            count++;
+        }
+        else
+        {
+            temp[j] = 0;
+            j++;
+        }
+    }
+    return (temp);
+}

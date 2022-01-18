@@ -26,7 +26,7 @@ int index_finder(t_stack stacka, int numb)
     return (-1);
 }
 
-void set_index(int *arr, t_stack *stacka)
+void    set_index(int *arr, t_stack *stacka)
 {
     int i;
     int index;
@@ -41,4 +41,13 @@ void set_index(int *arr, t_stack *stacka)
         stacka->array[index][1] = i;
         i++;
     }
+}
+
+void    indexing(t_stack *stacka)
+{
+    int *arr;
+
+    arr = dirty_sorting(*stacka);
+    set_index(arr, stacka);
+    free(arr);
 }

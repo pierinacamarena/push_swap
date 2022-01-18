@@ -53,7 +53,6 @@ void    push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer)
         {
             count = count + ft_sa(stacka, stackb, printer);
             markup(stacka);
-
         }
         else if (stacka->array[0][2] == 0)
             count = count + ft_pb(stacka, stackb, printer);
@@ -87,13 +86,13 @@ int sa_check(t_stack *stacka, t_stack *stackb, t_info *printer)
 
     original_stay = stacka->stay_a;
     temp = ft_temp_sa(stacka, stackb, printer);
-    markup(stacka);
-    new_stay = stacka->stay_a;
+    temp_markup(stacka);
+    new_stay = stacka->stay_a_temp;
     if (new_stay > original_stay)
         result = 0;
     else
         result = 1;
     temp = temp + ft_temp_sa(stacka, stackb, printer);
-    markup(stacka);
+    free(stacka->temp_a);
     return (result);
 }

@@ -29,11 +29,13 @@ typedef struct s_stack
   int x;
   int y;
   int **array;
+  int *temp_a;
   int max_size;
   int d_a;
   int d_b;
   int d_c;
   int stay_a;
+  int stay_a_temp;
 
 } t_stack;
 

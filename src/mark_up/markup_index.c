@@ -105,3 +105,37 @@ void index_selection(t_stack *stacka, int index)
         }
     }
 }
+
+int *index_temp_selection(t_stack *stacka, int index)
+{
+    int i;
+    int j;
+    int count;
+    int *temp;
+
+    count = 0;
+    temp = (int *)malloc(sizeof(int) * stacka->size);
+    i = index_value_finder(*stacka, index);
+    j = i + 1;
+    while (count < i)
+    {
+        stacka->array[count][2] = 0;
+        count++;
+    }
+    stacka->array[i][2] = 1;
+    while (j < stacka->size)
+    {
+        if ((stacka->array[i][1] + 1) == stacka->array[i][1])
+        {
+            temp[j] = 1;
+            i = j;
+            j++;
+        }
+        else
+        {
+            temp[j] = 0;
+            j++;
+        }
+    }
+    return (temp);
+}
