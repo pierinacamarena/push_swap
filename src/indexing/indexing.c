@@ -43,11 +43,11 @@ void    set_index(int *arr, t_stack *stacka)
     }
 }
 
-void    indexing(t_stack *stacka)
+int    *indexing(t_stack *stacka)
 {
     int *arr;
 
     arr = dirty_sorting(*stacka);
     set_index(arr, stacka);
-    free(arr);
+    return (arr);
 }

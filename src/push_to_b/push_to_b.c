@@ -44,11 +44,11 @@ void    push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer)
     i = 0;
     count = 0;
     stacka_check = check_stacka(*stacka);
-    printf("checksa before loop = %d\n", check_sa);
-    while (stacka_check == 1 && i < 5)
+    printf("checks a before loop = %d\n", stacka_check);
+    while (stacka_check == 1 && i < 7)
     {
         check_sa = sa_check(stacka, stackb, printer);
-        printf("checksa inside loop = %d, i is %d\n", check_sa, i);
+        printf("check sa inside loop = %d, i is %d\n", stacka_check, i);
         if (check_sa == 0)
         {
             count = count + ft_sa(stacka, stackb, printer);

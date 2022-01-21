@@ -50,14 +50,14 @@ int *head_index_counter(t_stack stacka)
     int i;
     int head;
     int min_head;
+    int location;
 
     i = 0;
-    //printf("count per index, incresing order\n");
-    //printf("[index : count]\n");
     counter = (int *)malloc(sizeof(int) * stacka.size + 1);
     while (i < stacka.size)
     {
-        counter[i] = index_head_count(stacka, i);
+        location = index_value_finder(stacka, i);
+        counter[location] = index_head_count(stacka, i);
         //printf("[%d : %d]\n", i, counter[i]);
         i++;
     }
@@ -70,6 +70,7 @@ int head_finder_index(int *counter, int size)
     int min_head;
 
     head = find_max(counter, size);
+    printf("the max head is %d, just finding the the highest, not final head\n", head);
     min_head = multiple_max(counter, head, size);
 
     return(min_head);

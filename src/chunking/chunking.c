@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   chunking.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,49 +12,12 @@
 
 #include "../../includes/push_swap.h"
 
-int	main(int ac, char **av)
+void    splitter(t_stack stacka, int n, int *arr)
 {
-	t_stack	stacka;
-	t_stack	stackb;
-	t_info	printer;
-	int		len;
-	int		i;
+    int *chunks;
 
-	len = ac - 1;
-	if (ac == 0 || ac == 1)
-	{
-		ft_putstr("no numbers to sort");
-		return (0);
-	}
-	stacka = init_stack(len);
-	ft_stack_populate(&stacka, av, len);
-	stackb = init_stack(len);
-	printer = init_printer(stacka, stackb);
-	if (ft_check_sorted(stacka) || len == 1)
-		ft_putstr("it is sorted! \n");
-	else
-	{
-		initial_print(printer);
-		printf("\n");
-		indexing(&stacka);
-		markup(&stacka);
-		//push_to_b(&stacka, &stackb, &printer);
-	}
-	return (0);
-}
-
-/**
- * Prints the elements of the stack from top to bottom.
- **/
-
-void	ft_print_stack(t_stack stack)
-{
-	int	i;
-
-	i = 0;
-	while (i < stack.size)
-	{
-		printf("%d\n", stack.array[i][0]);
-		i++;
-	}
+    chunks = (int *)malloc(sizeof(int) * n);
+    if (!chunks)
+        return (NULL);
+    
 }

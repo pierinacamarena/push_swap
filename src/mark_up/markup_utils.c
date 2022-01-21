@@ -112,9 +112,9 @@ int temp_stay_a(t_stack stacka)
 
     total = 0;
     i = 0;
-    while (i < stacka->size)
+    while (i < stacka.size)
     {
-        if (stack->temp_a[i] == 1)
+        if (stacka.temp_a[i] == 1)
             total++;
         i++;
     }

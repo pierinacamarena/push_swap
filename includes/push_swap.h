@@ -36,6 +36,7 @@ typedef struct s_stack
   int d_c;
   int stay_a;
   int stay_a_temp;
+  int head;
 
 } t_stack;
 
@@ -60,6 +61,10 @@ typedef struct s_info
 
 } t_info;
 
+typedef struct s_chunk
+{
+  
+}t_chunk;
 
 /*
 -----Algorithm-----
@@ -101,18 +106,11 @@ int *quickmergesort(t_stack stacka);
 */
 
 /*
-index.c
-*/
-int *indexing(t_stack *stacka);
-//int find_min(t_stack *stacka);
-int find_indices(t_stack *stacka, int *processed, int len);
-int check_min(int *processed, int len, int i);
-
-/*
 indexing.c
 */
-int   index_finder(t_stack stacka, int numb);
+int     index_finder(t_stack stacka, int numb);
 void  set_index(int *arr, t_stack *stacka);
+void  indexing(t_stack *stacka);
 
 /*
 -----Mark_up-----
@@ -121,26 +119,29 @@ void  set_index(int *arr, t_stack *stacka);
 /*
 markup.c
 */
-void    markup(t_stack *stacka);
-char markup_choice(int *counter_i, int *counter_g, int size);
-void printer_markup(t_stack stacka, int *counter_i, int *counter_g);
-void    print_final_markup(t_stack stacka);
+void  markup(t_stack *stacka);
+void  temp_markup(t_stack *stacka);
+void  printer_markup(t_stack stacka, int *counter_i, int *counter_g);
+void  print_final_markup(t_stack stacka);
+char  markup_choice(int *counter_i, int *counter_g, int size);
 
 /*
 markup_greater.c
 */
-int markup_head_count(t_stack stacka, int index);
-int *head_greater_counter(t_stack stacka);
-int head_finder_greater(int *counter, int size);
-void greater_selection(t_stack *stacka, int index);
+int     markup_head_count(t_stack stacka, int index);
+int     head_finder_greater(int *counter, int size);
+int     *head_greater_counter(t_stack stacka);
+int     *greater_temp_selection(t_stack *stacka, int index);
+void  greater_selection(t_stack *stacka, int index);
 
 /*
 markup_index.c
 */
-int index_head_count(t_stack stacka, int index);
-int *head_index_counter(t_stack stacka);
-int head_finder_index(int *counter, int size);
-void index_selection(t_stack *stacka, int index);
+int     index_head_count(t_stack stacka, int index);
+int     head_finder_index(int *counter, int size);
+int     *head_index_counter(t_stack stacka);
+int     *index_temp_selection(t_stack *stacka, int index);
+void  index_selection(t_stack *stacka, int index);
 
 
 /*
@@ -150,6 +151,7 @@ int index_value_finder(t_stack stacka, int index);
 int find_max(int *array, int len);
 int find_min(int *array, int len);
 int multiple_max(int *counter, int head, int size);
+int temp_stay_a(t_stack stacka);
 
 /*
 -----Normal------

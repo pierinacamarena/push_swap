@@ -28,14 +28,15 @@ void    markup(t_stack *stacka)
     printf("c is %c\n",c);
     if (c == 'i')
     {
+        printf("i chose i\n");
         head_i = head_finder_index(counter_i, stacka->size);
-        //printf("head is %d\n", head_i);
         index_selection(stacka, head_i);
         stacka->stay_a = find_max(counter_i, stacka->size);
         print_final_markup(*stacka);
     }
     else if (c == 'g')
     {
+        printf("i chose g\n");
         head_g = head_finder_greater(counter_g, stacka->size);
         printf("head is %d\n", head_g);
         greater_selection(stacka, head_g);
@@ -44,19 +45,20 @@ void    markup(t_stack *stacka)
     }
     else if (c == 'e')
     {
+        printf("inside e\n");
         head_i = head_finder_index(counter_i, stacka->size);
         head_g = head_finder_greater(counter_g, stacka->size);
+        printf("heads i and g are %d %d\n", head_i, head_g);
         stacka->stay_a = find_max(counter_g, stacka->size);
-        printf("i and g are %d %d\n", head_i, head_g);
         if (head_i < head_g)
         {
-            printf("inside i\n");
+            printf("i chose i\n");
             index_selection(stacka, head_i);
             print_final_markup(*stacka);
         }
         else
         {
-//            printf("inside g\n");
+            printf("i chose g\n");
             greater_selection(stacka, head_g);
             print_final_markup(*stacka);
         }
@@ -83,7 +85,7 @@ void    temp_markup(t_stack *stacka)
     if (c == 'i')
     {
         head_i = head_finder_index(counter_i, stacka->size);
-        //printf("head is %d\n", head_i);
+        printf("head is %d\n", head_i);
         stacka->temp_a = index_temp_selection(stacka, head_i);
         stacka->stay_a_temp = temp_stay_a(*stacka);
         print_final_markup(*stacka);
@@ -101,7 +103,7 @@ void    temp_markup(t_stack *stacka)
         head_i = head_finder_index(counter_i, stacka->size);
         head_g = head_finder_greater(counter_g, stacka->size);
         stacka->stay_a_temp = temp_stay_a(*stacka);
-        printf("i and g are %d %d\n", head_i, head_g);
+        printf("heads i and g are %d %d\n", head_i, head_g);
         if (head_i < head_g)
         {
         //    printf("inside i\n");
@@ -147,10 +149,10 @@ void printer_markup(t_stack stacka, int *counter_i, int *counter_g)
         i++;
     }
     i = 0;
-        printf("Second three are: index0-n, counter_i, counterg\n");
+        printf("Second two are: index0-n, counter_i, counterg\n");
     while (i < stacka.max_size)
     {
-    //    printf("%d  %d  %d\n", i, counter_i[i], counter_g[i]);
+        printf("%d  %d\n", counter_i[i], counter_g[i]);
         i++;
     }
 }
