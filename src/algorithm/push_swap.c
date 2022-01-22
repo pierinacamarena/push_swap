@@ -19,6 +19,9 @@ int	main(int ac, char **av)
 	t_info	printer;
 	int		len;
 	int		i;
+	int		*arr;
+	int		*chunks;
+	int		split;
 
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
@@ -34,10 +37,23 @@ int	main(int ac, char **av)
 		ft_putstr("it is sorted! \n");
 	else
 	{
+		split = 2;
 		initial_print(printer);
 		printf("\n");
-		indexing(&stacka);
-		markup(&stacka);
+		arr = indexing(&stacka);
+		chunks = split_choice(stacka, arr);
+		i = 0;
+		while (i < stacka.size)
+		{
+			printf("%d    | %d  %d\n", i, stacka.array[i][0], arr[i]);
+			i++;
+		}
+		i = 0;
+		while (i < split)
+		{
+			printf("%d\n", chunks[i]);
+			i++;
+		}
 		//push_to_b(&stacka, &stackb, &printer);
 	}
 	return (0);

@@ -17,6 +17,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <math.h>
 
 typedef struct s_stack
 {
@@ -61,11 +62,6 @@ typedef struct s_info
 
 } t_info;
 
-typedef struct s_chunk
-{
-  
-}t_chunk;
-
 /*
 -----Algorithm-----
 */
@@ -84,8 +80,19 @@ stackA_moves.c
 int	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
-stackB_moves.c
+stackB_movs.
 */
+
+/*
+-----Chunking-----
+*/
+
+/*
+chunking.c
+*/
+
+int   *split_choice(t_stack stacka, int *arr);
+int   *splitter(t_stack stacka, int n, int *arr);
 
 /*
 -----Dirty_Sort-----
@@ -110,7 +117,7 @@ indexing.c
 */
 int     index_finder(t_stack stacka, int numb);
 void  set_index(int *arr, t_stack *stacka);
-void  indexing(t_stack *stacka);
+int  *indexing(t_stack *stacka);
 
 /*
 -----Mark_up-----
