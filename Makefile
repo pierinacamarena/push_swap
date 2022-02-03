@@ -43,6 +43,7 @@ SRC = src/algorithm/push_swap.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
 		src/push_to_b/push_to_b.c \
+		src/push_to_b/push_chunk.c \
 		src/reverse/intermediate_reverse.c \
 		src/reverse/intermediate_bigger_reverse.c \
 		src/reverse/intermediate_smaller_reverse.c \

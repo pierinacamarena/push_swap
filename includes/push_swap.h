@@ -29,28 +29,32 @@ typedef struct s_stack
   int c;
   int x;
   int y;
-  int **array;
-  int *temp_a;
+  //int **array;
+  int *array;
+  //int *temp_a;
   int max_size;
   int d_a;
   int d_b;
   int d_c;
-  int stay_a;
-  int stay_a_temp;
-  int head;
+  //int stay_a;
+  //int stay_a_temp;
+  //int head;
 
 } t_stack;
 
-/**
-struct LinkedList
+typedef struct s_chunk
 {
-	int	data;
-	struct	LinkedLIst *next;
-};
+  int *chunks;
+  int *chunk_size;
+  int splits;
+} t_chunk;
 
-typedef struct *node;
+typedef struct s_hold
+{
+  int number;
+  int moves;
+} t_hold;
 
-*/
 typedef struct s_info 
 {
   t_stack	stacka;
@@ -91,8 +95,9 @@ stackB_movs.
 chunking.c
 */
 
-int   *split_choice(t_stack stacka, int *arr);
-int   *splitter(t_stack stacka, int n, int *arr);
+t_chunk   split_choice(t_stack stacka, int *arr);
+t_chunk   splitter(t_stack stacka, int n, int *arr);
+void      set_size_chunks(t_chunk *chunking, t_stack stacka, int n);
 
 /*
 -----Dirty_Sort-----
@@ -283,6 +288,13 @@ push_to_b.c
 void  push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer);
 int     check_stacka(t_stack stacka);
 int     sa_check(t_stack *stacka, t_stack *stackb, t_info *printer);
+
+/*
+push_chunk.c
+*/
+t_hold  find_top_num(t_stack stacka, int border);
+t_hold  find_lower_num(t_stack stacka, int border);
+int    choose_push(t_stack *stacka, t_stack *stackb, t_info *printer, int *chunks);
 
 /*
 -----Reverse-----

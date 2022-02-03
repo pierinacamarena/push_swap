@@ -33,7 +33,7 @@ If after performing sa (swap a) more elements will be kept, it means that there 
 
 After all we have to unmake sa (swap a) and return result of our calculations.
 */
-
+/*
 void    push_to_b(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
     int i;
@@ -96,3 +96,4 @@ int sa_check(t_stack *stacka, t_stack *stackb, t_info *printer)
     free(stacka->temp_a);
     return (result);
 }
+*/

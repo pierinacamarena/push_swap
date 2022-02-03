@@ -15,7 +15,7 @@
 /**
 function that counts how many numbers would sty in stacka, if index was the head
 **/
-
+/*
 int index_head_count(t_stack stacka, int index)
 {
     int i;
@@ -40,10 +40,12 @@ int index_head_count(t_stack stacka, int index)
     }
     return(count);
 }
+*/
 
 /**
 function that creates an array with the count of each index as a respective head
 **/
+/*
 int *head_index_counter(t_stack stacka)
 {
     int *counter;
@@ -140,3 +142,4 @@ int *index_temp_selection(t_stack *stacka, int index)
     }
     return (temp);
 }
+*/

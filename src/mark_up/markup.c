@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 void    markup(t_stack *stacka)
 {
     char    c;
@@ -168,3 +169,4 @@ void    print_final_markup(t_stack stacka)
         i++;
     }
 }
+*/

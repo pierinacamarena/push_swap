@@ -93,7 +93,7 @@ int *dirty_sorting(t_stack stacka)
     arr_size = stacka.size;
     while(i < arr_size)
     {
-        arr[i] = stacka.array[i][0];
+        arr[i] = stacka.array[i];
         i++;
     }
     mergeSort(arr, 0, arr_size - 1); 

@@ -19,9 +19,9 @@ int	ft_sort_three_reverse(t_stack *stackb, t_stack *stacka, t_info *printer)
 	int	c;
 	int	count;
 
-	a = stackb->array[0][0];
-	b = stackb->array[1][0];
-	c = stackb->array[2][0];
+	a = stackb->array[0];
+	b = stackb->array[1];
+	c = stackb->array[2];
 	if ((a < b) && (b < c))
 		count = sort_three_reverse_helper(stacka, stackb, printer);
 	else if ((a < c) && (c < b))

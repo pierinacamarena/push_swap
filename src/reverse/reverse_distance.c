@@ -27,8 +27,8 @@ void	ft_rda(t_stack *stacka, t_stack *stackb)
 	i = 0;
 	if (stackb->a < stacka->midpoint)
 	{
-		while (stackb->a > stacka->array[i][0] && \
-				stacka->array[i][0] != stacka->midpoint)
+		while (stackb->a > stacka->array[i] && \
+				stacka->array[i] != stacka->midpoint)
 			i++;
 		stackb->d_a = i;
 	}
@@ -36,7 +36,7 @@ void	ft_rda(t_stack *stacka, t_stack *stackb)
 	{
 		i = 0;
 		d = stacka->size - 1;
-		while (stackb->a < stacka->array[d][0])
+		while (stackb->a < stacka->array[d])
 		{
 			i++;
 			d--;
@@ -53,7 +53,7 @@ void	ft_rdb(t_stack *stacka, t_stack *stackb)
 	i = 0;
 	if (stackb->b < stacka->midpoint)
 	{
-		while (stackb->b > stacka->array[i][0])
+		while (stackb->b > stacka->array[i])
 			i++;
 		stackb->d_b = i;
 	}
@@ -61,7 +61,7 @@ void	ft_rdb(t_stack *stacka, t_stack *stackb)
 	{
 		i = 0;
 		d = stacka->size - 1;
-		while (stackb->b < stacka->array[d][0])
+		while (stackb->b < stacka->array[d])
 		{
 			d--;
 			i++;
@@ -78,7 +78,7 @@ void	ft_rdc(t_stack *stacka, t_stack *stackb)
 	i = 0;
 	if (stackb->c < stacka->midpoint)
 	{
-		while (stackb->c > stacka->array[i][0])
+		while (stackb->c > stacka->array[i])
 			i++;
 		stackb->d_c = i;
 	}
@@ -86,7 +86,7 @@ void	ft_rdc(t_stack *stacka, t_stack *stackb)
 	{
 		i = 0;
 		d = stacka->size - 1;
-		while (stackb->c < stacka->array[d][0])
+		while (stackb->c < stacka->array[d])
 		{
 			d--;
 			i++;

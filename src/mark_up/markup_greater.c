@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int markup_head_count(t_stack stacka, int index)
 {
     int i;
@@ -148,3 +148,4 @@ int *greater_temp_selection(t_stack *stacka, int index)
     }
     return (temp);
 }
+*/

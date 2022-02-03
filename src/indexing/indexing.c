@@ -19,14 +19,14 @@ int index_finder(t_stack stacka, int numb)
     i = 0;
     while (i < stacka.max_size)
     {
-        if (stacka.array[i][0] == numb)
+        if (stacka.array[i] == numb)
             return (i);
         i++;
     }
     return (-1);
 }
 
-void    set_index(int *arr, t_stack *stacka)
+/*void    set_index(int *arr, t_stack *stacka)
 {
     int i;
     int index;
@@ -41,13 +41,13 @@ void    set_index(int *arr, t_stack *stacka)
         stacka->array[index][1] = i;
         i++;
     }
-}
+}*/
 
 int    *indexing(t_stack *stacka)
 {
     int *arr;
 
     arr = dirty_sorting(*stacka);
-    set_index(arr, stacka);
+    //set_index(arr, stacka);
     return (arr);
 }

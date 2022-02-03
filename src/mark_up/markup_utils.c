@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 int index_value_finder(t_stack stacka, int index)
 {
     int i;
@@ -120,3 +121,4 @@ int temp_stay_a(t_stack stacka)
     }
     return(total);
 }
+*/

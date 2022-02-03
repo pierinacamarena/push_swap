@@ -17,12 +17,16 @@ int	main(int ac, char **av)
 	t_stack	stacka;
 	t_stack	stackb;
 	t_info	printer;
+	t_hold	hold_one;
+	t_hold	hold_two;
 	int		len;
 	int		i;
 	int		*arr;
-	int		*chunks;
+	t_chunk	chunking;
 	int		split;
+	int		count;
 
+	count = 0;
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
 	{
@@ -37,24 +41,40 @@ int	main(int ac, char **av)
 		ft_putstr("it is sorted! \n");
 	else
 	{
-		split = 2;
+		split = 5;
 		initial_print(printer);
 		printf("\n");
 		arr = indexing(&stacka);
-		chunks = split_choice(stacka, arr);
+		chunking = split_choice(stacka, arr);
 		i = 0;
 		while (i < stacka.size)
 		{
-			printf("%d    | %d  %d\n", i, stacka.array[i][0], arr[i]);
+			printf("%d    | %d  %d\n", i, stacka.array[i], arr[i]);
 			i++;
 		}
 		i = 0;
 		while (i < split)
 		{
-			printf("%d\n", chunks[i]);
+			printf("%d\n", chunking.chunks[i]);
 			i++;
 		}
-		//push_to_b(&stacka, &stackb, &printer);
+		i = 0;
+		while (i < split)
+		{
+			printf("chunk size %d chunk: %d\n", i + 1, chunking.chunk_size[i]);
+			i++;
+		}
+		i = 0;
+		while (i < 3)
+		{	
+			count = count + choose_push(&stacka, &stackb, &printer, chunking.chunks);
+			i++;
+		}
+		count = count + ft_sort_three_reverse(&stackb, &stacka, &printer);
+		printf("stacka\n");
+		ft_print_stack(stacka);
+		printf("stackb\n");
+		ft_print_stack(stackb);
 	}
 	return (0);
 }
@@ -70,7 +90,7 @@ void	ft_print_stack(t_stack stack)
 	i = 0;
 	while (i < stack.size)
 	{
-		printf("%d\n", stack.array[i][0]);
+		printf("%d\n", stack.array[i]);
 		i++;
 	}
 }

@@ -54,7 +54,7 @@ void	initial_print(t_info printer)
 	len = printer.lena;
 	while (i < len)
 	{
-		ft_putnbr(printer.stacka.array[i][0]);
+		ft_putnbr(printer.stacka.array[i]);
 		ft_putstr("\n");
 		i++;
 	}
