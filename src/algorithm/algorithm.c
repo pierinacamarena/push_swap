@@ -92,6 +92,25 @@ have a function that calls functions that will do the following:
 	-call the function that creates the indeces
 	-call the function that finds which markup method gives the biggest head
 	
-	-
-	-
+	-Ok now it is time to try the first chunk
+	-So call the function (while (i < (n - 3))
+	
+	Ok now for the remaining n-3 elements
+		check if the number is bigger than x
+			pb
+		if it is smaller than y
+			pb
+			ra
+		else
+			check is the number is bigger or smaller than stackb.midpoint
+			if it is bigger
+				calculate the number of ra needed,
+					ra (times needed)
+					pb
+					rra times needed back
+			if it smaller
+				calculate the number of rra needed
+					rra(needed)
+					pb
+					ra (times needed back)
 **/

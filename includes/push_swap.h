@@ -47,12 +47,16 @@ typedef struct s_chunk
   int *chunks;
   int *chunk_size;
   int splits;
+  int current_chunk;
+  int push_nums;
+  int rrbs_left;
 } t_chunk;
 
 typedef struct s_hold
 {
-  int number;
-  int moves;
+  int   number;
+  int   moves;
+  char  location;
 } t_hold;
 
 typedef struct s_info 
@@ -98,6 +102,8 @@ chunking.c
 t_chunk   split_choice(t_stack stacka, int *arr);
 t_chunk   splitter(t_stack stacka, int n, int *arr);
 void      set_size_chunks(t_chunk *chunking, t_stack stacka, int n);
+int       has_chunk(t_stack stacka, t_chunk chunking, int n);
+int       rbs_left;       
 
 /*
 -----Dirty_Sort-----
@@ -294,7 +300,26 @@ push_chunk.c
 */
 t_hold  find_top_num(t_stack stacka, int border);
 t_hold  find_lower_num(t_stack stacka, int border);
-int    choose_push(t_stack *stacka, t_stack *stackb, t_info *printer, int *chunks);
+int     choose_push(t_stack *stacka, t_stack *stackb, t_info *printer, int *chunks);
+int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer);
+int    solve_first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
+
+/*
+push_chunk_helper.c
+*/
+t_hold  choose_number(t_stack *stacka, t_stack *stackb, t_info *printer, int chunk);
+int     solve_other_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk *chunking);
+char    chunk_checker(t_stack stacka, t_chunk chunking);
+
+/*
+push_chunk_optimization.c
+*/
+int optim_higher_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk *chunking);
+
+/*
+pushtob_utils.c
+*/
+int distance(t_stack stacka, t_stack stackb, t_hold num);
 
 /*
 -----Reverse-----

@@ -63,8 +63,9 @@ t_chunk     splitter(t_stack stacka, int n, int *arr)
     set_size_chunks(&chunking, stacka, n);
     while (i < n)
     {
-        printf("location is %d\n", location);
+        //printf("location is %d\n", location);
         chunks[i] = arr[location];
+        printf("chunk border is %d at i %d\n", chunks[i], i);
         if (i < (n - 2))
             location = location + floor(stacka.size/n);
         else if (i == n - 2)
@@ -96,4 +97,18 @@ void    set_size_chunks(t_chunk *chunking, t_stack stacka, int n)
         size = stacka.size - size;
         chunking->chunk_size[i++] = size;
     }
+}
+
+int    has_chunk(t_stack stacka, t_chunk chunking, int n)
+{
+    int i;
+
+    i = 0;
+    while (i < stacka.size)
+    {
+        if (stacka.array[i] <= chunking.chunks[n-1])
+            return (1);
+        i++;
+    }
+    return (0);
 }

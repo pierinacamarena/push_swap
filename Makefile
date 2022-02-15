@@ -44,6 +44,9 @@ SRC = src/algorithm/push_swap.c \
 		src/printing/printer_helper.c \
 		src/push_to_b/push_to_b.c \
 		src/push_to_b/push_chunk.c \
+		src/push_to_b/push_chunk_helper.c \
+		src/push_to_b/push_chunk_optimization.c \
+		src/push_to_b/pushtob_utils.c \
 		src/reverse/intermediate_reverse.c \
 		src/reverse/intermediate_bigger_reverse.c \
 		src/reverse/intermediate_smaller_reverse.c \
@@ -61,7 +64,7 @@ SRC = src/algorithm/push_swap.c \
 
 OBJ		= $(SRC:.c=.o)
 
-CC		= gcc
+CC		= gcc -g
 
 FLAGS	= -Werror -Wall -Wextra
 

@@ -23,7 +23,6 @@ int	main(int ac, char **av)
 	int		i;
 	int		*arr;
 	t_chunk	chunking;
-	int		split;
 	int		count;
 
 	count = 0;
@@ -41,40 +40,32 @@ int	main(int ac, char **av)
 		ft_putstr("it is sorted! \n");
 	else
 	{
-		split = 5;
 		initial_print(printer);
 		printf("\n");
-		arr = indexing(&stacka);
-		chunking = split_choice(stacka, arr);
+		solve_a(&stacka, &stackb, &printer);
 		i = 0;
-		while (i < stacka.size)
+		/*while (i < stacka.size)
 		{
 			printf("%d    | %d  %d\n", i, stacka.array[i], arr[i]);
 			i++;
 		}
 		i = 0;
-		while (i < split)
+		while (i < chunking.splits)
 		{
 			printf("%d\n", chunking.chunks[i]);
 			i++;
 		}
 		i = 0;
-		while (i < split)
+		while (i < chunking.splits)
 		{
 			printf("chunk size %d chunk: %d\n", i + 1, chunking.chunk_size[i]);
 			i++;
-		}
-		i = 0;
-		while (i < 3)
-		{	
-			count = count + choose_push(&stacka, &stackb, &printer, chunking.chunks);
-			i++;
-		}
-		count = count + ft_sort_three_reverse(&stackb, &stacka, &printer);
+		}*/
 		printf("stacka\n");
 		ft_print_stack(stacka);
 		printf("stackb\n");
 		ft_print_stack(stackb);
+		printf("the size is %d", stackb.size);
 	}
 	return (0);
 }
