@@ -105,22 +105,28 @@ int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer)
     int     count;
     int     i;
     t_chunk chunking;
+    int     stackb_size;
 
-    i = 1;
+    i = 0;
     arr = indexing(stacka);
 	chunking = split_choice(*stacka, arr);
-    count = solve_first_chunk(stacka, stackb, printer, chunking);
     chunking.current_chunk = i;
-    count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
+    count = solve_first_chunk(stacka, stackb, printer, chunking);
+    stackb_size = expected_stackbsize(chunking);
+    printf("the expected size of stack b for the first chunk is %d\n", stackb_size);
+    //chunking.current_chunk++;
     //count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
-    /*while (i < chunking.splits)
+    //stackb_size = expected_stackbsize(chunking);
+    //printf("the expected size of stack b for the second chunk is %d\n", stackb_size);
+    //count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
+    while (i < chunking.splits)
     {
         chunking.current_chunk = i;
         count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
         i++;
         if (printer->count >= 1200)
         break;
-    }*/
+    }
     return (count);
 }
 

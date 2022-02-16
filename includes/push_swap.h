@@ -323,6 +323,7 @@ pushtob_utils.c
 */
 int distance(t_stack stacka, t_stack stackb, t_hold num);
 int optim_distance(t_stack stacka, t_stack stackb, t_hold num);
+int expected_stackbsize(t_chunk chunking);
 
 /*
 -----Reverse-----

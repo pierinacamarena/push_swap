@@ -154,12 +154,14 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
     int     k;
     char    c;
     t_hold  next_num;
+    int     exp_stackbsize;
 
     i = 0;
     c = chunk_checker(*stacka, *chunking);
     chunking->push_nums = 0;
 	//while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
-	while (c = chunk_checker(*stacka, *chunking) == 'y')
+    exp_stackbsize = (expected_stackbsize(*chunking));
+	while (chunk_checker(*stacka, *chunking) == 'y' && stackb->size < exp_stackbsize)
     {
         num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
         printf("num is %d\n", num.number);
@@ -199,24 +201,7 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
                     count = count + ft_rra(stacka, stackb, printer);
                 k++;
             }
-            j = 0;
-            if (num.number < stackb->midpoint)
-            {
-                while (j < num.distance)
-                {
-                    count = count + ft_rrb(stackb, stacka, printer);
-                    j++;
-                }
-                count = count + ft_pb(stacka, stackb, printer);
-                chunking->push_nums++;
-                j = 0;
-                while (j <= num.distance)
-                {
-                    count = count + ft_rb(stackb, stacka, printer);
-                    j++;
-                }
-            }
-            else if (num.number > stackb->midpoint)
+            if (num.number > stackb->midpoint)
             {
                 chunking->rrbs = 0;
                 while (j < num.distance)
@@ -245,6 +230,14 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
                     if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
                         break;
                 }
+                if (chunking->rrbs > 0)
+                {
+                    while (chunking->rrbs > 0)
+                    {
+                        count = count + ft_rrb(stackb, stacka, printer);
+                        chunking->rrbs--;
+                    }
+                }    
             }          
         }
         if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
