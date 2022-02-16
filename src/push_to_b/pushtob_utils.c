@@ -38,3 +38,17 @@ int distance(t_stack stacka, t_stack stackb, t_hold num)
     }
     return (distance);  
 }
+
+int optim_distance(t_stack stacka, t_stack stackb, t_hold num)
+{
+    int distance;
+    int i;
+    int j;
+
+    i = 0;
+
+    while (num.number < stackb.array[i])
+        i++;
+    distance = i;   
+    return (distance);  
+}

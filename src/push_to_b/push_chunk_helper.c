@@ -49,7 +49,8 @@ int    solve_other_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_ch
     i = 0;
     c = chunk_checker(*stacka, *chunking);
     chunking->push_nums = 0;
-	while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
+    while (c = chunk_checker(*stacka, *chunking) == 'y')
+	//while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
 	{
         //c = chunk_checker(*stacka, *chunking);
         num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
@@ -123,6 +124,7 @@ int    solve_other_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_ch
             }            
         }
         chunking->push_nums++;
+        c = chunk_checker(*stacka, *chunking);
 	}                
     return (count);
 }
@@ -149,7 +151,6 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
     int     j;
     int     count;
     t_hold  num;
-    int     d;
     int     k;
     char    c;
     t_hold  next_num;
@@ -157,9 +158,9 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
     i = 0;
     c = chunk_checker(*stacka, *chunking);
     chunking->push_nums = 0;
-	while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
-	{
-        //c = chunk_checker(*stacka, *chunking);
+	//while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
+	while (c = chunk_checker(*stacka, *chunking) == 'y')
+    {
         num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
         printf("num is %d\n", num.number);
         if (num.number > stackb->x)
@@ -179,6 +180,7 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
                 k++;
             }
             count = count + ft_pb(stacka, stackb, printer);
+            chunking->push_nums++;
         }
         else if (num.number < stackb->x && num.number > stackb->y)
         {
@@ -187,7 +189,7 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
             printf("i am at instruction %d\n", printer->count);
             printf("stackb->x is %d, stackb->y is %d\n", stackb->x, stackb->y);
             printf("the chosen number is  %d\n", num.number);
-            d = distance(*stacka, *stackb, num);
+            num.distance = distance(*stacka, *stackb, num);
             k = 0;
             while (k < num.moves)
             {
@@ -200,14 +202,15 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
             j = 0;
             if (num.number < stackb->midpoint)
             {
-                while (j < d)
+                while (j < num.distance)
                 {
                     count = count + ft_rrb(stackb, stacka, printer);
                     j++;
                 }
                 count = count + ft_pb(stacka, stackb, printer);
+                chunking->push_nums++;
                 j = 0;
-                while (j <= d)
+                while (j <= num.distance)
                 {
                     count = count + ft_rb(stackb, stacka, printer);
                     j++;
@@ -216,28 +219,37 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
             else if (num.number > stackb->midpoint)
             {
                 chunking->rrbs = 0;
-                while (j < d)
+                while (j < num.distance)
                 {
                     count = count + ft_rb(stackb, stacka, printer);
                     j++;
                     chunking->rrbs++;
+                    printf("at instruction %d the rrbs is %d\n", printer->count, chunking->rrbs);
                 }
                 count = count + ft_pb(stacka, stackb, printer);
+                chunking->push_nums++;
                 j = 0;
                 while (chunking->rrbs > 0)
                 {
                     count = count + optim_higher_midpoint(stacka, stackb, printer, chunking);
                     next_num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
-                    while (next_num.number < stackb->x)
+                    while (next_num.number < stackb->x && next_num.number <= chunking->chunks[chunking->current_chunk])
                     {
-                        count = count + optim_smaller();
+                        count = count + optim_smaller(stacka, stackb, printer, chunking);
+                        next_num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
+                        if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
+                            break;
                     }
                     count = count + ft_rrb(stackb, stacka, printer);
                     chunking->rrbs--;
+                    if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
+                        break;
                 }
-            }            
+            }          
         }
-        chunking->push_nums++;
+        if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
+            break;
+        c = chunk_checker(*stacka, *chunking);
 	}                
     return (count);
 }
