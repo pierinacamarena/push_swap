@@ -14,12 +14,12 @@
 
 void	ft_printer(t_info printer)
 {
-	int		i;
-	int		len;
+	//int		i;
+	//int		len;
 
-	i = 0;
+	//i = 0;
 	printer_initial_setup(printer);
-	len = ft_max(printer.lena, printer.lenb);
+	/*len = ft_max(printer.lena, printer.lenb);
 	while (i < len)
 	{
 		if (printer.lena != printer.lenb)
@@ -31,6 +31,7 @@ void	ft_printer(t_info printer)
 	}
 	ft_putstr("_               _\n");
 	ft_putstr("a               b\n");
+	*/
 }
 
 void	printer_initial_setup(t_info printer)

@@ -124,8 +124,6 @@ int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer)
         chunking.current_chunk = i;
         count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
         i++;
-        if (printer->count >= 1200)
-        break;
     }
     return (count);
 }

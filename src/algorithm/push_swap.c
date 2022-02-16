@@ -65,7 +65,8 @@ int	main(int ac, char **av)
 		ft_print_stack(stacka);
 		printf("stackb\n");
 		ft_print_stack(stackb);
-		printf("the size is %d", stackb.size);
+		printf("the size is %d\n", stackb.size);
+		printf("the number of instructions is %d\n", printer.count);
 	}
 	return (0);
 }

@@ -23,8 +23,7 @@ t_hold choose_number(t_stack *stacka, t_stack *stackb, t_info *printer, int chun
     i = 0;
     hold_one = find_top_num(*stacka, chunk);
 	hold_two = find_lower_num(*stacka, chunk);
-    //printf("hold one is %d\nhold two is %d\n", hold_one.number, hold_two.number);
-    if (hold_one.moves <= hold_two.moves)
+    if (hold_one.moves < hold_two.moves)
     {
         hold_one.location = 't';
         return (hold_one);
@@ -33,6 +32,19 @@ t_hold choose_number(t_stack *stacka, t_stack *stackb, t_info *printer, int chun
     {
         hold_two.location = 'b';
         return (hold_two);
+    }
+    else
+    {
+        if (hold_one.number < hold_two.number)
+        {
+            hold_one.location = 't';
+            return (hold_one);
+        }
+        else if (hold_two.number < hold_one.number)
+        {
+            hold_two.location = 'b';
+            return (hold_two);
+        }
     }
 }
 
@@ -164,14 +176,8 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
 	while (chunk_checker(*stacka, *chunking) == 'y' && stackb->size < exp_stackbsize)
     {
         num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
-        printf("num is %d\n", num.number);
         if (num.number > stackb->x)
         {
-            printf("------------------------------------------------\n");
-            printf("I am at 'num.number > stackb->x'\n");
-            printf("i am at instruction %d\n", printer->count);
-            printf("stackb->x is %d\n", stackb->x);
-            printf("the chosen number is  %d\n", num.number);
             k = 0;
             while (k < num.moves)
             {
@@ -186,11 +192,6 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
         }
         else if (num.number < stackb->x && num.number > stackb->y)
         {
-            printf("------------------------------------------------\n");
-            printf("I am at num.number < stackb->x && num.number > stackb->y\n");
-            printf("i am at instruction %d\n", printer->count);
-            printf("stackb->x is %d, stackb->y is %d\n", stackb->x, stackb->y);
-            printf("the chosen number is  %d\n", num.number);
             num.distance = distance(*stacka, *stackb, num);
             k = 0;
             while (k < num.moves)
@@ -209,7 +210,6 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
                     count = count + ft_rb(stackb, stacka, printer);
                     j++;
                     chunking->rrbs++;
-                    printf("at instruction %d the rrbs is %d\n", printer->count, chunking->rrbs);
                 }
                 count = count + ft_pb(stacka, stackb, printer);
                 chunking->push_nums++;
@@ -217,18 +217,23 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
                 while (chunking->rrbs > 0)
                 {
                     count = count + optim_higher_midpoint(stacka, stackb, printer, chunking);
-                    next_num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
-                    while (next_num.number < stackb->x && next_num.number <= chunking->chunks[chunking->current_chunk])
+                    if (stackb->size < exp_stackbsize)
+                        next_num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
+                    while (next_num.number < stackb->x && stackb->size < exp_stackbsize)
                     {
                         count = count + optim_smaller(stacka, stackb, printer, chunking);
                         next_num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
                         if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
+                            break;
+                        if (stackb->size == exp_stackbsize)
                             break;
                     }
                     count = count + ft_rrb(stackb, stacka, printer);
                     chunking->rrbs--;
                     if (chunking->push_nums >= chunking->chunk_size[chunking->current_chunk])
                         break;
+                    if (stackb->size == exp_stackbsize)
+                            break;
                 }
                 if (chunking->rrbs > 0)
                 {
