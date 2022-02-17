@@ -146,10 +146,8 @@ char    chunk_checker(t_stack stacka, t_chunk chunking)
     int i;
 
     i = 0;
-    //printf("inside chunk checker\n");
     while (i < stacka.size)
     {
-        //printf("current border is %d\n", chunking.chunks[chunking.current_chunk]);
         if (stacka.array[i] < chunking.chunks[chunking.current_chunk])
             return ('y');
         i++;
@@ -171,7 +169,6 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
     i = 0;
     c = chunk_checker(*stacka, *chunking);
     chunking->push_nums = 0;
-	//while (chunking->push_nums < chunking->chunk_size[chunking->current_chunk])
     exp_stackbsize = (expected_stackbsize(*chunking));
 	while (chunk_checker(*stacka, *chunking) == 'y' && stackb->size < exp_stackbsize)
     {

@@ -89,8 +89,22 @@ stackA_moves.c
 int	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
-stackB_movs.
+stackB_moves.c
 */
+
+/*
+stack_rr_moves.c
+*/
+int ft_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_ra_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_rb_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
+
+/*
+stack_rrr_moves.c
+*/
+int ft_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_rra_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_rrb_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
 -----Chunking-----
