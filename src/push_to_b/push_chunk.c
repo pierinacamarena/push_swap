@@ -111,7 +111,7 @@ int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer)
     arr = indexing(stacka);
 	chunking = split_choice(*stacka, arr);
     chunking.current_chunk = i;
-    count = solve_first_chunk(stacka, stackb, printer, chunking);
+    count = solve_first_chunk_original(stacka, stackb, printer, chunking);
     stackb_size = expected_stackbsize(chunking);
     printf("the expected size of stack b for the first chunk is %d\n", stackb_size);
     //chunking.current_chunk++;
@@ -152,11 +152,6 @@ int    solve_first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_ch
         printf("num is %d\n", num.number);
         if (num.number > stackb->x)
         {
-            printf("------------------------------------------------\n");
-            printf("I am at 'num.number > stackb->x'\n");
-            printf("i am at instruction %d\n", printer->count);
-            printf("stackb->x is %d\n", stackb->x);
-            printf("the chosen number is  %d\n", num.number);
             k = 0;
             while (k < num.moves)
             {
@@ -170,11 +165,6 @@ int    solve_first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_ch
         }
         else if (num.number < stackb->y)
         {
-            printf("------------------------------------------------\n");
-            printf("I am at num.number < stackb->y\n");
-            printf("i am at instruction %d\n", printer->count);
-            printf("stackb->y is %d\n", stackb->y);
-            printf("the chosen number is  %d\n", num.number);
             k = 0;
             while (k < num.moves)
             {
@@ -189,20 +179,58 @@ int    solve_first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_ch
         }
         else if (num.number < stackb->x && num.number > stackb->y)
         {
-            printf("------------------------------------------------\n");
-            printf("I am at num.number < stackb->x && num.number > stackb->y\n");
-            printf("i am at instruction %d\n", printer->count);
-            printf("stackb->x is %d, stackb->y is %d\n", stackb->x, stackb->y);
-            printf("the chosen number is  %d\n", num.number);
             d = distance(*stacka, *stackb, num);
             k = 0;
             while (k < num.moves)
             {
                 if (num.location == 't')
-                    count = count + ft_ra(stacka, stackb, printer);
+                {
+                    if (num.number > stackb->midpoint)
+                    {
+                        if (num.moves > d)
+                        {
+                            while (k < d)
+                            {
+                                count = count + ft_rr(stacka, stackb, printer);
+                                k++;
+                            }
+                            d = 0;
+                            while (k < num.moves)
+                            {
+                                count = count + ft_ra(stacka, stackb, printer);
+                                k++;
+                            }
+                        }
+                        else if (d > num.moves)
+                        {
+                            while (k < num.moves)
+                            {
+                                count = count + ft_rr(stacka, stackb, printer);
+                                k++;
+                            }
+                            d = d - num.moves;
+                        }
+                        else
+                        {
+                            while (k < num.moves)
+                            {
+                                count = count + ft_rr(stacka, stackb, printer);
+                                k++;
+                            }
+                            d = 0;
+                        }   
+                    }
+                    else
+                    {
+                        count = count + ft_ra(stacka, stackb, printer);
+                        k++;
+                    }
+                }
                 else if (num.location = 'b')
+                {
                     count = count + ft_rra(stacka, stackb, printer);
-                k++;
+                    k++;
+                }
             }
             j = 0;
             if (num.number < stackb->midpoint)

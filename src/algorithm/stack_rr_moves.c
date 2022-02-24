@@ -18,7 +18,7 @@ int ft_rr(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 	count = 0;
 	count = count + ft_ra_rr(stacka, stackb, printer);
-	count = count + ft_rb_rr(stacka, stackb, printer);
+	count = count + ft_rb_rr(stackb, stacka, printer);
 	printer->count = printer->count + 1;
 	update_printer(*stacka, *stackb, printer, "rr");
 }

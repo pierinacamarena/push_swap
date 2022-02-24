@@ -42,6 +42,15 @@ typedef struct s_stack
 
 } t_stack;
 
+typedef struct program
+{
+  t_info hold;
+  t_info next_hold;
+  t_chunk chunking;
+  int complete_distance;
+  int expected_stackbsize;
+}
+
 typedef struct s_chunk
 {
   int *chunks;
@@ -338,6 +347,18 @@ pushtob_utils.c
 int distance(t_stack stacka, t_stack stackb, t_hold num);
 int optim_distance(t_stack stacka, t_stack stackb, t_hold num);
 int expected_stackbsize(t_chunk chunking);
+
+/*
+pushtob_utils.c
+*/
+int    solve_first_chunk_original(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
+
+/*
+other_chunks.c
+*/
+int smallest_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num);
+int mid_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_chunk *chunking);
+int set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
 
 /*
 -----Reverse-----

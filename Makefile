@@ -49,6 +49,8 @@ SRC = src/algorithm/push_swap.c \
 		src/push_to_b/push_chunk_helper.c \
 		src/push_to_b/push_chunk_optimization.c \
 		src/push_to_b/pushtob_utils.c \
+		src/push_to_b/push_chunk_first.c \
+		src/push_to_b/other_chunks.c \
 		src/reverse/intermediate_reverse.c \
 		src/reverse/intermediate_bigger_reverse.c \
 		src/reverse/intermediate_smaller_reverse.c \

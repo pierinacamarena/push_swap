@@ -129,4 +129,43 @@ if it is an intermediate number
 
 
 
+ok lets rethink the algorithm for the intermediate case
+
+rotate the stacks so the right position is found 
+    so i will have to rotate stack a until the chosen number reaches the top of the stack
+    and i will have to rotate stack b until the correct location for the next number is found
+
+push the number to stackb
+
+then find 
+
+if the next number that will be pushed is smaller than stackb->y
+    -if the number is bigger > stackb->x one type of push
+    -if the number is smaller than stackb->x
+else
+    rrb and check again
+
+while (stackb < expected size)
+{
+    place in the right position using - complex rr
+    pb
+    distance_complete = num.distance;
+    -"Now we have to rrb (complete_distance)*rrb"
+    -while (distance_complete > 0)
+        get the next hold
+        if the next hold is smaller than stackb->y
+            -if it is bigger than stackb->x
+                simple rotate
+                pb
+            -else
+                complex rr (complete_distance = complete_distance + next_hold_distance)
+                pb
+        else
+            -rrb
+            complete_distance--;
+}
+
+algo in pseudocode
+
+while ()
 **/

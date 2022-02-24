@@ -175,20 +175,11 @@ int    solve_other_chunk_v2(t_stack *stacka, t_stack *stackb, t_info *printer, t
         num = choose_number(stacka, stackb, printer, chunking->chunks[chunking->current_chunk]);
         if (num.number > stackb->x)
         {
-            k = 0;
-            while (k < num.moves)
-            {
-                if (num.location == 't')
-                    count = count + ft_ra(stacka, stackb, printer);
-                else if (num.location = 'b')
-                    count = count + ft_rra(stacka, stackb, printer);
-                k++;
-            }
-            count = count + ft_pb(stacka, stackb, printer);
-            chunking->push_nums++;
+            count = count + smallest_push(stacka, stackb, printer, num);
         }
         else if (num.number < stackb->x && num.number > stackb->y)
         {
+            //count = count + mid_push(stacka, stackb, printer, &num, chunking);
             num.distance = distance(*stacka, *stackb, num);
             k = 0;
             while (k < num.moves)
