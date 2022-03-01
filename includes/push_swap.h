@@ -42,14 +42,14 @@ typedef struct s_stack
 
 } t_stack;
 
-typedef struct program
+/*typedef struct s_program
 {
   t_info hold;
   t_info next_hold;
   t_chunk chunking;
   int complete_distance;
   int expected_stackbsize;
-}
+} t_program;*/
 
 typedef struct s_chunk
 {
@@ -106,14 +106,14 @@ stack_rr_moves.c
 */
 int ft_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
 int ft_ra_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
-int ft_rb_rr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_rb_rr(t_stack *stackb, t_stack *stacka, t_info *printer);
 
 /*
 stack_rrr_moves.c
 */
 int ft_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
 int ft_rra_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
-int ft_rrb_rrr(t_stack *stacka, t_stack *stackb, t_info *printer);
+int ft_rrb_rrr(t_stack *stackb, t_stack *stacka, t_info *printer);
 
 /*
 -----Chunking-----
@@ -349,7 +349,7 @@ int optim_distance(t_stack stacka, t_stack stackb, t_hold num);
 int expected_stackbsize(t_chunk chunking);
 
 /*
-pushtob_utils.c
+push_chunk_first.c
 */
 int    solve_first_chunk_original(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
 
@@ -358,8 +358,20 @@ other_chunks.c
 */
 int smallest_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num);
 int mid_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_chunk *chunking);
-int set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
 
+/*
+set_location.c
+*/
+int set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
+int set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num);
+
+/*
+rrb_chunk.c
+*/
+int optimization(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_hold *next_hold, t_chunk *chunking, int *complete_distance);
+int rrb_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_chunk *chunking, int *complete_distance);
+int solve_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk *chunking, t_hold *num);
+int chunk_solver(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk *chunking);
 /*
 -----Reverse-----
 */

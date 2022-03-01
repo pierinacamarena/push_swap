@@ -100,7 +100,7 @@ int choose_push(t_stack *stacka, t_stack *stackb, t_info *printer, int *chunks)
 }
 
 int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer)
-{
+{ 
     int     *arr;
     int     count;
     int     i;
@@ -122,7 +122,8 @@ int    solve_a(t_stack *stacka, t_stack *stackb, t_info *printer)
     while (i < chunking.splits)
     {
         chunking.current_chunk = i;
-        count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
+        count = count + chunk_solver(stacka, stackb, printer, &chunking);
+        //count = count + solve_other_chunk_v2(stacka, stackb, printer, &chunking);
         i++;
     }
     return (count);

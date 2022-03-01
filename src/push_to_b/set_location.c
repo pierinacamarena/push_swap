@@ -72,13 +72,15 @@ int set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold
 int set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
 {
     int k;
+    int count;
 
     k = 0;
+    count = 0;
     if (num.location == 't')
     {
         while (k < num.moves)
         {
-            count = count + ft_rb(stacka, stackb, printer);
+            count = count + ft_rb(stackb, stacka, printer);
             k++;
         }
     }
@@ -86,7 +88,7 @@ int set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hol
     {
         while (k > num.moves)
         {
-            count = count + ft_rrb(stacka, stackb, printer);
+            count = count + ft_rrb(stackb, stacka, printer);
             k++;
         }
     }
