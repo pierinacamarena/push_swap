@@ -1,0 +1,829 @@
+---------------------------------
+Before sorting 
+52
+63
+48
+19
+80
+73
+36
+75
+7
+6
+47
+16
+26
+53
+79
+38
+50
+77
+84
+13
+15
+28
+39
+17
+74
+67
+22
+82
+51
+2
+45
+76
+12
+27
+58
+4
+14
+61
+46
+18
+40
+56
+69
+55
+21
+83
+62
+70
+37
+57
+_               _
+a               b
+---------------------------------
+exec ra-------instruction number 1
+
+---------------------------------
+exec ra-------instruction number 2
+
+---------------------------------
+exec ra-------instruction number 3
+
+---------------------------------
+exec pb-------instruction number 4
+
+---------------------------------
+exec ra-------instruction number 5
+
+---------------------------------
+exec ra-------instruction number 6
+
+---------------------------------
+exec ra-------instruction number 7
+
+---------------------------------
+exec ra-------instruction number 8
+
+---------------------------------
+exec pb-------instruction number 9
+
+---------------------------------
+exec pb-------instruction number 10
+
+---------------------------------
+exec rb-------instruction number 11
+
+---------------------------------
+exec sb-------instruction number 12
+
+---------------------------------
+exec ra-------instruction number 13
+
+---------------------------------
+exec rb-------instruction number 14
+
+---------------------------------
+exec pb-------instruction number 15
+
+---------------------------------
+exec rrb-------instruction number 16
+
+---------------------------------
+exec ra-------instruction number 17
+
+---------------------------------
+exec ra-------instruction number 18
+
+---------------------------------
+exec ra-------instruction number 19
+
+---------------------------------
+exec ra-------instruction number 20
+
+---------------------------------
+exec ra-------instruction number 21
+
+---------------------------------
+exec ra-------instruction number 22
+
+---------------------------------
+exec ra-------instruction number 23
+
+---------------------------------
+exec rb-------instruction number 24
+
+---------------------------------
+exec rb-------instruction number 25
+
+---------------------------------
+exec pb-------instruction number 26
+
+---------------------------------
+exec rrb-------instruction number 27
+
+---------------------------------
+exec rrb-------instruction number 28
+
+---------------------------------
+exec rb-------instruction number 29
+
+---------------------------------
+exec rb-------instruction number 30
+
+---------------------------------
+exec pb-------instruction number 31
+
+---------------------------------
+exec rrb-------instruction number 32
+
+---------------------------------
+exec rrb-------instruction number 33
+
+---------------------------------
+exec ra-------instruction number 34
+
+---------------------------------
+exec ra-------instruction number 35
+
+---------------------------------
+exec rb-------instruction number 36
+
+---------------------------------
+exec pb-------instruction number 37
+
+---------------------------------
+exec rrb-------instruction number 38
+
+---------------------------------
+exec ra-------instruction number 39
+
+---------------------------------
+exec ra-------instruction number 40
+
+---------------------------------
+exec ra-------instruction number 41
+
+---------------------------------
+exec ra-------instruction number 42
+
+---------------------------------
+exec ra-------instruction number 43
+
+---------------------------------
+exec pb-------instruction number 44
+
+---------------------------------
+exec rb-------instruction number 45
+
+---------------------------------
+exec ra-------instruction number 46
+
+---------------------------------
+exec ra-------instruction number 47
+
+---------------------------------
+exec rrb-------instruction number 48
+
+---------------------------------
+exec rrb-------instruction number 49
+
+---------------------------------
+exec rrb-------instruction number 50
+
+---------------------------------
+exec pb-------instruction number 51
+
+---------------------------------
+exec rb-------instruction number 52
+
+---------------------------------
+exec rb-------instruction number 53
+
+---------------------------------
+exec rb-------instruction number 54
+
+---------------------------------
+exec rb-------instruction number 55
+
+---------------------------------
+exec ra-------instruction number 56
+
+---------------------------------
+exec ra-------instruction number 57
+
+---------------------------------
+exec rrb-------instruction number 58
+
+---------------------------------
+exec pb-------instruction number 59
+
+---------------------------------
+exec rb-------instruction number 60
+
+---------------------------------
+exec rb-------instruction number 61
+
+---------------------------------
+exec rb-------instruction number 62
+
+---------------------------------
+exec rb-------instruction number 63
+
+---------------------------------
+exec rb-------instruction number 64
+
+---------------------------------
+exec rb-------instruction number 65
+
+---------------------------------
+exec pb-------instruction number 66
+
+---------------------------------
+exec rrb-------instruction number 67
+
+---------------------------------
+exec rrb-------instruction number 68
+
+---------------------------------
+exec rrb-------instruction number 69
+
+---------------------------------
+exec rrb-------instruction number 70
+
+---------------------------------
+exec ra-------instruction number 71
+
+---------------------------------
+exec ra-------instruction number 72
+
+---------------------------------
+exec rb-------instruction number 73
+
+---------------------------------
+exec pb-------instruction number 74
+
+---------------------------------
+exec rrb-------instruction number 75
+
+---------------------------------
+exec pb-------instruction number 76
+
+---------------------------------
+exec rra-------instruction number 77
+
+---------------------------------
+exec pb-------instruction number 78
+
+---------------------------------
+exec rr-------instruction number 79
+
+---------------------------------
+exec rr-------instruction number 80
+
+---------------------------------
+exec ra-------instruction number 81
+
+---------------------------------
+exec pb-------instruction number 82
+
+---------------------------------
+exec ra-------instruction number 83
+
+---------------------------------
+exec ra-------instruction number 84
+
+---------------------------------
+exec ra-------instruction number 85
+
+---------------------------------
+exec pb-------instruction number 86
+
+---------------------------------
+exec rr-------instruction number 87
+
+---------------------------------
+exec ra-------instruction number 88
+
+---------------------------------
+exec ra-------instruction number 89
+
+---------------------------------
+exec ra-------instruction number 90
+
+---------------------------------
+exec ra-------instruction number 91
+
+---------------------------------
+exec ra-------instruction number 92
+
+---------------------------------
+exec pb-------instruction number 93
+
+---------------------------------
+exec rr-------instruction number 94
+
+---------------------------------
+exec ra-------instruction number 95
+
+---------------------------------
+exec pb-------instruction number 96
+
+---------------------------------
+exec rrb-------instruction number 97
+
+---------------------------------
+exec rrb-------instruction number 98
+
+---------------------------------
+exec ra-------instruction number 99
+
+---------------------------------
+exec ra-------instruction number 100
+
+---------------------------------
+exec pb-------instruction number 101
+
+---------------------------------
+exec rr-------instruction number 102
+
+---------------------------------
+exec rr-------instruction number 103
+
+---------------------------------
+exec rr-------instruction number 104
+
+---------------------------------
+exec pb-------instruction number 105
+
+---------------------------------
+exec rrb-------instruction number 106
+
+---------------------------------
+exec rrb-------instruction number 107
+
+---------------------------------
+exec rrb-------instruction number 108
+
+---------------------------------
+exec pb-------instruction number 109
+
+---------------------------------
+exec rr-------instruction number 110
+
+---------------------------------
+exec rr-------instruction number 111
+
+---------------------------------
+exec rb-------instruction number 112
+
+---------------------------------
+exec rb-------instruction number 113
+
+---------------------------------
+exec rb-------instruction number 114
+
+---------------------------------
+exec rb-------instruction number 115
+
+---------------------------------
+exec pb-------instruction number 116
+
+---------------------------------
+exec rrb-------instruction number 117
+
+---------------------------------
+exec rrb-------instruction number 118
+
+---------------------------------
+exec rrb-------instruction number 119
+
+---------------------------------
+exec rrb-------instruction number 120
+
+---------------------------------
+exec rrb-------instruction number 121
+
+---------------------------------
+exec rrb-------instruction number 122
+
+---------------------------------
+exec rrb-------instruction number 123
+
+---------------------------------
+exec ra-------instruction number 124
+
+---------------------------------
+exec ra-------instruction number 125
+
+---------------------------------
+exec pb-------instruction number 126
+
+---------------------------------
+exec rr-------instruction number 127
+
+---------------------------------
+exec rb-------instruction number 128
+
+---------------------------------
+exec rb-------instruction number 129
+
+---------------------------------
+exec rb-------instruction number 130
+
+---------------------------------
+exec rb-------instruction number 131
+
+---------------------------------
+exec rb-------instruction number 132
+
+---------------------------------
+exec rb-------instruction number 133
+
+---------------------------------
+exec pb-------instruction number 134
+
+---------------------------------
+exec rrb-------instruction number 135
+
+---------------------------------
+exec rrb-------instruction number 136
+
+---------------------------------
+exec rrb-------instruction number 137
+
+---------------------------------
+exec rrb-------instruction number 138
+
+---------------------------------
+exec rrb-------instruction number 139
+
+---------------------------------
+exec rrb-------instruction number 140
+
+---------------------------------
+exec rrb-------instruction number 141
+
+---------------------------------
+exec rrb-------instruction number 142
+
+---------------------------------
+exec pb-------instruction number 143
+
+---------------------------------
+exec pb-------instruction number 144
+
+---------------------------------
+exec rb-------instruction number 145
+
+---------------------------------
+exec rb-------instruction number 146
+
+---------------------------------
+exec pb-------instruction number 147
+
+---------------------------------
+exec rr-------instruction number 148
+
+---------------------------------
+exec pb-------instruction number 149
+
+---------------------------------
+exec rrb-------instruction number 150
+
+---------------------------------
+exec rrb-------instruction number 151
+
+---------------------------------
+exec rrb-------instruction number 152
+
+---------------------------------
+exec ra-------instruction number 153
+
+---------------------------------
+exec pb-------instruction number 154
+
+---------------------------------
+exec rr-------instruction number 155
+
+---------------------------------
+exec rb-------instruction number 156
+
+---------------------------------
+exec rb-------instruction number 157
+
+---------------------------------
+exec pb-------instruction number 158
+
+---------------------------------
+exec rb-------instruction number 159
+
+---------------------------------
+exec rb-------instruction number 160
+
+---------------------------------
+exec rb-------instruction number 161
+
+---------------------------------
+exec pb-------instruction number 162
+
+---------------------------------
+exec rr-------instruction number 163
+
+---------------------------------
+exec pb-------instruction number 164
+
+---------------------------------
+exec rr-------instruction number 165
+
+---------------------------------
+exec ra-------instruction number 166
+
+---------------------------------
+exec ra-------instruction number 167
+
+---------------------------------
+exec pb-------instruction number 168
+
+---------------------------------
+exec rrb-------instruction number 169
+
+---------------------------------
+exec rrb-------instruction number 170
+
+---------------------------------
+exec pb-------instruction number 171
+
+---------------------------------
+exec rr-------instruction number 172
+
+---------------------------------
+exec rb-------instruction number 173
+
+---------------------------------
+exec pb-------instruction number 174
+
+---------------------------------
+exec ra-------instruction number 175
+
+---------------------------------
+exec ra-------instruction number 176
+
+---------------------------------
+exec ra-------instruction number 177
+
+---------------------------------
+exec ra-------instruction number 178
+
+---------------------------------
+exec ra-------instruction number 179
+
+---------------------------------
+exec pb-------instruction number 180
+
+---------------------------------
+exec rrb-------instruction number 181
+
+---------------------------------
+exec rrb-------instruction number 182
+
+---------------------------------
+exec rrb-------instruction number 183
+
+---------------------------------
+exec rrb-------instruction number 184
+
+---------------------------------
+exec rrb-------instruction number 185
+
+---------------------------------
+exec rrb-------instruction number 186
+
+---------------------------------
+exec rrb-------instruction number 187
+
+---------------------------------
+exec rrb-------instruction number 188
+
+---------------------------------
+exec pb-------instruction number 189
+
+---------------------------------
+exec rb-------instruction number 190
+
+---------------------------------
+exec pb-------instruction number 191
+
+---------------------------------
+exec rrb-------instruction number 192
+
+---------------------------------
+exec pb-------instruction number 193
+
+---------------------------------
+exec rb-------instruction number 194
+
+---------------------------------
+exec rb-------instruction number 195
+
+---------------------------------
+exec pb-------instruction number 196
+
+---------------------------------
+exec rb-------instruction number 197
+
+---------------------------------
+exec rb-------instruction number 198
+
+---------------------------------
+exec pb-------instruction number 199
+
+---------------------------------
+exec rrb-------instruction number 200
+
+---------------------------------
+exec rrb-------instruction number 201
+
+---------------------------------
+exec rrb-------instruction number 202
+
+---------------------------------
+exec pb-------instruction number 203
+
+---------------------------------
+exec rb-------instruction number 204
+
+---------------------------------
+exec rb-------instruction number 205
+
+---------------------------------
+exec pb-------instruction number 206
+
+---------------------------------
+exec pb-------instruction number 207
+
+---------------------------------
+exec rrb-------instruction number 208
+
+---------------------------------
+exec pb-------instruction number 209
+
+---------------------------------
+exec rb-------instruction number 210
+
+---------------------------------
+exec pb-------instruction number 211
+
+---------------------------------
+exec rrb-------instruction number 212
+
+---------------------------------
+exec rrb-------instruction number 213
+
+---------------------------------
+exec rrb-------instruction number 214
+
+---------------------------------
+exec pb-------instruction number 215
+
+---------------------------------
+exec rb-------instruction number 216
+
+---------------------------------
+exec rb-------instruction number 217
+
+---------------------------------
+exec rb-------instruction number 218
+
+---------------------------------
+exec rb-------instruction number 219
+
+---------------------------------
+exec rb-------instruction number 220
+
+---------------------------------
+exec rb-------instruction number 221
+
+---------------------------------
+exec rb-------instruction number 222
+
+---------------------------------
+exec pb-------instruction number 223
+
+---------------------------------
+exec rb-------instruction number 224
+
+---------------------------------
+exec rb-------instruction number 225
+
+---------------------------------
+exec rb-------instruction number 226
+
+---------------------------------
+exec rb-------instruction number 227
+
+---------------------------------
+exec pb-------instruction number 228
+
+---------------------------------
+exec rrb-------instruction number 229
+
+---------------------------------
+exec rrb-------instruction number 230
+
+---------------------------------
+exec rrb-------instruction number 231
+
+---------------------------------
+exec rrb-------instruction number 232
+
+---------------------------------
+exec rrb-------instruction number 233
+
+---------------------------------
+exec rrb-------instruction number 234
+
+---------------------------------
+exec rrb-------instruction number 235
+
+---------------------------------
+exec rrb-------instruction number 236
+
+---------------------------------
+exec rrb-------instruction number 237
+
+---------------------------------
+exec pb-------instruction number 238
+
+---------------------------------
+exec rrb-------instruction number 239
+
+---------------------------------
+exec rrb-------instruction number 240
+
+
+stacka
+stackb
+84
+83
+82
+80
+79
+77
+76
+75
+74
+73
+70
+69
+67
+63
+62
+61
+58
+57
+56
+55
+53
+52
+51
+50
+48
+47
+46
+45
+40
+39
+38
+37
+36
+28
+27
+26
+22
+21
+19
+18
+17
+16
+15
+14
+13
+12
+7
+6
+4
+2
+the size is 50
+the number of instructions is 240

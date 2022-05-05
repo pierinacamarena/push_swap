@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int ft_rr(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_rr(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
 
@@ -36,7 +36,6 @@ int	ft_ra_rr(t_stack *stacka, t_stack *stackb, t_info *printer)
 	len = stacka->size;
 	end = len - 1;
 	temp = stacka->array[0];
-	
 	while (i < (len - 1))
 	{
 		stacka->array[i] = stacka->array[j];
@@ -61,7 +60,6 @@ int	ft_rb_rr(t_stack *stackb, t_stack *stacka, t_info *printer)
 	len = stackb->size;
 	end = len - 1;
 	temp = stackb->array[0];
-
 	while (i < (len - 1))
 	{
 		stackb->array[i] = stackb->array[j];

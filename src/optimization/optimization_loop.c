@@ -12,35 +12,35 @@
 
 #include "../../includes/push_swap.h"
 
-int optima_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	optima_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    int check;
+	int	check;
 
-    check = 0;
-    if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
-        (stacka->a < stackb->a && stacka->a > stackb->b))
-        check = 1;
-    return (check);
+	check = 0;
+	if ((stacka->a > stackb->a && stacka->a < stackb->c) || \
+			(stacka->a < stackb->a && stacka->a > stackb->b))
+		check = 1;
+	return (check);
 }
 
-int optimb_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	optimb_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    int check;
+	int	check;
 
-    check = 0;
-    if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
-        (stacka->b < stackb->a && stacka->b > stackb->b))
-        check = 1;
-    return (check);
+	check = 0;
+	if ((stacka->b > stackb->a && stacka->b < stackb->c) || \
+			(stacka->b < stackb->a && stacka->b > stackb->b))
+		check = 1;
+	return (check);
 }
 
-int optimc_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	optimc_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    int check;
+	int	check;
 
-    check = 0;
-    if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
-        (stacka->c < stackb->a && stacka->c > stackb->b))
-        check = 1;
-    return (check);
+	check = 0;
+	if ((stacka->c > stackb->a && stacka->c < stackb->c) || \
+			(stacka->c < stackb->a && stacka->c > stackb->b))
+		check = 1;
+	return (check);
 }

@@ -17,19 +17,12 @@ int	main(int ac, char **av)
 	t_stack	stacka;
 	t_stack	stackb;
 	t_info	printer;
-	t_hold	hold_one;
-	t_hold	hold_two;
 	int		len;
-	int		i;
-	int		*arr;
-	t_chunk	chunking;
-	int		count;
 
-	count = 0;
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
 	{
-		ft_putstr("no numbers to sort");
+		ft_putstr("no numbers to sort\n");
 		return (0);
 	}
 	stacka = init_stack(len);
@@ -39,36 +32,23 @@ int	main(int ac, char **av)
 	if (ft_check_sorted(stacka) || len == 1)
 		ft_putstr("it is sorted! \n");
 	else
-	{
-		initial_print(printer);
-		printf("\n");
-		solve_a(&stacka, &stackb, &printer);
-		i = 0;
-		/*while (i < stacka.size)
-		{
-			printf("%d    | %d  %d\n", i, stacka.array[i], arr[i]);
-			i++;
-		}
-		i = 0;
-		while (i < chunking.splits)
-		{
-			printf("%d\n", chunking.chunks[i]);
-			i++;
-		}
-		i = 0;
-		while (i < chunking.splits)
-		{
-			printf("chunk size %d chunk: %d\n", i + 1, chunking.chunk_size[i]);
-			i++;
-		}*/
-		printf("stacka\n");
-		ft_print_stack(stacka);
-		printf("stackb\n");
-		ft_print_stack(stackb);
-		printf("the size is %d\n", stackb.size);
-		printf("the number of instructions is %d\n", printer.count);
-	}
+		sort_stack(&stacka, &stackb, &printer);
 	return (0);
+}
+
+void	sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer)
+{
+	initial_print(*printer);
+	printf("\n");
+	solve_a(stacka, stackb, printer);
+	printf("stacka\n");
+	ft_print_stack(*stacka);
+	printf("stackb\n");
+	ft_print_stack(*stackb);
+	printf("the size is %d\n", stackb->size);
+	printf("the number of instructions is %d\n", printer->count);
+	free(stacka->array);
+	free(stackb->array);
 }
 
 /**

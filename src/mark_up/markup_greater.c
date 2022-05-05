@@ -25,24 +25,19 @@ int markup_head_count(t_stack stacka, int index)
     j = i + 1;
     while (j < stacka.size)
     {
-    //    printf("i is %d\n j is %d\n stacka.array[i] is %d\n stacka.array[j] is %d\n count is %d\n", i, j, stacka.array[i], stacka.array[j], count);
-    //    printf("prev_max is %d\n", prev_max);
-        if (stacka.array[i][0] < stacka.array[j][0]) //&& (stacka.array[j] > prev_max))
+        if (stacka.array[i][0] < stacka.array[j][0]) 
+        && (stacka.array[j] > prev_max))
         {
         //    printf("---(stacka.array[i] < stacka.array[j])---\n");
          //   prev_max = stacka.array[j];
             i = j;
             j++;
             count++;
-          //  printf("i is %d\n j is %d\n stacka.array[i] is %d\n stacka.array[j] is %d\n, count is %d\n", i, j, stacka.array[i], stacka.array[j], count);
-        //    printf("prev_max is %d\n", prev_max);
         }
         else
         {
             //printf("---ELSE---\n");
-            j++;
-        //    printf("i is %d\n j is %d\n stacka.array[i] is %d\n stacka.array[j] is %d\n, count is %d\n", i, j, stacka.array[i], stacka.array[j], count);
-        //    printf("prev_max is %d\n", prev_max);       
+            j++;       
         }
     }
     return (count);
@@ -76,7 +71,6 @@ int head_finder_greater(int *counter, int size)
     int min_head;
 
     head = find_max(counter, size);
-    printf("the max head is %d, just finding the the highest, not final head\n", head);
     min_head = multiple_max(counter, head, size);
 
     return(min_head);

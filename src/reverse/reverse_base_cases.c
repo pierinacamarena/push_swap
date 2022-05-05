@@ -23,7 +23,7 @@ int	ft_sort_three_reverse(t_stack *stackb, t_stack *stacka, t_info *printer)
 	b = stackb->array[1];
 	c = stackb->array[2];
 	if ((a < b) && (b < c))
-		count = sort_three_reverse_helper(stacka, stackb, printer);
+		count = sort_three_reverse_helper(stackb, stacka, printer);
 	else if ((a < c) && (c < b))
 		count = count + ft_rb(stackb, stacka, printer);
 	else if ((b < a) && (a < c))

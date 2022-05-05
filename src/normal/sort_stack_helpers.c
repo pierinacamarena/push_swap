@@ -16,13 +16,10 @@ int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		count;
 
-	//if (stacka->array[0][2] == 0 && stacka->array[1][2] == 0 && stacka->array[2][2] == 0)
-	//{
-		count = ft_pb(stacka, stackb, printer);
-		count = count + ft_pb(stacka, stackb, printer);
-		count = count + ft_pb(stacka, stackb, printer);
-		count = count + ft_sort_three_reverse(stackb, stacka, printer);
-	//}
+	count = ft_pb(stacka, stackb, printer);
+	count = count + ft_pb(stacka, stackb, printer);
+	count = count + ft_pb(stacka, stackb, printer);
+	count = count + ft_sort_three_reverse(stackb, stacka, printer);
 	return (count);
 }
 
@@ -47,35 +44,17 @@ int	algo_helper_intermediate(t_stack *stacka, t_stack *stackb, t_info *printer)
 	count = 0;
 	ft_distance(stacka, stackb);
 	ft_print_distances(*stacka);
-	printf("instruction number is %d\n", printer->count);
-	printf("I am checking now if it goes to da, db, dc\n");
 	if ((stacka->d_a - 1 <= stacka->d_b) \
 		&& (stacka->d_a - 1 <= stacka->d_c))
-	{
-		printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-		printf("i am going to entere da_smaller\n");
 		count = count + ft_da_smaller(stacka, stackb, printer);
-	}
 	else
 	{
 		if (stacka->d_b < stacka->d_c)
-		{
-			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-			printf("i will enter db_smaller\n");
 			count = count + ft_db_smaller(stacka, stackb, printer);
-		}
 		else if (stacka->d_c < stacka->d_b)
-		{
-			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-			printf("i will enter dc_smaller\n");
 			count = count + ft_dc_smaller(stacka, stackb, printer);
-		}
 		else if (stacka->d_b == stacka->d_c)
-		{
-			printf("the value of da is %d, of db is %d and of dc is %d \n", stacka->d_a, stacka->d_b, stacka->d_c);
-			printf("i will enter db_smaller, case where db and dc are equal\n");
 			count = count + ft_db_smaller(stacka, stackb, printer);
-		}
 	}
 	return (count);
 }

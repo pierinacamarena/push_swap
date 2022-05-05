@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.c                                            :+:      :+:    :+:   */
+/*   dirty_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,90 +12,96 @@
 
 #include "../../includes/push_swap.h"
 
-// Merge Function
-void merge(int *arr, int l, int m, int r) 
-{ 
-    int i; 
-    int j; 
-    int k; 
-    int n1;
-    int n2; 
-    n1 = m - l + 1;
-    n2 = r - m;
-    int L[n1];
-    int R[n2]; 
-    
-    i = 0;
-    while (i < n1)
-    {
-        L[i] = arr[l + i];
-        i++;
-    }
-    j = 0;
-    while (j < n2)
-    {
-        R[j] = arr[m + 1 + j];
-        j++;
-    }
-    i = 0; 
-    j = 0; 
-    k = l; 
-    while (i < n1 && j < n2) 
-    { 
-        if (L[i] <= R[j]) 
-        { 
-            arr[k] = L[i]; 
-            i++; 
-        } 
-        else
-        { 
-            arr[k] = R[j]; 
-            j++; 
-        } 
-        k++; 
-    } 
-    while (i < n1) 
-    { 
-        arr[k] = L[i]; 
-        i++; 
-        k++; 
-    } 
-    while (j < n2) 
-    { 
-        arr[k] = R[j]; 
-        j++; 
-        k++;   
-    } 
+void	merge_complement(t_dirtysort *dirty, int *arr)
+{
+	while (dirty->i < dirty->n1)
+	{
+		arr[dirty->k] = dirty->larr[dirty->i];
+		dirty->i++;
+		dirty->k++;
+	}
+	while (dirty->j < dirty->n2)
+	{
+		arr[dirty->k] = dirty->rarr[dirty->j];
+		dirty->j++;
+		dirty->k++;
+	}
 }
 
-// Merge Sort Function in C 
-void mergeSort(int *arr, int l, int r) 
-{ 
-    int m;
-
-    if (l < r) 
-    { 
-        m = l + (r - l)/2; 
-        mergeSort(arr, l, m); 
-        mergeSort(arr, m + 1, r); 
-        merge(arr, l, m, r); 
-    } 
-} 
-
-int *dirty_sorting(t_stack stacka) 
+void	merge_helper(t_dirtysort *dirty, int *arr, int l)
 {
-    int arr_size; 
-    int i;
-    int *arr;
+	dirty->i = 0;
+	dirty->j = 0;
+	dirty->k = l;
+	while (dirty->i < dirty->n1 && dirty->j < dirty->n2)
+	{
+		if (dirty->larr[dirty->i] <= dirty->rarr[dirty->j])
+		{
+			arr[dirty->k] = dirty->larr[dirty->i];
+			dirty->i++;
+		}
+		else
+		{
+			arr[dirty->k] = dirty->rarr[dirty->j];
+			dirty->j++;
+		}
+		dirty->k++;
+	}
+	merge_complement(dirty, arr);
+}
 
-    i = 0;
-    arr = (int *)malloc(sizeof(int) * stacka.size);
-    arr_size = stacka.size;
-    while(i < arr_size)
-    {
-        arr[i] = stacka.array[i];
-        i++;
-    }
-    mergeSort(arr, 0, arr_size - 1); 
-    return (arr); 
+void	merge(int *arr, int l, int m, int r)
+{
+	t_dirtysort	dirty;
+
+	dirty.i = 0;
+	dirty.n1 = m - l + 1;
+	dirty.n2 = r - m;
+	dirty.larr = (int *)malloc(sizeof(int) * dirty.n1);
+	dirty.rarr = (int *)malloc(sizeof(int) * dirty.n2);
+	while (dirty.i < dirty.n1)
+	{
+		dirty.larr[dirty.i] = arr[l + dirty.i];
+		dirty.i++;
+	}
+	dirty.j = 0;
+	while (dirty.j < dirty.n2)
+	{
+		dirty.rarr[dirty.j] = arr[m + 1 + dirty.j];
+		dirty.j++;
+	}
+	merge_helper(&dirty, arr, l);
+	free(dirty.larr);
+	free(dirty.rarr);
+}
+
+void	merge_sort(int *arr, int l, int r)
+{
+	int	m;
+
+	if (l < r)
+	{
+		m = l + (r - l) / 2;
+		merge_sort(arr, l, m);
+		merge_sort(arr, m + 1, r);
+		merge(arr, l, m, r);
+	}
+}
+
+int	*dirty_sorting(t_stack stacka)
+{
+	int	arr_size;
+	int	i;
+	int	*arr;
+
+	i = 0;
+	arr = (int *)malloc(sizeof(int) * stacka.size);
+	arr_size = stacka.size;
+	while (i < arr_size)
+	{
+		arr[i] = stacka.array[i];
+		i++;
+	}
+	merge_sort(arr, 0, arr_size - 1);
+	return (arr);
 }

@@ -18,27 +18,16 @@
  **/
 t_stack	init_stack(int len)
 {
-	t_stack stack;
+	t_stack	stack;
 	int		i;
 	int		*array;
 
 	array = (int *)malloc(sizeof(int ) * len);
-	//if (!array)
-		//return (NULL);
-	/*int		**array;
-
-	array = (int **)malloc(sizeof(int*) * len);
-	i = 0;
-	while (i < len)
-	{
-		array[i] = (int*)malloc(sizeof(int) * 3);
-		i++;
-	}
-	*/
+	if (!array)
+		perror("array was not properly allocated");
 	stack.array = array;
 	stack.max_size = len;
 	stack.size = 0;
-
 	return (stack);
 }
 
@@ -92,19 +81,7 @@ t_stack	ft_stack_populate(t_stack *stack, char **av, int size)
 
 	i = 1;
 	j = 0;
-	/**
-	while (i <= size)
-	{
-		stack->array[j][0] = ft_atoi(av[i]);
-		i++;
-		j++;
-	}
-	stack->size = size;
-	stack->a = stack->array[0][0];
-	stack->b = stack->array[1][0];
-	stack->c = stack->array[size - 1][0];
-	**/
-	while (i <= size)
+	while (j < size)
 	{
 		stack->array[j] = ft_atoi(av[i]);
 		i++;

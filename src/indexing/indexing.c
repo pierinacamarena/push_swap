@@ -12,42 +12,24 @@
 
 #include "../../includes/push_swap.h"
 
-int index_finder(t_stack stacka, int numb)
+int	index_finder(t_stack stacka, int numb)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (i < stacka.max_size)
-    {
-        if (stacka.array[i] == numb)
-            return (i);
-        i++;
-    }
-    return (-1);
+	i = 0;
+	while (i < stacka.max_size)
+	{
+		if (stacka.array[i] == numb)
+			return (i);
+		i++;
+	}
+	return (-1);
 }
 
-/*void    set_index(int *arr, t_stack *stacka)
+int	*indexing(t_stack *stacka)
 {
-    int i;
-    int index;
+	int	*arr;
 
-    i = 0;
-    while (i < stacka->size)
-    {
-        //printf("i is %d\n", i);
-        //printf("arr[i] is %d\n", arr[i]);
-        index = index_finder(*stacka, arr[i]);
-        //printf("index is %d \n", index);
-        stacka->array[index][1] = i;
-        i++;
-    }
-}*/
-
-int    *indexing(t_stack *stacka)
-{
-    int *arr;
-
-    arr = dirty_sorting(*stacka);
-    //set_index(arr, stacka);
-    return (arr);
+	arr = dirty_sorting(*stacka);
+	return (arr);
 }

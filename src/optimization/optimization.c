@@ -31,8 +31,8 @@ int optim_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int optim(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    printf("inside optimization main function\n");
-    printf("number of instruction is %d\n", printer->count);
+    //printf("inside optimization main function\n");
+    //printf("number of instruction is %d\n", printer->count);
     int count;
     int checker;
     int ind_check;
@@ -64,21 +64,21 @@ int optim(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int optim_a(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    printf("inside optimization a\n");
-    printf("number of instruction is %d\n", printer->count);
+    //printf("inside optimization a\n");
+    //printf("number of instruction is %d\n", printer->count);
     int count;
     
     count = 0;
     if (stacka->a > stackb->a && stacka->a < stackb->c)
     {
-        printf("inside optimization a_a\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization a_a\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_pb(stacka, stackb, printer);
     }
     else if (stacka->a < stackb->a && stacka->a > stackb->b)
     {
-        printf("inside optimization a_b\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization a_b\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_pb(stacka, stackb, printer);
         count = count + ft_sb(stackb, stacka, printer);
     }
@@ -87,22 +87,22 @@ int optim_a(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int optim_b(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    printf("inside optimization b\n");
-    printf("number of instruction is %d\n", printer->count);
+    //printf("inside optimization b\n");
+    //printf("number of instruction is %d\n", printer->count);
     int count;
 
     count = 0;
     if (stacka->b > stackb->a && stacka->b < stackb->c)
     {
-        printf("inside optimization b_a\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization b_a\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_sa(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
     }
     else if (stacka->b < stackb->a && stacka->b > stackb->b)
     {
-        printf("inside optimization b_b\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization b_b\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_sa(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
         count = count + ft_sb(stackb, stacka, printer);
@@ -112,22 +112,22 @@ int optim_b(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 int optim_c(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
-    printf("inside optimization c\n");
-    printf("number of instruction is %d\n", printer->count);
+    //printf("inside optimization c\n");
+    //printf("number of instruction is %d\n", printer->count);
     int count;
 
     count = 0;
     if (stacka->c > stackb->a && stacka->c < stackb->c)
     {
-        printf("inside optimization c_a\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization c_a\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_rra(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
     }
     else if (stacka->c < stackb->a && stacka->c > stackb->b)
     {
-        printf("inside optimization c_b\n");
-        printf("number of instruction is %d\n", printer->count);
+        //printf("inside optimization c_b\n");
+        //printf("number of instruction is %d\n", printer->count);
         count = count + ft_rra(stacka, stackb, printer);
         count = count + ft_pb(stacka, stackb, printer);
         count = count + ft_sb(stackb, stacka, printer);

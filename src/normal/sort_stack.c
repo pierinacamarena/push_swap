@@ -40,23 +40,20 @@ int	ft_sort_main_algo(t_stack *stacka, t_stack *stackb, t_info *printer)
 	count = algo_helper_begin(stacka, stackb, printer);
 	while (j < stackb->max_size && stacka->size >= 3)
 	{
-		
-//		{
-			if ((stacka->a > stackb->x || stacka->a < stackb->y) \
-					|| (stacka->b > stackb->x || stacka->b < stackb->y) \
-					|| (stacka->c > stackb->x || stacka->c < stackb->y))
-			{
-				count = count + algo_helper_top(stacka, stackb, printer);
-				j++;
-			}
-			else if ((stacka->a < stackb->x && stacka->a > stackb->y) \
-					&& (stacka->b < stackb->x && stacka->b > stackb->y) \
-					&& (stacka->c < stackb->x && stacka->c > stackb->y))
-			{
-				count = count + algo_helper_intermediate(stacka, stackb, printer);
-				j++;
-			}
-//		}
+		if ((stacka->a > stackb->x || stacka->a < stackb->y) \
+				|| (stacka->b > stackb->x || stacka->b < stackb->y) \
+				|| (stacka->c > stackb->x || stacka->c < stackb->y))
+		{
+			count = count + algo_helper_top(stacka, stackb, printer);
+			j++;
+		}
+		else if ((stacka->a < stackb->x && stacka->a > stackb->y) \
+				&& (stacka->b < stackb->x && stacka->b > stackb->y) \
+				&& (stacka->c < stackb->x && stacka->c > stackb->y))
+		{
+			count = count + algo_helper_intermediate(stacka, stackb, printer);
+			j++;
+		}
 	}
 	count = count + algo_helper_end(stacka, stackb, printer);
 	return (count);

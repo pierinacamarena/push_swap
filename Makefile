@@ -21,7 +21,6 @@ SRC = src/algorithm/push_swap.c \
 		src/algorithm/stack_rrr_moves.c \
 		src/chunking/chunking.c \
 		src/dirty_sort/dirty_sort.c \
-		src/dirty_sort/merge_sort.c \
 		src/indexing/indexing.c \
 		src/mark_up/markup.c \
 		src/mark_up/markup_greater.c \
@@ -44,10 +43,9 @@ SRC = src/algorithm/push_swap.c \
 		src/printing/debug_functions.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
-		src/push_to_b/push_to_b.c \
+		src/push_to_b/first_chunk_helper.c \
 		src/push_to_b/push_chunk.c \
 		src/push_to_b/push_chunk_helper.c \
-		src/push_to_b/push_chunk_optimization.c \
 		src/push_to_b/pushtob_utils.c \
 		src/push_to_b/push_chunk_first.c \
 		src/push_to_b/other_chunks.c \
@@ -66,7 +64,7 @@ SRC = src/algorithm/push_swap.c \
 		src/set_up/stack_setup.c \
 		src/utils/cleaner.c \
 		src/utils/utils2.c \
-		src/utils/utils.c
+		src/utils/utils.c \
 
 OBJ		= $(SRC:.c=.o)
 

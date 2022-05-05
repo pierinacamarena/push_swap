@@ -43,7 +43,8 @@ int index_head_count(t_stack stacka, int index)
 */
 
 /**
-function that creates an array with the count of each index as a respective head
+function that creates an array with the 
+count of each index as a respective head
 **/
 /*
 int *head_index_counter(t_stack stacka)
@@ -72,7 +73,8 @@ int head_finder_index(int *counter, int size)
     int min_head;
 
     head = find_max(counter, size);
-    printf("the max head is %d, just finding the the highest, not final head\n", head);
+    printf("the max head is %d, just finding the
+     the highest, not final head\n", head);
     min_head = multiple_max(counter, head, size);
 
     return(min_head);

@@ -165,7 +165,8 @@ void    print_final_markup(t_stack stacka)
     i = 0;
     while (i < stacka.max_size)
     {
-        printf("%d | %d | %d\n", stacka.array[i][0], stacka.array[i][1], stacka.array[i][2]);
+        printf("%d | %d | %d\n", stacka.array[i][0], \
+        stacka.array[i][1], stacka.array[i][2]);
         i++;
     }
 }

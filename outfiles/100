@@ -1,0 +1,2571 @@
+---------------------------------
+Before sorting 
+600
+508
+157
+719
+82
+465
+208
+562
+308
+661
+282
+264
+794
+370
+23
+637
+434
+250
+667
+783
+560
+56
+537
+143
+155
+36
+773
+299
+47
+621
+316
+166
+326
+130
+96
+418
+703
+725
+496
+421
+152
+338
+337
+623
+596
+469
+230
+774
+742
+60
+275
+272
+611
+10
+656
+32
+190
+8
+644
+46
+662
+629
+105
+205
+150
+125
+643
+767
+333
+575
+384
+648
+169
+176
+491
+659
+604
+240
+766
+424
+102
+195
+493
+162
+622
+233
+630
+698
+255
+447
+409
+765
+518
+665
+348
+42
+544
+417
+288
+295
+_               _
+a               b
+---------------------------------
+exec ra-------instruction number 1
+
+---------------------------------
+exec ra-------instruction number 2
+
+---------------------------------
+exec ra-------instruction number 3
+
+---------------------------------
+exec ra-------instruction number 4
+
+---------------------------------
+exec pb-------instruction number 5
+
+---------------------------------
+exec ra-------instruction number 6
+
+---------------------------------
+exec ra-------instruction number 7
+
+---------------------------------
+exec ra-------instruction number 8
+
+---------------------------------
+exec ra-------instruction number 9
+
+---------------------------------
+exec ra-------instruction number 10
+
+---------------------------------
+exec ra-------instruction number 11
+
+---------------------------------
+exec ra-------instruction number 12
+
+---------------------------------
+exec ra-------instruction number 13
+
+---------------------------------
+exec ra-------instruction number 14
+
+---------------------------------
+exec pb-------instruction number 15
+
+---------------------------------
+exec ra-------instruction number 16
+
+---------------------------------
+exec ra-------instruction number 17
+
+---------------------------------
+exec ra-------instruction number 18
+
+---------------------------------
+exec ra-------instruction number 19
+
+---------------------------------
+exec ra-------instruction number 20
+
+---------------------------------
+exec ra-------instruction number 21
+
+---------------------------------
+exec pb-------instruction number 22
+
+---------------------------------
+exec rrb-------instruction number 23
+
+---------------------------------
+exec ra-------instruction number 24
+
+---------------------------------
+exec pb-------instruction number 25
+
+---------------------------------
+exec pb-------instruction number 26
+
+---------------------------------
+exec rrb-------instruction number 27
+
+---------------------------------
+exec pb-------instruction number 28
+
+---------------------------------
+exec rb-------instruction number 29
+
+---------------------------------
+exec rb-------instruction number 30
+
+---------------------------------
+exec ra-------instruction number 31
+
+---------------------------------
+exec ra-------instruction number 32
+
+---------------------------------
+exec rrb-------instruction number 33
+
+---------------------------------
+exec rrb-------instruction number 34
+
+---------------------------------
+exec pb-------instruction number 35
+
+---------------------------------
+exec rb-------instruction number 36
+
+---------------------------------
+exec rb-------instruction number 37
+
+---------------------------------
+exec rb-------instruction number 38
+
+---------------------------------
+exec ra-------instruction number 39
+
+---------------------------------
+exec ra-------instruction number 40
+
+---------------------------------
+exec ra-------instruction number 41
+
+---------------------------------
+exec ra-------instruction number 42
+
+---------------------------------
+exec rb-------instruction number 43
+
+---------------------------------
+exec rb-------instruction number 44
+
+---------------------------------
+exec pb-------instruction number 45
+
+---------------------------------
+exec rrb-------instruction number 46
+
+---------------------------------
+exec rrb-------instruction number 47
+
+---------------------------------
+exec rb-------instruction number 48
+
+---------------------------------
+exec rb-------instruction number 49
+
+---------------------------------
+exec rb-------instruction number 50
+
+---------------------------------
+exec pb-------instruction number 51
+
+---------------------------------
+exec rrb-------instruction number 52
+
+---------------------------------
+exec rrb-------instruction number 53
+
+---------------------------------
+exec rrb-------instruction number 54
+
+---------------------------------
+exec ra-------instruction number 55
+
+---------------------------------
+exec ra-------instruction number 56
+
+---------------------------------
+exec ra-------instruction number 57
+
+---------------------------------
+exec ra-------instruction number 58
+
+---------------------------------
+exec ra-------instruction number 59
+
+---------------------------------
+exec rb-------instruction number 60
+
+---------------------------------
+exec pb-------instruction number 61
+
+---------------------------------
+exec rrb-------instruction number 62
+
+---------------------------------
+exec ra-------instruction number 63
+
+---------------------------------
+exec ra-------instruction number 64
+
+---------------------------------
+exec ra-------instruction number 65
+
+---------------------------------
+exec ra-------instruction number 66
+
+---------------------------------
+exec ra-------instruction number 67
+
+---------------------------------
+exec ra-------instruction number 68
+
+---------------------------------
+exec ra-------instruction number 69
+
+---------------------------------
+exec ra-------instruction number 70
+
+---------------------------------
+exec rrb-------instruction number 71
+
+---------------------------------
+exec rrb-------instruction number 72
+
+---------------------------------
+exec rrb-------instruction number 73
+
+---------------------------------
+exec rrb-------instruction number 74
+
+---------------------------------
+exec pb-------instruction number 75
+
+---------------------------------
+exec rb-------instruction number 76
+
+---------------------------------
+exec rb-------instruction number 77
+
+---------------------------------
+exec rb-------instruction number 78
+
+---------------------------------
+exec rb-------instruction number 79
+
+---------------------------------
+exec rb-------instruction number 80
+
+---------------------------------
+exec ra-------instruction number 81
+
+---------------------------------
+exec ra-------instruction number 82
+
+---------------------------------
+exec ra-------instruction number 83
+
+---------------------------------
+exec pb-------instruction number 84
+
+---------------------------------
+exec rb-------instruction number 85
+
+---------------------------------
+exec ra-------instruction number 86
+
+---------------------------------
+exec rrb-------instruction number 87
+
+---------------------------------
+exec rrb-------instruction number 88
+
+---------------------------------
+exec pb-------instruction number 89
+
+---------------------------------
+exec rb-------instruction number 90
+
+---------------------------------
+exec rb-------instruction number 91
+
+---------------------------------
+exec rb-------instruction number 92
+
+---------------------------------
+exec ra-------instruction number 93
+
+---------------------------------
+exec pb-------instruction number 94
+
+---------------------------------
+exec rb-------instruction number 95
+
+---------------------------------
+exec ra-------instruction number 96
+
+---------------------------------
+exec rrb-------instruction number 97
+
+---------------------------------
+exec rrb-------instruction number 98
+
+---------------------------------
+exec rrb-------instruction number 99
+
+---------------------------------
+exec rrb-------instruction number 100
+
+---------------------------------
+exec rrb-------instruction number 101
+
+---------------------------------
+exec pb-------instruction number 102
+
+---------------------------------
+exec rb-------instruction number 103
+
+---------------------------------
+exec rb-------instruction number 104
+
+---------------------------------
+exec rb-------instruction number 105
+
+---------------------------------
+exec rb-------instruction number 106
+
+---------------------------------
+exec rb-------instruction number 107
+
+---------------------------------
+exec rb-------instruction number 108
+
+---------------------------------
+exec ra-------instruction number 109
+
+---------------------------------
+exec ra-------instruction number 110
+
+---------------------------------
+exec rb-------instruction number 111
+
+---------------------------------
+exec rb-------instruction number 112
+
+---------------------------------
+exec rb-------instruction number 113
+
+---------------------------------
+exec rb-------instruction number 114
+
+---------------------------------
+exec pb-------instruction number 115
+
+---------------------------------
+exec rrb-------instruction number 116
+
+---------------------------------
+exec rrb-------instruction number 117
+
+---------------------------------
+exec rrb-------instruction number 118
+
+---------------------------------
+exec rrb-------instruction number 119
+
+---------------------------------
+exec ra-------instruction number 120
+
+---------------------------------
+exec rb-------instruction number 121
+
+---------------------------------
+exec rb-------instruction number 122
+
+---------------------------------
+exec pb-------instruction number 123
+
+---------------------------------
+exec rrb-------instruction number 124
+
+---------------------------------
+exec rrb-------instruction number 125
+
+---------------------------------
+exec rb-------instruction number 126
+
+---------------------------------
+exec rb-------instruction number 127
+
+---------------------------------
+exec rb-------instruction number 128
+
+---------------------------------
+exec rb-------instruction number 129
+
+---------------------------------
+exec rb-------instruction number 130
+
+---------------------------------
+exec pb-------instruction number 131
+
+---------------------------------
+exec rrb-------instruction number 132
+
+---------------------------------
+exec rrb-------instruction number 133
+
+---------------------------------
+exec rrb-------instruction number 134
+
+---------------------------------
+exec rrb-------instruction number 135
+
+---------------------------------
+exec rrb-------instruction number 136
+
+---------------------------------
+exec ra-------instruction number 137
+
+---------------------------------
+exec ra-------instruction number 138
+
+---------------------------------
+exec ra-------instruction number 139
+
+---------------------------------
+exec ra-------instruction number 140
+
+---------------------------------
+exec ra-------instruction number 141
+
+---------------------------------
+exec ra-------instruction number 142
+
+---------------------------------
+exec ra-------instruction number 143
+
+---------------------------------
+exec ra-------instruction number 144
+
+---------------------------------
+exec ra-------instruction number 145
+
+---------------------------------
+exec ra-------instruction number 146
+
+---------------------------------
+exec ra-------instruction number 147
+
+---------------------------------
+exec ra-------instruction number 148
+
+---------------------------------
+exec ra-------instruction number 149
+
+---------------------------------
+exec ra-------instruction number 150
+
+---------------------------------
+exec rb-------instruction number 151
+
+---------------------------------
+exec rb-------instruction number 152
+
+---------------------------------
+exec rb-------instruction number 153
+
+---------------------------------
+exec rb-------instruction number 154
+
+---------------------------------
+exec rb-------instruction number 155
+
+---------------------------------
+exec rb-------instruction number 156
+
+---------------------------------
+exec rb-------instruction number 157
+
+---------------------------------
+exec pb-------instruction number 158
+
+---------------------------------
+exec rrb-------instruction number 159
+
+---------------------------------
+exec rrb-------instruction number 160
+
+---------------------------------
+exec rrb-------instruction number 161
+
+---------------------------------
+exec rrb-------instruction number 162
+
+---------------------------------
+exec rrb-------instruction number 163
+
+---------------------------------
+exec rrb-------instruction number 164
+
+---------------------------------
+exec rrb-------instruction number 165
+
+---------------------------------
+exec ra-------instruction number 166
+
+---------------------------------
+exec ra-------instruction number 167
+
+---------------------------------
+exec ra-------instruction number 168
+
+---------------------------------
+exec ra-------instruction number 169
+
+---------------------------------
+exec ra-------instruction number 170
+
+---------------------------------
+exec ra-------instruction number 171
+
+---------------------------------
+exec ra-------instruction number 172
+
+---------------------------------
+exec ra-------instruction number 173
+
+---------------------------------
+exec ra-------instruction number 174
+
+---------------------------------
+exec ra-------instruction number 175
+
+---------------------------------
+exec ra-------instruction number 176
+
+---------------------------------
+exec ra-------instruction number 177
+
+---------------------------------
+exec ra-------instruction number 178
+
+---------------------------------
+exec ra-------instruction number 179
+
+---------------------------------
+exec rrb-------instruction number 180
+
+---------------------------------
+exec rrb-------instruction number 181
+
+---------------------------------
+exec rrb-------instruction number 182
+
+---------------------------------
+exec rrb-------instruction number 183
+
+---------------------------------
+exec rrb-------instruction number 184
+
+---------------------------------
+exec pb-------instruction number 185
+
+---------------------------------
+exec rb-------instruction number 186
+
+---------------------------------
+exec rb-------instruction number 187
+
+---------------------------------
+exec rb-------instruction number 188
+
+---------------------------------
+exec rb-------instruction number 189
+
+---------------------------------
+exec rb-------instruction number 190
+
+---------------------------------
+exec rb-------instruction number 191
+
+---------------------------------
+exec ra-------instruction number 192
+
+---------------------------------
+exec ra-------instruction number 193
+
+---------------------------------
+exec pb-------instruction number 194
+
+---------------------------------
+exec pb-------instruction number 195
+
+---------------------------------
+exec rr-------instruction number 196
+
+---------------------------------
+exec rr-------instruction number 197
+
+---------------------------------
+exec pb-------instruction number 198
+
+---------------------------------
+exec ra-------instruction number 199
+
+---------------------------------
+exec ra-------instruction number 200
+
+---------------------------------
+exec pb-------instruction number 201
+
+---------------------------------
+exec ra-------instruction number 202
+
+---------------------------------
+exec ra-------instruction number 203
+
+---------------------------------
+exec ra-------instruction number 204
+
+---------------------------------
+exec pb-------instruction number 205
+
+---------------------------------
+exec rb-------instruction number 206
+
+---------------------------------
+exec pb-------instruction number 207
+
+---------------------------------
+exec rr-------instruction number 208
+
+---------------------------------
+exec ra-------instruction number 209
+
+---------------------------------
+exec ra-------instruction number 210
+
+---------------------------------
+exec ra-------instruction number 211
+
+---------------------------------
+exec pb-------instruction number 212
+
+---------------------------------
+exec rr-------instruction number 213
+
+---------------------------------
+exec rr-------instruction number 214
+
+---------------------------------
+exec ra-------instruction number 215
+
+---------------------------------
+exec ra-------instruction number 216
+
+---------------------------------
+exec ra-------instruction number 217
+
+---------------------------------
+exec ra-------instruction number 218
+
+---------------------------------
+exec ra-------instruction number 219
+
+---------------------------------
+exec ra-------instruction number 220
+
+---------------------------------
+exec pb-------instruction number 221
+
+---------------------------------
+exec rrb-------instruction number 222
+
+---------------------------------
+exec ra-------instruction number 223
+
+---------------------------------
+exec ra-------instruction number 224
+
+---------------------------------
+exec ra-------instruction number 225
+
+---------------------------------
+exec ra-------instruction number 226
+
+---------------------------------
+exec ra-------instruction number 227
+
+---------------------------------
+exec ra-------instruction number 228
+
+---------------------------------
+exec ra-------instruction number 229
+
+---------------------------------
+exec ra-------instruction number 230
+
+---------------------------------
+exec ra-------instruction number 231
+
+---------------------------------
+exec ra-------instruction number 232
+
+---------------------------------
+exec ra-------instruction number 233
+
+---------------------------------
+exec pb-------instruction number 234
+
+---------------------------------
+exec rrb-------instruction number 235
+
+
+chunk border is 155 at i 0
+chunk border is 295 at i 1
+chunk border is 491 at i 2
+chunk border is 643 at i 3
+chunk border is 794 at i 4
+num is 143
+------------------------------------------------
+I am at 'num.number > stackb->x'
+i am at instruction 23
+stackb->x is 82
+the chosen number is  143
+num is 155
+------------------------------------------------
+I am at 'num.number > stackb->x'
+i am at instruction 25
+stackb->x is 143
+the chosen number is  155
+num is 36
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 26
+stackb->x is 155, stackb->y is 23
+the chosen number is  36
+num is 47
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 30
+stackb->x is 155, stackb->y is 23
+the chosen number is  47
+num is 130
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 38
+stackb->x is 155, stackb->y is 23
+the chosen number is  130
+num is 96
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 47
+stackb->x is 155, stackb->y is 23
+the chosen number is  96
+num is 152
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 54
+stackb->x is 155, stackb->y is 23
+the chosen number is  152
+num is 60
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 62
+stackb->x is 155, stackb->y is 23
+the chosen number is  60
+num is 10
+------------------------------------------------
+I am at num.number < stackb->y
+i am at instruction 80
+stackb->y is 23
+the chosen number is  10
+num is 32
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 85
+stackb->x is 155, stackb->y is 10
+the chosen number is  32
+num is 8
+------------------------------------------------
+I am at num.number < stackb->y
+i am at instruction 92
+stackb->y is 10
+the chosen number is  8
+num is 46
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 95
+stackb->x is 155, stackb->y is 8
+the chosen number is  46
+num is 105
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 108
+stackb->x is 155, stackb->y is 8
+the chosen number is  105
+num is 150
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 119
+stackb->x is 155, stackb->y is 8
+the chosen number is  150
+num is 125
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 125
+stackb->x is 155, stackb->y is 8
+the chosen number is  125
+num is 102
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 136
+stackb->x is 155, stackb->y is 8
+the chosen number is  102
+num is 42
+------------------------------------------------
+I am at num.number < stackb->x && num.number > stackb->y
+i am at instruction 165
+stackb->x is 155, stackb->y is 8
+the chosen number is  42
+complete_distance is: 2 at instruction 195
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 195
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 198
+next_hold is 208
+ at instruction 198complete_distance is: 3 at instruction 207
+complete_distance is: 4 at instruction 212
+complete_distance is: 6 at instruction 221
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 221
+next_hold is 230
+ at instruction 221INSIDE RRB ----- complete_distance is: 5 at instruction 222
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 222
+next_hold is 230
+ at instruction 222I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 234
+next_hold is 275
+ at instruction 234INSIDE RRB ----- complete_distance is: 4 at inst---------------------------------
+exec rrb-------instruction number 236
+
+---------------------------------
+exec ra-------instruction number 237
+
+---------------------------------
+exec ra-------instruction number 238
+
+---------------------------------
+exec pb-------instruction number 239
+
+---------------------------------
+exec rb-------instruction number 240
+
+---------------------------------
+exec pb-------instruction number 241
+
+---------------------------------
+exec rr-------instruction number 242
+
+---------------------------------
+exec rr-------instruction number 243
+
+---------------------------------
+exec rb-------instruction number 244
+
+---------------------------------
+exec rb-------instruction number 245
+
+---------------------------------
+exec rb-------instruction number 246
+
+---------------------------------
+exec pb-------instruction number 247
+
+---------------------------------
+exec ra-------instruction number 248
+
+---------------------------------
+exec ra-------instruction number 249
+
+---------------------------------
+exec ra-------instruction number 250
+
+---------------------------------
+exec pb-------instruction number 251
+
+---------------------------------
+exec rr-------instruction number 252
+
+---------------------------------
+exec rr-------instruction number 253
+
+---------------------------------
+exec ra-------instruction number 254
+
+---------------------------------
+exec ra-------instruction number 255
+
+---------------------------------
+exec ra-------instruction number 256
+
+---------------------------------
+exec ra-------instruction number 257
+
+---------------------------------
+exec pb-------instruction number 258
+
+---------------------------------
+exec pb-------instruction number 259
+
+---------------------------------
+exec rrb-------instruction number 260
+
+---------------------------------
+exec rrb-------instruction number 261
+
+---------------------------------
+exec rrb-------instruction number 262
+
+---------------------------------
+exec rrb-------instruction number 263
+
+---------------------------------
+exec ra-------instruction number 264
+
+---------------------------------
+exec ra-------instruction number 265
+
+---------------------------------
+exec ra-------instruction number 266
+
+---------------------------------
+exec pb-------instruction number 267
+
+---------------------------------
+exec rr-------instruction number 268
+
+---------------------------------
+exec rr-------instruction number 269
+
+---------------------------------
+exec rb-------instruction number 270
+
+---------------------------------
+exec rb-------instruction number 271
+
+---------------------------------
+exec pb-------instruction number 272
+
+---------------------------------
+exec rr-------instruction number 273
+
+---------------------------------
+exec rb-------instruction number 274
+
+---------------------------------
+exec rb-------instruction number 275
+
+---------------------------------
+exec rb-------instruction number 276
+
+---------------------------------
+exec rb-------instruction number 277
+
+---------------------------------
+exec pb-------instruction number 278
+
+---------------------------------
+exec rrb-------instruction number 279
+
+---------------------------------
+exec rrb-------instruction number 280
+
+---------------------------------
+exec rrb-------instruction number 281
+
+---------------------------------
+exec rrb-------instruction number 282
+
+---------------------------------
+exec rrb-------instruction number 283
+
+---------------------------------
+exec rrb-------instruction number 284
+
+---------------------------------
+exec rrb-------instruction number 285
+
+---------------------------------
+exec rrb-------instruction number 286
+
+---------------------------------
+exec ra-------instruction number 287
+
+---------------------------------
+exec pb-------instruction number 288
+
+---------------------------------
+exec rrb-------instruction number 289
+
+---------------------------------
+exec rrb-------instruction number 290
+
+---------------------------------
+exec ra-------instruction number 291
+
+---------------------------------
+exec ra-------instruction number 292
+
+---------------------------------
+exec pb-------instruction number 293
+
+---------------------------------
+exec rrb-------instruction number 294
+
+---------------------------------
+exec rrb-------instruction number 295
+
+---------------------------------
+exec rrb-------instruction number 296
+
+---------------------------------
+exec rrb-------instruction number 297
+
+---------------------------------
+exec rrb-------instruction number 298
+
+---------------------------------
+exec rrb-------instruction number 299
+
+---------------------------------
+exec pb-------instruction number 300
+
+---------------------------------
+exec rb-------instruction number 301
+
+---------------------------------
+exec pb-------instruction number 302
+
+---------------------------------
+exec rr-------instruction number 303
+
+---------------------------------
+exec ra-------instruction number 304
+
+---------------------------------
+exec ra-------instruction number 305
+
+---------------------------------
+exec pb-------instruction number 306
+
+---------------------------------
+exec rrb-------instruction number 307
+
+---------------------------------
+exec ra-------instruction number 308
+
+---------------------------------
+exec pb-------instruction number 309
+
+---------------------------------
+exec rrb-------instruction number 310
+
+---------------------------------
+exec ra-------instruction number 311
+
+---------------------------------
+exec ra-------instruction number 312
+
+---------------------------------
+exec ra-------instruction number 313
+
+---------------------------------
+exec pb-------instruction number 314
+
+---------------------------------
+exec rr-------instruction number 315
+
+---------------------------------
+exec rb-------instruction number 316
+
+---------------------------------
+exec rb-------instruction number 317
+
+---------------------------------
+exec rb-------instruction number 318
+
+---------------------------------
+exec rb-------instruction number 319
+
+---------------------------------
+exec pb-------instruction number 320
+
+---------------------------------
+exec rrb-------instruction number 321
+
+ruction 235
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 235
+next_hold is 275
+ at instruction 235INSIDE RRB ----- complete_distance is: 3 at instruction 236
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 236
+next_hold is 275
+ at instruction 236complete_distance is: 4 at instruction 241
+complete_distance is: 9 at instruction 247
+complete_distance is: 11 at instruction 258
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 259
+next_hold is 240
+ at instruction 259INSIDE RRB ----- complete_distance is: 10 at instruction 260
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 260
+next_hold is 240
+ at instruction 260INSIDE RRB ----- complete_distance is: 9 at instruction 261
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 261
+next_hold is 240
+ at instruction 261INSIDE RRB ----- complete_distance is: 8 at instruction 262
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 262
+next_hold is 240
+ at instruction 262INSIDE RRB ----- complete_distance is: 7 at instruction 263
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 263
+next_hold is 240
+ at instruction 263complete_distance is: 11 at instruction 272
+complete_distance is: 16 at instruction 278
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 278
+next_hold is 233
+ at instruction 278INSIDE RRB ----- complete_distance is: 15 at instruction 279
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 279
+next_hold is 233
+ at instruction 279INSIDE RRB ----- complete_distance is: 14 at instruction 280
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 280
+next_hold is 233
+ at instruction 280INSIDE RRB ----- complete_distance is: 13 at instruction 281
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 281
+next_hold is 233
+ at instruction 281INSIDE RRB ----- complete_distance is: 12 at instruction 282
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 282
+next_hold is 233
+ at instruction 282INSIDE RRB ----- complete_distance is: 11 at instruction 283
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 283
+next_hold is 233
+ at instruction 283INSIDE RRB ----- complete_distance is: 10 at instruction 284
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 284
+next_hold is 233
+ at instruction 284INSIDE RRB ----- complete_distance is: 9 at instruction 285
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 285
+next_hold is 233
+ at instruction 285INSIDE RRB ----- complete_distance is: 8 at instruction 286
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 286
+next_hold is 233
+ at instruction 286I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 288
+next_hold is 255
+ at instruction 288INSIDE RRB ----- complete_distance is: 7 at instruction 289
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 289
+next_hold is 255
+ at instruction 289INSIDE RRB ----- complete_distance is: 6 at instruction 290
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 290
+next_hold is 255
+ at instruction 290I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 293
+next_hold is 264
+ at instruction 293complete_distance is: 1 at instruction 300
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 300
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 302
+next_hold is 348
+ at instruction 302complete_distance is: 2 at instruction 306
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 306
+next_hold is 417
+ at instruction 306INSIDE RRB ----- complete_distance is: 1 at instruction 307
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 307
+next_hold is 417
+ at instruction 307I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 309
+next_hold is 465
+ at instruction 309INSIDE RRB ----- complete_distance is: 0 at instruction 310
+complete_distance is: 5 at instruction 314
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 314
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 320
+next_hold is 370
+ at instruction 320INSIDE RRB ----- complete_distan---------------------------------
+exec ra-------instruction number 322
+
+---------------------------------
+exec ra-------instruction number 323
+
+---------------------------------
+exec pb-------instruction number 324
+
+---------------------------------
+exec rrb-------instruction number 325
+
+---------------------------------
+exec rrb-------instruction number 326
+
+---------------------------------
+exec ra-------instruction number 327
+
+---------------------------------
+exec pb-------instruction number 328
+
+---------------------------------
+exec rr-------instruction number 329
+
+---------------------------------
+exec rr-------instruction number 330
+
+---------------------------------
+exec rr-------instruction number 331
+
+---------------------------------
+exec rr-------instruction number 332
+
+---------------------------------
+exec rr-------instruction number 333
+
+---------------------------------
+exec rb-------instruction number 334
+
+---------------------------------
+exec pb-------instruction number 335
+
+---------------------------------
+exec rrb-------instruction number 336
+
+---------------------------------
+exec ra-------instruction number 337
+
+---------------------------------
+exec pb-------instruction number 338
+
+---------------------------------
+exec pb-------instruction number 339
+
+---------------------------------
+exec rrb-------instruction number 340
+
+---------------------------------
+exec rrb-------instruction number 341
+
+---------------------------------
+exec rrb-------instruction number 342
+
+---------------------------------
+exec rrb-------instruction number 343
+
+---------------------------------
+exec pb-------instruction number 344
+
+---------------------------------
+exec ra-------instruction number 345
+
+---------------------------------
+exec ra-------instruction number 346
+
+---------------------------------
+exec ra-------instruction number 347
+
+---------------------------------
+exec pb-------instruction number 348
+
+---------------------------------
+exec rb-------instruction number 349
+
+---------------------------------
+exec rb-------instruction number 350
+
+---------------------------------
+exec rb-------instruction number 351
+
+---------------------------------
+exec rb-------instruction number 352
+
+---------------------------------
+exec rb-------instruction number 353
+
+---------------------------------
+exec rb-------instruction number 354
+
+---------------------------------
+exec pb-------instruction number 355
+
+---------------------------------
+exec rb-------instruction number 356
+
+---------------------------------
+exec pb-------instruction number 357
+
+---------------------------------
+exec rrb-------instruction number 358
+
+---------------------------------
+exec rrb-------instruction number 359
+
+---------------------------------
+exec rrb-------instruction number 360
+
+---------------------------------
+exec rrb-------instruction number 361
+
+---------------------------------
+exec rrb-------instruction number 362
+
+---------------------------------
+exec rrb-------instruction number 363
+
+---------------------------------
+exec rrb-------instruction number 364
+
+---------------------------------
+exec rrb-------instruction number 365
+
+---------------------------------
+exec rrb-------instruction number 366
+
+---------------------------------
+exec rrb-------instruction number 367
+
+---------------------------------
+exec ra-------instruction number 368
+
+---------------------------------
+exec ra-------instruction number 369
+
+---------------------------------
+exec pb-------instruction number 370
+
+---------------------------------
+exec rr-------instruction number 371
+
+---------------------------------
+exec rr-------instruction number 372
+
+---------------------------------
+exec rr-------instruction number 373
+
+---------------------------------
+exec rr-------instruction number 374
+
+---------------------------------
+exec rr-------instruction number 375
+
+---------------------------------
+exec rr-------instruction number 376
+
+---------------------------------
+exec rr-------instruction number 377
+
+---------------------------------
+exec rr-------instruction number 378
+
+---------------------------------
+exec rr-------instruction number 379
+
+---------------------------------
+exec rb-------instruction number 380
+
+---------------------------------
+exec rb-------instruction number 381
+
+---------------------------------
+exec rb-------instruction number 382
+
+---------------------------------
+exec pb-------instruction number 383
+
+---------------------------------
+exec rrb-------instruction number 384
+
+---------------------------------
+exec rrb-------instruction number 385
+
+---------------------------------
+exec rrb-------instruction number 386
+
+---------------------------------
+exec rrb-------instruction number 387
+
+ce is: 4 at instruction 321
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 321
+next_hold is 370
+ at instruction 321I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 324
+next_hold is 434
+ at instruction 324INSIDE RRB ----- complete_distance is: 3 at instruction 325
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 325
+next_hold is 434
+ at instruction 325INSIDE RRB ----- complete_distance is: 2 at instruction 326
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 326
+next_hold is 434
+ at instruction 326complete_distance is: 8 at instruction 335
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 335
+next_hold is 316
+ at instruction 335INSIDE RRB ----- complete_distance is: 7 at instruction 336
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 336
+next_hold is 316
+ at instruction 336I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 339
+next_hold is 418
+ at instruction 339INSIDE RRB ----- complete_distance is: 6 at instruction 340
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 340
+next_hold is 418
+ at instruction 340INSIDE RRB ----- complete_distance is: 5 at instruction 341
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 341
+next_hold is 418
+ at instruction 341INSIDE RRB ----- complete_distance is: 4 at instruction 342
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 342
+next_hold is 418
+ at instruction 342INSIDE RRB ----- complete_distance is: 3 at instruction 343
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 343
+next_hold is 418
+ at instruction 343complete_distance is: 9 at instruction 355
+complete_distance is: 10 at instruction 357
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 357
+next_hold is 469
+ at instruction 357INSIDE RRB ----- complete_distance is: 9 at instruction 358
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 358
+next_hold is 469
+ at instruction 358INSIDE RRB ----- complete_distance is: 8 at instruction 359
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 359
+next_hold is 469
+ at instruction 359INSIDE RRB ----- complete_distance is: 7 at instruction 360
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 360
+next_hold is 469
+ at instruction 360INSIDE RRB ----- complete_distance is: 6 at instruction 361
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 361
+next_hold is 469
+ at instruction 361INSIDE RRB ----- complete_distance is: 5 at instruction 362
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 362
+next_hold is 469
+ at instruction 362INSIDE RRB ----- complete_distance is: 4 at instruction 363
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 363
+next_hold is 469
+ at instruction 363INSIDE RRB ----- complete_distance is: 3 at instruction 364
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 364
+next_hold is 469
+ at instruction 364INSIDE RRB ----- complete_distance is: 2 at instruction 365
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 365
+next_hold is 469
+ at instruction 365INSIDE RRB ----- complete_distance is: 1 at instruction 366
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 366
+next_hold is 469
+ at instruction 366INSIDE RRB ----- complete_distance is: 0 at instruction 367
+complete_distance is: 12 at instruction 370
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 370
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 383
+next_hold is 384
+ at instruction 383INSIDE RRB ----- complete_distance is: 11 at instruction 384
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 384
+next_hold is 384
+ at instruction 384INSIDE RRB ----- complete_distance is: 10 at instruction 385
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 385
+next_hold is 384
+ at instruction 385INSIDE RRB ----- complete_distance is: 9 at instruction 386
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 386
+next_hold is 384
+ at instruction 386INSIDE RRB ----- complete_distance is: 8 at instruction 387
+I AM INSIDE THE SM---------------------------------
+exec ra-------instruction number 388
+
+---------------------------------
+exec pb-------instruction number 389
+
+---------------------------------
+exec rrb-------instruction number 390
+
+---------------------------------
+exec rrb-------instruction number 391
+
+---------------------------------
+exec rrb-------instruction number 392
+
+---------------------------------
+exec rrb-------instruction number 393
+
+---------------------------------
+exec rrb-------instruction number 394
+
+---------------------------------
+exec rrb-------instruction number 395
+
+---------------------------------
+exec rrb-------instruction number 396
+
+---------------------------------
+exec rrb-------instruction number 397
+
+---------------------------------
+exec ra-------instruction number 398
+
+---------------------------------
+exec pb-------instruction number 399
+
+---------------------------------
+exec rr-------instruction number 400
+
+---------------------------------
+exec rr-------instruction number 401
+
+---------------------------------
+exec rr-------instruction number 402
+
+---------------------------------
+exec rb-------instruction number 403
+
+---------------------------------
+exec rb-------instruction number 404
+
+---------------------------------
+exec pb-------instruction number 405
+
+---------------------------------
+exec rrb-------instruction number 406
+
+---------------------------------
+exec rrb-------instruction number 407
+
+---------------------------------
+exec rrb-------instruction number 408
+
+---------------------------------
+exec rrb-------instruction number 409
+
+---------------------------------
+exec rrb-------instruction number 410
+
+---------------------------------
+exec pb-------instruction number 411
+
+---------------------------------
+exec pb-------instruction number 412
+
+---------------------------------
+exec pb-------instruction number 413
+
+---------------------------------
+exec rr-------instruction number 414
+
+---------------------------------
+exec rr-------instruction number 415
+
+---------------------------------
+exec pb-------instruction number 416
+
+---------------------------------
+exec ra-------instruction number 417
+
+---------------------------------
+exec pb-------instruction number 418
+
+---------------------------------
+exec pb-------instruction number 419
+
+---------------------------------
+exec rb-------instruction number 420
+
+---------------------------------
+exec rb-------instruction number 421
+
+---------------------------------
+exec rb-------instruction number 422
+
+---------------------------------
+exec pb-------instruction number 423
+
+---------------------------------
+exec rrb-------instruction number 424
+
+---------------------------------
+exec rrb-------instruction number 425
+
+---------------------------------
+exec ra-------instruction number 426
+
+---------------------------------
+exec pb-------instruction number 427
+
+---------------------------------
+exec rrb-------instruction number 428
+
+---------------------------------
+exec rrb-------instruction number 429
+
+---------------------------------
+exec rrb-------instruction number 430
+
+---------------------------------
+exec ra-------instruction number 431
+
+---------------------------------
+exec ra-------instruction number 432
+
+---------------------------------
+exec pb-------instruction number 433
+
+---------------------------------
+exec rr-------instruction number 434
+
+---------------------------------
+exec rr-------instruction number 435
+
+---------------------------------
+exec rb-------instruction number 436
+
+---------------------------------
+exec rb-------instruction number 437
+
+---------------------------------
+exec rb-------instruction number 438
+
+---------------------------------
+exec pb-------instruction number 439
+
+---------------------------------
+exec rb-------instruction number 440
+
+---------------------------------
+exec rb-------instruction number 441
+
+---------------------------------
+exec pb-------instruction number 442
+
+---------------------------------
+exec rrb-------instruction number 443
+
+---------------------------------
+exec rrb-------instruction number 444
+
+---------------------------------
+exec rrb-------instruction number 445
+
+---------------------------------
+exec rrb-------instruction number 446
+
+---------------------------------
+exec ra-------instruction number 447
+
+---------------------------------
+exec pb-------instruction number 448
+
+---------------------------------
+exec rr-------instruction number 449
+
+---------------------------------
+exec rr-------instruction number 450
+
+---------------------------------
+exec rb-------instruction number 451
+
+---------------------------------
+exec rb-------instruction number 452
+
+---------------------------------
+exec rb-------instruction number 453
+
+---------------------------------
+exec rb-------instruction number 454
+
+---------------------------------
+exec rb-------instruction number 455
+
+---------------------------------
+exec rb-------instruction number 456
+
+---------------------------------
+exec pb-------instruction number 457
+
+---------------------------------
+exec rrb-------instruction number 458
+
+---------------------------------
+exec rrb-------instruction number 459
+
+ALL DISTANCE_COMPLETE > 0 LOOP, instruction 387
+next_hold is 384
+ at instruction 387I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 389
+next_hold is 491
+ at instruction 389INSIDE RRB ----- complete_distance is: 7 at instruction 390
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 390
+next_hold is 491
+ at instruction 390INSIDE RRB ----- complete_distance is: 6 at instruction 391
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 391
+next_hold is 491
+ at instruction 391INSIDE RRB ----- complete_distance is: 5 at instruction 392
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 392
+next_hold is 491
+ at instruction 392INSIDE RRB ----- complete_distance is: 4 at instruction 393
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 393
+next_hold is 491
+ at instruction 393INSIDE RRB ----- complete_distance is: 3 at instruction 394
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 394
+next_hold is 491
+ at instruction 394INSIDE RRB ----- complete_distance is: 2 at instruction 395
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 395
+next_hold is 491
+ at instruction 395INSIDE RRB ----- complete_distance is: 1 at instruction 396
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 396
+next_hold is 491
+ at instruction 396INSIDE RRB ----- complete_distance is: 0 at instruction 397
+complete_distance is: 5 at instruction 399
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 399
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 405
+next_hold is 2078618272
+ at instruction 405complete_distance is: 2 at instruction 413
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 413
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 416
+next_hold is 544
+ at instruction 416complete_distance is: 5 at instruction 423
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 423
+next_hold is 562
+ at instruction 423INSIDE RRB ----- complete_distance is: 4 at instruction 424
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 424
+next_hold is 562
+ at instruction 424INSIDE RRB ----- complete_distance is: 3 at instruction 425
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 425
+next_hold is 562
+ at instruction 425I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 427
+next_hold is 637
+ at instruction 427INSIDE RRB ----- complete_distance is: 2 at instruction 428
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 428
+next_hold is 637
+ at instruction 428INSIDE RRB ----- complete_distance is: 1 at instruction 429
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 429
+next_hold is 637
+ at instruction 429INSIDE RRB ----- complete_distance is: 0 at instruction 430
+complete_distance is: 5 at instruction 433
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 433
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 439
+next_hold is 537
+ at instruction 439complete_distance is: 7 at instruction 442
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 442
+next_hold is 621
+ at instruction 442INSIDE RRB ----- complete_distance is: 6 at instruction 443
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 443
+next_hold is 621
+ at instruction 443INSIDE RRB ----- complete_distance is: 5 at instruction 444
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 444
+next_hold is 621
+ at instruction 444INSIDE RRB ----- complete_distance is: 4 at instruction 445
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 445
+next_hold is 621
+ at instruction 445INSIDE RRB ----- complete_distance is: 3 at instruction 446
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 446
+next_hold is 621
+ at instruction 446complete_distance is: 11 at instruction 457
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 457
+next_hold is 623
+ at instruction 457INSIDE RRB ----- complete_distance is: 10 at instruction 458
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 458
+next_hold is 623
+ at instruction 458INSIDE RRB ----- complete---------------------------------
+exec rrb-------instruction number 460
+
+---------------------------------
+exec rrb-------instruction number 461
+
+---------------------------------
+exec rrb-------instruction number 462
+
+---------------------------------
+exec rrb-------instruction number 463
+
+---------------------------------
+exec rrb-------instruction number 464
+
+---------------------------------
+exec rrb-------instruction number 465
+
+---------------------------------
+exec rrb-------instruction number 466
+
+---------------------------------
+exec pb-------instruction number 467
+
+---------------------------------
+exec rb-------instruction number 468
+
+---------------------------------
+exec rb-------instruction number 469
+
+---------------------------------
+exec rb-------instruction number 470
+
+---------------------------------
+exec rb-------instruction number 471
+
+---------------------------------
+exec pb-------instruction number 472
+
+---------------------------------
+exec rrb-------instruction number 473
+
+---------------------------------
+exec ra-------instruction number 474
+
+---------------------------------
+exec ra-------instruction number 475
+
+---------------------------------
+exec pb-------instruction number 476
+
+---------------------------------
+exec rrb-------instruction number 477
+
+---------------------------------
+exec rrb-------instruction number 478
+
+---------------------------------
+exec rrb-------instruction number 479
+
+---------------------------------
+exec ra-------instruction number 480
+
+---------------------------------
+exec ra-------instruction number 481
+
+---------------------------------
+exec ra-------instruction number 482
+
+---------------------------------
+exec pb-------instruction number 483
+
+---------------------------------
+exec rrb-------instruction number 484
+
+---------------------------------
+exec rrb-------instruction number 485
+
+---------------------------------
+exec pb-------instruction number 486
+
+---------------------------------
+exec rr-------instruction number 487
+
+---------------------------------
+exec rb-------instruction number 488
+
+---------------------------------
+exec rb-------instruction number 489
+
+---------------------------------
+exec rb-------instruction number 490
+
+---------------------------------
+exec rb-------instruction number 491
+
+---------------------------------
+exec rb-------instruction number 492
+
+---------------------------------
+exec rb-------instruction number 493
+
+---------------------------------
+exec rb-------instruction number 494
+
+---------------------------------
+exec rb-------instruction number 495
+
+---------------------------------
+exec rb-------instruction number 496
+
+---------------------------------
+exec pb-------instruction number 497
+
+---------------------------------
+exec rrb-------instruction number 498
+
+---------------------------------
+exec rrb-------instruction number 499
+
+---------------------------------
+exec ra-------instruction number 500
+
+---------------------------------
+exec ra-------instruction number 501
+
+---------------------------------
+exec pb-------instruction number 502
+
+---------------------------------
+exec rrb-------instruction number 503
+
+---------------------------------
+exec rrb-------instruction number 504
+
+---------------------------------
+exec rrb-------instruction number 505
+
+---------------------------------
+exec rrb-------instruction number 506
+
+---------------------------------
+exec rrb-------instruction number 507
+
+---------------------------------
+exec rrb-------instruction number 508
+
+---------------------------------
+exec rrb-------instruction number 509
+
+---------------------------------
+exec rrb-------instruction number 510
+
+---------------------------------
+exec pb-------instruction number 511
+
+---------------------------------
+exec rb-------instruction number 512
+
+---------------------------------
+exec pb-------instruction number 513
+
+---------------------------------
+exec pb-------instruction number 514
+
+---------------------------------
+exec rb-------instruction number 515
+
+---------------------------------
+exec rb-------instruction number 516
+
+---------------------------------
+exec pb-------instruction number 517
+
+---------------------------------
+exec rrb-------instruction number 518
+
+---------------------------------
+exec pb-------instruction number 519
+
+---------------------------------
+exec rb-------instruction number 520
+
+---------------------------------
+exec rb-------instruction number 521
+
+---------------------------------
+exec rb-------instruction number 522
+
+---------------------------------
+exec pb-------instruction number 523
+
+---------------------------------
+exec rrb-------instruction number 524
+
+---------------------------------
+exec rrb-------instruction number 525
+
+_distance is: 9 at instruction 459
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 459
+next_hold is 623
+ at instruction 459INSIDE RRB ----- complete_distance is: 8 at instruction 460
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 460
+next_hold is 623
+ at instruction 460INSIDE RRB ----- complete_distance is: 7 at instruction 461
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 461
+next_hold is 623
+ at instruction 461INSIDE RRB ----- complete_distance is: 6 at instruction 462
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 462
+next_hold is 623
+ at instruction 462INSIDE RRB ----- complete_distance is: 5 at instruction 463
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 463
+next_hold is 623
+ at instruction 463INSIDE RRB ----- complete_distance is: 4 at instruction 464
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 464
+next_hold is 623
+ at instruction 464INSIDE RRB ----- complete_distance is: 3 at instruction 465
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 465
+next_hold is 623
+ at instruction 465INSIDE RRB ----- complete_distance is: 2 at instruction 466
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 466
+next_hold is 623
+ at instruction 466complete_distance is: 6 at instruction 472
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 472
+next_hold is 611
+ at instruction 472INSIDE RRB ----- complete_distance is: 5 at instruction 473
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 473
+next_hold is 611
+ at instruction 473I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 476
+next_hold is 629
+ at instruction 476INSIDE RRB ----- complete_distance is: 4 at instruction 477
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 477
+next_hold is 629
+ at instruction 477INSIDE RRB ----- complete_distance is: 3 at instruction 478
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 478
+next_hold is 629
+ at instruction 478INSIDE RRB ----- complete_distance is: 2 at instruction 479
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 479
+next_hold is 629
+ at instruction 479I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 483
+next_hold is 643
+ at instruction 483INSIDE RRB ----- complete_distance is: 1 at instruction 484
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 484
+next_hold is 643
+ at instruction 484INSIDE RRB ----- complete_distance is: 0 at instruction 485
+complete_distance is: 10 at instruction 486
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 486
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 497
+next_hold is 604
+ at instruction 497INSIDE RRB ----- complete_distance is: 9 at instruction 498
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 498
+next_hold is 604
+ at instruction 498INSIDE RRB ----- complete_distance is: 8 at instruction 499
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 499
+next_hold is 604
+ at instruction 499I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 502
+next_hold is 611
+ at instruction 502complete_distance is: 1 at instruction 511
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 511
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 513
+next_hold is 765
+ at instruction 513complete_distance is: 3 at instruction 517
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 517
+next_hold is 719
+ at instruction 517INSIDE RRB ----- complete_distance is: 2 at instruction 518
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 518
+next_hold is 719
+ at instruction 518complete_distance is: 5 at instruction 523
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 523
+next_hold is 794
+ at instruction 523INSIDE RRB ----- complete_distance is: 4 at instruction 524
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 524
+next_hold is 794
+ at instruction 524INSIDE RRB ----- complete_distance is: 3 at instruction 525
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 525
+next_hold is 794
+ at ---------------------------------
+exec rrb-------instruction number 526
+
+---------------------------------
+exec rrb-------instruction number 527
+
+---------------------------------
+exec rrb-------instruction number 528
+
+---------------------------------
+exec pb-------instruction number 529
+
+---------------------------------
+exec rb-------instruction number 530
+
+---------------------------------
+exec rb-------instruction number 531
+
+---------------------------------
+exec rb-------instruction number 532
+
+---------------------------------
+exec rb-------instruction number 533
+
+---------------------------------
+exec rb-------instruction number 534
+
+---------------------------------
+exec pb-------instruction number 535
+
+---------------------------------
+exec rrb-------instruction number 536
+
+---------------------------------
+exec rrb-------instruction number 537
+
+---------------------------------
+exec rrb-------instruction number 538
+
+---------------------------------
+exec rrb-------instruction number 539
+
+---------------------------------
+exec pb-------instruction number 540
+
+---------------------------------
+exec rb-------instruction number 541
+
+---------------------------------
+exec pb-------instruction number 542
+
+---------------------------------
+exec rb-------instruction number 543
+
+---------------------------------
+exec rb-------instruction number 544
+
+---------------------------------
+exec rb-------instruction number 545
+
+---------------------------------
+exec rb-------instruction number 546
+
+---------------------------------
+exec pb-------instruction number 547
+
+---------------------------------
+exec rrb-------instruction number 548
+
+---------------------------------
+exec pb-------instruction number 549
+
+---------------------------------
+exec rrb-------instruction number 550
+
+---------------------------------
+exec rrb-------instruction number 551
+
+---------------------------------
+exec rrb-------instruction number 552
+
+---------------------------------
+exec pb-------instruction number 553
+
+---------------------------------
+exec rb-------instruction number 554
+
+---------------------------------
+exec rb-------instruction number 555
+
+---------------------------------
+exec rb-------instruction number 556
+
+---------------------------------
+exec rb-------instruction number 557
+
+---------------------------------
+exec pb-------instruction number 558
+
+---------------------------------
+exec rb-------instruction number 559
+
+---------------------------------
+exec rb-------instruction number 560
+
+---------------------------------
+exec rb-------instruction number 561
+
+---------------------------------
+exec rb-------instruction number 562
+
+---------------------------------
+exec rb-------instruction number 563
+
+---------------------------------
+exec rb-------instruction number 564
+
+---------------------------------
+exec rb-------instruction number 565
+
+---------------------------------
+exec rb-------instruction number 566
+
+---------------------------------
+exec pb-------instruction number 567
+
+---------------------------------
+exec rb-------instruction number 568
+
+---------------------------------
+exec pb-------instruction number 569
+
+---------------------------------
+exec rrb-------instruction number 570
+
+---------------------------------
+exec rrb-------instruction number 571
+
+---------------------------------
+exec pb-------instruction number 572
+
+---------------------------------
+exec rrb-------instruction number 573
+
+---------------------------------
+exec rrb-------instruction number 574
+
+---------------------------------
+exec rrb-------instruction number 575
+
+---------------------------------
+exec rrb-------instruction number 576
+
+---------------------------------
+exec rrb-------instruction number 577
+
+---------------------------------
+exec rrb-------instruction number 578
+
+---------------------------------
+exec rrb-------instruction number 579
+
+---------------------------------
+exec rrb-------instruction number 580
+
+instruction 525INSIDE RRB ----- complete_distance is: 2 at instruction 526
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 526
+next_hold is 794
+ at instruction 526INSIDE RRB ----- complete_distance is: 1 at instruction 527
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 527
+next_hold is 794
+ at instruction 527INSIDE RRB ----- complete_distance is: 0 at instruction 528
+complete_distance is: 5 at instruction 529
+I AM INSIDE THE BIG DISTANCE_COMPLETE > 0 LOOP, instruction 529
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 535
+next_hold is 783
+ at instruction 535INSIDE RRB ----- complete_distance is: 4 at instruction 536
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 536
+next_hold is 783
+ at instruction 536INSIDE RRB ----- complete_distance is: 3 at instruction 537
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 537
+next_hold is 783
+ at instruction 537INSIDE RRB ----- complete_distance is: 2 at instruction 538
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 538
+next_hold is 783
+ at instruction 538INSIDE RRB ----- complete_distance is: 1 at instruction 539
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 539
+next_hold is 783
+ at instruction 539complete_distance is: 2 at instruction 542
+complete_distance is: 6 at instruction 547
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 547
+next_hold is 725
+ at instruction 547INSIDE RRB ----- complete_distance is: 5 at instruction 548
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 548
+next_hold is 725
+ at instruction 548I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 549
+next_hold is 774
+ at instruction 549INSIDE RRB ----- complete_distance is: 4 at instruction 550
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 550
+next_hold is 774
+ at instruction 550INSIDE RRB ----- complete_distance is: 3 at instruction 551
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 551
+next_hold is 774
+ at instruction 551INSIDE RRB ----- complete_distance is: 2 at instruction 552
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 552
+next_hold is 774
+ at instruction 552complete_distance is: 6 at instruction 558
+complete_distance is: 14 at instruction 567
+complete_distance is: 15 at instruction 569
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 569
+next_hold is 662
+ at instruction 569INSIDE RRB ----- complete_distance is: 14 at instruction 570
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 570
+next_hold is 662
+ at instruction 570INSIDE RRB ----- complete_distance is: 13 at instruction 571
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 571
+next_hold is 662
+ at instruction 571I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 572
+next_hold is 767
+ at instruction 572INSIDE RRB ----- complete_distance is: 12 at instruction 573
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 573
+next_hold is 767
+ at instruction 573INSIDE RRB ----- complete_distance is: 11 at instruction 574
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 574
+next_hold is 767
+ at instruction 574INSIDE RRB ----- complete_distance is: 10 at instruction 575
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 575
+next_hold is 767
+ at instruction 575INSIDE RRB ----- complete_distance is: 9 at instruction 576
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 576
+next_hold is 767
+ at instruction 576INSIDE RRB ----- complete_distance is: 8 at instruction 577
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 577
+next_hold is 767
+ at instruction 577INSIDE RRB ----- complete_distance is: 7 at instruction 578
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 578
+next_hold is 767
+ at instruction 578INSIDE RRB ----- complete_distance is: 6 at instruction 579
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 579
+next_hold is 767
+ at instruction 579INSIDE RRB ----- complete_distance is: 5 at instruction 580
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 ---------------------------------
+exec rrb-------instruction number 581
+
+---------------------------------
+exec pb-------instruction number 582
+
+---------------------------------
+exec rb-------instruction number 583
+
+---------------------------------
+exec rb-------instruction number 584
+
+---------------------------------
+exec rb-------instruction number 585
+
+---------------------------------
+exec rb-------instruction number 586
+
+---------------------------------
+exec rb-------instruction number 587
+
+---------------------------------
+exec rb-------instruction number 588
+
+---------------------------------
+exec rb-------instruction number 589
+
+---------------------------------
+exec rb-------instruction number 590
+
+---------------------------------
+exec rb-------instruction number 591
+
+---------------------------------
+exec rb-------instruction number 592
+
+---------------------------------
+exec rb-------instruction number 593
+
+---------------------------------
+exec rb-------instruction number 594
+
+---------------------------------
+exec rb-------instruction number 595
+
+---------------------------------
+exec pb-------instruction number 596
+
+---------------------------------
+exec rrb-------instruction number 597
+
+---------------------------------
+exec pb-------instruction number 598
+
+---------------------------------
+exec rrb-------instruction number 599
+
+---------------------------------
+exec rrb-------instruction number 600
+
+---------------------------------
+exec rrb-------instruction number 601
+
+---------------------------------
+exec rrb-------instruction number 602
+
+---------------------------------
+exec rrb-------instruction number 603
+
+---------------------------------
+exec rrb-------instruction number 604
+
+---------------------------------
+exec rrb-------instruction number 605
+
+---------------------------------
+exec rrb-------instruction number 606
+
+---------------------------------
+exec rrb-------instruction number 607
+
+---------------------------------
+exec rrb-------instruction number 608
+
+---------------------------------
+exec rrb-------instruction number 609
+
+---------------------------------
+exec rrb-------instruction number 610
+
+---------------------------------
+exec rrb-------instruction number 611
+
+---------------------------------
+exec rrb-------instruction number 612
+
+---------------------------------
+exec rrb-------instruction number 613
+
+---------------------------------
+exec rrb-------instruction number 614
+
+LOOP, instruction 580
+next_hold is 767
+ at instruction 580INSIDE RRB ----- complete_distance is: 4 at instruction 581
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 581
+next_hold is 767
+ at instruction 581complete_distance is: 17 at instruction 596
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 596
+next_hold is 659
+ at instruction 596INSIDE RRB ----- complete_distance is: 16 at instruction 597
+I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 597
+next_hold is 659
+ at instruction 597I AM INSIDE THE SMALL DISTANCE_COMPLETE > 0 LOOP, instruction 598
+next_hold is 661
+ at instruction 598stacka
+stackb
+794
+783
+774
+773
+767
+766
+765
+742
+725
+719
+703
+698
+667
+665
+662
+661
+659
+656
+648
+644
+643
+637
+630
+629
+623
+622
+621
+611
+604
+600
+596
+575
+562
+560
+544
+537
+518
+508
+496
+493
+491
+469
+465
+447
+434
+424
+421
+418
+417
+409
+384
+370
+348
+338
+337
+333
+326
+316
+308
+299
+295
+288
+282
+275
+272
+264
+255
+250
+240
+233
+230
+208
+205
+195
+190
+176
+169
+166
+162
+157
+155
+152
+150
+143
+130
+125
+105
+102
+96
+82
+60
+56
+47
+46
+42
+36
+32
+23
+10
+8
+the size is 100
+the number of instructions is 614

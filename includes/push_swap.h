@@ -21,7 +21,6 @@
 
 typedef struct s_stack
 {
-
   int size;
   int midpoint;
   int a;
@@ -29,27 +28,24 @@ typedef struct s_stack
   int c;
   int x;
   int y;
-  //int **array;
   int *array;
-  //int *temp_a;
   int max_size;
   int d_a;
   int d_b;
   int d_c;
-  //int stay_a;
-  //int stay_a_temp;
-  //int head;
-
 } t_stack;
 
-/*typedef struct s_program
+typedef struct s_dirtysort
 {
-  t_info hold;
-  t_info next_hold;
-  t_chunk chunking;
-  int complete_distance;
-  int expected_stackbsize;
-} t_program;*/
+  int i;
+  int j;
+  int k;
+  int n1;
+  int n2;
+  int *larr;
+  int *rarr;
+} t_dirtysort;
+
 
 typedef struct s_chunk
 {
@@ -80,6 +76,15 @@ typedef struct s_info
 
 } t_info;
 
+typedef struct s_rchunk
+{
+  int     exp_stackbsize;
+  int     complete_distance;
+  t_hold  next_hold;
+  t_hold  num;
+
+} t_rchunk;
+
 /*
 -----Algorithm-----
 */
@@ -87,6 +92,7 @@ typedef struct s_info
 /*
 push_swap.c
 */
+void	sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer);
 
 /*
 stack_moves_helper.c
@@ -311,6 +317,11 @@ printer.c
 */
 
 /*
+first_chunk_helper.c
+*/
+int middle_helper(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num);
+
+/*
 push_to_b.c
 */
 
@@ -351,7 +362,7 @@ int expected_stackbsize(t_chunk chunking);
 /*
 push_chunk_first.c
 */
-int    solve_first_chunk_original(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
+int    first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
 
 /*
 other_chunks.c
@@ -362,6 +373,8 @@ int mid_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_c
 /*
 set_location.c
 */
+int	loc_helper(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
+int	second_help(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
 int set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num);
 int set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num);
 

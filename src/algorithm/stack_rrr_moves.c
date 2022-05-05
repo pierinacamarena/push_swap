@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int ft_rrr(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_rrr(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
 
