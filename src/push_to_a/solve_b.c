@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cleaner.c                                          :+:      :+:    :+:   */
+/*   solve_b.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/06 15:43:25 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/06 15:50:57 by pcamaren         ###   ########.fr       */
+/*   Created: 2021/09/10 17:30:38 by pcamaren          #+#    #+#             */
+/*   Updated: 2021/10/06 15:55:17 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-void	free_stack(t_stack *stack)
+int	solve_b(t_program *p)
 {
-	free(stack->array);
-	free(stack);
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (i < p->stackb.max_size)
+	{
+		count = count + ft_pa(p);
+		i++;
+	}
+	return (count);
 }

@@ -12,94 +12,94 @@
 
 #include "../../includes/push_swap.h"
 
-int	sort_inverse_top(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	sort_inverse_top(t_program *p)
 {
 	int	count;
 
-	if (stackb->a < stacka->x || stackb->a > stacka->y)
-		count = count + reverse_top_stack_a(stacka, stackb, printer);
-	else if (stackb->b < stacka->x || stackb->b > stacka->y)
-		count = count + reverse_top_stack_b(stacka, stackb, printer);
-	else if (stackb->c < stacka->x || stackb->c > stacka->y)
-		count = count + reverse_top_stack_c(stacka, stackb, printer);
+	if (p->stackb.a < p->stacka.x || p->stackb.a > p->stacka.y)
+		count = count + reverse_top_stack_a(p);
+	else if (p->stackb.b < p->stacka.x || p->stackb.b > p->stacka.y)
+		count = count + reverse_top_stack_b(p);
+	else if (p->stackb.c < p->stacka.x || p->stackb.c > p->stacka.y)
+		count = count + reverse_top_stack_c(p);
 	return (count);
 }
 
-int	sort_inverse_inter(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	sort_inverse_inter(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	ft_distance_reverse(stacka, stackb);
-	if ((stackb->d_a - 1 <= stackb->d_b) \
-			&& (stackb->d_a - 1 <= stackb->d_c))
-		count = count + rda_smaller(stacka, stackb, printer);
+	ft_distance_reverse(p);
+	if ((p->stackb.d_a - 1 <= p->stackb.d_b) \
+			&& (p->stackb.d_a - 1 <= p->stackb.d_c))
+		count = count + rda_smaller(p);
 	else
 	{
-		if (stackb->d_b < stackb->d_c)
-			count = count + rdb_smaller(stacka, stackb, printer);
-		else if (stackb->d_c < stackb->d_b)
-			count = count + rdc_smaller(stacka, stackb, printer);
-		else if (stackb->d_b == stackb->d_c)
-			count = count + rdb_smaller(stacka, stackb, printer);
+		if (p->stackb.d_b < p->stackb.d_c)
+			count = count + rdb_smaller(p);
+		else if (p->stackb.d_c < p->stackb.d_b)
+			count = count + rdc_smaller(p);
+		else if (p->stackb.d_b == p->stackb.d_c)
+			count = count + rdb_smaller(p);
 	}
 	return (count);
 }
 
-int	sort_inverse_end(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	sort_inverse_end(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->size == 2)
+	if (p->stackb.size == 2)
 	{
-		ft_val_updta(stacka);
-		ft_val_updtb(stackb);
-		count = count + ft_rbase_case_two(stacka, stackb, printer);
+		ft_val_updta(p);
+		ft_val_updtb(p);
+		count = count + ft_rbase_case_two(p);
 	}
-	if (stackb->size == 1)
+	if (p->stackb.size == 1)
 	{
-		count = count + ft_rbase_case_one(stacka, stackb, printer);
+		count = count + ft_rbase_case_one(p);
 	}
 	return (0);
 }
 
-int	sort_inverse_initial(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	sort_inverse_initial(t_program *p)
 {
 	int	count;
 	int	n;
 
 	count = 0;
-	n = stacka->size;
+	n = p->stacka.size;
 	while (n > 3)
 	{
-		count = count + ft_pb(stacka, stackb, printer);
+		count = count + ft_pb(p);
 		n--;
 	}
 	return (count);
 }
 
-int	ft_sort_inverse(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_sort_inverse(t_program *p)
 {
 	int	j;
 	int	count;
 
 	count = 0;
-	sort_inverse_initial(stacka, stackb, printer);
-	count = count + ft_sort_three(stacka, stackb, printer);
+	sort_inverse_initial(p);
+	count = count + ft_sort_three(p);
 	j = 3;
-	while (j < stacka->max_size && stackb->size >= 3)
+	while (j < p->stacka.max_size && p->stackb.size >= 3)
 	{
-		if ((stackb->a < stacka->x || stackb->a > stacka->y) \
-				|| (stackb->b < stacka->x || stackb->b > stacka->y) \
-				|| (stackb->c < stacka->x || stackb->c > stacka->y))
-				count = count + sort_inverse_top(stacka, stackb, printer);
-		else if ((stackb->a > stacka->x && stackb->a < stacka->y) \
-				&& (stackb->b > stacka->x && stackb->b < stacka->y) \
-				&& (stackb->c > stacka->x && stackb->c < stacka->y))
-				count = count + sort_inverse_inter(stacka, stackb, printer);
+		if ((p->stackb.a < p->stacka.x || p->stackb.a > p->stacka.y) \
+				|| (p->stackb.b < p->stacka.x || p->stackb.b > p->stacka.y) \
+				|| (p->stackb.c < p->stacka.x || p->stackb.c > p->stacka.y))
+				count = count + sort_inverse_top(p);
+		else if ((p->stackb.a > p->stacka.x && p->stackb.a < p->stacka.y) \
+				&& (p->stackb.b > p->stacka.x && p->stackb.b < p->stacka.y) \
+				&& (p->stackb.c > p->stacka.x && p->stackb.c < p->stacka.y))
+				count = count + sort_inverse_inter(p);
 		j++;
 	}
-	count = count + sort_inverse_end(stacka, stackb, printer);
+	count = count + sort_inverse_end(p);
 	return (count);
 }

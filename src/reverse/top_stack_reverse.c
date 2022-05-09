@@ -12,62 +12,62 @@
 
 #include "../../includes/push_swap.h"
 
-int	reverse_top_stack_a(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	reverse_top_stack_a(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->a < stacka->x)
+	if (p->stackb.a < p->stacka.x)
 	{
-		count = count + ft_pa(stacka, stackb, printer);
+		count = count + ft_pa(p);
 		return (count);
 	}
-	else if (stackb->a > stacka->y)
+	else if (p->stackb.a > p->stacka.y)
 	{
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_pa(p);
+		count = count + ft_ra(p);
 		return (count);
 	}
 	return (count);
 }
 
-int	reverse_top_stack_b(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	reverse_top_stack_b(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->b < stacka->x)
+	if (p->stackb.b < p->stacka.x)
 	{
-		count = count + ft_sb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
+		count = count + ft_sb(p);
+		count = count + ft_pa(p);
 		return (count);
 	}
-	else if (stackb->b > stacka->y)
+	else if (p->stackb.b > p->stacka.y)
 	{
-		count = count + ft_sb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_sb(p);
+		count = count + ft_pa(p);
+		count = count + ft_ra(p);
 		return (count);
 	}
 	return (count);
 }
 
-int	reverse_top_stack_c(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	reverse_top_stack_c(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->c < stacka->x)
+	if (p->stackb.c < p->stacka.x)
 	{
-		count = count + ft_rrb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
+		count = count + ft_rrb(p);
+		count = count + ft_pa(p);
 		return (count);
 	}
-	else if (stackb->c > stacka->y)
+	else if (p->stackb.c > p->stacka.y)
 	{
-		count = count + ft_rrb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_rrb(p);
+		count = count + ft_pa(p);
+		count = count + ft_ra(p);
 		return (count);
 	}
 	return (count);

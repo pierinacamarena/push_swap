@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int	first_three(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk c)
+int	first_three(t_program *p)
 {
 	int	i;
 	int	count;
@@ -21,14 +21,14 @@ int	first_three(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk c)
 	count = 0;
 	while (i < 3)
 	{	
-		count = count + choose_push(stacka, stackb, printer, c.chunks);
+		count = count + choose_push(p, p->chunking.chunks);
 		i++;
 	}
-	count = count + ft_sort_three_reverse(stackb, stacka, printer);
+	count = count + ft_sort_three_reverse(p);
 	return (count);
 }
 
-int	top_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	top_push(t_program *p, t_hold num)
 {
 	int	k;
 	int	count;
@@ -38,76 +38,76 @@ int	top_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
 	while (k < num.moves)
 	{
 		if (num.location == 't')
-			count = count + ft_ra(stacka, stackb, printer);
+			count = count + ft_ra(p);
 		else if (num.location == 'b')
-			count = count + ft_rra(stacka, stackb, printer);
+			count = count + ft_rra(p);
 		k++;
 	}
-	count = count + ft_pb(stacka, stackb, printer);
+	count = count + ft_pb(p);
 	return (count);
 }
 
-int	border_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	border_push(t_program *p, t_hold num)
 {
 	int	k;
 	int	count;
 
 	count = 0;
-	if (num.number > stackb->x)
-		count = top_push(stacka, stackb, printer, num);
-	else if (num.number < stackb->y)
+	if (num.number > p->stackb.x)
+		count = top_push(p, num);
+	else if (num.number < p->stackb.y)
 	{
 		k = 0;
 		while (k < num.moves)
 		{
 			if (num.location == 't')
-				count = count + ft_ra(stacka, stackb, printer);
+				count = count + ft_ra(p);
 			else if (num.location == 'b')
-				count = count + ft_rra(stacka, stackb, printer);
+				count = count + ft_rra(p);
 			k++;
 		}
-		count = count + ft_pb(stacka, stackb, printer);
-		count = count + ft_rb(stackb, stacka, printer);
+		count = count + ft_pb(p);
+		count = count + ft_rb(p);
 	}
 	return (count);
 }
 
-int	middle_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	middle_push(t_program *p, t_hold num)
 {
 	int	d;
 	int	k;
 	int	j;
 	int	count;
 
-	d = distance(*stacka, *stackb, num);
+	d = distance(*p, num);
 	k = 0;
 	while (k < num.moves)
 	{
 		if (num.location == 't')
-			count = count + ft_ra(stacka, stackb, printer);
+			count = count + ft_ra(p);
 		else if (num.location == 'b')
-			count = count + ft_rra(stacka, stackb, printer);
+			count = count + ft_rra(p);
 		k++;
 	}
-	count = middle_helper(stacka, stackb, printer, num);
+	count = middle_helper(p, num);
 	return (count);
 }
 
-int	first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk c)
+int	first_chunk(t_program *p)
 {
 	t_hold	num;
 	int		i;
 	int		count;
 
-	count = first_three(stacka, stackb, printer, c);
+	count = first_three(p);
 	i = 0;
-	while (i < (c.chunk_size[0] - 3))
+	while (i < (p->chunking.chunk_size[0] - 3))
 	{
-		num = choose_number(stacka, stackb, printer, c.chunks[0]);
-		if (num.number > stackb->x || num.number < stackb->y)
-			border_push(stacka, stackb, printer, num);
-		else if (num.number < stackb->x && num.number > stackb->y)
-			middle_push(stacka, stackb, printer, num);
+		num = choose_number(p, p->chunking.chunks[0]);
+		if (num.number > p->stackb.x || num.number < p->stackb.y)
+			border_push(p, num);
+		else if (num.number < p->stackb.x && num.number > p->stackb.y)
+			middle_push(p, num);
 		i++;
 	}
 	return (count);

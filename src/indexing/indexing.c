@@ -26,10 +26,10 @@ int	index_finder(t_stack stacka, int numb)
 	return (-1);
 }
 
-int	*indexing(t_stack *stacka)
+int	*indexing(t_program p)
 {
 	int	*arr;
 
-	arr = dirty_sorting(*stacka);
+	arr = dirty_sorting(p);
 	return (arr);
 }

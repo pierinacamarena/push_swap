@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	ft_sort_stack(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
@@ -58,3 +58,4 @@ int	ft_sort_main_algo(t_stack *stacka, t_stack *stackb, t_info *printer)
 	count = count + algo_helper_end(stacka, stackb, printer);
 	return (count);
 }
+*/

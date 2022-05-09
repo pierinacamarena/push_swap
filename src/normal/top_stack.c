@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	ft_top_stack_a(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	a;
@@ -90,3 +90,4 @@ int	ft_top_stack_c(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	return (count);
 }
+*/

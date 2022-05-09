@@ -12,53 +12,53 @@
 
 #include "../../includes/push_swap.h"
 
-int	support(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	support(t_program *p, t_hold num)
 {
 	int	count;
 	int	j;
 	int	d;
 
 	j = 0;
-	d = distance(*stacka, *stackb, num);
+	d = distance(*p, num);
 	count = 0;
 	while (j < d)
 	{
-		count = count + ft_rrb(stackb, stacka, printer);
+		count = count + ft_rrb(p);
 		j++;
 	}
-	count = count + ft_pb(stacka, stackb, printer);
+	count = count + ft_pb(p);
 	j = 0;
 	while (j <= d)
 	{
-		count = count + ft_rb(stackb, stacka, printer);
+		count = count + ft_rb(p);
 		j++;
 	}
 	return (count);
 }
 
-int	middle_helper(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	middle_helper(t_program *p, t_hold num)
 {
 	int	j;
 	int	d;
 	int	count;
 
 	j = 0;
-	d = distance(*stacka, *stackb, num);
+	d = distance(*p, num);
 	count = 0;
-	if (num.number < stackb->midpoint)
-		count = support(stacka, stackb, printer, num);
-	else if (num.number > stackb->midpoint)
+	if (num.number < p->stackb.midpoint)
+		count = support(p, num);
+	else if (num.number > p->stackb.midpoint)
 	{
 		while (j < d)
 		{
-			count = count + ft_rb(stackb, stacka, printer);
+			count = count + ft_rb(p);
 			j++;
 		}
-		count = count + ft_pb(stacka, stackb, printer);
+		count = count + ft_pb(p);
 		j = 0;
 		while (j < d)
 		{
-			count = count + ft_rrb(stackb, stacka, printer);
+			count = count + ft_rrb(p);
 			j++;
 		}
 	}

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	rb_complement(t_stack *stacka, t_stack *stackb, t_info *printer, int rrb)
 {
 	int	i;
@@ -112,3 +112,4 @@ int	dc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	count = count + rb_complement(stacka, stackb, printer, rrb);
 	return (count);
 }
+*/

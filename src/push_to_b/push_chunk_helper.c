@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-static t_hold	same_moves(t_hold one, t_hold two)
+t_hold	same_moves(t_hold one, t_hold two)
 {
 	if (one.number < two.number)
 	{
@@ -26,15 +26,15 @@ static t_hold	same_moves(t_hold one, t_hold two)
 	}
 }
 
-t_hold	choose_number(t_stack *stacka, t_stack *stackb, t_info *printer, int chunk)
+t_hold	choose_number(t_program *p, int chunk)
 {
 	t_hold	hold_one;
 	t_hold	hold_two;
 	t_hold	final_hold;
 	int		count;
 
-	hold_one = find_top_num(*stacka, chunk);
-	hold_two = find_lower_num(*stacka, chunk);
+	hold_one = find_top_num(p, chunk);
+	hold_two = find_lower_num(p, chunk);
 	if (hold_one.moves < hold_two.moves)
 	{
 		hold_one.location = 't';

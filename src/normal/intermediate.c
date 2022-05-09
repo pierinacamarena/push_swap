@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	ft_da_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	count;
@@ -59,3 +59,4 @@ int	ft_dc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
 		return (count);
 	}
 }
+*/

@@ -12,85 +12,85 @@
 
 #include "../../includes/push_swap.h"
 
-void	ft_distance_reverse(t_stack *stacka, t_stack *stackb)
+void	ft_distance_reverse(t_program *p)
 {
-	ft_rda(stacka, stackb);
-	ft_rdb(stacka, stackb);
-	ft_rdc(stacka, stackb);
+	ft_rda(p);
+	ft_rdb(p);
+	ft_rdc(p);
 }
 
-void	ft_rda(t_stack *stacka, t_stack *stackb)
+void	ft_rda(t_program *p)
 {
 	int	d;
 	int	i;
 
 	i = 0;
-	if (stackb->a < stacka->midpoint)
+	if (p->stackb.a < p->stacka.midpoint)
 	{
-		while (stackb->a > stacka->array[i] && \
-				stacka->array[i] != stacka->midpoint)
+		while (p->stackb.a > p->stacka.array[i] && \
+				p->stacka.array[i] != p->stacka.midpoint)
 			i++;
-		stackb->d_a = i;
+		p->stackb.d_a = i;
 	}
-	else if (stackb->a > stacka->midpoint)
+	else if (p->stackb.a > p->stacka.midpoint)
 	{
 		i = 0;
-		d = stacka->size - 1;
-		while (stackb->a < stacka->array[d])
+		d = p->stacka.size - 1;
+		while (p->stackb.a < p->stacka.array[d])
 		{
 			i++;
 			d--;
 		}
-		stackb->d_a = i;
+		p->stackb.d_a = i;
 	}
 }
 
-void	ft_rdb(t_stack *stacka, t_stack *stackb)
+void	ft_rdb(t_program *p)
 {
 	int	d;
 	int	i;
 
 	i = 0;
-	if (stackb->b < stacka->midpoint)
+	if (p->stackb.b < p->stacka.midpoint)
 	{
-		while (stackb->b > stacka->array[i])
+		while (p->stackb.b > p->stacka.array[i])
 			i++;
-		stackb->d_b = i;
+		p->stackb.d_b = i;
 	}
-	else if (stackb->b > stacka->midpoint)
+	else if (p->stackb.b > p->stacka.midpoint)
 	{
 		i = 0;
-		d = stacka->size - 1;
-		while (stackb->b < stacka->array[d])
+		d = p->stacka.size - 1;
+		while (p->stackb.b < p->stacka.array[d])
 		{
 			d--;
 			i++;
 		}
-		stackb->d_b = i;
+		p->stackb.d_b = i;
 	}
 }
 
-void	ft_rdc(t_stack *stacka, t_stack *stackb)
+void	ft_rdc(t_program *p)
 {
 	int	d;
 	int	i;
 
 	i = 0;
-	if (stackb->c < stacka->midpoint)
+	if (p->stackb.c < p->stacka.midpoint)
 	{
-		while (stackb->c > stacka->array[i])
+		while (p->stackb.c > p->stacka.array[i])
 			i++;
-		stackb->d_c = i;
+		p->stackb.d_c = i;
 	}
-	else if (stackb->c > stacka->midpoint)
+	else if (p->stackb.c > p->stacka.midpoint)
 	{
 		i = 0;
-		d = stacka->size - 1;
-		while (stackb->c < stacka->array[d])
+		d = p->stacka.size - 1;
+		while (p->stackb.c < p->stacka.array[d])
 		{
 			d--;
 			i++;
 		}
-		stackb->d_c = i;
+		p->stackb.d_c = i;
 	}
 }

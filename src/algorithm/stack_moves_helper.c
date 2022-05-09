@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-void	ft_pa_helper(t_stack *stacka, t_stack *stackb)
+void	ft_pa_helper(t_program *p)
 {
 	int		i;
 	int		j;
@@ -20,16 +20,16 @@ void	ft_pa_helper(t_stack *stacka, t_stack *stackb)
 
 	i = 0;
 	j = 1;
-	end = stackb->size - 1;
+	end = p->stackb.size - 1;
 	while (i < end)
 	{
-		stackb->array[i] = stackb->array[j];
+		p->stackb.array[i] = p->stackb.array[j];
 		i++;
 		j++;
 	}
 }
 
-void	ft_pb_helper(t_stack *stacka, t_stack *stackb)
+void	ft_pb_helper(t_program *p)
 {
 	int		i;
 	int		j;
@@ -37,10 +37,10 @@ void	ft_pb_helper(t_stack *stacka, t_stack *stackb)
 
 	i = 0;
 	j = 1;
-	end = stacka->size - 1;
+	end = p->stacka.size - 1;
 	while (i < end)
 	{
-		stacka->array[i] = stacka->array[j];
+		p->stacka.array[i] = p->stacka.array[j];
 		i++;
 		j++;
 	}

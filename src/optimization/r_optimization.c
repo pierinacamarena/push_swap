@@ -12,91 +12,91 @@
 
 #include "../../includes/push_swap.h"
 
-int	r_optim_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	r_optim_checker(t_program *p)
 {
 	int	checker;
 
 	checker = 0;
-	if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
-			(stackb->a > stacka->a && stackb->a < stacka->b))
+	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
+			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
 		checker++;
-	if ((stackb->b < stacka->a && stackb->b > stacka->c) || \
-			(stackb->b > stacka->a && stackb->b < stacka->b))
+	if ((p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c) || \
+			(p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b))
 		checker++;
-	if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
-			(stackb->a > stacka->a && stackb->a < stacka->b))
+	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
+			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
 		checker++;
 	return (checker);
 }
 
-int	r_optim(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	r_optim(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
-			(stackb->a > stacka->a && stackb->a < stacka->b))
-		count = count + r_optim_a(stacka, stackb, printer);
-	if ((stackb->b < stacka->a && stackb->b > stacka->c) || \
-			(stackb->b > stacka->a && stackb->b < stacka->b))
-		count = count + r_optim_b(stacka, stackb, printer);
-	if ((stackb->a < stacka->a && stackb->a > stacka->c) || \
-			(stackb->a > stacka->a && stackb->a < stacka->b))
-		count = count + r_optim_c(stacka, stackb, printer);
+	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
+			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
+		count = count + r_optim_a(p);
+	if ((p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c) || \
+			(p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b))
+		count = count + r_optim_b(p);
+	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
+			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
+		count = count + r_optim_c(p);
 	return (count);
 }
 
-int	r_optim_a(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	r_optim_a(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->a < stacka->a && stackb->a > stacka->c)
+	if (p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c)
 	{
-		count = count + ft_pa(stacka, stackb, printer);
+		count = count + ft_pa(p);
 	}
-	else if (stackb->a > stacka->a && stackb->a < stacka->b)
+	else if (p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b)
 	{
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_sa(stacka, stackb, printer);
-	}
-	return (count);
-}
-
-int	r_optim_b(t_stack *stacka, t_stack *stackb, t_info *printer)
-{
-	int	count;
-
-	count = 0;
-	if (stackb->b < stacka->a && stackb->b > stacka->c)
-	{
-		count = count + ft_sb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
-	}
-	else if (stackb->b > stacka->a && stackb->b < stacka->b)
-	{
-		count = count + ft_sb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_sa(stacka, stackb, printer);
+		count = count + ft_pa(p);
+		count = count + ft_sa(p);
 	}
 	return (count);
 }
 
-int	r_optim_c(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	r_optim_b(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	if (stackb->c < stacka->a && stackb->c > stacka->c)
+	if (p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c)
 	{
-		count = count + ft_rrb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
+		count = count + ft_sb(p);
+		count = count + ft_pa(p);
 	}
-	else if (stackb->c > stacka->a && stackb->c < stacka->b)
+	else if (p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b)
 	{
-		count = count + ft_rrb(stackb, stacka, printer);
-		count = count + ft_pa(stacka, stackb, printer);
-		count = count + ft_sa(stacka, stackb, printer);
+		count = count + ft_sb(p);
+		count = count + ft_pa(p);
+		count = count + ft_sa(p);
+	}
+	return (count);
+}
+
+int	r_optim_c(t_program *p)
+{
+	int	count;
+
+	count = 0;
+	if (p->stackb.c < p->stacka.a && p->stackb.c > p->stacka.c)
+	{
+		count = count + ft_rrb(p);
+		count = count + ft_pa(p);
+	}
+	else if (p->stackb.c > p->stacka.a && p->stackb.c < p->stacka.b)
+	{
+		count = count + ft_rrb(p);
+		count = count + ft_pa(p);
+		count = count + ft_sa(p);
 	}
 	return (count);
 }

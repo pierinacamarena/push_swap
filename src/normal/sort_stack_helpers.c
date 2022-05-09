@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	algo_helper_begin(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int		count;
@@ -81,3 +81,4 @@ int	algo_helper_end(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	return (count);
 }
+*/

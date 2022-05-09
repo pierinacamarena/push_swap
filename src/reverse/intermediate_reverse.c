@@ -12,40 +12,40 @@
 
 #include "../../includes/push_swap.h"
 
-int	rda_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rda_smaller(t_program *p)
 {
 	int	i;
 	int	count;
 
 	i = 0;
-	if (stackb->a < stacka->midpoint)
-		count = rda_less_midpoint(stacka, stackb, printer);
+	if (p->stackb.a < p->stacka.midpoint)
+		count = rda_less_midpoint(p);
 	else
-		count = rda_more_midpoint(stacka, stackb, printer);
+		count = rda_more_midpoint(p);
 	return (count);
 }
 
-int	rdb_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rdb_smaller(t_program *p)
 {
 	int	i;
 	int	count;
 
 	i = 0;
-	if (stackb->b < stacka->midpoint)
-		count = rdb_less_midpoint(stacka, stackb, printer);
+	if (p->stackb.b < p->stacka.midpoint)
+		count = rdb_less_midpoint(p);
 	else
-		count = rdb_more_midpoint(stacka, stackb, printer);
+		count = rdb_more_midpoint(p);
 	return (count);
 }
 
-int	rdc_smaller(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rdc_smaller(t_program *p)
 {
 	int	i;
 	int	count;
 
-	if (stackb->c < stacka->midpoint)
-		count = rdc_less_midpoint(stacka, stackb, printer);
+	if (p->stackb.c < p->stacka.midpoint)
+		count = rdc_less_midpoint(p);
 	else
-		count = rdc_more_midpoint(stacka, stackb, printer);
+		count = rdc_more_midpoint(p);
 	return (count);
 }

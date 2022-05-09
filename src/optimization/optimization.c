@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int optim_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
     int checker;
@@ -133,4 +133,4 @@ int optim_c(t_stack *stacka, t_stack *stackb, t_info *printer)
         count = count + ft_sb(stackb, stacka, printer);
     }
     return (count);
-}
+}*/

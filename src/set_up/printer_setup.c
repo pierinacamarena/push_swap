@@ -26,15 +26,14 @@ t_info	init_printer(t_stack stacka, t_stack stackb)
 	return (printer);
 }
 
-void	update_printer(t_stack stacka, t_stack stackb, \
-		t_info *printer, char *move)
+void	update_printer(t_program *p, char *move)
 {
-	printer->lena = stacka.size;
-	printer->lenb = stackb.size;
-	printer->move[0] = move[0];
-	printer->move[1] = move[1];
-	printer->move[2] = '\0';
+	p->printer.lena = p->stacka.size;
+	p->printer.lenb = p->stackb.size;
+	p->printer.move[0] = move[0];
+	p->printer.move[1] = move[1];
+	p->printer.move[2] = '\0';
 	if (move[2] != '\0')
-		printer->move[2] = move[2];
-	ft_printer(*printer);
+		p->printer.move[2] = move[2];
+	ft_printer(p->printer);
 }

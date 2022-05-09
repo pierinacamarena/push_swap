@@ -16,16 +16,16 @@
  *	Switches the top two numbers of stackA
  **/
 
-int	ft_sa(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_sa(t_program *p)
 {
 	int	temp;
 
-	temp = stacka->array[0];
-	stacka->array[0] = stacka->array[1];
-	stacka->array[1] = temp;
-	ft_val_updta(stacka);
-	printer->count = printer->count + 1;
-	update_printer(*stacka, *stackb, printer, "sa");
+	temp = p->stacka.array[0];
+	p->stacka.array[0] = p->stacka.array[1];
+	p->stacka.array[1] = temp;
+	ft_val_updta(p);
+	p->printer.count = p->printer.count + 1;
+	update_printer(p, "sa");
 	return (1);
 }
 
@@ -34,7 +34,7 @@ int	ft_sa(t_stack *stacka, t_stack *stackb, t_info *printer)
  *	rest move one position upwards
  **/
 
-int	ft_ra(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_ra(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -44,19 +44,19 @@ int	ft_ra(t_stack *stacka, t_stack *stackb, t_info *printer)
 
 	i = 0;
 	j = 1;
-	len = stacka->size;
+	len = p->stacka.size;
 	end = len - 1;
-	temp = stacka->array[0];
+	temp = p->stacka.array[0];
 	while (i < (len - 1))
 	{
-		stacka->array[i] = stacka->array[j];
+		p->stacka.array[i] = p->stacka.array[j];
 		i++;
 		j++;
 	}
-	stacka->array[end] = temp;
-	ft_val_updta(stacka);
-	printer->count = printer->count + 1;
-	update_printer(*stacka, *stackb, printer, "ra");
+	p->stacka.array[end] = temp;
+	ft_val_updta(p);
+	p->printer.count = p->printer.count + 1;
+	update_printer(p, "ra");
 	return (1);
 }
 
@@ -64,7 +64,7 @@ int	ft_ra(t_stack *stacka, t_stack *stackb, t_info *printer)
  * Reverse rotates stackA, the last number becomes first, and all other numbers
  * move one position downwards
  **/
-int	ft_rra(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_rra(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -72,45 +72,45 @@ int	ft_rra(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	len;
 	int	end;
 
-	len = stacka->size;
+	len = p->stacka.size;
 	end = len - 1;
 	i = end;
 	j = end - 1;
-	temp = stacka->array[end];
+	temp = p->stacka.array[end];
 	while (i > 0)
 	{
-		stacka->array[i] = stacka->array[j];
+		p->stacka.array[i] = p->stacka.array[j];
 		i--;
 		j--;
 	}
-	stacka->array[0] = temp;
-	ft_val_updta(stacka);
-	printer->count = printer->count + 1;
-	update_printer(*stacka, *stackb, printer, "rra");
+	p->stacka.array[0] = temp;
+	ft_val_updta(p);
+	p->printer.count = p->printer.count + 1;
+	update_printer(p, "rra");
 	return (1);
 }
 
-int	ft_pa(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_pa(t_program *p)
 {
 	int	i;
 	int	temp;
 	int	increase;
 
-	temp = stackb->array[0];
-	ft_pa_helper(stacka, stackb);
-	stackb->size--;
-	increase = stackb->max_size - stackb->size;
-	i = stacka->size;
+	temp = p->stackb.array[0];
+	ft_pa_helper(p);
+	p->stackb.size--;
+	increase = p->stackb.max_size - p->stackb.size;
+	i = p->stacka.size;
 	while (i > 0 && i < increase)
 	{
-		stacka->array[i] = stacka->array[i -1];
+		p->stacka.array[i] = p->stacka.array[i -1];
 		i--;
 	}
-	stacka->array[0] = temp;
-	stacka->size++;
-	ft_val_updta(stacka);
-	ft_val_updtb(stackb);
-	printer->count = printer->count + 1;
-	update_printer(*stacka, *stackb, printer, "pa");
+	p->stacka.array[0] = temp;
+	p->stacka.size++;
+	ft_val_updta(p);
+	ft_val_updtb(p);
+	p->printer.count = p->printer.count + 1;
+	update_printer(p, "pa");
 	return (1);
 }

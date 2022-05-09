@@ -28,6 +28,14 @@ t_stack	init_stack(int len)
 	stack.array = array;
 	stack.max_size = len;
 	stack.size = 0;
+	stack.a = 0;
+	stack.b = 0;
+	stack.c = 0;
+	stack.x = 0;
+	stack.y = 0;
+	stack.d_a = 0;
+	stack.d_b = 0;
+	stack.d_c = 0;
 	return (stack);
 }
 

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
+/*
 int	optima_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 {
 	int	check;
@@ -44,3 +44,4 @@ int	optimc_less_checker(t_stack *stacka, t_stack *stackb, t_info *printer)
 		check = 1;
 	return (check);
 }
+*/

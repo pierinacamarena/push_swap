@@ -43,7 +43,9 @@ SRC = src/algorithm/push_swap.c \
 		src/printing/debug_functions.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
+		src/push_to_a/solve_b.c \
 		src/push_to_b/first_chunk_helper.c \
+		src/push_to_b/choose_push.c \
 		src/push_to_b/push_chunk.c \
 		src/push_to_b/push_chunk_helper.c \
 		src/push_to_b/pushtob_utils.c \
@@ -51,6 +53,7 @@ SRC = src/algorithm/push_swap.c \
 		src/push_to_b/other_chunks.c \
 		src/push_to_b/rrb_chunk.c \
 		src/push_to_b/set_location.c \
+		src/push_to_b/t_hold_init.c \
 		src/reverse/intermediate_reverse.c \
 		src/reverse/intermediate_bigger_reverse.c \
 		src/reverse/intermediate_smaller_reverse.c \

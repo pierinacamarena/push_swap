@@ -12,18 +12,18 @@
 
 #include "../../includes/push_swap.h"
 
-int	ft_rrr(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_rrr(t_program *p)
 {
 	int	count;
 
 	count = 0;
-	count = count + ft_rra_rrr(stacka, stackb, printer);
-	count = count + ft_rrb_rrr(stackb, stacka, printer);
-	printer->count = printer->count + 1;
-	update_printer(*stacka, *stackb, printer, "rrr");
+	count = count + ft_rra_rrr(p);
+	count = count + ft_rrb_rrr(p);
+	p->printer.count = p->printer.count + 1;
+	update_printer(p, "rrr");
 }
 
-int	ft_rra_rrr(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	ft_rra_rrr(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -31,23 +31,23 @@ int	ft_rra_rrr(t_stack *stacka, t_stack *stackb, t_info *printer)
 	int	len;
 	int	end;
 
-	len = stacka->size;
+	len = p->stacka.size;
 	end = len - 1;
 	i = end;
 	j = end - 1;
-	temp = stacka->array[end];
+	temp = p->stacka.array[end];
 	while (i > 0)
 	{
-		stacka->array[i] = stacka->array[j];
+		p->stacka.array[i] = p->stacka.array[j];
 		i--;
 		j--;
 	}
-	stacka->array[0] = temp;
-	ft_val_updta(stacka);
+	p->stacka.array[0] = temp;
+	ft_val_updta(p);
 	return (1);
 }
 
-int	ft_rrb_rrr(t_stack *stackb, t_stack *stacka, t_info *printer)
+int	ft_rrb_rrr(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -55,18 +55,18 @@ int	ft_rrb_rrr(t_stack *stackb, t_stack *stacka, t_info *printer)
 	int	len;
 	int	end;
 
-	len = stackb->size;
+	len = p->stackb.size;
 	end = len - 1;
 	i = end;
 	j = end - 1;
-	temp = stackb->array[end];
+	temp = p->stackb.array[end];
 	while (i > 0)
 	{
-		stackb->array[i] = stackb->array[j];
+		p->stackb.array[i] = p->stackb.array[j];
 		i--;
 		j--;
 	}
-	stackb->array[0] = temp;
-	ft_val_updtb(stackb);
+	p->stackb.array[0] = temp;
+	ft_val_updtb(p);
 	return (1);
 }

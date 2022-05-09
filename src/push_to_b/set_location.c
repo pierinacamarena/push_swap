@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int	loc_helper(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num)
+int	loc_helper(t_program *p, t_hold *num)
 {
 	int	k;
 	int	i;
@@ -25,19 +25,20 @@ int	loc_helper(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num)
 	if (num->distance == num->moves)
 	{
 		while (k++ < num->moves)
-			count = count + ft_rr(stacka, stackb, printer);
+			count = count + ft_rr(p);
 	}
 	else if (num->distance < num->moves)
 	{
 		while (k++ < num->distance)
-			count = count + ft_rr(stacka, stackb, printer);
+			count = count + ft_rr(p);
 		moves_left = num->moves - num->distance;
 		while (i++ < moves_left)
-			count = count + ft_ra(stacka, stackb, printer);
+			count = count + ft_ra(p);
 	}
 	return (count);
 }
-int	second_help(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num)
+
+int	second_help(t_program *p, t_hold *num)
 {
 	int	i;
 	int	k;
@@ -48,13 +49,29 @@ int	second_help(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num)
 	k = 0;
 	count = 0;
 	while (k++ < num->moves)
-		count = count + ft_rra(stacka, stackb, printer);
+		count = count + ft_rra(p);
 	while (i++ < num->distance)
-		count = count + ft_rb(stackb, stacka, printer);
+		count = count + ft_rb(p);
 	return (count);
 }
 
-int	set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num)
+int	loc_b_helper(t_program *p, t_hold *num)
+{
+	int	k;
+	int	i;
+	int	count;
+
+	i = 0;
+	k = 0;
+	count = 0;
+	while (k++ < num->moves)
+		count = count + ft_rra(p);
+	while (i++ < num->distance)
+		count = count + ft_rb(p);
+	return (count);
+}
+
+int	set_chunk_location(t_program *p, t_hold *num)
 {
 	int	i;
 	int	k;
@@ -64,31 +81,26 @@ int	set_chunk_location(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold
 	i = 0;
 	k = 0;
 	count = 0;
-	num->distance = distance(*stacka, *stackb, *num);
+	num->distance = distance(*p, *num);
 	if (num->location == 't')
 	{
 		if (num->distance > num->moves)
 		{
 			while (k++ < num->moves)
-				count = count + ft_rr(stacka, stackb, printer);
+				count = count + ft_rr(p);
 			moves_left = num->distance - num->moves;
 			while (i++ < moves_left)
-				count = count + ft_rb(stackb, stacka, printer);
+				count = count + ft_rb(p);
 		}
 		else
-			count = loc_helper(stacka, stackb, printer, num);
+			count = loc_helper(p, num);
 	}
 	else if (num->location == 'b')
-	{
-		while (k++ < num->moves)
-			count = count + ft_rra(stacka, stackb, printer);
-		while (i++ < num->distance)
-			count = count + ft_rb(stackb, stacka, printer);
-	}
+		count = count + loc_b_helper(p, num);
 	return (count);
 }
 
-int	set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	set_location_simple(t_program *p, t_hold num)
 {
 	int	k;
 	int	count;
@@ -98,11 +110,11 @@ int	set_location_simple(t_stack *stacka, t_stack *stackb, t_info *printer, t_hol
 	if (num.location == 't')
 	{
 		while (k++ < num.moves)
-			count = count + ft_ra(stacka, stackb, printer);
+			count = count + ft_ra(p);
 	}
 	else if (num.location == 'b')
 	{
 		while (k++ < num.moves)
-			count = count + ft_rra(stacka, stackb, printer);
+			count = count + ft_rra(p);
 	}
 }

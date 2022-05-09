@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
+/*
 
 void	ft_distance(t_stack *stacka, t_stack *stackb)
 {
@@ -92,4 +93,4 @@ void	ft_dc(t_stack *stacka, t_stack *stackb)
 		}
 		stacka->d_c = i;
 	}
-}
+}*/

@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int	smallest_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
+int	smallest_push(t_program *p, t_hold num)
 {
 	int	count;
 	int	k;
@@ -22,11 +22,11 @@ int	smallest_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold num)
 	while (k < num.moves)
 	{
 		if (num.location == 't')
-			count = count + ft_ra(stacka, stackb, printer);
+			count = count + ft_ra(p);
 		else if (num.location == 'b')
-			count = count + ft_rra(stacka, stackb, printer);
+			count = count + ft_rra(p);
 		k++;
 	}
-	count = count + ft_pb(stacka, stackb, printer);
+	count = count + ft_pb(p);
 	return (count);
 }

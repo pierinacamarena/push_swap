@@ -88,18 +88,18 @@ void	merge_sort(int *arr, int l, int r)
 	}
 }
 
-int	*dirty_sorting(t_stack stacka)
+int	*dirty_sorting(t_program p)
 {
 	int	arr_size;
 	int	i;
 	int	*arr;
 
 	i = 0;
-	arr = (int *)malloc(sizeof(int) * stacka.size);
-	arr_size = stacka.size;
+	arr = (int *)malloc(sizeof(int) * p.stacka.size);
+	arr_size = p.stacka.size;
 	while (i < arr_size)
 	{
-		arr[i] = stacka.array[i];
+		arr[i] = p.stacka.array[i];
 		i++;
 	}
 	merge_sort(arr, 0, arr_size - 1);

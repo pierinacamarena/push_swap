@@ -12,24 +12,24 @@
 
 #include "../../includes/push_swap.h"
 
-int	distance(t_stack stacka, t_stack stackb, t_hold num)
+int	distance(t_program p, t_hold num)
 {
 	int	distance;
 	int	i;
 	int	j;
 
 	i = 0;
-	j = stackb.size - 1;
+	j = p.stackb.size - 1;
 	distance = 0;
-	if (num.number > stackb.midpoint)
+	if (num.number > p.stackb.midpoint)
 	{
-		while (num.number < stackb.array[i])
+		while (num.number < p.stackb.array[i])
 			i++;
 		distance = i;
 	}
-	else if (num.number < stackb.midpoint)
+	else if (num.number < p.stackb.midpoint)
 	{
-		while (num.number > stackb.array[j])
+		while (num.number > p.stackb.array[j])
 		{
 			i++;
 			j--;
@@ -39,14 +39,13 @@ int	distance(t_stack stacka, t_stack stackb, t_hold num)
 	return (distance);
 }
 
-int	optim_distance(t_stack stacka, t_stack stackb, t_hold num)
+int	optim_distance(t_program p, t_hold num)
 {
 	int	distance;
 	int	i;
-	int	j;
 
 	i = 0;
-	while (num.number < stackb.array[i])
+	while (num.number < p.stackb.array[i] && i < p.stackb.size)
 		i++;
 	distance = i;
 	return (distance);
@@ -65,4 +64,17 @@ int	expected_stackbsize(t_chunk chunking)
 		i++;
 	}
 	return (size);
+}
+
+int	rrb_helper_extra(t_program *p, int *complete_distance)
+{
+	int	count;
+
+	count = 0;
+	while (*complete_distance > 0)
+	{
+		count = count + ft_rrb(p);
+		*complete_distance = *complete_distance - 1;
+	}
+	return (count);
 }

@@ -12,74 +12,71 @@
 
 #include "../../includes/push_swap.h"
 
-int	rda_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rda_less_midpoint(t_program *p)
 {
 	int	i;
 	int	count;
 
 	i = 0;
 	count = 0;
-	//printf("---inside rda_less_midpoint---\n instruction number is %d\n", printer->count);
-	while (i < stackb->d_a)
+	while (i < p->stackb.d_a)
 	{
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_ra(p);
 		i++;
 	}
-	count = count + ft_pa(stacka, stackb, printer);
+	count = count + ft_pa(p);
 	i = 0;
-	while (i < stackb->d_a)
+	while (i < p->stackb.d_a)
 	{
-		count = count + r_optim(stacka, stackb, printer);
-		count = count + ft_rra(stacka, stackb, printer);
+		count = count + r_optim(p);
+		count = count + ft_rra(p);
 		i++;
 	}
 	return (count);
 }
 
-int	rdb_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rdb_less_midpoint(t_program *p)
 {
 	int	i;
 	int	count;
 
 	i = 0;
 	count = 0;
-	//printf("---inside rdb_less_midpoint---\n instruction number is %d\n", printer->count);
-	count = ft_sb(stackb, stacka, printer);
-	while (i < stackb->d_b)
+	count = ft_sb(p);
+	while (i < p->stackb.d_b)
 	{
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_ra(p);
 		i++;
 	}
-	count = count + ft_pa(stacka, stackb, printer);
+	count = count + ft_pa(p);
 	i = 0;
-	while (i < stackb->d_b)
+	while (i < p->stackb.d_b)
 	{
-		count = count + r_optim(stacka, stackb, printer);
-		count = count + ft_rra(stacka, stackb, printer);
+		count = count + r_optim(p);
+		count = count + ft_rra(p);
 		i++;
 	}
 	return (count);
 }
 
-int	rdc_less_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
+int	rdc_less_midpoint(t_program *p)
 {
 	int	i;
 	int	count;
 
 	i = 0;
-	//printf("---inside rdc_less_midpoint---\n instruction number is %d\n", printer->count);
-	count = ft_rrb(stackb, stacka, printer);
-	while (i < stackb->d_c)
+	count = ft_rrb(p);
+	while (i < p->stackb.d_c)
 	{
-		count = count + ft_ra(stacka, stackb, printer);
+		count = count + ft_ra(p);
 		i++;
 	}
-	count = count + ft_pa(stacka, stackb, printer);
+	count = count + ft_pa(p);
 	i = 0;
-	while (i < stackb->d_c)
+	while (i < p->stackb.d_c)
 	{
-		count = count + r_optim(stacka, stackb, printer);
-		count = count + ft_rra(stacka, stackb, printer);
+		count = count + r_optim(p);
+		count = count + ft_rra(p);
 		i++;
 	}
 	return (count);

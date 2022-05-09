@@ -9,7 +9,7 @@
 /*   Updated: 2021/11/25 16:59:06 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include "../../includes/push_swap.h"
 
 int	da_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
@@ -98,3 +98,4 @@ int	dc_more_midpoint(t_stack *stacka, t_stack *stackb, t_info *printer)
 	}
 	return (count);
 }
+*/
