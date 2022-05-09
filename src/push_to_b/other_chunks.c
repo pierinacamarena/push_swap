@@ -12,21 +12,18 @@
 
 #include "../../includes/push_swap.h"
 
-int	smallest_push(t_program *p, t_hold num)
+void	smallest_push(t_program *p, t_hold num)
 {
-	int	count;
 	int	k;
 
 	k = 0;
-	count = 0;
 	while (k < num.moves)
 	{
 		if (num.location == 't')
-			count = count + ft_ra(p);
+			ft_ra(p);
 		else if (num.location == 'b')
-			count = count + ft_rra(p);
+			ft_rra(p);
 		k++;
 	}
-	count = count + ft_pb(p);
-	return (count);
+	ft_pb(p);
 }

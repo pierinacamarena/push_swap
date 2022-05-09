@@ -12,40 +12,34 @@
 
 #include "../../includes/push_swap.h"
 
-int	rda_smaller(t_program *p)
+void	rda_smaller(t_program *p)
 {
 	int	i;
-	int	count;
 
 	i = 0;
 	if (p->stackb.a < p->stacka.midpoint)
-		count = rda_less_midpoint(p);
+		rda_less_midpoint(p);
 	else
-		count = rda_more_midpoint(p);
-	return (count);
+		rda_more_midpoint(p);
 }
 
-int	rdb_smaller(t_program *p)
+void	rdb_smaller(t_program *p)
 {
 	int	i;
-	int	count;
 
 	i = 0;
 	if (p->stackb.b < p->stacka.midpoint)
-		count = rdb_less_midpoint(p);
+		rdb_less_midpoint(p);
 	else
-		count = rdb_more_midpoint(p);
-	return (count);
+		rdb_more_midpoint(p);
 }
 
-int	rdc_smaller(t_program *p)
+void	rdc_smaller(t_program *p)
 {
 	int	i;
-	int	count;
 
 	if (p->stackb.c < p->stacka.midpoint)
-		count = rdc_less_midpoint(p);
+		rdc_less_midpoint(p);
 	else
-		count = rdc_more_midpoint(p);
-	return (count);
+		rdc_more_midpoint(p);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printer_setup.c                                    :+:      :+:    :+:   */
+/*   cleaner.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,30 +12,20 @@
 
 #include "../../includes/push_swap.h"
 
-t_info	init_printer(t_stack stacka, t_stack stackb)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_info	printer;
+	t_list		*elem;
+	t_list		*next;
 
-	printer.stacka = stacka;
-	printer.stackb = stackb;
-	printer.lena = stacka.size;
-	printer.lenb = stackb.size;
-	printer.move[3] = '\0';
-	printer.move[2] = '\0';
-	printer.count = 0;
-	printer.ins = 'n';
-	printer.instructions = '\0';
-	return (printer);
-}
-
-void	update_printer(t_program *p, char *move)
-{
-	p->printer.lena = p->stacka.size;
-	p->printer.lenb = p->stackb.size;
-	p->printer.move[0] = move[0];
-	p->printer.move[1] = move[1];
-	p->printer.move[2] = '\0';
-	if (move[2] != '\0')
-		p->printer.move[2] = move[2];
-	ft_printer(p->printer);
+	if (!lst && !del)
+		return ;
+	elem = *lst;
+	while (elem)
+	{
+		next = elem->next;
+		del(elem->content);
+		free(elem);
+		elem = elem->next;
+	}
+	*lst = NULL;
 }

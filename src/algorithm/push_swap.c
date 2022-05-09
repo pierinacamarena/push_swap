@@ -37,52 +37,25 @@ int	main(int ac, char **av)
 		ft_putstr("it is sorted! \n");
 	else
 		sort_stack(&p);
+	free(p.stacka.array);
+	free(p.stackb.array);
 	return (0);
 }
 
 void	sort_stack(t_program *p)
 {
-	int count;
-
-	count = 0;
-	initial_print(p->printer);
-	printf("\n");
 	if (p->stacka.max_size > 20)
 	{	
-		count = count + solve_a(p);
-		count = count + solve_b(p);
+		solve_a(p);
+		solve_b(p);
 	}
 	else if (p->stacka.max_size <= 20)
 	{
 		if (p->stacka.size == 2)
-			count = count + ft_sa(p);
+			ft_sa(p);
 		if (p->stacka.size == 3)
-			count = count + ft_sort_three(p);
+			ft_sort_three(p);
 		else if (p->stacka.size > 3 && p->stacka.size <= 20)
-			count = count + ft_sort_inverse(p);
-	}
-	printf("stacka\n");
-	ft_print_stack(p->stacka);
-	printf("stackb\n");
-	ft_print_stack(p->stackb);
-	printf("the size is %d\n", p->stackb.size);
-	printf("the number of instructions is %d\n", p->printer.count);
-	free(p->stacka.array);
-	free(p->stackb.array);
-}
-
-/**
- * Prints the elements of the stack from top to bottom.
- **/
-
-void	ft_print_stack(t_stack stack)
-{
-	int	i;
-
-	i = 0;
-	while (i < stack.size)
-	{
-		printf("%d\n", stack.array[i]);
-		i++;
+			ft_sort_inverse(p);
 	}
 }

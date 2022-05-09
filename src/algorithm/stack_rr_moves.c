@@ -12,18 +12,15 @@
 
 #include "../../includes/push_swap.h"
 
-int	ft_rr(t_program *p)
+void	ft_rr(t_program *p)
 {
-	int	count;
-
-	count = 0;
-	count = count + ft_ra_rr(p);
-	count = count + ft_rb_rr(p);
+	ft_ra_rr(p);
+	ft_rb_rr(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rr");
 }
 
-int	ft_ra_rr(t_program *p)
+void	ft_ra_rr(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -44,10 +41,9 @@ int	ft_ra_rr(t_program *p)
 	}
 	p->stacka.array[end] = temp;
 	ft_val_updta(p);
-	return (1);
 }
 
-int	ft_rb_rr(t_program *p)
+void	ft_rb_rr(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -68,5 +64,4 @@ int	ft_rb_rr(t_program *p)
 	}
 	p->stackb.array[end] = temp;
 	ft_val_updtb(p);
-	return (1);
 }

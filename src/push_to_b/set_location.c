@@ -12,109 +12,95 @@
 
 #include "../../includes/push_swap.h"
 
-int	loc_helper(t_program *p, t_hold *num)
+void	loc_helper(t_program *p, t_hold *num)
 {
 	int	k;
 	int	i;
-	int	count;
 	int	moves_left;
 
-	count = 0;
 	k = 0;
 	i = 0;
 	if (num->distance == num->moves)
 	{
 		while (k++ < num->moves)
-			count = count + ft_rr(p);
+			ft_rr(p);
 	}
 	else if (num->distance < num->moves)
 	{
 		while (k++ < num->distance)
-			count = count + ft_rr(p);
+			ft_rr(p);
 		moves_left = num->moves - num->distance;
 		while (i++ < moves_left)
-			count = count + ft_ra(p);
+			ft_ra(p);
 	}
-	return (count);
 }
 
-int	second_help(t_program *p, t_hold *num)
+void	second_help(t_program *p, t_hold *num)
 {
 	int	i;
 	int	k;
-	int	count;
 	int	moves_left;
 
 	i = 0;
 	k = 0;
-	count = 0;
 	while (k++ < num->moves)
-		count = count + ft_rra(p);
+		ft_rra(p);
 	while (i++ < num->distance)
-		count = count + ft_rb(p);
-	return (count);
+		ft_rb(p);
 }
 
-int	loc_b_helper(t_program *p, t_hold *num)
+void	loc_b_helper(t_program *p, t_hold *num)
 {
 	int	k;
 	int	i;
-	int	count;
 
 	i = 0;
 	k = 0;
-	count = 0;
 	while (k++ < num->moves)
-		count = count + ft_rra(p);
+		ft_rra(p);
 	while (i++ < num->distance)
-		count = count + ft_rb(p);
-	return (count);
+		ft_rb(p);
 }
 
-int	set_chunk_location(t_program *p, t_hold *num)
+void	set_chunk_location(t_program *p, t_hold *num)
 {
 	int	i;
 	int	k;
-	int	count;
 	int	moves_left;
 
 	i = 0;
 	k = 0;
-	count = 0;
 	num->distance = distance(*p, *num);
 	if (num->location == 't')
 	{
 		if (num->distance > num->moves)
 		{
 			while (k++ < num->moves)
-				count = count + ft_rr(p);
+				ft_rr(p);
 			moves_left = num->distance - num->moves;
 			while (i++ < moves_left)
-				count = count + ft_rb(p);
+				ft_rb(p);
 		}
 		else
-			count = loc_helper(p, num);
+			loc_helper(p, num);
 	}
 	else if (num->location == 'b')
-		count = count + loc_b_helper(p, num);
-	return (count);
+		loc_b_helper(p, num);
 }
 
-int	set_location_simple(t_program *p, t_hold num)
+void	set_location_simple(t_program *p, t_hold num)
 {
 	int	k;
-	int	count;
 
 	k = 0;
-	count = 0;
 	if (num.location == 't')
 	{
 		while (k++ < num.moves)
-			count = count + ft_ra(p);
+			ft_ra(p);
 	}
 	else if (num.location == 'b')
 	{
 		while (k++ < num.moves)
-			count = count + ft_rra(p);
+			ft_rra(p);
 	}
 }

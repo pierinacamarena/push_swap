@@ -12,39 +12,34 @@
 
 #include "../../includes/push_swap.h"
 
-int	ft_sort_three(t_program *p)
+void	ft_sort_three(t_program *p)
 {
 	int	a;
 	int	b;
 	int	c;
-	int	count;
 
 	a = p->stacka.array[0];
 	b = p->stacka.array[1];
 	c = p->stacka.array[2];
 	if ((a < c) && (c < b))
-		count = ft_sort_three_helper(p);
+		ft_sort_three_helper(p);
 	else if ((b < a) && (a < c))
-		count = ft_sa(p);
+		ft_sa(p);
 	else if ((c < a) && (a < b))
-		count = ft_rra(p);
+		ft_rra(p);
 	else if ((b < c) && (c < a))
-		count = ft_ra(p);
+		ft_ra(p);
 	else if ((c < b) && (b < a))
 	{
-		count = ft_ra(p);
-		count = count + ft_sa(p);
+		ft_ra(p);
+		ft_sa(p);
 	}
-	return (count);
 }
 
-int	ft_sort_three_helper(t_program *p)
+void	ft_sort_three_helper(t_program *p)
 {
-	int	count;
-
-	count = ft_rra(p);
-	count = count + ft_sa(p);
-	return (count);
+	ft_rra(p);
+	ft_sa(p);
 }
 /*
 int	ft_base_case_two(t_program *p)

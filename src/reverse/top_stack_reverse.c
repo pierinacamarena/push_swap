@@ -12,63 +12,46 @@
 
 #include "../../includes/push_swap.h"
 
-int	reverse_top_stack_a(t_program *p)
+void	reverse_top_stack_a(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.a < p->stacka.x)
-	{
-		count = count + ft_pa(p);
-		return (count);
-	}
+		ft_pa(p);
 	else if (p->stackb.a > p->stacka.y)
 	{
-		count = count + ft_pa(p);
-		count = count + ft_ra(p);
-		return (count);
+		ft_pa(p);
+		ft_ra(p);
 	}
-	return (count);
+	
 }
 
-int	reverse_top_stack_b(t_program *p)
+void	reverse_top_stack_b(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.b < p->stacka.x)
 	{
-		count = count + ft_sb(p);
-		count = count + ft_pa(p);
-		return (count);
+		ft_sb(p);
+		ft_pa(p);
 	}
 	else if (p->stackb.b > p->stacka.y)
 	{
-		count = count + ft_sb(p);
-		count = count + ft_pa(p);
-		count = count + ft_ra(p);
-		return (count);
+		ft_sb(p);
+		ft_pa(p);
+		ft_ra(p);
 	}
-	return (count);
+	
 }
 
-int	reverse_top_stack_c(t_program *p)
+void	reverse_top_stack_c(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.c < p->stacka.x)
 	{
-		count = count + ft_rrb(p);
-		count = count + ft_pa(p);
-		return (count);
+		ft_rrb(p);
+		ft_pa(p);
 	}
 	else if (p->stackb.c > p->stacka.y)
 	{
-		count = count + ft_rrb(p);
-		count = count + ft_pa(p);
-		count = count + ft_ra(p);
-		return (count);
+		ft_rrb(p);
+		ft_pa(p);
+		ft_ra(p);
 	}
-	return (count);
+	
 }

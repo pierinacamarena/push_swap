@@ -14,41 +14,37 @@
 
 int	opt(t_program *p, t_hold *num, t_hold *next_hold, int *complete_distance)
 {
-	int	count;
 	int	exp_stackbsize;
 
 	exp_stackbsize = expected_stackbsize(p->chunking);
-	count = 0;
 	if (next_hold->number > p->stackb.x && (p->stackb.size < exp_stackbsize))
 	{
-		count = count + set_location_simple(p, *next_hold);
-		count = count + ft_pb(p);
+		set_location_simple(p, *next_hold);
+		ft_pb(p);
 	}
 	else if (next_hold->number < p->stackb.x \
 			&& (p->stackb.size < exp_stackbsize))
 	{
-		count = count + set_chunk_location(p, next_hold);
-		count = count + ft_pb(p);
+		set_chunk_location(p, next_hold);
+		ft_pb(p);
 		*complete_distance = *complete_distance + next_hold->distance;
 	}
 	else if (p->stackb.size == exp_stackbsize)
-		return (count);
-	return (count);
+		return (1);
+	return (1);
 }
 
-int	rrb_helper(t_program *p, t_hold *num, int *complete_distance)
+void	rrb_helper(t_program *p, t_hold *num, int *complete_distance)
 {
 	t_hold	next_hold;
-	int		count;
 	int		exp_stackbsize;
 
-	count = 0;
 	exp_stackbsize = expected_stackbsize(p->chunking);
 	next_hold = choose_number(p, p->chunking.chunks[p->chunking.current_chunk]);
 	next_hold.distance = optim_distance(*p, next_hold);
 	while (next_hold.number < p->stackb.y)
 	{
-		count = count + opt(p, num, &next_hold, complete_distance);
+		opt(p, num, &next_hold, complete_distance);
 		if (p->stackb.size < exp_stackbsize)
 		{
 			next_hold = choose_number(p, \
@@ -58,67 +54,59 @@ int	rrb_helper(t_program *p, t_hold *num, int *complete_distance)
 		else if (p->stackb.size == exp_stackbsize)
 			break ;
 	}
-	return (count);
 }
 
 int	rrb_chunk(t_program *p, t_hold *num, int *complete_distance)
 {
 	t_hold	next_hold;
-	int		count;
 	int		exp_stackbsize;
 
-	count = 0;
 	exp_stackbsize = expected_stackbsize(p->chunking);
 	next_hold = choose_number(p, p->chunking.chunks[p->chunking.current_chunk]);
 	next_hold.distance = optim_distance(*p, next_hold);
 	if ((next_hold.number < p->stackb.y) && (p->stackb.size < exp_stackbsize))
-		count = count + rrb_helper(p, num, complete_distance);
+		rrb_helper(p, num, complete_distance);
 	else if (p->stackb.size == exp_stackbsize && *complete_distance > 0)
 	{
-		count = count + rrb_helper_extra(p, complete_distance);
-		return (count);
+		rrb_helper_extra(p, complete_distance);
+		return (1);
 	}
 	else if (p->stackb.size == exp_stackbsize && *complete_distance == 0)
-		return (count);
+		return (1);
 	else
 	{
-		count = count + ft_rrb(p);
+		ft_rrb(p);
 		*complete_distance = *complete_distance - 1;
 	}
-	return (count);
+	return (1);
 }
 
-int	solve_intermediate(t_program *p, t_hold *num)
+void	solve_intermediate(t_program *p, t_hold *num)
 {
 	int	j;
-	int	count;
 	int	distance_complete;
 
 	j = 0;
-	count = 0;
 	distance_complete = num->distance;
 	while (distance_complete > 0)
 	{
-		count = count + set_chunk_location(p, num);
-		count = count + ft_pb(p);
+		set_chunk_location(p, num);
+		ft_pb(p);
 		while (distance_complete > 0)
 		{
-			count = count + rrb_chunk(p, num, &distance_complete);
+			rrb_chunk(p, num, &distance_complete);
 			j++;
 		}
 	}
-	return (count);
 }
 
-int	chunk_solver(t_program *p)
+void	chunk_solver(t_program *p)
 {
 	int		i;
-	int		count;
 	int		exp_stackbsize;
 	t_hold	num;
 
 	i = 0;
-	count = 0;
 	exp_stackbsize = expected_stackbsize(p->chunking);
 	num = init_hold();
 	while (p->stackb.size < exp_stackbsize)
@@ -126,11 +114,10 @@ int	chunk_solver(t_program *p)
 		num = choose_number(p, p->chunking.chunks[p->chunking.current_chunk]);
 		num.distance = distance(*p, num);
 		if (num.number > p->stackb.x)
-			count = count + smallest_push(p, num);
+			smallest_push(p, num);
 		else if (num.number < p->stackb.x && num.number > p->stackb.y)
 		{
-			count = count + solve_intermediate(p, &num);
+			solve_intermediate(p, &num);
 		}
 	}
-	return (count);
 }

@@ -14,33 +14,14 @@
 
 void	ft_printer(t_info printer)
 {
-	int		i;
-	int		len;
-
-	i = 0;
-	printer_initial_setup(printer);
-	/*len = ft_max(printer.lena, printer.lenb);
-	while (i < len)
-	{
-		if (printer.lena != printer.lenb)
-			i = i + printer_diff_len(printer);
-		else if (printer.lena == printer.lenb)
-			i = i + printer_same_len(printer, len);
-		if (i < len && printer.lena != printer.lenb)
-			i = i + printer_final_print(printer, i, len);
-	}
-	ft_putstr("_               _\n");
-	ft_putstr("a               b\n");*/
+	ft_putstr(printer.move);
+	ft_putstr("\n");
 }
 
 void	printer_initial_setup(t_info printer)
 {
-	ft_putstr("---------------------------------\n");
-	ft_putstr("exec ");
 	ft_putstr(printer.move);
-	ft_putstr("-------instruction number ");
-	ft_putnbr(printer.count);
-	ft_putstr("\n\n");
+	ft_putstr("\n");
 }
 
 void	initial_print(t_info printer)
@@ -61,3 +42,34 @@ void	initial_print(t_info printer)
 	ft_putstr("_               _\n");
 	ft_putstr("a               b\n");
 }
+
+/*void	ft_printer_full_print(t_info printer)
+{
+	int		i;
+	int		len;
+
+	i = 0;
+	printer_initial_setup(printer);
+	len = ft_max(printer.lena, printer.lenb);
+	while (i < len)
+	{
+		if (printer.lena != printer.lenb)
+			i = i + printer_diff_len(printer);
+		else if (printer.lena == printer.lenb)
+			i = i + printer_same_len(printer, len);
+		if (i < len && printer.lena != printer.lenb)
+			i = i + printer_final_print(printer, i, len);
+	}
+	ft_putstr("_               _\n");
+	ft_putstr("a               b\n");
+}
+
+void	printer_initial_setup_full(t_info printer)
+{
+	//ft_putstr("---------------------------------\n");
+	//ft_putstr("exec ");
+	ft_putstr(printer.move);
+	//ft_putstr("-------instruction number ");
+	//ft_putnbr(printer.count);
+	ft_putstr("\n");
+}*/

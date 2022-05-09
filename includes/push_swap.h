@@ -19,6 +19,12 @@
 #include <unistd.h>
 #include <math.h>
 
+typedef struct s_list
+{
+	void				*content;
+	struct s_list		*next;
+}						t_list;
+
 typedef struct s_stack
 {
   int size;
@@ -72,7 +78,9 @@ typedef struct s_info
   int		lena;
   int		lenb;
   int   count;
-  char		move[4];
+  char  move[4];
+  char  **instructions;
+  char  ins;
 
 } t_info;
 
@@ -102,35 +110,35 @@ stack_moves_helper.c
 /*
 stackA_moves.c
 */
-int	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer);
-int	ft_sa (t_program *p);
-int	ft_ra (t_program *p);
-int	ft_rra (t_program *p);
-int	ft_pa (t_program *p);
+void	ft_temp_sa(t_stack *stacka, t_stack *stackb, t_info *printer);
+void	ft_sa (t_program *p);
+void	ft_ra (t_program *p);
+void	ft_rra (t_program *p);
+void	ft_pa (t_program *p);
 void  ft_pa_helper(t_program *p);
 
 /*
 stackB_moves.c
 */
-int	ft_sb (t_program *p);
-int	ft_rb (t_program *p);
-int	ft_rrb (t_program *p);
-int	ft_pb (t_program *p);
+void	ft_sb (t_program *p);
+void	ft_rb (t_program *p);
+void	ft_rrb (t_program *p);
+void	ft_pb (t_program *p);
 void  ft_pb_helper(t_program *p);
 
 /*
 stack_rr_moves.c
 */
-int ft_rr(t_program *p);
-int ft_ra_rr(t_program *p);
-int ft_rb_rr(t_program *p);
+void ft_rr(t_program *p);
+void ft_ra_rr(t_program *p);
+void ft_rb_rr(t_program *p);
 
 /*
 stack_rrr_moves.c
 */
-int ft_rrr(t_program *p);
-int ft_rra_rrr(t_program *p);
-int ft_rrb_rrr(t_program *p);
+void ft_rrr(t_program *p);
+void ft_rra_rrr(t_program *p);
+void ft_rrb_rrr(t_program *p);
 
 /*
 -----Chunking-----
@@ -234,8 +242,8 @@ intermediate.c
 /*
 sort_base_cases.c
 */
-int	ft_sort_three (t_program *p);
-int   ft_sort_three_helper(t_program *p);
+void	ft_sort_three (t_program *p);
+void   ft_sort_three_helper(t_program *p);
 int	ft_base_case_two (t_program *p);
 int	ft_base_case_one (t_program *p);
 
@@ -270,10 +278,10 @@ r_optimization.c
 */
 
 int r_optim_checker(t_program *p);
-int r_optim(t_program *p);
-int r_optim_a(t_program *p);
-int r_optim_b(t_program *p);
-int r_optim_c(t_program *p);
+void r_optim(t_program *p);
+void r_optim_a(t_program *p);
+void r_optim_b(t_program *p);
+void r_optim_c(t_program *p);
 
 /*
 optimization_less.c
@@ -290,10 +298,10 @@ r_optimization_less.c
 */
 
 int r_optim_less_checker(t_program *p);
-int r_optim_less(t_program *p, int *new_ra);
-int r_optim_less_a(t_program *p);
-int r_optim_less_b(t_program *p);
-int r_optim_less_c(t_program *p);
+void r_optim_less(t_program *p, int *new_ra);
+void r_optim_less_a(t_program *p);
+void r_optim_less_b(t_program *p);
+void r_optim_less_c(t_program *p);
 
 /*
 optimization_loop.c
@@ -342,7 +350,7 @@ printer.c
 solve_b.c
 */
 
-int solve_b(t_program *p);
+void solve_b(t_program *p);
 
 /*
 -----Push_to_b------
@@ -351,7 +359,8 @@ int solve_b(t_program *p);
 /*
 first_chunk_helper.c
 */
-int middle_helper(t_program *p, t_hold num);
+void	support(t_program *p, t_hold num);
+void middle_helper(t_program *p, t_hold num);
 
 /*
 push_to_b.c
@@ -364,7 +373,7 @@ int     sa_check(t_stack *stacka, t_stack *stackb, t_info *printer);
 /*
 push_chunk.c
 */
-int    solve_a(t_program *p);
+void    solve_a(t_program *p);
 int    solve_first_chunk(t_stack *stacka, t_stack *stackb, t_info *printer, t_chunk chunking);
 
 /*
@@ -372,8 +381,8 @@ choose_push.c
 */
 t_hold  find_top_num(t_program *p, int border);
 t_hold  find_lower_num(t_program  *p, int border);
-int choose_push_helper(t_program *p, t_hold one, t_hold two);
-int     choose_push(t_program *p, int *chunks);
+void choose_push_helper(t_program *p, t_hold one, t_hold two);
+void     choose_push(t_program *p, int *chunks);
 
 /*
 push_chunk_helper.c
@@ -396,35 +405,35 @@ pushtob_utils.c
 int distance(t_program p, t_hold num);
 int optim_distance(t_program p, t_hold num);
 int expected_stackbsize(t_chunk chunking);
-int	rrb_helper_extra(t_program *p, int *complete_distance);
+void	rrb_helper_extra(t_program *p, int *complete_distance);
 
 /*
 push_chunk_first.c
 */
-int    first_chunk(t_program *p);
+void    first_chunk(t_program *p);
 
 /*
 other_chunks.c
 */
-int smallest_push(t_program *p, t_hold num);
+void smallest_push(t_program *p, t_hold num);
 int mid_push(t_stack *stacka, t_stack *stackb, t_info *printer, t_hold *num, t_chunk *chunking);
 
 /*
 set_location.c
 */
-int	loc_helper(t_program *p, t_hold *num);
-int	second_help(t_program *p, t_hold *num);
-int	loc_b_helper(t_program *p, t_hold *num);
-int set_chunk_location(t_program *p, t_hold *num);
-int set_location_simple(t_program *p, t_hold num);
+void	loc_helper(t_program *p, t_hold *num);
+void	second_help(t_program *p, t_hold *num);
+void	loc_b_helper(t_program *p, t_hold *num);
+void set_chunk_location(t_program *p, t_hold *num);
+void set_location_simple(t_program *p, t_hold num);
 
 /*
 rrb_chunk.c
 */
 int opt(t_program *p, t_hold *num, t_hold *next_hold, int *complete_distance);
 int rrb_chunk(t_program *p, t_hold *num, int *complete_distance);
-int solve_intermediate(t_program *p, t_hold *num);
-int chunk_solver(t_program *p);
+void solve_intermediate(t_program *p, t_hold *num);
+void chunk_solver(t_program *p);
 
 /*
 t_hold_init.c
@@ -438,38 +447,38 @@ t_hold  init_hold(void);
 /*
 intermediate_bigger_reverse.c
 */
-int   rda_more_midpoint(t_program *p);
-int   rdb_more_midpoint(t_program *p);
-int	  rdc_more_midpoint(t_program *p);
+void   rda_more_midpoint(t_program *p);
+void   rdb_more_midpoint(t_program *p);
+void	  rdc_more_midpoint(t_program *p);
 
 /*
 intermediate_reverse.c
 */
-int	rdb_smaller (t_program *p);
-int	rdc_smaller (t_program *p);
-int	rda_smaller (t_program *p);
+void	rdb_smaller (t_program *p);
+void	rdc_smaller (t_program *p);
+void	rda_smaller (t_program *p);
 /*
 intermediate_smaller_reverse.c
 */
-int   rda_less_midpoint(t_program *p);
-int   rdb_less_midpoint(t_program *p);
-int	  rdc_less_midpoint(t_program *p);
+void   rda_less_midpoint(t_program *p);
+void   rdb_less_midpoint(t_program *p);
+void	  rdc_less_midpoint(t_program *p);
 
 /*
 inverse_sort.c
 */
-int	sort_inverse_top(t_program *p);
-int	sort_inverse_inter(t_program *p);
-int	sort_inverse_end(t_program *p);
-int	sort_inverse_initial(t_program *p);
-int	ft_sort_inverse (t_program *p);
+void	sort_inverse_top(t_program *p);
+void	sort_inverse_inter(t_program *p);
+void	sort_inverse_end(t_program *p);
+void	sort_inverse_initial(t_program *p);
+void	ft_sort_inverse (t_program *p);
 /*
 reverse_base_cases.c
 */
-int sort_three_reverse_helper(t_program *p);
-int	ft_sort_three_reverse (t_program *p);
-int 	ft_rbase_case_two (t_program *p);
-int	  ft_rbase_case_one (t_program *p);
+void sort_three_reverse_helper(t_program *p);
+void	ft_sort_three_reverse (t_program *p);
+void 	ft_rbase_case_two (t_program *p);
+void	  ft_rbase_case_one (t_program *p);
 /*
 reverse_distance.c
 */
@@ -480,13 +489,13 @@ void	ft_rdc (t_program *p);
 /*
 top_stack_reverse.c
 */
-int	reverse_top_stack_a (t_program *p);
-int	reverse_top_stack_b (t_program *p);
-int	reverse_top_stack_c (t_program *p);
+void	reverse_top_stack_a (t_program *p);
+void	reverse_top_stack_b (t_program *p);
+void	reverse_top_stack_c (t_program *p);
 /*
 to_stackb.c
 */
-int pb_stackb(t_program *p);
+void pb_stackb(t_program *p);
 
 /*
 -----Set up-----

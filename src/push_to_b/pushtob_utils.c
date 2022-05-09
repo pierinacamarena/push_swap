@@ -66,15 +66,11 @@ int	expected_stackbsize(t_chunk chunking)
 	return (size);
 }
 
-int	rrb_helper_extra(t_program *p, int *complete_distance)
+void	rrb_helper_extra(t_program *p, int *complete_distance)
 {
-	int	count;
-
-	count = 0;
 	while (*complete_distance > 0)
 	{
-		count = count + ft_rrb(p);
+		ft_rrb(p);
 		*complete_distance = *complete_distance - 1;
 	}
-	return (count);
 }

@@ -29,40 +29,34 @@ int	r_optim_less_checker(t_program *p)
 	return (checker);
 }
 
-int	r_optim_less(t_program *p, int *new_ra)
+void	r_optim_less(t_program *p, int *new_ra)
 {
-	int	count;
 	int	check;
 
-	count = 0;
 	check = 0;
 	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
 			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
 	{
-		count = count + r_optim_less_a(p);
+		r_optim_less_a(p);
 		check++;
 	}
 	if ((p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c) || \
 			(p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b))
 	{
-		count = count + r_optim_less_b(p);
+		r_optim_less_b(p);
 		check++;
 	}
 	if ((p->stackb.c < p->stacka.a && p->stackb.c > p->stacka.c) || \
 			(p->stackb.c > p->stacka.a && p->stackb.c < p->stacka.b))
 	{
-		count = count + r_optim_less_c(p);
+		r_optim_less_c(p);
 		check++;
 	}
 	*new_ra = check;
-	return (count);
 }
 
-int	r_optim_less_a(t_program *p)
+void	r_optim_less_a(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c)
 	{
 		ft_pa(p);
@@ -72,14 +66,10 @@ int	r_optim_less_a(t_program *p)
 		ft_pa(p);
 		ft_sa(p);
 	}
-	return (count);
 }
 
-int	r_optim_less_b(t_program *p)
+void	r_optim_less_b(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c)
 	{
 		ft_sb(p);
@@ -91,14 +81,10 @@ int	r_optim_less_b(t_program *p)
 		ft_pa(p);
 		ft_sa(p);
 	}
-	return (count);
 }
 
-int	r_optim_less_c(t_program *p)
+void	r_optim_less_c(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.c < p->stacka.a && p->stackb.c > p->stacka.c)
 	{
 		ft_rrb(p);
@@ -110,5 +96,4 @@ int	r_optim_less_c(t_program *p)
 		ft_pa(p);
 		ft_sa(p);
 	}
-	return (count);
 }

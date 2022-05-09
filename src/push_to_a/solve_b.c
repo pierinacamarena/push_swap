@@ -12,17 +12,14 @@
 
 #include "../../includes/push_swap.h"
 
-int	solve_b(t_program *p)
+void	solve_b(t_program *p)
 {
 	int	i;
-	int	count;
 
 	i = 0;
-	count = 0;
 	while (i < p->stackb.max_size)
 	{
-		count = count + ft_pa(p);
+		ft_pa(p);
 		i++;
 	}
-	return (count);
 }

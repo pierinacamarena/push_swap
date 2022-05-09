@@ -16,7 +16,7 @@
  *	Switches the top two numbers of stackA
  **/
 
-int	ft_sa(t_program *p)
+void	ft_sa(t_program *p)
 {
 	int	temp;
 
@@ -26,7 +26,6 @@ int	ft_sa(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "sa");
-	return (1);
 }
 
 /**
@@ -34,7 +33,7 @@ int	ft_sa(t_program *p)
  *	rest move one position upwards
  **/
 
-int	ft_ra(t_program *p)
+void	ft_ra(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -57,14 +56,13 @@ int	ft_ra(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "ra");
-	return (1);
 }
 
 /**
  * Reverse rotates stackA, the last number becomes first, and all other numbers
  * move one position downwards
  **/
-int	ft_rra(t_program *p)
+void	ft_rra(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -87,10 +85,9 @@ int	ft_rra(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rra");
-	return (1);
 }
 
-int	ft_pa(t_program *p)
+void	ft_pa(t_program *p)
 {
 	int	i;
 	int	temp;
@@ -112,5 +109,4 @@ int	ft_pa(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "pa");
-	return (1);
-}
+	}

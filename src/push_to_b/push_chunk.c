@@ -12,26 +12,23 @@
 
 #include "../../includes/push_swap.h"
 
-int	solve_a(t_program *p)
+void	solve_a(t_program *p)
 {
 	int	*arr;
-	int	count;
 	int	i;
 
 	i = 0;
-	count = 0;
 	arr = indexing(*p);
 	p->chunking = split_choice(p->stacka, arr);
 	p->chunking.current_chunk = i;
-	count = count + first_chunk(p);
+	first_chunk(p);
 	while (i < p->chunking.splits)
 	{
 		p->chunking.current_chunk = i;
-		count = count + chunk_solver(p);
+		chunk_solver(p);
 		i++;
 	}
 	free(arr);
 	free(p->chunking.chunks);
 	free(p->chunking.chunk_size);
-	return (count);
 }

@@ -40,7 +40,6 @@ SRC = src/algorithm/push_swap.c \
 		src/optimization/r_optimization_less.c \
 		src/optimization/optimization_loop.c \
 		src/optimization/optimization_less_loop.c \
-		src/printing/debug_functions.c \
 		src/printing/printer.c \
 		src/printing/printer_helper.c \
 		src/push_to_a/solve_b.c \

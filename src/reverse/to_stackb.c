@@ -12,23 +12,19 @@
 
 #include "../../includes/push_swap.h"
 
-int	pb_stackb(t_program *p)
+void	pb_stackb(t_program *p)
 {
-	int	count;
-
-	count = 0;
-	count += ft_pb(p);
-	count += ft_pb(p);
-	count += ft_pb(p);
+	ft_pb(p);
+	ft_pb(p);
+	ft_pb(p);
 	ft_sort_three_reverse(p);
 	if (p->stacka.a > p->stackb.midpoint)
 	{
-		count += ft_pb(p);
+		ft_pb(p);
 	}
 	else if (p->stacka.a < p->stackb.midpoint)
 	{
-		count += ft_pb(p);
-		count += ft_rb(p);
+		ft_pb(p);
+		ft_rb(p);
 	}
-	return (count);
 }

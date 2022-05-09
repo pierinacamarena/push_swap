@@ -55,55 +55,51 @@ t_hold	find_lower_num(t_program *p, int border)
 	return (hold_two);
 }
 
-int	choose_push_helper(t_program *p, t_hold one, t_hold two)
+void	choose_push_helper(t_program *p, t_hold one, t_hold two)
 {
-	int	count;
 	int	i;
 
-	count = 0;
 	i = 0;
 	if (one.moves <= two.moves)
 	{
 		if (one.moves == 0)
-			count = count + ft_pb(p);
+			ft_pb(p);
 		else if (one.moves == 1)
 		{
-			count = count + ft_sa(p);
-			count = count + ft_pb(p);
+			ft_sa(p);
+			ft_pb(p);
 		}
 		else
 		{
 			while (i < one.moves)
 			{
-				count = count + ft_ra(p);
+				ft_ra(p);
 				i++;
 			}
-			count = count + ft_pb(p);
+			ft_pb(p);
 		}
 	}
 }
 
-int	choose_push(t_program *p, int *chunks)
+void	choose_push(t_program *p, int *chunks)
 {
 	t_hold	hold_one;
 	t_hold	hold_two;
-	int		count;
 	int		i;
 
-	count = 0;
 	i = 0;
 	hold_one = find_top_num(p, chunks[0]);
 	hold_two = find_lower_num(p, chunks[0]);
 	if (hold_one.moves <= hold_two.moves)
-		count = count + choose_push_helper(p, hold_one, hold_two);
+		choose_push_helper(p, hold_one, hold_two);
 	else if (hold_two.moves < hold_one.moves)
 	{
 		i = 0;
 		while (i < hold_two.moves)
 		{
-			count = count + ft_rra(p);
+			ft_rra(p);
 			i++;
 		}
-		count = count + ft_pb(p);
+		ft_pb(p);
 	}
 }

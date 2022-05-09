@@ -14,7 +14,7 @@
 
 /**	Switches the top two number of stackB
  **/
-int	ft_sb(t_program *p)
+void	ft_sb(t_program *p)
 {
 	int	temp;
 
@@ -24,7 +24,6 @@ int	ft_sb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "sb");
-	return (1);
 }
 
 /**
@@ -32,7 +31,7 @@ int	ft_sb(t_program *p)
  *	rest move one position upwards
  **/
 
-int	ft_rb(t_program *p)
+void	ft_rb(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -55,7 +54,6 @@ int	ft_rb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rb");
-	return (1);
 }
 
 /**
@@ -63,7 +61,7 @@ int	ft_rb(t_program *p)
  * move one position downwards
  **/
 
-int	ft_rrb(t_program *p)
+void	ft_rrb(t_program *p)
 {
 	int	temp;
 	int	i;
@@ -86,14 +84,13 @@ int	ft_rrb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rrb");
-	return (1);
 }
 
 /**
  *Function that pushes the top element of stackA to the top of stackB
  **/
 
-int	ft_pb(t_program *p)
+void	ft_pb(t_program *p)
 {
 	int	i;
 	int	temp;
@@ -116,5 +113,4 @@ int	ft_pb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "pb");
-	return (1);
 }

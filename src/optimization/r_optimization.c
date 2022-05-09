@@ -29,74 +29,58 @@ int	r_optim_checker(t_program *p)
 	return (checker);
 }
 
-int	r_optim(t_program *p)
+void	r_optim(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
 			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
-		count = count + r_optim_a(p);
+		r_optim_a(p);
 	if ((p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c) || \
 			(p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b))
-		count = count + r_optim_b(p);
+		r_optim_b(p);
 	if ((p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c) || \
 			(p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b))
-		count = count + r_optim_c(p);
-	return (count);
+		r_optim_c(p);
 }
 
-int	r_optim_a(t_program *p)
+void	r_optim_a(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.a < p->stacka.a && p->stackb.a > p->stacka.c)
 	{
-		count = count + ft_pa(p);
+		ft_pa(p);
 	}
 	else if (p->stackb.a > p->stacka.a && p->stackb.a < p->stacka.b)
 	{
-		count = count + ft_pa(p);
-		count = count + ft_sa(p);
+		ft_pa(p);
+		ft_sa(p);
 	}
-	return (count);
 }
 
-int	r_optim_b(t_program *p)
+void	r_optim_b(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.b < p->stacka.a && p->stackb.b > p->stacka.c)
 	{
-		count = count + ft_sb(p);
-		count = count + ft_pa(p);
+		ft_sb(p);
+		ft_pa(p);
 	}
 	else if (p->stackb.b > p->stacka.a && p->stackb.b < p->stacka.b)
 	{
-		count = count + ft_sb(p);
-		count = count + ft_pa(p);
-		count = count + ft_sa(p);
+		ft_sb(p);
+		ft_pa(p);
+		ft_sa(p);
 	}
-	return (count);
 }
 
-int	r_optim_c(t_program *p)
+void	r_optim_c(t_program *p)
 {
-	int	count;
-
-	count = 0;
 	if (p->stackb.c < p->stacka.a && p->stackb.c > p->stacka.c)
 	{
-		count = count + ft_rrb(p);
-		count = count + ft_pa(p);
+		ft_rrb(p);
+		ft_pa(p);
 	}
 	else if (p->stackb.c > p->stacka.a && p->stackb.c < p->stacka.b)
 	{
-		count = count + ft_rrb(p);
-		count = count + ft_pa(p);
-		count = count + ft_sa(p);
+		ft_rrb(p);
+		ft_pa(p);
+		ft_sa(p);
 	}
-	return (count);
 }
