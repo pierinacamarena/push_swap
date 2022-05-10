@@ -45,7 +45,7 @@ int	optim_distance(t_program p, t_hold num)
 	int	i;
 
 	i = 0;
-	while (num.number < p.stackb.array[i] && i < p.stackb.size)
+	while (num.number < p.stackb.array[i] && (i < p.stackb.size - 1))
 		i++;
 	distance = i;
 	return (distance);

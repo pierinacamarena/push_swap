@@ -18,7 +18,7 @@ int	main(int ac, char **av)
 	t_stack		stackb;
 	t_info		printer;
 	t_program	p;
-	int		len;
+	int			len;
 
 	len = ac - 1;
 	if (ac == 0 || ac == 1)
@@ -37,8 +37,6 @@ int	main(int ac, char **av)
 		ft_putstr("it is sorted! \n");
 	else
 		sort_stack(&p);
-	free(p.stacka.array);
-	free(p.stackb.array);
 	return (0);
 }
 
@@ -58,4 +56,6 @@ void	sort_stack(t_program *p)
 		else if (p->stacka.size > 3 && p->stacka.size <= 20)
 			ft_sort_inverse(p);
 	}
+	free(p->stacka.array);
+	free(p->stackb.array);
 }

@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list		*elem;
@@ -30,3 +31,4 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 		elem->next->next = NULL;
 	}
 }
+*/

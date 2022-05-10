@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 int	ft_lstsize(t_list *lst)
 {
 	size_t		len;
@@ -26,3 +27,4 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (len);
 }
+*/

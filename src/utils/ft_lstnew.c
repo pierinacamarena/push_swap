@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 t_list	*ft_lstnew(void *content)
 {
 	t_list		*list;
@@ -26,3 +27,4 @@ t_list	*ft_lstnew(void *content)
 	list->next = NULL;
 	return (list);
 }
+*/

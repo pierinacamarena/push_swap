@@ -21,26 +21,19 @@ void	rda_more_midpoint(t_program *p)
 	i = 0;
 	new_ra = 0;
 	rra = 0;
-	while (i < p->stackb.d_a)
-	{
+	while (i++ < p->stackb.d_a)
 		ft_rra(p);
-		i++;
-	}
 	ft_pa(p);
 	i = 0;
-	while (i <= p->stackb.d_a)
+	while (i++ <= p->stackb.d_a)
 	{
 		r_optim_less(p, &new_ra);
 		rra = rra + new_ra;
 		ft_ra(p);
-		i++;
 	}
 	i = 0;
-	while (i < rra)
-	{
+	while (i++ < rra)
 		ft_ra(p);
-		i++;
-	}
 }
 
 void	rdb_more_midpoint(t_program *p)
@@ -53,26 +46,19 @@ void	rdb_more_midpoint(t_program *p)
 	new_ra = 0;
 	rra = 0;
 	ft_sb(p);
-	while (i < p->stackb.d_b)
-	{
+	while (i++ < p->stackb.d_b)
 		ft_rra(p);
-		i++;
-	}
 	ft_pa(p);
 	i = 0;
-	while (i <= (p->stackb.d_b))
+	while (i++ <= (p->stackb.d_b))
 	{
 		ft_ra(p);
 		r_optim_less(p, &new_ra);
 		rra = rra + new_ra;
-		i++;
 	}
 	i = 0;
-	while (i < rra)
-	{
+	while (i++ < rra)
 		ft_ra(p);
-		i++;
-	}
 }
 
 void	rdc_more_midpoint(t_program *p)
@@ -85,24 +71,17 @@ void	rdc_more_midpoint(t_program *p)
 	new_ra = 0;
 	rra = 0;
 	ft_rrb(p);
-	while (i < p->stackb.d_c)
-	{
+	while (i++ < p->stackb.d_c)
 		ft_rra(p);
-		i++;
-	}
 	ft_pa(p);
 	i = 0;
-	while (i <= (p->stackb.d_c))
+	while (i++ <= (p->stackb.d_c))
 	{
 		r_optim_less(p, &new_ra);
 		rra = rra + new_ra;
 		ft_ra(p);
-		i++;
 	}
 	i = 0;
-	while (i < rra)
-	{
+	while (i++ < rra)
 		ft_ra(p);
-		i++;
-	}
 }

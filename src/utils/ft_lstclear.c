@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list		*elem;
@@ -29,3 +30,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+*/

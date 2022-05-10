@@ -24,7 +24,6 @@ t_info	init_printer(t_stack stacka, t_stack stackb)
 	printer.move[2] = '\0';
 	printer.count = 0;
 	printer.ins = 'n';
-	printer.instructions = '\0';
 	return (printer);
 }
 

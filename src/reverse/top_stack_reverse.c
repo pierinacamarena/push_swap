@@ -20,8 +20,7 @@ void	reverse_top_stack_a(t_program *p)
 	{
 		ft_pa(p);
 		ft_ra(p);
-	}
-	
+	}	
 }
 
 void	reverse_top_stack_b(t_program *p)
@@ -37,7 +36,6 @@ void	reverse_top_stack_b(t_program *p)
 		ft_pa(p);
 		ft_ra(p);
 	}
-	
 }
 
 void	reverse_top_stack_c(t_program *p)
@@ -53,5 +51,4 @@ void	reverse_top_stack_c(t_program *p)
 		ft_pa(p);
 		ft_ra(p);
 	}
-	
 }

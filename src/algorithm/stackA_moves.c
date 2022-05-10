@@ -109,4 +109,4 @@ void	ft_pa(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "pa");
-	}
+}

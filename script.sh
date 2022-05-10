@@ -2,7 +2,7 @@
 
 max=0
 test_nb=300
-value_nb=500
+value_nb=100
 min_val=1
 max_val=800
 total=0
@@ -15,9 +15,9 @@ do
 	error=`./push_swap $arg | ./checker_linux $arg`
 	if [ $error != "OK" ]
 	then
-		echo "$arg\n$error\n" >> error
+		echo "$arg\n" >> error
 	else
-		echo "$arg\n$error\n" >> ok
+		echo "$error\n\n" >> ok
 	fi
 	if [ $current -gt $max ]
 	then

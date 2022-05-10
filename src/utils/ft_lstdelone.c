@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst && !del)
@@ -20,3 +21,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	free(lst);
 	lst = NULL;
 }
+*/

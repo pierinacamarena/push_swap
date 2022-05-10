@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*elem;
@@ -36,3 +37,4 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		elem->next = NULL;
 	return (elem);
 }
+*/

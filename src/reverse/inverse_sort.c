@@ -77,11 +77,11 @@ void	ft_sort_inverse(t_program *p)
 		if ((p->stackb.a < p->stacka.x || p->stackb.a > p->stacka.y) \
 				|| (p->stackb.b < p->stacka.x || p->stackb.b > p->stacka.y) \
 				|| (p->stackb.c < p->stacka.x || p->stackb.c > p->stacka.y))
-				sort_inverse_top(p);
+			sort_inverse_top(p);
 		else if ((p->stackb.a > p->stacka.x && p->stackb.a < p->stacka.y) \
 				&& (p->stackb.b > p->stacka.x && p->stackb.b < p->stacka.y) \
 				&& (p->stackb.c > p->stacka.x && p->stackb.c < p->stacka.y))
-				sort_inverse_inter(p);
+			sort_inverse_inter(p);
 		j++;
 	}
 	sort_inverse_end(p);

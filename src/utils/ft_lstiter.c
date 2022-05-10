@@ -12,6 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
+/*
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst)
@@ -20,3 +21,4 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	if (lst->next)
 		ft_lstiter(lst->next, f);
 }
+*/
