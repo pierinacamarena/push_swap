@@ -34,12 +34,7 @@ void	ft_putnbr(int n)
 	ft_putneg((unsigned int)n);
 }
 
-int	ft_max(int a, int b)
+int	ft_isdigit(int c)
 {
-	if (a > b)
-		return (a);
-	else if (a < b)
-		return (b);
-	else
-		return (a);
+	return (c >= '0' && c <= '9');
 }

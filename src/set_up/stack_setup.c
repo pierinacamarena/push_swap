@@ -39,7 +39,7 @@ t_stack	init_stack(int len)
 		stack.d_b = 0;
 		stack.d_c = 0;
 	}
-	else 
+	else
 		perror("too small to create array\n");
 	return (stack);
 }

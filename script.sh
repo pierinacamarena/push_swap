@@ -19,11 +19,6 @@ do
 	else
 		echo "$error\n\n" >> ok
 	fi
-	if [ $current -gt $max ]
-	then
-		max="$current"
-		worst="$arg"
-	fi
 
 avg=`expr $total / $test_nb`
 done

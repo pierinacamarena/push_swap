@@ -494,16 +494,18 @@ void	ft_val_updtb(t_program *p);
 */
 
 /*
-cleaner.c
+check_error.c
 */
+int	check_numbers(int ac, char **av);
+int	check_arguments(int ac, char **av);
 
 /*
 utils.c
 */
-
 /*
 utils2.c
 */
+int	ft_isdigit(int c);
 t_stack	init_stack(int ac);
 t_stack	ft_stack_populate(t_stack *stack, char **av, int size);
 t_info	init_printer(t_stack stacka, t_stack stackb);

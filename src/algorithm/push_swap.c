@@ -18,23 +18,24 @@ int	main(int ac, char **av)
 	t_stack		stackb;
 	t_info		printer;
 	t_program	p;
-	int			len;
+	int			error;
 
-	len = ac - 1;
-	if (ac == 0 || ac == 1)
-	{
-		ft_putstr("no numbers to sort\n");
+	error = check_arguments(ac, av);
+	if (error == 0 || ac == 2)
 		return (0);
-	}
-	stacka = init_stack(len);
-	ft_stack_populate(&stacka, av, len);
-	stackb = init_stack(len);
+	stacka = init_stack(ac - 1);
+	ft_stack_populate(&stacka, av, ac - 1);
+	stackb = init_stack(ac - 1);
 	printer = init_printer(stacka, stackb);
 	p.stacka = stacka;
 	p.stackb = stackb;
 	p.printer = printer;
-	if (ft_check_sorted(stacka) || len == 1)
-		ft_putstr("it is sorted! \n");
+	if (ft_check_sorted(stacka))
+	{
+		free(p.stacka.array);
+		free(p.stackb.array);
+		return (0);
+	}
 	else
 		sort_stack(&p);
 	return (0);

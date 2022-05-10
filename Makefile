@@ -64,7 +64,7 @@ SRC = src/algorithm/push_swap.c \
 		src/set_up/printer_setup.c \
 		src/set_up/stack_values.c \
 		src/set_up/stack_setup.c \
-		src/utils/cleaner.c \
+		src/utils/check_error.c \
 		src/utils/utils2.c \
 		src/utils/utils.c \
 
