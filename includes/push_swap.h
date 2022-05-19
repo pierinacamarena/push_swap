@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <math.h>
+# include "extra.h"
 
 typedef struct s_stack
 {
@@ -493,11 +494,17 @@ void	ft_val_updtb(t_program *p);
 -----Utils-----
 */
 
+int		ft_isspace(int c);
+
 /*
 check_error.c
 */
-int	check_numbers(int ac, char **av);
-int	check_arguments(int ac, char **av);
+int		check_numbers(int ac, char **av);
+int		check_arguments(int ac, char **av);
+int		find_dup(long long *list, int len, int number);
+int		check_duplicates(long long *list, int len);
+int		check_numbers(int ac, char **av);
+int		check_num_size(long long *list, int len);
 
 /*
 utils.c
@@ -505,7 +512,7 @@ utils.c
 /*
 utils2.c
 */
-int	ft_isdigit(int c);
+int		ft_isdigit(int c);
 t_stack	init_stack(int ac);
 t_stack	ft_stack_populate(t_stack *stack, char **av, int size);
 t_info	init_printer(t_stack stacka, t_stack stackb);

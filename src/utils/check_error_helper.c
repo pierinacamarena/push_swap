@@ -1,50 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   check_error_helper.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcamaren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/05 17:21:12 by pcamaren          #+#    #+#             */
-/*   Updated: 2021/10/05 17:51:00 by pcamaren         ###   ########.fr       */
+/*   Created: 2021/10/06 15:43:25 by pcamaren          #+#    #+#             */
+/*   Updated: 2021/10/06 15:50:57 by pcamaren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
+#include <limits.h>
 
-int	ft_atoi(const char *str)
-{
-	int	nb;
-	int	sign;
-
-	nb = 0;
-	sign = 1;
-	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
-		str++;
-	if (*str == '+' || *str == '-')
-	{
-		if (*str == '-')
-			sign = -1;
-		str++;
-	}
-	while (*str >= '0' && *str <= '9')
-		nb = (nb * 10) + ((*str++) - '0');
-	return (nb * sign);
-}
-
-void	ft_putstr(char const *s)
+int	check_num_size(long long *list, int len)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (s[i] != '\0')
+	j = 1;
+	while (i < len)
 	{
-		write(1, &s[i], 1);
+		if (list[i] > INT_MAX || list[i] < INT_MIN)
+			return (-1);
 		i++;
 	}
-}
-
-int	ft_isspace(int c)
-{
-	return ((c > 8 && c < 14) || c == ' ');
+	return (0);
 }
