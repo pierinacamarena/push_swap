@@ -48,3 +48,24 @@ int	ft_isspace(int c)
 {
 	return ((c > 8 && c < 14) || c == ' ');
 }
+
+char	*ft_strcpy(char *dst, char const *src)
+{
+	char		*save;
+
+	save = dst;
+	while (*src)
+		*dst++ = *src++;
+	*dst = '\0';
+	return (save);
+}
+
+int			ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str && *str++)
+		i++;
+	return (i);
+}

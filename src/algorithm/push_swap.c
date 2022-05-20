@@ -43,6 +43,11 @@ int	main(int ac, char **av)
 
 void	sort_stack(t_program *p)
 {
+	t_node	*curr;
+	t_node	*root;
+
+	root = NULL;
+	p->moves = &root;
 	if (p->stacka.max_size > 20)
 	{	
 		solve_a(p);
@@ -57,6 +62,22 @@ void	sort_stack(t_program *p)
 		else if (p->stacka.size > 3 && p->stacka.size <= 20)
 			ft_sort_inverse(p);
 	}
+	curr = root;
+	ft_putstr("-----------\n");
+	while (curr != NULL)
+    {
+		printf("%d: %s\n", curr->location, curr->str);
+		curr = curr->next;
+    }
+	remove_element(p->moves, 2);
+	curr = root;
+	ft_putstr("-----------\n");
+	while (curr != NULL)
+    {
+		printf("%d: %s\n", curr->location, curr->str);
+		curr = curr->next;
+    }
+	deallocate(p->moves);
 	free(p->stacka.array);
 	free(p->stackb.array);
 }

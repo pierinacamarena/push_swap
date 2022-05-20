@@ -18,6 +18,7 @@ void	ft_rrr(t_program *p)
 	ft_rrb_rrr(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rrr");
+	insert_end(p->moves, "rrr", p->printer.count);
 }
 
 void	ft_rra_rrr(t_program *p)

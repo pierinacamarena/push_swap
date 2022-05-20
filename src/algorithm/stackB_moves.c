@@ -24,6 +24,8 @@ void	ft_sb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "sb");
+	insert_end(p->moves, "sb", p->printer.count);
+
 }
 
 /**
@@ -54,6 +56,8 @@ void	ft_rb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rb");
+	insert_end(p->moves, "rb", p->printer.count);
+
 }
 
 /**
@@ -84,6 +88,7 @@ void	ft_rrb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rrb");
+	insert_end(p->moves, "rrb", p->printer.count);
 }
 
 /**
@@ -113,4 +118,6 @@ void	ft_pb(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "pb");
+	insert_end(p->moves, "pb", p->printer.count);
+
 }

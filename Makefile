@@ -68,6 +68,8 @@ SRC = src/algorithm/push_swap.c \
 		src/utils/utils2.c \
 		src/utils/utils.c \
 		src/utils/check_error_helper.c \
+		src/linked_list/linked_list.c \
+		src/linked_list/linked_list_second.c \
 
 OBJ		= $(SRC:.c=.o)
 

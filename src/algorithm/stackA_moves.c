@@ -26,6 +26,7 @@ void	ft_sa(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "sa");
+	insert_end(p->moves, "sa", p->printer.count);
 }
 
 /**
@@ -56,6 +57,8 @@ void	ft_ra(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "ra");
+	insert_end(p->moves, "ra", p->printer.count);
+
 }
 
 /**
@@ -85,6 +88,8 @@ void	ft_rra(t_program *p)
 	ft_val_updta(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "rra");
+	insert_end(p->moves, "rra", p->printer.count);
+
 }
 
 void	ft_pa(t_program *p)
@@ -109,4 +114,5 @@ void	ft_pa(t_program *p)
 	ft_val_updtb(p);
 	p->printer.count = p->printer.count + 1;
 	update_printer(p, "pa");
+	insert_end(p->moves, "pa", p->printer.count);
 }

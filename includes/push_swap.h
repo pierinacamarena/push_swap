@@ -19,6 +19,13 @@
 # include <math.h>
 # include "extra.h"
 
+typedef struct  t_node
+{
+    int                     location;
+    char                    *str;
+	struct t_node		    *next;
+}               t_node;
+
 typedef struct s_stack
 {
 	int	size;
@@ -82,6 +89,7 @@ typedef struct s_program
 	t_stack	stackb;
 	t_info	printer;
 	t_chunk	chunking;
+	t_node	**moves;
 }		t_program;
 
 /*
@@ -490,11 +498,24 @@ stack_values.c
 void	ft_val_updta(t_program *p);
 void	ft_val_updtb(t_program *p);
 
+
+/*
+-----Linked_list-----
+*/
+t_node *init_list(void);
+void    insert_begining(t_node **root, char *str, int location);
+void    insert_after(t_node *chosen_node, char *str, int location);
+void    insert_end(t_node **root, char *str, int location);
+void    deallocate(t_node **root);
+void    remove_element(t_node **root, int value);
+
+
 /*
 -----Utils-----
 */
 
 int		ft_isspace(int c);
+int		ft_strcmp(const char *s1, const char *s2);
 
 /*
 check_error.c
@@ -527,5 +548,7 @@ void	ft_putneg(unsigned int n);
 void	ft_putnbr(int i);
 int		ft_max(int a, int b);
 void	ft_putchar(char c);
+int		ft_strlen(char *str);
+char	*ft_strcpy(char *dst, char const *src);
 
 #endif
